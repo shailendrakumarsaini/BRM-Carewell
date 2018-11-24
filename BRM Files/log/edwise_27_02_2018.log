@@ -1,0 +1,5001 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:41:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:44:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:44:19",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:44:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:44:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:45:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:46:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:47:02",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:53:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:53:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:54:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 10:54:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:08:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:08:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:10:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:10:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:10:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:17:13",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:17:15",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:17:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:20:08",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:20:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:21:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:22:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:22:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:23:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:24:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:25:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:26:11",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:28:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:28:56",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:29:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:29:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:29:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:29:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:31:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:31:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:32:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:33:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:35:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:35:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:38:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:39:13",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:39:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:40:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:40:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:41:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:42:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:43:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:45:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:45:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:46:25",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:46:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:46:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:46:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:47:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:48:10",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:56:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:56:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:56:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:57:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:57:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:57:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:59:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 11:59:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:00:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:01:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:01:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:02:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:03:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:05:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:07:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:09:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:10:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:10:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:11:02",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:11:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:19:19",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:21:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:21:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:23:13",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:24:13",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 12:45:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 13:53:10",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 13:57:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:03:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:06:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:07:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:08:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:08:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:08:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:11:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:12:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:12:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:11:54",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:14:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:15:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:16:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:17:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:19:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:20:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:20:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:21:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:22:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:24:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:26:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:27:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:27:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:32:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:34:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:35:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:36:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:37:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:38:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:41:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:43:11",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:44:32",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:46:15",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:46:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:48:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:48:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:49:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:49:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:50:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:50:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:50:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:51:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:51:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:52:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:54:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:54:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:55:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:56:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:56:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:56:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:57:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:57:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:58:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:58:25",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:58:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 14:59:56",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:01:09",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:01:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:02:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:03:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:04:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:04:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:05:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:06:19",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:07:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:07:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:08:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:08:56",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:09:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:11:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:12:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:12:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:12:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:13:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:13:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:13:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:13:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:14:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:14:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:15:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:16:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:19:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:19:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:20:09",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:20:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:20:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:20:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:20:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:22:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:23:10",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:23:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:23:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:26:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:26:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:26:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:27:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:27:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:27:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:39:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:40:00",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:41:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:41:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:41:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:42:09",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:44:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:46:59",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:48:48",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:49:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:48:57",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:50:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:50:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 15:50:12",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:00:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:01:10",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:01:48",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:02:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:02:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:02:57",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:03:36",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:03:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:05:10",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:08:05",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:10:19",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:10:58",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:13:04",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:14:18",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:15:45",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:16:30",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:18:09",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:19:32",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:19:45",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:19:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:20:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:20:50",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:20:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:22:00",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:22:10",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:22:51",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:23:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:26:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:27:06",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:27:47",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:27:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:28:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:29:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:30:14",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:30:48",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:31:38",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:32:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:32:07",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:32:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:35:08",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:35:12",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:35:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:36:08",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:36:41",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:37:11",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:39:05",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:40:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:40:15",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:41:05",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:42:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:42:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:42:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:43:28",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:43:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:43:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:43:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:44:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:45:12",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:45:55",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:47:14",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:47:57",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:48:35",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:48:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:49:31",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:49:48",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:51:01",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:50:06",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:52:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:52:55",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:53:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:54:17",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:55:06",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:55:51",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 16:56:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:56:53",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:57:53",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:58:45",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 16:59:43",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:01:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:01:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:01:06",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:04:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:04:19",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:04:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:04:46",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:04:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:06:29",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:08:06",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:08:10",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:09:29",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:16:10",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:17:17",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:21:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:23:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:24:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:26:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:27:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:27:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:28:15",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:29:19",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:29:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:30:15",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:30:26",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:30:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:31:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 17:33:04",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:35:15",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:36:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:38:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:39:09",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:39:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:42:11",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:43:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:44:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:46:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:46:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:48:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:47:38",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:48:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:48:55",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:49:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:49:49",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:51:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:52:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:53:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:56:09",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:56:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 17:57:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:02:24",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:02:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:02:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:05:20",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:06:23",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:06:36",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:07:59",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:09:33",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:10:36",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 18:10:50",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:13:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:14:17",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:14:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:16:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:16:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:19:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:20:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:20:09",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:21:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:21:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:21:59",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:26:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:33:06",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:35:55",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:37:30",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:37:42",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:38:10",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:46:49",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:47:42",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:48:19",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:48:43",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:48:58",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:49:13",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:50:24",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:51:07",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:52:13",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:54:35",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:55:02",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:55:11",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:55:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:55:32",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 18:55:45",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:00:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:00:05",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:00:14",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:01:05",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:01:21",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:01:54",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:02:21",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:02:41",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:03:26",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:03:40",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:03:06",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:03:16",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 19:04:37",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 19:05:33",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:05:06",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:06:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:07:13",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:07:24",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:07:28",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": "",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:07:30",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:07:59",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:09:22",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:10:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:12:46",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-27 19:14:09",
+        "client_ip": "10.22.39.22"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:14:10",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:14:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:15:20",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:15:23",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:16:02",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:16:07",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:16:29",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:18:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:18:34",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:18:57",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:23:05",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:22:25",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:22:30",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:22:32",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:22:38",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:22:45",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:23:08",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:26:02",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:26:08",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:25:12",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:25:20",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:25:30",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:26:48",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:26:55",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:27:03",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:27:26",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:27:34",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:27:42",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:29:25",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:29:36",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:28:50",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:31:03",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:31:07",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:31:10",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:31:11",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:31:12",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:31:14",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:32:12",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:33:55",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:33:22",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:34:29",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:33:49",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:33:56",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:33:58",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:35:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:35:13",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:35:26",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:35:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:35:01",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:35:03",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:36:00",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:35:05",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:36:17",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:36:40",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:37:27",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:43:24",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:43:45",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 19:44:10",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:44:49",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": "",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:45:44",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:48:18",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:49:00",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:49:04",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:54:00",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:54:23",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:54:28",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:57:11",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:57:58",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:58:33",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:59:18",
+        "client_ip": "10.22.39.45"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:59:22",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 19:59:53",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:00:51",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:00:58",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:01:24",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:01:31",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:01:37",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:02:30",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:03:24",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:03:27",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:03:48",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:03:52",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:04:01",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:06:18",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:06:47",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:06:22",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:08:27",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:08:40",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:08:48",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:09:16",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:09:49",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:14:02",
+        "client_ip": "203.193.173.148",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:14:32",
+        "client_ip": "203.193.173.148",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:14:38",
+        "client_ip": "203.193.173.148",
+        "isEmpty": "false"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:14:40",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:15:37",
+        "client_ip": "203.193.173.148",
+        "isEmpty": "false"
+    },
+    "window": "Medicine Stock",
+    "extra": "",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:15:55",
+        "client_ip": "203.193.173.148",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:15:08",
+        "client_ip": "10.22.39.45",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:16:16",
+        "client_ip": "203.193.173.148"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:16:29",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:16:35",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:16:36",
+        "client_ip": "203.193.173.148"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:17:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 20:18:15",
+        "client_ip": "10.22.39.45"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:26:10",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:26:16",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:27:52",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:28:23",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:28:41",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:35:35",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:36:43",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:37:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:37:27",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:42:16",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:42:57",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:43:09",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:43:46",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:48:26",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:48:37",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:49:16",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:49:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:49:26",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:51:31",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:52:12",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:52:41",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-27 20:55:46",
+        "client_ip": "10.22.39.23",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:52:07",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:52:53",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:52:57",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:53:29",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:54:54",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:57:57",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:58:07",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-27 21:59:12",
+        "client_ip": "202.62.71.157",
+        "isEmpty": "false"
+    },
+    "window": "Users",
+    "extra": "extra Data",
+    "isEmpty": "false"
+},

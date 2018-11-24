@@ -1,0 +1,82 @@
+<div ng-controller="cancelreceipt_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/cancel.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Cancel Receipt
+                    </div>
+                    <small class="text-muted"> Cancel Receipt</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="font-size: 20px;">Cancel Receipt</div>
+                <div class="panel-body">
+                    <form id="formid" class="form-validation" ng-submit="show_rec(recno)">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="recno">Receipt Code</label>
+                                <div class="input-group">
+                                    <label class="input-group-addon btn" for="recno"><b class="glyphicon glyphicon-list-alt"></b></label>
+                                    <input type="text" ng-model="recno" class="form-control" id="recno" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>&nbsp;</label>
+                                <br>
+                                <button class="btn btn-primary" form="formid">Check</button>
+                            </div>
+                        </div><br>
+                    </form>
+                    <div class="row" ng-show="showrec==1">
+                        <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Patient Name</th>
+                                    <th>City</th>
+                                    <th>Mobile</th>
+                                    <th>Doctor Name</th>
+                                    <th>Recipt Code</th>
+                                    <th style="text-align:right">Amount</th>
+                                    <th>Date</th>
+                                    <th>Bill Category</th>
+                                    <th>To Cancel a Receipt</th>
+                                </tr>
+                                <tr ng-repeat="i in rec_data" ng-show="norec==1">
+                                    <td>{{i.name}}</td>
+                                    <td>{{i.city}}</td>
+                                    <td>{{i.mobile}}</td>
+                                    <td>Dr.&nbsp;{{i.dr_name}}&nbsp;{{i.qualification}}</td>
+                                    <td>{{i.receipt_code}}</td>
+                                    <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{i.amount | number:'2'}}</td>
+                                    <td>{{i.date_time}}</td>
+                                    <td>{{i.bcname}}</td>
+                                    <td><button class="btn btn-primary" ng-click="cancel_rec(i.receipt_code)" ng-disabled="btnEnalbe==0">Cancel Receipt</button></td>
+                                </tr>
+                                <tr ng-show="norec==0">
+                                    <td colspan="8" align="center">
+                                        <h3>No Record </h3>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <!-- <ipdetails patientid="5"></ipdetails> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,2161 @@
+<div ng-controller="collection_ctrl">
+    <div class="panel panel-default" style="margin: 5px;">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/income.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Collection
+                    </div>
+                    <small class="text-muted">Collection Information</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div ng-show="action == 1">
+                <div class="row">
+                    <div class="col-md-5" ng-init="init()">
+                        <div class="input-group pull-left">
+                            <label class="input-group-addon btn" for="searchid"><b class="fa fa-search"> &nbsp;Search Patient</b></label>
+                            <ui-select ng-model="selected_data.innerObj" ng-change="autosearch_data($select.search)" id="searchid" reset-search-input="true" theme="bootstrap"  title="Choose an address" append-to-body="true">
+                                <ui-select-match placeholder="Search for Patient..."><span ng-bind="$select.selected.collection_data"></span></ui-select-match>
+                                <ui-select-choices repeat="item in (collection_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0" ng-click="move(selected_data.innerObj.patient_id)">
+                                <span ng-bind-html="item.name |uppercase | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span ng-bind-html="item.gender | highlight: $select.search"></span>:
+                                <span ng-bind-html="item.age | highlight: $select.search"></span><br>
+                                <span>
+                                    <i class="fa fa-map-marker"></i>&nbsp;<span ng-bind-html="item.city | uppercase|highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-mobile"></i>&nbsp;<span ng-bind-html="item.mobile | highlight: $select.search"></span>
+                                </span>
+                                </ui-select-choices>
+                            </ui-select>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                        <div class="container-fluid">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li class="active"><a id="opLink1" data-toggle="tab" ng-click="showTab('#mainmenu1', '#opLink1')" ><b>OP List</b></a></li>
+                                <li><a id="opLink2" data-toggle="tab" ng-click="showTab('#mainmenu2', '#opLink2')"><b>IP List</b></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                    <div id="mainmenu1" class="tab-pane fade in active"><br>
+                                            <div style="overflow: auto">
+                                                <table class="table table-striped table-bordered">
+                                                    <!-- <caption style="text-align:center;font-size: 18px">{{changeDate}} OP List</caption> -->
+                                                    <thead>
+                                                        <td colspan="10">
+                                                            <div class="col-md-4 pull-left" ng-hide="NOOP==1">
+                                                                <label>Search Patient</label>
+                                                                <div class="input-group">
+                                                                    <label class="input-group-addon btn" for="searchID1"><i class="fa fa-search"></i></label>
+                                                                    <input class="form-control" ng-model="search1" id="searchID1">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2"></div>
+                                                            <div class="col-md-3 pull-right">
+                                                              <label for="testdate2">To Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="date" id="testdate2" ng-model="tempDateModelToDate" ng-change="byDate()" class="form-control">
+                                                                    <label class="input-group-addon btn" for="testdate2">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 pull-right">
+                                                              <label for="testdate1">From Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="date" id="testdate1" ng-model="tempDateModelFromDate" ng-change="byDate()" class="form-control">
+                                                                    <label class="input-group-addon btn" for="testdate1">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+
+                                                    </thead>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th ng-click="SortTheData('patient_id')">Patient ID</th>
+                                                            <th ng-click="SortTheData('name')">Patient Name</th>
+                                                            <!-- <th ng-click="SortTheData('mobile')">Mobile No</th>
+                                                            <th ng-click="SortTheData('city')">City</th> -->
+                                                            <th ng-click="SortTheData('dr_name')">Doctor Name</th>
+                                                            <th>OP Details</th>
+                                                            <!-- <th>Convert To In-Patient</th> -->
+                                                            <th>Print</th>
+                                                            <th>Remove</th>
+                                                            <!-- <th>Patient Status</th>  -->
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr ng-repeat="m in unit_data |orderBy:sort:reverseSort |filter:search1" ng-hide="NOOP==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{m.patient_id}}</td>
+                                                            <td>{{m.name}}
+                                                                <span class="text-muted">&nbsp;&nbsp;&nbsp;&nbsp;{{m.gender}}&nbsp;:&nbsp;{{m.age}},&nbsp;S/O&nbsp;{{m.father_name}}</span><br>
+                                                                <span class="text-muted">
+                                                                    <i class="fa fa-mobile"></i>&nbsp;
+                                                                    <span ng-bind-html="m.mobile "></span>&nbsp;&nbsp;
+                                                                    <i class="fa fa-map-marker"></i>
+                                                                    <span ng-bind-html="m.city "></span>
+                                                                </span>
+                                                            </td>
+                                                            <!-- <td>{{m.mobile}}</td>
+                                                            <td>{{m.city}}</td> -->
+                                                            <td>Dr.&nbsp;{{m.dr_name}}&nbsp;{{m.qualification}}</td>
+                                                            <td><a><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#opdetails" ng-click="op_details(m.p_visit_id)"></i></a></td>
+                                                            <!-- <td><button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-disabled="m.convert_to_inpatient==0" ng-click="send_Idssss(m.patient_id,m.p_visit_id,m.dr_id)">Move To In Patient</button></td> -->
+                                                            <td><a><i class="fa fa-print fa-lg" ng-click="print_op(m.p_visit_id)" data-toggle="modal" data-target="#opprint"></i></a></td>
+                                                            <td><a><i class="fa fa-trash fa-lg text-danger" ng-click="DeleteOP(m.p_visit_id)"></i></a></td>
+                                                            <!--<td style="text-align:center;"><a href ng-click="change_status(m.patient_id,m.patient_status,$index)"><i class="fa fa-check text-success" ng-show="m.patient_status==1"></i><i class="fa fa-times text-danger"  ng-show="m.patient_status==0"></i></a></td>   -->
+                                                        </tr>
+
+                                                        <tr ng-show="NOOP==1">
+                                                            <td colspan="10" style="text-align: center"><h4>No OP Exist</h4></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <!-- opdetails Model  -->
+                                                <div class="modal fade" id="opdetails" data-backdrop="static">
+                                                        <div class="modal-dialog modal-lg modal-full-height">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title">&nbsp;OP Details</h4>
+                                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                                </div>
+
+                                                                <!-- Modal body -->
+                                                                <div class="modal-body">
+                                                                    <div>
+
+                                                                        <form name="opdetailsform">
+                                                                            <table class="table table-striped table-bordered">
+                                                                                <tr>
+                                                                                    <th>Patient ID</th>
+                                                                                    <th>Patient Name</th>
+                                                                                    <th>Mobile No</th>
+                                                                                    <th>City</th>
+                                                                                </tr>
+                                                                                <tr ng-repeat="t in get_opdetails">
+                                                                                    <td>{{t.patient_id}}</td>
+                                                                                    <td>{{t.name}}<span class="text-muted"><br>{{t.gender}}&nbsp;:&nbsp;{{t.age}},&nbsp;S/O&nbsp;{{t.father_name}}</span></td>
+                                                                                    <td>{{t.mobile}}</td>
+                                                                                    <td>{{t.city}}</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <table class="table table-striped table-bordered">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Doctor Name</th>
+                                                                                        <th>Date</th>
+                                                                                        <th>OP Type</th>
+                                                                                        <th>Referral</th>
+                                                                                        <th style="text-align: right">Consultancy Fee</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr ng-repeat="t in get_opdetails">
+                                                                                        <td>Dr.&nbsp;{{t.dr_name}}&nbsp;{{t.qualification}}</td>
+                                                                                        <td>{{t.visit_date}}</td>
+                                                                                        <td>{{t.type_of_consultation}}</td>
+                                                                                        <td>{{(t.ref_name == null)? "None" : t.ref_name}}</td>
+                                                                                        <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </form>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <!-- Modal footer -->
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                </div>
+
+                                            <!-- OP Details Print Modal -->
+                                                <div class="modal fade" id="opprint" data-backdrop="static">
+                                                        <div class="modal-dialog modal-lg modal-full-height">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title">&nbsp;OP Details</h4>
+                                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                                </div>
+
+
+                                                                <!-- Modal body -->
+                                                                <div class="modal-body">
+
+                                                                        <div ng-repeat="t in get_opdetails_for_print">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12" align="center" ng-repeat="i in hospital_details">
+                                                                                    <!-- <h3>{{i.hname}}</h3>
+                                                                                    <p style="font-size:15px">{{i.haddress}}</p> -->
+                                                                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                        <tr>
+                                                                                            <h3>{{i.hname}}</h3>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            {{i.haddress}}
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="opPrint">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <h4>To</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                            <tr>
+                                                                                                <td style="text-align:center">Patient Name</td>
+                                                                                                <td style="text-align:center">Address</td>
+                                                                                                <td style="text-align:center">Mobile</td>
+                                                                                                <td style="text-align:center">Receipt Code </td>
+                                                                                                <td style="text-align:center">Date</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="text-align:center">{{t.name}}[<span class="text-muted">{{t.gender}}&nbsp;:&nbsp;{{t.age}},&nbsp;{{t.father_name}}</span>]</td>
+                                                                                                <td style="text-align:center">{{t.city}}</td>
+                                                                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                                                <td style="text-align:center">{{t.visit_date}}</td>
+                                                                                            </tr>
+                                                                                        </table><br/>
+                                                                                        <table  border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                            <tr>
+                                                                                                <th style="text-align:center">##</th>
+                                                                                                <th style="text-align:center">Description</th>
+                                                                                                <th style="text-align:right;padding-right: 15px">Amount</th>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="text-align:center">{{$index+1}}</td>
+                                                                                                <td style="text-align:center">{{t.fcname}} [Dr.&nbsp; {{t.dr_name}}&nbsp;{{t.qualification}} ]</td>
+                                                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount|number:2}}</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br/>
+                                                                                <table cellspacing="0px" hieght="100%" width="100%">
+                                                                                    <tr>
+                                                                                        <td><b>Terms & Conditions :</b></td>
+                                                                                        <td align="left"><b>Signature:</b></td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table cellspacing="0px" hieght="100%" width="100%">
+                                                                                <tr>
+                                                                                    <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            </div>
+                                                                            <div id="opPrintPrint" ng-show="PrintShow==1">
+                                                                                <div class="row" style="margin-top:1.4in;">
+                                                                                    <div class="col-md-12">
+                                                                                        <h4>To</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12">
+                                                                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                            <tr>
+                                                                                                <td style="text-align:center">Patient Name</td>
+                                                                                                <td style="text-align:center">Address</td>
+                                                                                                <td style="text-align:center">Mobile</td>
+                                                                                                <td style="text-align:center">Receipt Code </td>
+                                                                                                <td style="text-align:center">Date</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="text-align:center">{{t.name}}[<span class="text-muted">{{t.gender}}&nbsp;:&nbsp;{{t.age}},&nbsp;{{t.father_name}}</span>]</td>
+                                                                                                <td style="text-align:center">{{t.city}}</td>
+                                                                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                                                <td style="text-align:center">{{t.visit_date}}</td>
+                                                                                            </tr>
+                                                                                        </table><br/>
+                                                                                        <table  border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                            <tr>
+                                                                                                <th style="text-align:center">##</th>
+                                                                                                <th style="text-align:center">Description</th>
+                                                                                                <th style="text-align:right;padding-right: 15px">Amount</th>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="text-align:center">{{$index+1}}</td>
+                                                                                                <td style="text-align:center">{{t.fcname}} [Dr.&nbsp; {{t.dr_name}}&nbsp;{{t.qualification}} ]</td>
+                                                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount|number:2}}</td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <br/>
+                                                                                <table cellspacing="0px" hieght="100%" width="100%">
+                                                                                    <tr>
+                                                                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                                                                    <tr>
+                                                                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                                                    </tr>
+                                                                                </table> -->
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('opPrintPrint')">Print</button>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                    </div>
+                                    <div id="mainmenu2" class="tab-pane fade"><br>
+                                            <div style="overflow: auto">
+                                                <table class="table table-striped table-bordered">
+                                                    <!-- <caption style="text-align:center;font-size: 18px">{{changeDate}} IP List</caption> -->
+                                                    <thead ng-hide="NOIP==1">
+                                                        <td colspan="10">
+                                                            <div class="col-md-4">
+                                                                <label>Search Patient</label>
+                                                                <div class="input-group pull-left">
+                                                                    <label class="input-group-addon btn" for="searchID2"><i class="fa fa-search"></i></label>
+                                                                    <input class="form-control" ng-model="search2" id="searchID2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label>From Date </label>
+                                                                <div class="input-group">
+                                                                    <input type="date" id="from_date_model_for_ipID" ng-model="from_date_model_for_ip" ng-change="change_from_date_for_ip(from_date_model_for_ip)" class="form-control">
+                                                                    <label class="input-group-addon btn" for="from_date_model_for_ipID">
+                                                                        <span class="fa fa-calendar"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label>To Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="date" id="to_date_model_for_ipID" ng-model="to_date_model_for_ip" ng-change="change_to_date_for_ip(to_date_model_for_ip)" class="form-control">
+                                                                    <label class="input-group-addon btn" for="to_date_model_for_ipID">
+                                                                        <span class="fa fa-calendar"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <label>&nbsp;</label>
+                                                                <div class="input-group">
+                                                                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" type="button" ng-click="getIP()" ng-disabled="enableSearchDateBtnForIp==0"><i class="fa fa-search"></i>Search</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </thead>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th ng-click="SortTheData('patient_id')">ID</th>
+                                                            <th ng-click="SortTheData('name')">Name</th>
+                                                            <!-- <th ng-click="SortTheData('department')">Department</th>
+                                                            <th ng-click="SortTheData('initial_diagnosis')">Diagnosis</th>
+                                                            <th ng-click="SortTheData('schemeName')">Scheme</th> -->
+                                                            <th>Scheme</th>
+                                                            <th ng-click="SortTheData('total_package_amount')">Doctor</th>
+                                                            <!-- <th >Date</th>
+                                                            <th >Loc Name</th> -->
+                                                            <th style="text-align: right">Package</th>
+                                                            <th>Details</th>
+                                                            <!-- <th>Print</th> -->
+                                                            <!-- <th>Convert To In-Patient</th> -->
+                                                            <!-- <th>Patient Status</th>  -->
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody ng-repeat="m in unit_ip_data |orderBy:sort:reverseSort |filter:search2" ng-hide="NOIP==1">
+                                                        <tr>
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{m.patient_id}}</td>
+                                                            <td>{{m.name}}<br/>
+                                                                <span class="text-muted">
+                                                                    {{m.gender}}&nbsp;:&nbsp;{{m.age}},&nbsp;S/O&nbsp;{{m.father_name}}
+                                                                </span><br/>
+                                                                <span class="text-muted">
+                                                                    <i class="fa fa-mobile"></i>&nbsp;
+                                                                    <span ng-bind-html="m.mobile "></span><br/>
+                                                                    <i class="fa fa-map-marker"></i>
+                                                                    <span ng-bind-html="m.city "></span>
+                                                                </span>
+                                                            </td>
+                                                            <!-- <td>{{m.spname}}</td>
+                                                            <td>{{m.initial_diagnosis}}</td>
+                                                            <td>{{m.schemeName}}</td> -->
+                                                            <td>
+                                                                {{m.schemeName}}<br>
+                                                                <span class="text-muted">
+                                                                    {{m.spname}}<br>
+                                                                    {{m.initial_diagnosis}}
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                Dr.&nbsp;{{m.dr_name}}&nbsp;{{m.qualification}}<br>
+                                                                {{(m.anesthesian_dr_name == null) ? ' ': 'Dr.'+' '+m.anesthesian_dr_name+' '+m.anesthesian_dr_qualification}}<br>
+                                                                {{(m.surgeon_dr_name == null) ? ' ': 'Dr.'+m.surgeon_dr_name+' '+m.surgeon_dr_qualification}}
+                                                            </td>
+                                                            <!-- <td>{{m.dr_name}}</td>
+                                                            <td>{{m.dr_name}}<br>
+                                                                {{m.dr_name}}
+                                                            </td> -->
+                                                            <td style="text-align: right">{{m.total_package_amount |number:2}}</td>
+                                                            <td><a><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#ipdetails" ng-click="specific_ip_detailsFun(m.p_visit_id)"></i></a></td>
+                                                            <!-- <td><i class="fa fa-print fa-lg" ng-click="print_ip(m.p_visit_id)" data-toggle="modal" data-target="#ipprint"></i></td> -->
+                                                            <!-- <td><button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-click="send_Idssss(m.patient_id,m.name)">IP</button></td> -->
+                                                            <!-- <td style="text-align:center;"><a href ng-click="change_status(m.patient_id,m.patient_status,$index)"><i class="fa fa-check text-success" ng-show="m.patient_status==1"></i><i class="fa fa-times text-danger" ng-show="m.patient_status==0"></i></a></td> -->
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody ng-show="NOIP==1">
+                                                        <tr>
+                                                            <td colspan="9" style="text-align: center"><h4>No IP Exist</h4></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <!-- IP Details Modal    -->
+                                                <div class="modal fade" id="ipdetails" data-backdrop="static">
+                                                        <div class="modal-dialog modal-lg modal-full-height">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title">{{pn}}&nbsp;IP Details</h4>
+                                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                                </div>
+
+                                                                <!-- Modal body -->
+                                                                <div class="modal-body">
+                                                                    <div>
+
+                                                                        <form name="opdetailsform">
+                                                                            <table class="table table-striped table-bordered">
+                                                                                <tr>
+                                                                                    <th>Patient ID</th>
+                                                                                    <th>Patient Name</th>
+                                                                                    <!-- <th>Mobile No</th>
+                                                                                    <th>City</th> -->
+                                                                                    <th>Doctor Name</th>
+                                                                                </tr>
+                                                                                <tr ng-repeat="sip in specific_ip_details">
+                                                                                    <td>{{sip.patient_id}}</td>
+                                                                                    <td>{{sip.name}}<span class="text-muted"><br>{{sip.gender}}&nbsp;:&nbsp;{{sip.age}},&nbsp;S/O&nbsp;{{sip.father_name}}</span></td>
+                                                                                    <!-- <td>{{sip.mobile}}</td>
+                                                                                    <td>{{sip.city}}</td> -->
+                                                                                    <td>Dr.&nbsp;{{sip.dr_name}}&nbsp;{{sip.qualification}}</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <table class="table table-striped table-hover table-bordered">
+                                                                                    <tr>
+                                                                                        <th>Anesthesia Doctor</th>
+                                                                                        <th>Surgen Doctor</th>
+                                                                                        <th>Date</th>
+                                                                                        <th>Loc Name</th>
+                                                                                        <th>Bed Name</th>
+                                                                                        <th>Referral</th>
+                                                                                        <th style="text-align: right">Package</th>
+                                                                                    </tr>
+                                                                                    <tr ng-repeat="sip in specific_ip_details">
+                                                                                        <td>{{(sip.anesthesian_dr_name == null) ? '-----' : 'Dr. '+ sip.anesthesian_dr_name}}</td>
+                                                                                        <td>{{(sip.surgeon_dr_name == null) ? '-----' : 'Dr. '+ sip.surgeon_dr_name}}</td>
+                                                                                        <td>{{sip.visit_date}}</td>
+                                                                                        <td>{{sip.bed_loc_name}}</td>
+                                                                                        <td>{{sip.bed_code}}</td>
+                                                                                        <td>{{(sip.ref_name == null)? "None" : sip.ref_name}}</td>
+                                                                                        <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{(sip.total_package_amount == null)? "0" : sip.total_package_amount |number:2}}</td>
+                                                                                    </tr>
+                                                                            </table>
+                                                                        </form>
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <!-- Modal footer -->
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                </div>
+			</div>
+
+
+            <div class="row" ng-show="action==2">
+                    <div class="container-fluid">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active"><a id="link1" data-toggle="tab" ng-click="showTab('#menu1', this.id)">Profile</a></li>
+                            <li><a id="link2" data-toggle="tab" ng-click="showTab('#menu2', this.id)">Previous Visits</a></li>
+                            <li><a id="link3" data-toggle="tab" ng-click="showTab('#menu3', this.id)">Previous Bills</a></li>
+                            <li><a id="link4" data-toggle="tab" ng-click="showTab('#menu4', this.id)">Payment</a></li>
+                            <li ng-if="level === 1 || level === 1"><a id="link5" data-toggle="tab" ng-click="showTab('#menu5', this.id)">Lab Payment</a></li>
+                            <li ng-if="level_name === 'Lab Technician' || level_name === 'Administrator'"><a id="link6" data-toggle="tab" ng-click="showTab('#menu6', this.id)">Pharmacy Payment</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane fade in active"><br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Patient Profile</div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-6" ng-repeat="i in patient_details">
+                                                <h4>Patient Details</h4>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                                                    <img src="img/medical_icons/team.png" alt="...">
+                                                                    </a>
+                                                            <div class="clear">
+                                                                <div class="h3 m-t-xs m-b-xs">
+                                                                    {{i.name}}
+                                                                    <b class="text-success pull-right">{{Type}}</b>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt">
+                                                        <span class="list-group-item">
+                                                                        Father's Name :
+                                                                    <span class="pull-right">{{i.father_name}}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-group no-radius alt">
+                                                        <span class="list-group-item">
+                                                                    Patient Age :
+                                                                    <span class="pull-right">{{i.age}}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-group no-radius alt">
+                                                        <span class="list-group-item">
+                                                                    Gender :
+                                                                    <span class="pull-right">{{i.gender}}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-group no-radius alt">
+                                                        <span class="list-group-item">
+                                                                    City Name :
+                                                                    <span class="pull-right">{{i.city}}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-group no-radius alt">
+                                                        <span class="list-group-item">
+                                                            Mobile No. :
+                                                            <span class="pull-right">{{i.mobile}}</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" ng-repeat="i in patient_visit_details">
+                                                    <h4>Visit Details</h4>
+                                                    <div class="panel panel-default">
+                                                        <!-- <div class="panel-heading">
+                                                            <div class="clearfix">
+                                                                <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                                                        <img src="img/medical_icons/team.png" alt="...">
+                                                                        </a>
+                                                                <div class="clear">
+                                                                    <div class="h3 m-t-xs m-b-xs">
+                                                                        Dr.&nbsp;{{i.dr_name}}{<span class="text-muted"></span>}
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="list-group no-radius alt">
+                                                                <span class="list-group-item">
+                                                                            Doctor Name :
+                                                                            <span class="pull-right">Dr.&nbsp;{{i.dr_name}}[<span class="text-muted">{{i.qualification}}</span>]</span>
+                                                                </span>
+                                                            </div>
+                                                        <div class="list-group no-radius alt">
+                                                            <span class="list-group-item">
+                                                                            Visit Date :
+                                                                        <span class="pull-right">{{i.visit_date}}</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="list-group no-radius alt">
+                                                            <span class="list-group-item">
+                                                                        Total Amount :
+                                                                        <span class="pull-right"><i class="fa fa-rupee"></i>&nbsp;{{i.total_package |number:2}}</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="list-group no-radius alt">
+                                                            <span class="list-group-item">
+                                                                        Advance Amount :
+                                                                        <span class="pull-right"><i class="fa fa-rupee"></i>&nbsp;{{totalPaidAmount |number:2}}</span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="list-group no-radius alt">
+                                                            <span class="list-group-item">
+                                                                        Due Amount :
+                                                                        <span class="pull-right"><i class="fa fa-rupee"></i>&nbsp;{{i.total_package - totalPaidAmount |number:2}}</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div ng-if="Type === 'In Patient'">
+                                                        <button type="button" class="btn btn-primary" ng-disabled="isBillSettled == 1" ng-click="loadFinalBillSettlement(i.patient_id, i.p_visit_id)">Bill Settlement</button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" ng-if="loadFinalBill === true">
+                                            <form name="finalBillSettlementForm" id="finalBillSettlementForm">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-4">
+                                                        <label>Discharge Date</label>
+                                                        <input type="date" ng-model="dischargeDateOfVisit" class="form-control" required>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <button type="submit" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="finalBillSettlementForm" ng-click="saveFinalSettlementBillData()" ng-disabled="finalBillSettlementForm.$invalid"><i class="fa fa-check"></i>Save</button>
+                                                        <button id="modalToggleButton" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-hide="true"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6" style="overflow-x: auto">
+                                                    <table class="table table-bordered table-striped">
+                                                        <caption style="font-size: 18px">Charges</caption>
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Service Name</th>
+                                                                <th style="text-align:right">Rent Amount</th>
+                                                                <th>No Of Days</th>
+                                                                <th style="text-align:right">Total</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr ng-repeat="i in cumulativeRoomsArray">
+                                                                <td><span style="cursor: pointer" ng-click="showBreakUpsOfRoom(i.bedId)">{{ i.loc_name }}</span></td>
+                                                                <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{ i.roomRentAmount |number:2}}</td>
+                                                                <td><input type="text" class="form-control" ng-model="i.noOfDays" ng-change="calcTotalRoomAmount()" pattern="[0-9.]{1,12}" required /></td>
+                                                                <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{ (i.noOfDays === undefined) ? 0 : (i.noOfDays * i.roomRentAmount) |number:2}}</td>
+                                                            </tr>
+
+                                                            <tr ng-repeat="j in cumulativeDoctorVisitsArray">
+                                                                <td><span style="cursor: pointer" ng-click="showBreakUpsOfDoctor(j.visitedDoctor, j.consultationType)">Dr. <h7>{{ j.dr_name }} <small>{{ j.qualification }}</small></h7></span></td>
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{ j.amount |number:2}}</td>
+                                                                <td><input type="text" class="form-control" ng-model="j.count" ng-change="calcTotalDoctorVisitAmount()" pattern="[0-9.]{1,12}" required /></td>
+                                                                <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{ (j.count === undefined) ? 0 : (j.count * j.amount) |number:2}}</td>
+                                                            </tr>
+
+                                                            <tr ng-repeat="i in testDetailsOfVisit" ng-if="(i.visitInvestigationsAmount > 0 || i.visitInvestigationsAmount === undefined) && investigationsThere === true">
+                                                                <td colspan="2"><span style="cursor: pointer" ng-click="showBreakUpsOfInvestigations($index)">{{ 'Investigation ' + ($index + 1) }}</span></td>
+                                                                <td align="right"><input type="text" class="form-control" ng-model="i.visitInvestigationsAmount" ng-change="calcTotalInvestigationsAmount()" pattern="[0-9.]{1,12}" required /></td>
+                                                                <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{ i.visitInvestigationsAmount |number:2}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:right" colspan="3"><b>Total</b></td>
+                                                                <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{ totalAmountOfVisit = (totalRoomAmount + totalDoctorVisitAmount + labInvestigationsAmount) |number:2}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <table class="table table-bordered table-striped">
+                                                        <caption style="font-size: 18px">Visit Summary</caption>
+                                                        <!-- <thead>
+                                                            <tr>
+                                                                <th>Total Amount</th>
+                                                                <th>Paid Amount</th>
+                                                                <th>Due Amount</th>
+                                                            </tr>
+                                                        </thead> -->
+                                                        <tbody>
+                                                            <tr align="right">
+                                                                <td class="col-md-6"><b>Total Amount</b></td>
+                                                                <td class="col-md-6"><i class="fa fa-rupee"></i>&nbsp;{{ totalAmountOfVisit |number:2}}</td>
+                                                            </tr>
+                                                            <tr align="right">
+                                                                <td><b>Paid Amount</b></td>
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{ totalPaidAmountOfVisit |number:2}}</td>
+                                                            </tr>
+                                                            <tr align="right">
+                                                                <td><b>Due Amount</b></td>
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{ totalDueAmountOfVisit = (totalAmountOfVisit - totalPaidAmountOfVisit) |number:2}}</td>
+                                                            </tr>
+                                                            <tr align="right">
+                                                                <td><b>Discount (<i class="fa fa-rupee"></i>)</b></td>
+                                                                <td>
+                                                                    <input type="text" class="form-control" ng-model="discountAmountOfVisit" ng-change="assignDiscountAmount(discountAmountOfVisit)" required />
+                                                                </td>
+                                                            </tr>
+                                                            <tr align="right">
+                                                                <td><b>Final Amount</b></td>
+                                                                <!-- <td>{{ finalAmountOfVisit = totalAmountOfVisit - (totalAmountOfVisit * ((discountOfVisit === undefined) ? 0 : discountOfVisit) / 100) }}</td> -->
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{ finalAmountOfVisit = totalDueAmountOfVisit - discountAmountOfVisit |number:2}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </form>
+                                            <div class="modal fade" id="roomDetailsOfVisitModal" data-backdrop="static">
+                                                <div class="modal-dialog modal-lg modal-full-height">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">&nbsp;Rooms History of Visit</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+                                                            <table class="table table-bordered table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Location Name</th>
+                                                                        <th>Entered Date</th>
+                                                                        <th>Vacated Date</th>
+                                                                        <th>No Of Days</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr ng-repeat="i in roomDetailsOfVisit" ng-if="i.bedId === bedIdForDetailsModal">
+                                                                        <td>{{ i.loc_name }}</td>
+                                                                        <td>{{ i.enteredDate | date: 'dd-MM-yyyy' }}</td>
+                                                                        <td>{{ i.vacatedDate | date: 'dd-MM-yyyy' }}</td>
+                                                                        <td>{{ i.noOfDays }}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- Modal footer -->
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="modal fade" id="doctorDetailsOfVisitModal" data-backdrop="static">
+                                                <div class="modal-dialog modal-lg modal-full-height">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">&nbsp;Doctor Consultation History of Visit</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+                                                            <table class="table table-bordered table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Visited Date</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr ng-repeat="i in visitedDoctorDetails" ng-if="i.visitedDoctor === doctorIdForDetailsModal && i.consultationType === consultationTypeForDetailsModal">
+                                                                        <td>Dr. <h7>{{ i.dr_name }} <small>{{ i.qualification }}</small></h7></td>
+                                                                        <td>{{ i.date | date: 'dd-MM-yyyy' }}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- Modal footer -->
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class="tab-pane fade"><br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Previous Visits</div>
+                                    <div class="panel-body">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <th>S No.</th>
+                                                <!-- <th>Visit ID</th> -->
+                                                <th>Visit Date</th>
+                                                <th>Visit Type</th>
+                                                <th>Referral</th>
+                                            </thead>
+                                            <tbody ng-repeat="i in pre_visit_details" ng-hide="NoDataForVisit == 1">
+                                                <td>{{$index+1}}</td>
+                                                <!-- <td>{{i.p_visit_id}}</td> -->
+                                                <td>{{i.visit_date}}</td>
+                                                <td>{{i.fcname}}</td>
+                                                <td>{{(i.ref_name == null)?'None':i.ref_name}}</td>
+                                            </tbody>
+                                            <tbody ng-show="NoDataForVisit == 1">
+                                                <tr align="center">
+                                                    <td colspan="4"><h4>No Data</h4></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu3" class="tab-pane fade"><br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Previous Bills</div>
+                                    <div class="panel-body">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <th>S No.</th>
+                                                <!-- <th>Visit ID</th> -->
+                                                <th>Bill Date</th>
+                                                <th>Category</th>
+                                                <th>Receipt Code</th>
+                                                <!-- <th>Bill Category</th> -->
+                                                <th style="text-align: right">Bill Amount</th>
+                                                <th>Cash Type</th>
+                                                <th>Bill</th>
+                                            </thead>
+                                            <tbody ng-repeat="i in pre_bills_details" ng-hide="NoData == 1">
+                                                <td>{{$index+1}}</td>
+                                                <!-- <td>{{i.p_visit_id}}</td> -->
+                                                <td>{{i.transaction_date |date:'dd-MM-yy'}}</td>
+                                                <td>{{i.bcname}}</td>
+                                                <td>{{i.receipt_code}}</td>
+                                                <!-- <td>{{i.bcname}}</td>  -->
+                                                <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{i.amount|number:2}}</td>
+                                                <td>{{i.payment_type}}</td>
+                                                <td><b class="fa fa-print fa-lg" data-toggle="modal" data-target="#myModal" ng-click="get_detailsByRecCode(i.receipt_code)" style="cursor: pointer;"></b></td>
+                                            </tbody>
+                                            <tbody ng-show="NoData == 1">
+                                                <tr align="center">
+                                                    <td colspan="7"><h4>No Data</h4></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                   
+                                            <!-- Receipt Model -->
+                                            <div class="modal fade" id="myModal" data-backdrop="static">
+                                                <div class="modal-dialog modal-lg modal-full-height">
+                                                    <div class="modal-content">
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+
+                                                            <div ng-repeat="t in indivisual_receipt">
+                                                                <div class="row">
+                                                                    <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                            <tr>
+                                                                                <h3>{{i.hname}}</h3>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                {{i.haddress}}
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="BillPrint">
+                                                                        <div class="row" style="font-size: 20px">
+                                                                            <div class="col-md-12">
+                                                                                <h4>To</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                                                                    <tr>
+                                                                                        <td style="text-align:center">Name</td>
+                                                                                        <td style="text-align:center">Address</td>
+                                                                                        <td style="text-align:center">Mobile</td>
+                                                                                        <td style="text-align:center">Receipt Code </td>
+                                                                                        <td style="text-align:center">Date</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="text-align:center">
+                                                                                            {{t.name}}
+                                                                                            <span class="text-muted">[{{t.gender + ' : ' + t.age + ', ' + t.father_name}}]</span>
+                                                                                        </td>
+                                                                                        <td style="text-align:center">{{t.city}}</td>
+                                                                                        <td style="text-align:center">{{t.mobile}}</td>
+                                                                                        <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                                        <td style="text-align:center">{{t.date_time}}</td>
+                                                                                    </tr>
+                                                                                </table><br/>
+                                                                                <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                                                                    <tr>
+                                                                                        <th style="text-align:center">##</th>
+                                                                                        <th style="text-align:center">Description</th>
+                                                                                        <th style="text-align:right; padding-right: 15px">Amount</th>
+                                                                                    </tr>
+                                                                                    <tr ng-repeat="z in t.paid_details">
+                                                                                        <td style="text-align:center">{{$index+1}}</td>
+                                                                                        <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : '';}}
+                                                                                            <span class="text-muted"> {{ (z.billcategory === 'PHARMACY') ? '(BNo: ' + z.batch_no + ')' : '' }}</span></td>
+                                                                                        <td style="text-align:right; padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td style="text-align:center; padding-right: 15px" colspan="2">Total Amount</td>
+                                                                                        <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div><br/>
+                                                                        <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                                                            <tr>
+                                                                                <!-- <td><b>Terms & Conditions :</b></td> -->
+                                                                                <td style="float: right; padding-right:12%;">Signature:</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                                                            <tr>
+                                                                                <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                                            </tr>
+                                                                        </table> -->
+                                                                </div>
+
+                                                                <div id="BillPrint_print" ng-show="PrintShow==1">
+
+                                                                    <div class="row" style="font-size: 20px;margin-top:1.5in;">
+                                                                        <div class="col-md-12">
+                                                                            <h4>To</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                                                                <tr>
+                                                                                    <td style="text-align:center">Name</td>
+                                                                                    <td style="text-align:center">Address</td>
+                                                                                    <td style="text-align:center">Mobile</td>
+                                                                                    <td style="text-align:center">Receipt Code </td>
+                                                                                    <td style="text-align:center">Date</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="text-align:center">
+                                                                                        {{t.name}}
+                                                                                        <span class="text-muted">[{{t.gender + ' : ' + t.age + ', ' + t.father_name}}]</span>
+                                                                                    </td>
+                                                                                    <td style="text-align:center">{{t.city}}</td>
+                                                                                    <td style="text-align:center">{{t.mobile}}</td>
+                                                                                    <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                                    <td style="text-align:center">{{t.date_time}}</td>
+                                                                                </tr>
+                                                                            </table><br/>
+                                                                            <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                                                                <tr>
+                                                                                    <th style="text-align:center">##</th>
+                                                                                    <th style="text-align:center">Description</th>
+                                                                                    <th style="text-align:right; padding-right: 15px">Amount</th>
+                                                                                </tr>
+                                                                                <tr ng-repeat="z in t.paid_details">
+                                                                                    <td style="text-align:center">{{$index+1}}</td>
+                                                                                    <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : '';}}
+                                                                                        <span class="text-muted"> {{ (z.billcategory === 'PHARMACY') ? '(BNo: ' + z.batch_no + ')' : '' }}</span></td>
+                                                                                    <td style="text-align:right; padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="text-align:center; padding-right: 15px" colspan="2">Total Amount</td>
+                                                                                    <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div><br/>
+                                                                    <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                                                        <tr>
+                                                                            <!-- <td><b>Terms & Conditions :</b></td> -->
+                                                                            <td style="float: right; padding-right:12%;">Signature:</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                                                        <tr>
+                                                                            <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                                        </tr>
+                                                                    </table> -->
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('BillPrint_print')">Print</button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu4" class="tab-pane fade" ng-if="level_name === 'Pharmacy Staff' || level_name === 'Administrator'"><br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Payment<button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="paymentFormID" ng-disabled="paymentFormName.$invalid"><i class="fa fa-check"></i>Save</button></div>
+                                    <div class="panel-body">
+                                        <!-- <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="paymentFormID" ng-disabled="paymentFormName.$invalid"><i class="fa fa-check"></i>Save</button>
+                                            </div>
+                                        </div> -->
+                                        <form id="paymentFormID" name="paymentFormName" class="form-validation" ng-submit="save_visit_data()">
+                                            <div class="row">
+                                                <div class="col-md-4 form-group">
+                                                    <label for="collectionDateID">Date</label>
+                                                    <div class="input-group">
+                                                        <input type="date" id="collectionDateID"ng-model="tempDateModel" ng-change="collection.transaction_date = tempDateModel.toLocaleDateString('en-US' , {day:'2-digit', month: 'long', year: 'numeric'});" class="form-control" id="date">
+                                                        <label class="input-group-addon" for="collectionDateID"><i class="fa fa-calendar"></i></label>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md-4">
+                                                    <label>Select Date</label>
+                                                    <div class="input-group">
+                                                        <input type="text" id="trans_dateID" ng-model="trans_date" ng-change="changeDate_Through_UiJquery_for_payment(trans_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                                        <label class="input-group-addon" for="trans_dateID"><i class="fa fa-calendar"></i></label>
+                                                    </div>
+                                                </div> -->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="hosID">Select Hospital</label>
+                                                        <select ng-model="collection.hospital_id" class="form-control" id="hosID" required>
+                                                            <option value=""> Select Hospital</option>
+                                                            <option value="{{j.hid}}" ng-repeat="j in hospital">{{j.hname}}</option>
+                                                        </select>
+
+                                                        <!-- <ui-select ng-model="selected_data.obj" ng-change="select_hospital(selected_data.obj)" id="hosID" reset-search-input="true">
+                                                            <ui-select-match>
+                                                                <span>{{$select.selected.hname}}</span>
+                                                            </ui-select-match>
+                                                            <ui-select-choices repeat="j in (hospital | filter: $select.search) track by $index">
+                                                                <div ng-bind-html="j.hname | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                        </ui-select> -->
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md-3">
+                                                    <br>
+                                                    <button class="btn btn-primary" type="button" ng-click="add()" ng-disabled="addBtnDisable == 'yes'"><b class="fa fa-plus"></b></button>
+                                                </div> -->
+                                            </div>
+                                            <div class="row" ng-repeat="i in collection.paid_details">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label >Select Bill Category</label>
+                                                        <!-- <select ng-model="i.bill_id" class="form-control">
+                                                                <option value="{{item.bcid}}" ng-repeat="item in bill_cateories">{{item.bcname}}</option>
+                                                            </select> -->
+
+                                                        <ui-select ng-model="i.obj" ng-change="select_bil_category(i.obj,$index)" reset-search-input="true" ng-required="true">
+                                                            <ui-select-match>
+                                                                <span>{{$select.selected.bcname}}</span>
+                                                            </ui-select-match>
+                                                            <ui-select-choices repeat="item in (bill_cateories | filter: $select.search) track by $index">
+                                                                <div ng-bind-html="item.bcname | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                        <!-- <pre>{{i.obj | json}}</pre>  -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Paid Amount</label>
+                                                        <div class="input-group m-b">
+                                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                                            <input type="text" ng-model="i.paidAmount" ng-change="get_paid_amount()" class="form-control"  pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <br>
+                                                        <button class="btn btn-danger" type="button" ng-click="remove($index)" ng-disabled="collection.paid_details.length == 1" ng-hide="collection.paid_details.length == 1"><i class="fa fa-trash"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row" ng-show="show_total == 1">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <br>
+                                                        <button class="btn btn-primary" type="button" ng-click="add()" ng-disabled="addBtnDisable == 'yes'"><b class="fa fa-plus"></b></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4" ng-show="show_total == 1">
+                                                    <div class="form-group">
+                                                        <label for="totalpaidAmount">Total Paid Amount</label>
+                                                        <input type="text" ng-model="collection.total_paid_amount" class="form-control" id="totalpaidAmount" ng-disabled="true" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form=group">
+                                                        <label for="bill_pay_type">Payment Type</label>
+                                                        <select ng-model="collection.payment_type" class="form-control" id="bill_pay_type" required>
+                                                            <option value=""> Select Type</option>
+                                                            <option value="Cash"> Cash</option>
+                                                            <option value="Card"> Card</option>
+                                                            <option value="Cheque"> Cheque</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="bill_spdesc">Remark</label>
+                                                        <textarea id="bill_spdesc" class="form-control" cols="1" rows="1" ng-model="collection.remark" style="height: 35px" placeholder="Remark"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div><br>
+                                            <!-- <pre>{{collection | json}}</pre> -->
+                                        </form>
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <!-- <th>Patient Name</th>
+                                                <th>Address</th>
+                                                <th>Visit Type</th> -->
+                                                <th style="text-align: right">Total Package</th>
+                                                <th style="text-align: right">Paid Amount</th>
+                                                <th style="text-align: right">Due Amount</th>
+                                            </thead>
+                                            <tbody ng-repeat="i in patient_visit_details">
+                                                <!-- <td>{{i.name}}</td>
+                                                <td>{{i.city}}</td>
+                                                <td>{{i.fcname}}</td> -->
+                                                <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{i.total_package |number:2}}</td>
+                                                <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{totalPaidAmount |number:2}}</td>
+                                                <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{i.total_package - totalPaidAmount |number:2}}</td>
+                                            </tbody>
+                                        </table>
+
+                                            <!-- OP Details Print Modal -->
+                                            <!-- <button id="modalToggleButton" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-hide="true"></button> -->
+                                            <!-- <div class="modal fade" id="BillID" data-backdrop="static">
+                                    <div class="modal-dialog modal-lg modal-full-height">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <div id="BillPrints">
+                                                    <div ng-repeat="t in receipt_data">
+                                                        <div class="row">
+                                                            <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                                                <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                    <tr>
+                                                                        <h3>{{i.hname}}</h3>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        {{i.haddress}}
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h4>To</h4>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                    <tr>
+                                                                        <td style="text-align:center">Name</td>
+                                                                        <td style="text-align:center">Address</td>
+                                                                        <td style="text-align:center">Mobile</td>
+                                                                        <td style="text-align:center">Receipt Code </td>
+                                                                        <td style="text-align:center">Date</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="text-align:center">{{t.name}}</td>
+                                                                        <td style="text-align:center">{{t.city}}</td>
+                                                                        <td style="text-align:center">{{t.mobile}}</td>
+                                                                        <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                        <td style="text-align:center">{{t.date_time}}</td>
+                                                                    </tr>
+                                                                </table><br/>
+                                                                <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                    <tr>
+                                                                        <th style="text-align:center">##</th>
+                                                                        <th style="text-align:center">Description</th>
+                                                                        <th style="text-align:right; padding-right: 15px;">Amount</th>
+                                                                    </tr>
+                                                                    <tr ng-repeat="z in t.paid_details">
+                                                                        <td style="text-align:center">{{$index+1}}</td>
+                                                                        <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                                        <td style="text-align:right; padding-right: 15px;"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="text-align:center" colspan="2">Total Amount</td>
+                                                                        <td style="text-align:right; padding-right: 15px;"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <br/>
+                                                        <table cellspacing="0px" hieght="100%" width="100%">
+                                                            <tr>
+                                                                <td><b>Terms & Conditions :</b></td>
+                                                                <td align="left"><b>Signature:</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <table cellspacing="0px" hieght="100%" width="100%">
+                                                            <tr>
+                                                                <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                                                    <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('BillPrints')">Print</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu5" class="tab-pane fade" ng-if="level_name === 'Lab Technician'  || level_name === 'Administrator'"><br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Lab Payment<button id="paymentSave" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="LabPaymentId" ng-disabled="LabPaymentName.$invalid"><i class="fa fa-check"></i>Save</button></div>
+                                    <div class="panel-body">
+                                        <form name="LabPaymentName" id="LabPaymentId" class="form-validation" ng-submit="save_lab_billing_data()">
+                                            <button type="button" id="openModel" style="display: none" >MOdel</button>
+                                            <!-- <div class="row">
+                                                <div class="col-md-12">
+                                                    <button id="paymentSave" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="LabPaymentId" ng-disabled="LabPaymentName.$invalid"><i class="fa fa-check"></i>Save</button>
+                                                </div>
+                                            </div> -->
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="lab_billingDateID">Date</label>
+                                                            <div class="input-group">
+                                                                <input type="date" id="lab_billingDateID"ng-model="tempDateModel" ng-change="lab_billing.transaction_date = tempDateModel.toLocaleDateString('en-US' , {day:'2-digit', month: 'long', year: 'numeric'})" id="dateID" class="form-control">
+                                                                <label class="input-group-addon" for="lab_billingDateID"><i class="fa fa-calendar"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="col-md-6">
+                                                            <label>Select Date</label>
+                                                            <div class="input-group">
+                                                                <input type="text" id="lab_billing_dateID" ng-model="lab_billing_date" ng-change="changeDate_Through_UiJquery(lab_billing_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                                                <label class="input-group-addon" for="lab_billing_dateID"><i class="fa fa-calendar"></i></label>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="bill_hosID">Select Hospital</label>
+                                                                <select ng-model="lab_billing.hospital_id" class="form-control" id="bill_hosID" required>
+                                                                    <option value=""> Select Hospital</option>
+                                                                    <option value="{{j.hid}}" ng-repeat="j in hospital">{{j.hname}}</option>
+                                                                </select>
+
+                                                                <!-- <ui-select ng-model="selected_data.obj" ng-change="select_hospital(selected_data.obj)" id="hosID" reset-search-input="true">
+                                                                    <ui-select-match>
+                                                                        <span>{{$select.selected.hname}}</span>
+                                                                    </ui-select-match>
+                                                                    <ui-select-choices repeat="j in (hospital | filter: $select.search) track by $index">
+                                                                        <div ng-bind-html="j.hname | highlight: $select.search"></div>
+                                                                    </ui-select-choices>
+                                                                </ui-select> -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="col-md-1">
+                                                            <br>
+                                                            <button class="btn btn-primary" type="button" ng-click="add_for_lab_billing()" ng-disabled="addBtnDisable_for_bill == 'yes'"><b class="fa fa-plus"></b></button>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="row" ng-repeat="i in lab_billing.test">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="ser">Test</label>
+                                                                <!-- <select ng-model="i.bill_id" id="selectID" class="form-control">
+                                                                        <option value="{{item.bcid}}" ng-repeat="item in bill_cateories">{{item.bcname}}</option>
+                                                                    </select> -->
+
+                                                                <ui-select ng-model="i.obj" ng-change="select_bil_category_for_selection_of_test(i.obj,$index)" reset-search-input="true" ng-required="true">
+                                                                    <ui-select-match placeholder="Select Test">
+                                                                        <span>{{$select.selected.test_name}}</span>
+                                                                    </ui-select-match>
+                                                                    <ui-select-choices repeat="item in (test_data | filter: $select.search) track by $index">
+                                                                        <div ng-bind-html="item.test_name | highlight: $select.search"></div>
+                                                                    </ui-select-choices>
+                                                                </ui-select>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label>Paid Amount</label>
+                                                                <div class="input-group m-b">
+                                                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                                                    <input type="text" ng-model="i.paid_amount" ng-change="get_paid_amount_for_biiling()"  ng-disabled="true" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group">
+                                                                <br>
+                                                                <button class="btn btn-danger" type="button" ng-click="remove_for_lab_billing($index)" ng-disabled="lab_billing.test.length == 1" ng-hide="lab_billing.test.length == 1"><i class="fa fa-trash"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- <pre>{{lab_billing | json}}</pre> -->
+                                                    <div class="row" ng-show="show_total_for_bill == 1">
+                                                        <div class="col-md-6">
+                                                            <br>
+                                                            <button class="btn btn-primary" type="button" ng-click="add_for_lab_billing()" ng-disabled="addBtnDisable_for_bill == 'yes'" ng-hide="addBtnDisable_for_bill == 'yes'"><b class="fa fa-plus"></b></button>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="bill_totalpaidAmount">Total Paid Amount</label>
+                                                                <div class="input-group m-b">
+                                                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                                                    <input type="text" ng-model="lab_billing.total_paid_amount" class="form-control" id="bill_totalpaidAmount" ng-disabled="true" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form=group">
+                                                                <label for="ser1">Payment Type</label>
+                                                                <select ng-model="lab_billing.payment_type" class="form-control" id="ser1" required>
+                                                                    <option value=""> Select Type</option>
+                                                                    <option value="Cash"> Cash</option>
+                                                                    <option value="Card"> Card</option>
+                                                                    <option value="Cheque"> Cheque</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <label for="spdesc">Remark</label>
+                                                                <textarea id="spdesc" class="form-control" ng-model="lab_billing.remark" placeholder="Remark" style="height: 35px"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div><br>
+                                                <div class="col-md-4" ng-show="Type=='In Patient'">
+                                                    <table class="table table-hover b-t b-light table-bordered">
+                                                        <tbody ng-if="showNoInvestigations === false">
+                                                            <tr ng-repeat="i in inpatientInvestigations">
+                                                                <td><span style="cursor: pointer;" ng-click="ShowInvestigations($index)">Investigations&nbsp;&nbsp;{{$index+1}}</span></td>
+                                                                <td>Dr. {{ i.dr_name }}</td>
+                                                                <td>{{ date | date: 'dd-MM-yy' }}</td>
+                                                            </tr>
+                                                        </tbody>
+
+                                                        <tbody ng-if="showNoInvestigations === true">
+                                                            <tr>
+                                                                <td colspan="3"><h4>No Investigations</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                                <!-- <pre>{{lab_billing | json}}</pre> -->
+                                        </form>
+
+                                        <!-- <button id="modalToggleButton" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-hide="true"></button> -->
+                                        <!-- <div class="modal fade" id="lab_billingID" data-backdrop="static">
+                                                <div class="modal-dialog modal-lg modal-full-height">
+                                                    <div class="modal-content">
+
+
+                                                        <div class="modal-body">
+                                                            <div id="lab_billingPrint">
+                                                                <div ng-repeat="t in receipt">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                                                            <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                <tr>
+                                                                                    <h3>{{i.hname}}</h3>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    {{i.haddress}}
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <h4>To</h4>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                <tr>
+                                                                                    <td style="text-align:center">Name</td>
+                                                                                    <td style="text-align:center">Address</td>
+                                                                                    <td style="text-align:center">Mobile</td>
+                                                                                    <td style="text-align:center">Receipt Code </td>
+                                                                                    <td style="text-align:center">Date</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="text-align:center">{{t.name}}</td>
+                                                                                    <td style="text-align:center">{{t.city}}</td>
+                                                                                    <td style="text-align:center">{{t.mobile}}</td>
+                                                                                    <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                                    <td style="text-align:center">{{t.date_time}}</td>
+                                                                                </tr>
+                                                                            </table><br/>
+                                                                            <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                                <tr>
+                                                                                    <th style="text-align:center">##</th>
+                                                                                    <th style="text-align:center">Description</th>
+                                                                                    <th style="text-align:right;padding-right:15px">Amount</th>
+                                                                                </tr>
+                                                                                <tr ng-repeat="z in t.paid_details">
+                                                                                    <td style="text-align:center">{{$index+1}}</td>
+                                                                                    <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                                                    <td style="text-align:right;padding-right:15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td style="text-align:center" colspan="2">Total Amount</td>
+                                                                                    <td style="text-align:right;padding-right:15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br/>
+                                                                    <table cellspacing="0px" hieght="100%" width="100%">
+                                                                        <tr>
+                                                                            <td><b>Terms & Conditions :</b></td>
+                                                                            <td align="left"><b>Signature:</b></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table cellspacing="0px" hieght="100%" width="100%">
+                                                                        <tr>
+                                                                            <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                                                                <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('lab_billingPrint')">Print</button>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu6" class="tab-pane fade"><br>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Pharmacy Payment<button type="submit" form="pharmacyformId" class="btn btn-success btn-sm btn-addon pull-right" ng-disabled="pharmacyformName.$invalid"><i class="fa fa-check"></i>Save</button></div>
+                                    <div class="panel-body">
+                                        <form id="pharmacyformId" name="pharmacyformName" ng-submit="save_pharmacy_billing_data()">
+                                            <!-- <div class="row">
+                                                <div class="col-md-12">
+                                                    <button type="submit" form="pharmacyformId" class="btn btn-success btn-sm btn-addon pull-right" ng-disabled="pharmacyformName.$invalid"><i class="fa fa-check"></i>Save</button>
+                                                </div>
+                                            </div> -->
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="row">
+                                                                <!-- <div class="col-md-6">
+                                                                    <label>Select Date</label>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="transaction_dateID" ng-model="transaction_date" ng-change="changeDate_Through_UiJquery_for_pharmacy(transaction_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                                                        <label class="input-group-addon" for="transaction_dateID"><i class="fa fa-calendar"></i></label>
+                                                                    </div>
+                                                                </div> -->
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="pharmacy_lab_billingDateID">Select Date</label>
+                                                                    <div class="input-group">
+                                                                        <input type="date" id="pharmacy_lab_billingDateID" ng-model="tempDateModel" ng-change="pharmacy_lab_billing.transaction_date = tempDateModel.toLocaleDateString('en-US' , {day:'2-digit', month: 'long', year: 'numeric'})" class="form-control">
+                                                                        <label class="input-group-addon" for="pharmacy_lab_billingDateID"><i class="fa fa-calendar"></i></label>
+                                                                    </div>
+                                                                </div>
+                                                                <!--    <div class="col-md-3">
+                                                                    <div class="form-group">
+                                                                        <label>Select Doctor</label>
+                                                                        <select ng-model="pharmacy_lab_billing.dr_id" class="form-control" required>
+                                                                            <option value=""> Select Hospital</option>
+                                                                            <option value="{{j.uid}}" ng-repeat="j in doctors">{{j.name}}</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>  -->
+                                                                <div class="col-md-5">
+                                                                    <div class="form-group">
+                                                                        <label>Select Hospital</label>
+                                                                        <select ng-model="pharmacy_lab_billing.hospital_id" class="form-control" required>
+                                                                            <option value=""> Select Hospital</option>
+                                                                            <option value="{{j.hid}}" ng-repeat="j in hospital">{{j.hname}}</option>
+                                                                        </select>
+
+                                                                        <!-- <ui-select ng-model="selected_data.obj" ng-change="select_hospital(selected_data.obj)" id="hosID" reset-search-input="true">
+                                                                            <ui-select-match>
+                                                                                <span>{{$select.selected.hname}}</span>
+                                                                            </ui-select-match>
+                                                                            <ui-select-choices repeat="j in (hospital | filter: $select.search) track by $index">
+                                                                                <div ng-bind-html="j.hname | highlight: $select.search"></div>
+                                                                            </ui-select-choices>
+                                                                        </ui-select> -->
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="col-md-1">
+                                                                    <br>
+                                                                    <button class="btn btn-primary" type="button" ng-click="add_for_lab_billing_pharmacy($index)" ng-disabled="pharmacy_add_btn_disable == 1"><b class="fa fa-plus"></b></button>
+                                                                </div> -->
+                                                    </div>
+                                                    <div class="row" ng-repeat="i in pharmacy_lab_billing.Arr" >
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Select Medicine</label>
+
+                                                                <!-- <ui-select ng-model="i.obj" ng-change="select_medicine_for_pharmacy_lab_billing(i.obj,$index)" reset-search-input="true" ng-required="true">
+                                                                    <ui-select-match>
+                                                                        <span>{{$select.selected.med_name}}</span>
+                                                                    </ui-select-match>
+                                                                    <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0">
+                                                                            <span ng-bind-html="item.med_name |uppercase | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                Quantity :<span class="text-muted" ng-bind-html="item.quantity | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                Price :<span class="text-muted" ng-bind-html="item.price |number:2 | highlight: $select.search"></span><br>
+                                                                SU :<span class="text-muted" ng-bind-html="item.med_sale_units | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                BN :<span class="text-muted" ng-bind-html="item.batch_no | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    </ui-select-choices>
+                                                                </ui-select> -->
+                                                                <ui-select ng-model="i.obj" ng-change="autosearch_data_for_medicine($select.search); select_medicine_for_pharmacy_lab_billing(i.obj,$index)" id="searchid" theme="bootstrap">
+                                                                    <ui-select-match placeholder="Search Medicines..."><span ng-bind="$select.selected.med_name"></span></ui-select-match>
+                                                                    <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index" refresh="autosearch_data_for_medicine($select.search)" refresh-delay="0">
+                                                                    <span ng-bind-html="item.med_name |uppercase | highlight: $select.search"></span></br>
+                                                                    Quantity :&nbsp;&nbsp;&nbsp;<span ng-bind-html="item.quantity | highlight: $select.search"></span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    Price :&nbsp;&nbsp;&nbsp;<span ng-bind-html="item.price |number:2 | highlight: $select.search"></span><br>
+                                                                    SU :&nbsp;&nbsp;&nbsp;<span ng-bind-html="item.med_sale_units | highlight: $select.search"></span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    BN :&nbsp;&nbsp;&nbsp;<span ng-bind-html="item.batch_no | highlight: $select.search"></span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    Expiry Date : &nbsp;&nbsp;&nbsp;<span ng-bind-html="item.expiry_date | highlight: $select.search"></span>
+                                                                    </ui-select-choices>
+                                                                </ui-select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Quantity</label>
+                                                                <input type="text" ng-model="i.req_qty" ng-change="change_qty_for_pharmacy($index,i.req_qty)" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Amount</label>
+                                                                <div class="input-group m-b">
+                                                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                                                    <input type="text" ng-model="i.price" ng-change="change_amount_for_pharmacy($index,i.price)" ng-disabled="true" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group">
+                                                                <br>
+                                                                <button class="btn btn-danger" type="button" ng-click="remove_for_lab_billing_pharmacy($index)" ng-disabled="pharmacy_lab_billing.Arr.length == 1" ng-hide="pharmacy_lab_billing.Arr.length == 1"><i class="fa fa-trash"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" ng-show="show_pharmacy_total==1">
+                                                        <div class="col-md-8">
+                                                            <br>
+                                                            <button class="btn btn-primary" type="button" ng-click="add_for_lab_billing_pharmacy($index)" ng-disabled="pharmacy_add_btn_disable == 1"><b class="fa fa-plus"></b></button>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Total Amount</label>
+                                                                <div class="input-group m-b">
+                                                                    <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                                                    <input type="text" ng-model="pharmacy_lab_billing.total_amount" ng-change="get_paid_amount_for_biiling()"  ng-disabled="true" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form=group">
+                                                                    <label>Payment Type</label>
+                                                                    <select ng-model="pharmacy_lab_billing.payment_type" class="form-control"  required>
+                                                                        <option value=""> Select Type</option>
+                                                                        <option value="Cash"> Cash</option>
+                                                                        <option value="Card"> Card</option>
+                                                                        <option value="Cheque"> Cheque</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <div class="form-group">
+                                                                    <label>Remark</label>
+                                                                    <textarea  class="form-control" ng-model="pharmacy_lab_billing.remark" placeholder="Remark" style="height: 35px"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-1"></div>
+                                                    </div><br>
+                                                </div><br>
+                                                <!-- <div class="col-md-4" ng-show="Type == 'In Patient'">
+                                                    <table class="table table-hover b-t b-light table-bordered">
+                                                        <tbody ng-if="showNoPrescriptions === false">
+                                                            <tr ng-repeat="i in inpatientPrescriptions">
+                                                                <td><span style="cursor: pointer" ng-click="ShowPrescription($index)">Prescriptions  {{$index+1}}</span></td>
+                                                                <td>Dr. {{ i.dr_name }}</td>
+                                                                <td>{{ i.date | date: 'dd-MM-yy' }}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody ng-if="showNoPrescriptions === true">
+                                                            <tr>
+                                                                <td colspan="3"><h4>No Prescriptions</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div> -->
+                                            </div>
+                                            <!-- <pre>{{pharmacy_lab_billing |json}}</pre> -->
+                                        </form>
+
+                                        <!-- <div class="modal fade" id="PharmacyID" data-backdrop="static">
+                                        <div class="modal-dialog modal-lg modal-full-height">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <div id="lab_billingPharmacy">
+                                                        <div ng-repeat="t in pharmacy_bills">
+                                                            <div class="row">
+                                                                <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                        <tr>
+                                                                            <h3>{{i.hname}}</h3>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            {{i.haddress}}
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <h4>To</h4>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                        <tr>
+                                                                            <td style="text-align:center">Name</td>
+                                                                            <td style="text-align:center">Address</td>
+                                                                            <td style="text-align:center">Mobile</td>
+                                                                            <td style="text-align:center">Receipt Code </td>
+                                                                            <td style="text-align:center">Date</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align:center">{{t.name}}</td>
+                                                                            <td style="text-align:center">{{t.city}}</td>
+                                                                            <td style="text-align:center">{{t.mobile}}</td>
+                                                                            <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                            <td style="text-align:center">{{t.date_time}}</td>
+                                                                        </tr>
+                                                                    </table><br/>
+                                                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                                        <tr>
+                                                                            <th style="text-align:center">S No.</th>
+                                                                            <th style="text-align:center">Description</th>
+                                                                            <th style="text-align:right;padding-right: 15px">Amount</th>
+                                                                        </tr>
+                                                                        <tr ng-repeat="z in t.paid_details">
+                                                                            <td style="text-align:center">{{$index+1}}</td>
+                                                                            <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                                            <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align:center" colspan="2">Total Amount</td>
+                                                                            <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <br/>
+                                                            <table cellspacing="0px" hieght="100%" width="100%">
+                                                                <tr>
+                                                                    <td><b>Terms & Conditions :</b></td>
+                                                                    <td align="left"><b>Signature:</b></td>
+                                                                </tr>
+                                                            </table>
+                                                            <table cellspacing="0px" hieght="100%" width="100%">
+                                                                <tr>
+                                                                    <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                                                        <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('lab_billingPharmacy')">Print</button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div ng-show="action==3">
+
+                        <div ng-repeat="t in receipt_data">
+                            <div class="row">
+                                <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                        <tr>
+                                            <h3>{{i.hname}}</h3>
+                                        </tr>
+                                        <tr>
+                                            {{i.haddress}}
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="BillPrints" style="width:80%; padding-left: 18%;">
+                                <div class="row" style="font-size: 20px">
+                                    <div class="col-md-12">
+                                        <h4>To</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <td style="text-align:center">Name</td>
+                                                <td style="text-align:center">Address</td>
+                                                <td style="text-align:center">Mobile</td>
+                                                <td style="text-align:center">Receipt Code </td>
+                                                <td style="text-align:center">Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center">{{t.name}}</td>
+                                                <td style="text-align:center">{{t.city}}</td>
+                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                <td style="text-align:center">{{t.date_time}}</td>
+                                            </tr>
+                                        </table><br/>
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <th style="text-align:center">##</th>
+                                                <th style="text-align:center">Description</th>
+                                                <th style="text-align:right; padding-right: 15px;">Amount</th>
+                                            </tr>
+                                            <tr ng-repeat="z in t.paid_details">
+                                                <td style="text-align:center">{{$index+1}}</td>
+                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                <td style="text-align:right; padding-right: 15px;"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                <td style="text-align:right; padding-right: 15px;"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br/>
+                                <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                    <tr>
+                                        <!-- <td><b>Terms & Conditions :</b></td> -->
+                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                    </tr>
+                                </table>
+                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                    <tr>
+                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                    </tr>
+                                </table> -->
+                            </div>
+                            <div id="BillPrintsPrint" style="width:80%; padding-left: 18%;" ng-show="PrintShow==1">
+                                <div class="row" style="font-size: 20px ;margin-top :1.4in;">
+                                    <div class="col-md-12">
+                                        <h4>To</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <td style="text-align:center">Name</td>
+                                                <td style="text-align:center">Address</td>
+                                                <td style="text-align:center">Mobile</td>
+                                                <td style="text-align:center">Receipt Code </td>
+                                                <td style="text-align:center">Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center">{{t.name}}</td>
+                                                <td style="text-align:center">{{t.city}}</td>
+                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                <td style="text-align:center">{{t.date_time}}</td>
+                                            </tr>
+                                        </table><br/>
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <th style="text-align:center">##</th>
+                                                <th style="text-align:center">Description</th>
+                                                <th style="text-align:right; padding-right: 15px;">Amount</th>
+                                            </tr>
+                                            <tr ng-repeat="z in t.paid_details">
+                                                <td style="text-align:center">{{$index+1}}</td>
+                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                <td style="text-align:right; padding-right: 15px;"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                <td style="text-align:right; padding-right: 15px;"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br/>
+                                <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                    <tr>
+                                        <!-- <td><b>Terms & Conditions :</b></td> -->
+                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                    </tr>
+                                </table>
+                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                    <tr>
+                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                    </tr>
+                                </table> -->
+                            </div>
+                        </div>
+                    </br><hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                            <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('BillPrintsPrint')">Print</button>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div ng-show="action==4">
+
+                        <div ng-repeat="t in receipt">
+                            <div class="row">
+                                <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                        <tr>
+                                            <h3>{{i.hname}}</h3>
+                                        </tr>
+                                        <tr>
+                                            {{i.haddress}}
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="lab_billingPrint" style="width:80%; padding-left: 18%;">
+                                <div class="row" style="font-size: 20px">
+                                    <div class="col-md-12">
+                                        <h4>To</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <td style="text-align:center">Name</td>
+                                                <td style="text-align:center">Address</td>
+                                                <td style="text-align:center">Mobile</td>
+                                                <td style="text-align:center">Receipt Code </td>
+                                                <td style="text-align:center">Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center">{{t.name}}</td>
+                                                <td style="text-align:center">{{t.city}}</td>
+                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                <td style="text-align:center">{{t.date_time}}</td>
+                                            </tr>
+                                        </table><br/>
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <th style="text-align:center">##</th>
+                                                <th style="text-align:center">Description</th>
+                                                <th style="text-align:right;padding-right:15px">Amount</th>
+                                            </tr>
+                                            <tr ng-repeat="z in t.paid_details">
+                                                <td style="text-align:center">{{$index+1}}</td>
+                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                <td style="text-align:right;padding-right:15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                <td style="text-align:right;padding-right:15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br/>
+                                <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                    <tr>
+                                        <!-- <td><b>Terms & Conditions :</b></td> -->
+                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                    </tr>
+                                </table>
+                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                    <tr>
+                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                    </tr>
+                                </table> -->
+                            </div>
+							<div id="lab_billingPrint_print" style="width:80%; padding-left: 18%;"  ng-show="PrintShow==1">
+                                <div class="row" style="font-size: 20px;margin-top: 1.4in;">
+                                    <div class="col-md-12">
+                                        <h4>To</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <td style="text-align:center">Name</td>
+                                                <td style="text-align:center">Address</td>
+                                                <td style="text-align:center">Mobile</td>
+                                                <td style="text-align:center">Receipt Code </td>
+                                                <td style="text-align:center">Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center">{{t.name}}</td>
+                                                <td style="text-align:center">{{t.city}}</td>
+                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                <td style="text-align:center">{{t.date_time}}</td>
+                                            </tr>
+                                        </table><br/>
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <th style="text-align:center">##</th>
+                                                <th style="text-align:center">Description</th>
+                                                <th style="text-align:right;padding-right:15px">Amount</th>
+                                            </tr>
+                                            <tr ng-repeat="z in t.paid_details">
+                                                <td style="text-align:center">{{$index+1}}</td>
+                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                <td style="text-align:right;padding-right:15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                <td style="text-align:right;padding-right:15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <br/>
+                                <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                    <tr>
+                                        <!-- <td><b>Terms & Conditions :</b></td> -->
+                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                    </tr>
+                                </table>
+                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                    <tr>
+                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                    </tr>
+                                </table> -->
+                            </div>
+                        </div>
+                </br><hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                            <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('lab_billingPrint_print')">Print</button>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div ng-show="action==5">
+
+                        <div ng-repeat="t in pharmacy_bills">
+                            <div class="row">
+                                <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                    <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                        <tr>
+                                            <h3>{{i.hname}}</h3>
+                                        </tr>
+                                        <tr>
+                                            {{i.haddress}}
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="lab_billingPharmacy" style="width:80%; padding-left: 18%;">
+                                <div class="row" style="font-size: 20px">
+                                    <div class="col-md-12">
+                                        <h4>To</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <td style="text-align:center">Name</td>
+                                                <td style="text-align:center">Address</td>
+                                                <td style="text-align:center">Mobile</td>
+                                                <td style="text-align:center">Receipt Code </td>
+                                                <td style="text-align:center">Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center">{{t.name}}</td>
+                                                <td style="text-align:center">{{t.city}}</td>
+                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                <td style="text-align:center">{{t.date_time}}</td>
+                                            </tr>
+                                        </table><br/>
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <th style="text-align:center">S No.</th>
+                                                <th style="text-align:center">Description</th>
+                                                <th style="text-align:right;padding-right: 15px">Amount</th>
+                                            </tr>
+                                            <tr ng-repeat="z in t.paid_details">
+                                                <td style="text-align:center">{{$index+1}}</td>
+                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div><br/>
+                                <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                    <tr>
+                                        <!-- <td><b>Terms & Conditions :</b></td> -->
+                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                    </tr>
+                                </table>
+                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                    <tr>
+                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                    </tr>
+                                </table> -->
+                            </div>
+							<div id="lab_billingPharmacy_print" style="width:80%; padding-left: 18%;" ng-show="PrintShow==1">
+                                <div class="row" style="font-size: 20px;margin-top: 1.5in;">
+                                    <div class="col-md-12">
+                                        <h4>To</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <td style="text-align:center">Name</td>
+                                                <td style="text-align:center">Address</td>
+                                                <td style="text-align:center">Mobile</td>
+                                                <td style="text-align:center">Receipt Code </td>
+                                                <td style="text-align:center">Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center">{{t.name}}</td>
+                                                <td style="text-align:center">{{t.city}}</td>
+                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                <td style="text-align:center">{{t.date_time}}</td>
+                                            </tr>
+                                        </table><br/>
+                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                            <tr>
+                                                <th style="text-align:center">S No.</th>
+                                                <th style="text-align:center">Description</th>
+                                                <th style="text-align:right;padding-right: 15px">Amount</th>
+                                            </tr>
+                                            <tr ng-repeat="z in t.paid_details">
+                                                <td style="text-align:center">{{$index+1}}</td>
+                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{z.amount |number:2}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{t.amount |number:2}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div><br/>
+                                <table cellspacing="0px" hieght="100%" width="100%" style="font-size: 20px">
+                                    <tr>
+                                        <!-- <td><b>Terms & Conditions :</b></td> -->
+                                        <td style="float: right; padding-right:12%;">Signature:</td>
+                                    </tr>
+                                </table>
+                                <!-- <table cellspacing="0px" hieght="100%" width="100%">
+                                    <tr>
+                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                    </tr>
+                                </table> -->
+                            </div>
+                        </div>
+                </br><hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary pull-right" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                            <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('lab_billingPharmacy_print')">Print</button>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

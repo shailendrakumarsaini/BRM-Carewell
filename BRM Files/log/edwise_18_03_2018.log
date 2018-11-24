@@ -1,0 +1,136 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:49:48",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:53:24",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:53:51",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:53:59",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:54:06",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:54:27",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:54:42",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:54:47",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:54:53",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:54:57",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:55:28",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:55:59",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 16:56:22",
+        "client_ip": "2405:204:6596:33ca::57c:20a5"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 17:03:06",
+        "client_ip": "157.48.104.62"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-18 17:03:13",
+        "client_ip": "157.48.104.62"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},

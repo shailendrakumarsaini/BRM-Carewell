@@ -1,0 +1,2107 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 12:13:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 12:15:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 12:15:59",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 12:16:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 12:16:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 12:16:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 14:57:27",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 14:57:50",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 14:58:36",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 14:59:00",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Item Group",
+    "extra": "Item Group is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 14:59:57",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 15:00:10",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 15:23:47",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:23:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 15:23:52",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 15:24:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 15:38:48",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 15:50:17",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:22:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:22:20",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:34:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:36:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:36:59",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:37:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 16:37:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:37:49",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:38:57",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:39:57",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:40:00",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:40:11",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=8&type_of_consultation=op&amount=800"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:40:11",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:40:49",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:00",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=6&type_of_consultation=special_op&amount=900"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:01",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:09",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:25",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=11&type_of_consultation=ip&amount=500"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:25",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:31",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:41",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=7&type_of_consultation=special_ip&amount=800"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:41",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:46",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:59",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=10&type_of_consultation=op&amount=400"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:41:59",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:05",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:18",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=11&type_of_consultation=ip&amount=700"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:18",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:29",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:30",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:31",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:43",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:44",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:46",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:46",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:46",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:42:59",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Get Patient Menu",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:43:56",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:43:58",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:22",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=6&type_of_consultation=op&amount=500"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:22",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:24",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=6&type_of_consultation=special_op&amount=800"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:35",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:42",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=7&type_of_consultation=op&amount=700"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:42",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:45",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:54",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=7&type_of_consultation=special_op&amount=800"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:44:54",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:24",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:28",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=8&type_of_consultation=op&amount=600"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:34",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:41",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=8&type_of_consultation=special_op&amount=800"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:41",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:44",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=9&type_of_consultation=op&amount=700"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:51",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:47:55",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:48:02",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=10&type_of_consultation=op&amount=800"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:48:02",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:48:21",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add New Consult",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:48:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Consult Data Added",
+    "extra": "dr_id=11&type_of_consultation=op&amount=700"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:48:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:49:07",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=Bhanu%20Kiran%20Aeinapathy&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=S%2FO%20Ainaparthi%20Krishna%20Rao&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=M&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=08%2F06%2F1984&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=34&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=10-192&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=sai%20nagar&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=indrapalem&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=Kakinada%20Rural&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=East%20Godavari&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=Andhra%20Pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533006&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=9035328594&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=603780921864&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=1&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=6&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=500&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:49:07",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:49:44",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=Salumuri%20Satyanarayana&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=S%2FO%20Pothu%20Raju&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=M&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=01%2F01%2F1964&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=64&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=4-45&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=Velam%20Street&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=balabhadrapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=bikkavolu%20mandalam&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=East%20Godavari&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=Andhra%20Pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533343&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=9988899988&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=656774834754&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=3&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=7&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=700&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:49:44",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:51:08",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:51:41",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:53:33",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=Ram%20Kumar%20A&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=Divider&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=M&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=02-02-1972&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=45&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=123&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=Syam&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=Balabadhrapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=Balabadhrapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=EG%20Dist&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=AP&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533002&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=1212121212&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=123456789012&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=5&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=8&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=600&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:53:33",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:54:38",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=ramu&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=rao&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=m&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=1987%2F08%2F17&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=30&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=11%2F2&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=sai&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=kakinada&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=ramaraopeta&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=east%20godavari%20dist&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=andhra%20pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533003&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=8934425634&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=604542424245&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=5&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=8&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=600&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:54:39",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:55:04",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=Syam%20S&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=Syam%20S&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=M&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=01-01-1994&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=23&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=1221&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=Syam&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=Amalapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=Syam&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=EG%20Dst&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=AP&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533201&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=2323232323&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=121212121212&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=7&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=9&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=700&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:55:04",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:56:24",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=David%20R&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=David%20R&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=M&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=01-01-1993&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=24&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=434&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=Davis&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=Amalapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=Amalapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=EG%20Dst&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=AP&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533201&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=8787878787&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=454545454545&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=8&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=10&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=800&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:56:24",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:56:31",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:56:57",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=lakshmi&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=ramu&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=f&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=1986%2F02%2F07&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=29&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=1%2F121&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=sri%20ram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=kakinada&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=indrapalem&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=east%20godavari%20dist&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=andhra%20pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533006&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=8334234302&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=794376438943&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=8&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=10&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=800&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:56:57",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:58:31",
+        "client_ip": "10.22.39.53"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=Jack&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=Jack&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=M&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=23-02-1978&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=36&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=6766&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=JAck&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=Kakinada&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=Kakinada&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=EG%20Dst&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=AP&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533001&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=4321242342&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=454545454542&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=1&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=6&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=500&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:58:31",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:59:33",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=kiran&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=rao&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=m&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=1976-08-06&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=43&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=11-167&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=gandhi&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=rajamundry&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=anand%20regency&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=east%20godavari%20dist&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=andhra%20pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533034&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=9334248924&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=480842420424&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=6&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=8&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=800&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 16:59:33",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:02:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=neelema&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=raju&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=f&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=1990-08-05&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=27&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=12-123%2Fa&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=sainagar&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=rajamundry&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=hanuman%20temple&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=east%20godavari%20dist&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=andhra%20pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533034&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=8363530863&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=677754538034&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=4&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=7&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=800&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:02:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:04:53",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:05:49",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "New Patient",
+    "extra": "patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bname%5D=rajendra&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bfather_name%5D=venkata%20ramu&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bgender%5D=m&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdate_of_birth%5D=1989-04-04&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bage%5D=32&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bhouse_no%5D=8-344%2Fa&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstreet%5D=gandhi%20circle&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bloc%5D=amalapuram&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bcity%5D=near%20peta&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bdistrict%5D=east%20godavari%20dist&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bstate%5D=andhra%20pradesh&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bpincode%5D=533065&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bmobile%5D=8999582325&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Baadhar_no%5D=334342442424&patient_new_reg%5Bbasic_info%5D%5B0%5D%5Bemail%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_consult_id%5D=7&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bdr_id%5D=9&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bref_id%5D=&patient_new_reg%5Bconsultation%5D%5B0%5D%5Bconsultation_amount%5D=700&patient_new_reg%5Bconsultation%5D%5B0%5D%5Buser_id%5D=1&patient_new_reg%5Bvisit_type%5D=op"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:05:49",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:07:41",
+        "client_ip": "10.22.39.53"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:29:48",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Asset Inward",
+    "extra": "Asset Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:33:13",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Asset Inward",
+    "extra": "Asset Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:33:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:33:35",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Asset Inward",
+    "extra": "Asset Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:18",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:25",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Bed Section"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:35:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "medicine Inward",
+    "extra": "medicine Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:35:34",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Allocate Bed"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 17:35:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:35:43",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:35:47",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:09",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:14",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:16",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:17",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:17",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:17",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:22",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "To Show the Items",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 17:37:54",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Asset Inward",
+    "extra": "Asset Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:38:53",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "medicine Inward",
+    "extra": "medicine Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:39:02",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Asset Inward",
+    "extra": "Asset Inward is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:42:26",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:42:53",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:44:49",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "id=1&name=Aditya%20Medical%20Agency&address=mathura1&city=goverdhan&contact_person=sunil&mobile=2543525345&gst_no=434343&tin_no=4343434343"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:28",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "id = 1Status = 0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:35",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "id = 2Status = 0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:35",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:45:42",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Item Group",
+    "extra": "Item Group is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:46:19",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:46:22",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:46:52",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:46:55",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:46:58",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:47:00",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:47:02",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:47:12",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:48:30",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:48:32",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:49:42",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "Supplier",
+    "extra": "Supplier data is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 18:51:17",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 18:53:54",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 18:55:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 18:57:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 18:58:17",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 18:58:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:03:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:03:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 19:03:56",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:04:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:05:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:05:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:11:20",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 19:11:33",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:12:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:12:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:13:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:13:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:14:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:14:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:14:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:14:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:15:56",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:17:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:17:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:17:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:18:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:15",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Bed Section"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Allocate Bed"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Beds"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Bed Section"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Allocate Bed"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:21:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:22:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:23:06",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 19:23:19",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:21:52",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:22:17",
+        "client_ip": "10.22.39.44"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:22:20",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "OutPatient",
+    "extra": "OutPatient Data Loaded"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:22:27",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:23:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:24:50",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:25:59",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:29:07",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:32:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:34:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:35:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:36:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-03-07 20:37:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:37:52",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-03-07 20:44:13",
+        "client_ip": "10.22.39.44"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},

@@ -1,0 +1,52 @@
+"medication_details": [
+    {
+      "med_id": "1",
+      "med_name": "EDTA TUBE",
+      "BB": true,
+    
+    },
+    {
+      "med_id": "4",
+      "med_name": "URINE CONTAINER",
+      "BB": true,
+    
+    },
+    {
+      "med_id": "6",
+      "med_name": "COL TUBE3",
+    
+      "AL": true,
+      
+    },
+    {
+      "med_id": "9",
+      "med_name": "HCV KIT",
+     
+      "AD": true
+    }
+  ],
+  "date": "April 23, 2018",
+
+    med_given:[
+        
+    ]{
+        Date:23/4/18
+        sched: bb,
+        medic:[1,4]
+
+    },
+    {
+        Date:23/4/18
+        sched: AL,
+        medic:[9]
+
+    }
+    med_given:{
+        date: 23/4/18
+        23/4/18:{
+            BB:[
+                1,2,3
+            ]
+
+        }
+    }

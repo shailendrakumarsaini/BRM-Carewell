@@ -1,0 +1,964 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 11:25:31",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:14:47",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:15:02",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 22:45:57",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 22:50:04",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 22:50:07",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 22:50:38",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 22:59:12",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:00:26",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:00:30",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:00:32",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:02:23",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:05:51",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:06:24",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:06:26",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:06:28",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:09:02",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-28 23:10:49",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:48:42",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:48:49",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:49:25",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:50:04",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:50:10",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:53:48",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:55:15",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:55:45",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 12:59:58",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:03:45",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:03:52",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:04:39",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:04:42",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:05:49",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:05:57",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:05:59",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:06:19",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:06:22",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:07:06",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:07:06",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:07:31",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:09:46",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:09:53",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:09:56",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:12:41",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:12:43",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:12:56",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:13:00",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:19:02",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:20:27",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:20:32",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:24:51",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:24:54",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:36:38",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:36:49",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:37:42",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:38:46",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:40:10",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 13:41:58",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:32:44",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:34:47",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:35:05",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:37:12",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:39:02",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:40:27",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:40:55",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:42:37",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:43:02",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:43:16",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:44:49",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:45:08",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:45:24",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:46:12",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:50:35",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:52:09",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:52:34",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:52:51",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:56:57",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 14:58:18",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 15:00:06",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 15:02:23",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 15:04:21",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 15:08:19",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:52:18",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:52:37",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:53:17",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:54:33",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:56:56",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:58:32",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 16:59:36",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 17:00:06",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 17:00:49",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 17:01:12",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 17:01:28",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 17:06:37",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 19:03:20",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 19:03:37",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 19:03:45",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 19:08:38",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 19:08:56",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 06:22:12",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 06:22:12",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 06:22:56",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 06:22:56",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 06:38:44",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 20:08:52",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 20:09:08",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-01-29 06:39:13",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-01-29 20:09:16",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},

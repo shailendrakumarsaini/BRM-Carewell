@@ -1,0 +1,121 @@
+<div ng-controller="inventoryunits_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r">
+                    <img src="img/medical_icons/scale.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Units
+                    </div>
+                    <small class="text-muted">Units for Inventory</small>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="panel-body" ng-init="init()">
+
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()"><i class="fa fa-user-plus"></i>New</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button> </div>
+            </div> -->
+
+            <div class="panel panel-default" ng-show="action==1">
+                <div class="panel-heading" style="font-size: 20px;">Inventory Details<button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()"><i class="fa fa-user-plus"></i>New</button></div>
+                <div class="panel-body">
+                    <table class="table table-striped b-t b-light table-bordered" ng-show="action==1">
+                        <thead>
+                            <tr ng-hide="NoData==1">
+                                <td colspan="3">
+                                    <div class="input-group col-md-3 pull-left" >
+                                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                        <input class="form-control" ng-model="search">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>S No.</th>
+                                <th>Unit Name</th>
+                                <th style="width:30px;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="x in unit_data |filter:search">
+                            <tr rowspan="2">
+                                <td>{{$index+1}}</td>
+                                <td><span style="cursor: pointer" ng-click="invunit_menu(x.unit_id)">{{x.unit_name}}</span></td>
+                                <td>
+                                    <a href ng-click="change_status(x.unit_id,x.status,$index)"><i class="fa fa-check text-success" ng-show="x.status==1"></i><i class="fa fa-times text-danger" ng-show="x.status==0"></i></a>
+                                </td>
+                            </tr>
+                            <tr ng-show="menu_uid==x.unit_id">
+                                <td colspan="3">
+                                    <form name="form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Inventory Unit Name</label>
+                                                <input type="text" class="form-control" ng-model="x.unit_name" placeholder="Inventory Unit Name" required title="Enter Inventory Unit Name">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr ng-show="menu_uid==x.unit_id">
+                                <td colspan="5">
+                                    <div clss="row">
+                                        <!-- <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="delete_unit(x.unit_id)"><i class="fa fa-trash"></i>Delete</button> -->
+                                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_inv_unit(x)" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Update</button>
+                                    </div>
+                                    <div class="col-xs-12 alert alert-success" ng-if="result!=''">
+                                        <strong><i class="fa fa-check fa-lg" aria-hidden="true"></i></strong> {{result}}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody ng-show="NoData==1">
+                            <tr align="center">
+                                <td colspan="3"><h4>No Data</h4></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div ng-show="action==2">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size: 20px;">Add Inventory Item<button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button> </div>
+                    <div class="panel-body">    
+                        <form name="form" ng-submit="save_unit()" id="myform">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label>Inventory Unit Name</label>
+                                    <input type="text" class="form-control" ng-model="unit_name" placeholder="Inventory Unit Name" required title="Inventory Unit Name">
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <!--<pre ng-bind="user |json"></pre>-->
+            </div>
+
+
+        </div>
+    </div>
+</div>

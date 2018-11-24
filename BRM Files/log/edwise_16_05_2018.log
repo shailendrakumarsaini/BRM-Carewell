@@ -1,0 +1,2809 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 13:10:36",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 13:10:47",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 13:10:58",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 13:45:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:12:12",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:12:18",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:13:42",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:14:05",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:14:14",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:14:19",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:14:24",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:16:34",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:16:40",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:16:43",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:16:59",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:17:05",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:17:26",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:17:28",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:17:31",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:17:53",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:22:55",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:22:56",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 14:22:59",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:47:58",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:48:53",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:10",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:34",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:35",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:51",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Updated",
+    "extra": "updatedInvestigations%5BcaseSheetId%5D=36&updatedInvestigations%5BpatientId%5D=13&updatedInvestigations%5Bdate%5D=2018-05-15&updatedInvestigations%5BvisitedDoctor%5D=9&updatedInvestigations%5Bdr_name%5D=Jagan&updatedInvestigations%5Bqualification%5D=M.D.%20General%20Medicine&updatedInvestigations%5BconsultationType%5D=IP%20Consultation&updatedInvestigations%5Bdiagnosis%5D=&updatedInvestigations%5BinvestigationResults%5D=%5B%7B%22price%22%3A%20%22200%22%2C%20%22test_id%22%3A%20%2244%22%2C%20%22test_name%22%3A%20%22GLYCOSOLATED%20HEMOGLOBIN%20A1c%22%2C%20%22ref_values%22%3A%20%5B%7B%22Gender%22%3A%20%22All%22%2C%20%22remarks%22%3A%20%22LOREM%20IPSUM%20DOLOR%22%2C%20%22%24%24hashKey%22%3A%20%22object%3A2736%22%2C%20%22rangeType%22%3A%20%22Description%22%2C%20%22unit_name%22%3A%20%22%25%22%2C%20%22Description%22%3A%20%22NORMAL%20%3A%203.0%20-%206.2%25%2C%20GOOD%20DIABETIC%20CONTROL%20%3A%205.5%20-%206.8%25%2C%20FAIR%20CONTROL%20%3A%206.8%20-%207.6%25%2C%20POOR%20CONTROL%20%3A%20%3E7.6%25%22%2C%20%22subInvestigation%22%3A%20%22GLYCOSOLATED%20HEMOGLOBIN%20A1c%22%7D%5D%2C%20%22resultGiven%22%3A%20false%7D%5D&updatedInvestigations%5Bmedication_details%5D=null&updatedInvestigations%5Bmonitoring%5D=&updatedInvestigations%5Bnotes%5D=&updatedInvestigations%5Bgender%5D=M&updatedInvestigations%5Bage%5D=21&updatedInvestigations%5B%24%24hashKey%5D=object%3A586&updatedInvestigations%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:51",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:53",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:49:59",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:50:01",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:50:06",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:50:21",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=45&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=WIDAL&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=100&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1556&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendDenominator%5D=320&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartDenominator%5D=300&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20O&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A1643&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendDenominator%5D=180&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartDenominator%5D=160&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20H&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A1659&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendDenominator%5D=70&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20AH&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A1675&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendDenominator%5D=80&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20BH&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=13&casesheet%5Bp_visit_id%5D=15&casesheet%5Bbed_id%5D=10&casesheet%5Bdoctor_id%5D=6&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:50:21",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:50:23",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:51:59",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:52:03",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:53:25",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:53:27",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:53:39",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:53:55",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:53:57",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:55:42",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:55:44",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:56:23",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:56:25",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:58:09",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 14:58:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:00:58",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:01:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=45&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=WIDAL&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=100&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1556&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendDenominator%5D=320&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartDenominator%5D=300&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20O&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A1643&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendDenominator%5D=180&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartDenominator%5D=160&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20H&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A1659&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendDenominator%5D=70&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20AH&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A1675&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendDenominator%5D=80&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20BH&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=13&casesheet%5Bp_visit_id%5D=15&casesheet%5Bbed_id%5D=10&casesheet%5Bdoctor_id%5D=6&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:01:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:01:15",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:04:35",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:04:39",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:04:40",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:05:37",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:05:40",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:05:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:05:51",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=45&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=WIDAL&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=100&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1556&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendDenominator%5D=320&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartDenominator%5D=300&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20O&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A1643&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendDenominator%5D=180&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartDenominator%5D=160&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20H&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A1659&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendDenominator%5D=70&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20AH&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A1675&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendDenominator%5D=80&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20BH&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=11&casesheet%5Bp_visit_id%5D=11&casesheet%5Bbed_id%5D=1&casesheet%5Bdoctor_id%5D=5&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:05:51",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:06:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:09:57",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:10:02",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:10:35",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:10:38",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 15:11:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:12:33",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:12:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:13:47",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:13:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:14:17",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:14:19",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:14:55",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:14:57",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:15:19",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:09",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:11",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:38",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:44",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:55",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=HEMOGLOBIN&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendRange%5D=17&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A213&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=gms%25&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartRange%5D=13&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=HEMOGLOBIN&casesheet%5Binv_details%5D%5B1%5D%5Btest_id%5D=2&casesheet%5Binv_details%5D%5B1%5D%5Btest_name%5D=DIFFERENTIAL%20COUNT&casesheet%5Binv_details%5D%5B1%5D%5Bprice%5D=50&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5BendRange%5D=70&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A366&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=%25&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5BstartRange%5D=40&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=NEUTROPHILS&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5BendRange%5D=45&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A441&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=%25&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5BstartRange%5D=20&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=LYMPHOCYTES&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5BendRange%5D=10&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A457&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=%25&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5BstartRange%5D=2&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=MONOCYTES&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5BendRange%5D=6&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A473&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=%25&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5BstartRange%5D=2&casesheet%5Binv_details%5D%5B1%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=EOSINOPHILS&casesheet%5Binv_details%5D%5B2%5D%5Btest_id%5D=3&casesheet%5Binv_details%5D%5B2%5D%5Btest_name%5D=RCB%20COUNT&casesheet%5Binv_details%5D%5B2%5D%5Bprice%5D=100&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5BendRange%5D=5.5&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A197&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=million%20cells%2Fcu.mm&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5BstartRange%5D=4.5&casesheet%5Binv_details%5D%5B2%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=RCB%20COUNT&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=13&casesheet%5Bp_visit_id%5D=15&casesheet%5Bbed_id%5D=10&casesheet%5Bdoctor_id%5D=4&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:56",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:58",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:16:59",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:00",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:07",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:08",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:10",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:11",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:24",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=45&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=WIDAL&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=100&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1556&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendDenominator%5D=320&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartDenominator%5D=300&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20O&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A1643&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendDenominator%5D=180&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartDenominator%5D=160&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20H&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A1659&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendDenominator%5D=70&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20AH&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A1675&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendDenominator%5D=80&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20BH&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=13&casesheet%5Bp_visit_id%5D=15&casesheet%5Bbed_id%5D=10&casesheet%5Bdoctor_id%5D=5&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:24",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:39",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:40",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:42",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:43",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:17:45",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:06",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=11&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=BLEEDING%20TIME&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=40&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1663&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Time&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=02%20min%2015%20sec&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendMinutes%5D=3&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendSeconds%5D=0&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartMinutes%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartSeconds%5D=0&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=BLEEDING%20TIME&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=13&casesheet%5Bp_visit_id%5D=15&casesheet%5Bbed_id%5D=10&casesheet%5Bdoctor_id%5D=7&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:06",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:08",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:14",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:18",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:21",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:34",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:54",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:57",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:18:59",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:05",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=HEMOGLOBIN&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendRange%5D=17&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A213&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=gms%25&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartRange%5D=13&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=HEMOGLOBIN&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=11&casesheet%5Bp_visit_id%5D=11&casesheet%5Bbed_id%5D=1&casesheet%5Bdoctor_id%5D=4&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:05",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:06",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:08",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:09",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:10",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:13",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:23",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=45&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=WIDAL&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=100&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1556&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BendDenominator%5D=320&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BstartDenominator%5D=300&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20O&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A1643&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BendDenominator%5D=180&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BstartDenominator%5D=160&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=SALMONELLA%20TYPHI%20H&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A1659&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BendDenominator%5D=70&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20AH&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A1675&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=Ratio&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=.&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BendDenominator%5D=80&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartNumerator%5D=1&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BstartDenominator%5D=50&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=SALMONELLA%20PARA%20TYPHI%20BH&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=11&casesheet%5Bp_visit_id%5D=11&casesheet%5Bbed_id%5D=1&casesheet%5Bdoctor_id%5D=7&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:23",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:26",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:30",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=36&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=URINE%20ANALYSIS&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=220&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BArray%5D=CLEAR%2C%20CLOUDY&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=EPITHELIAL%20CELLS%20PRESENT%2C%203%20-%205%20PUS%20CELLS%20PRESENT%20IN%20HPF%2C%201%20-%202%20RBC%2C%20NO%20CASTS%20%26%20CRYSTALS&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A314&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=ml&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=APPEARANCE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D=CLEAR%2C%20PALE%20YELLOW%2C%20BRIGHT%20YELLOW%2C%20AMBER%2C%20%20TEA-COLORED&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A393&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=ml&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=COLOUR&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BArray%5D=ALKALINE%2C%20ACIDIC&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A412&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=ml&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=REACTION&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A434&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=T%2FF&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BtrueValue%5D=POSITIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=ml&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BfalseValue%5D=NEGATIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=BLOOD&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5B%24%24hashKey%5D=object%3A454&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BrangeType%5D=T%2FF&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BtrueValue%5D=POSITIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5Bunit_name%5D=ml&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BfalseValue%5D=NEGATIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BsubInvestigation%5D=BILE%20SALTS&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5B%24%24hashKey%5D=object%3A474&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BrangeType%5D=T%2FF&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BtrueValue%5D=POSITIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5Bunit_name%5D=ml&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BfalseValue%5D=NEGATIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BsubInvestigation%5D=BILE%20PIGMENTS&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BArray%5D=NORMAL%2C%20HEPATITIS%2C%20HEPATOTOXINS%2C%20%20BILIARY%20OBSTRUCTIONS&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5B%24%24hashKey%5D=object%3A494&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5Bunit_name%5D=mg%2Fdl&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BsubInvestigation%5D=UROBILINOGEN&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D=NEGATIVE%2C%20TRACE%2C%20SMALL%2C%20MODERATE%2C%20LARGE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5B%24%24hashKey%5D=object%3A513&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5Bunit_name%5D=mmol%2FL&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BsubInvestigation%5D=KETONE%20BODIES&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D=NORMAL%2C%20NEGATIVE%2C%20TRACE%2C%20PROTEIN%201%2B%2C%20PROTEIN%202%2B%2C%20PROTEIN%203%2B%2C%20PROTEIN%204%2B&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5B%24%24hashKey%5D=object%3A536&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5Bunit_name%5D=mg%2Fdl&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BsubInvestigation%5D=PROTEINS&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BArray%5D=NEGATIVE%2C%20LIGHT%2C%20MEDIUM%2C%20DARK&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5B%24%24hashKey%5D=object%3A555&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5Bunit_name%5D=mg%2Fdl&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BsubInvestigation%5D=GLUCOSE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5B%24%24hashKey%5D=object%3A574&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BrangeType%5D=T%2FF&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BtrueValue%5D=POSITIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5Bunit_name%5D=%25&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BfalseValue%5D=NEGATIVE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BsubInvestigation%5D=NITRITES&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BendRange%5D=14&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5B%24%24hashKey%5D=object%3A594&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5Bunit_name%5D=ph&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BstartRange%5D=1.0&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BsubInvestigation%5D=PH&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BendRange%5D=1.030&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5B%24%24hashKey%5D=object%3A610&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BrangeType%5D=Range&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5Bunit_name%5D=mg%2Fdl&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BstartRange%5D=1.003&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BsubInvestigation%5D=SPECIFIC%20GRAVITY&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D=NEGATIVE%2C%20TRACE%2C%20SMALL%2C%20MODERATE%2C%20LARGE&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5B%24%24hashKey%5D=object%3A626&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BrangeType%5D=Array&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5Bunit_name%5D=cacells%2Ful&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BsubInvestigation%5D=LEUKOCYTES&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=11&casesheet%5Bp_visit_id%5D=11&casesheet%5Bbed_id%5D=1&casesheet%5Bdoctor_id%5D=8&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:19:54",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:20:40",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "investigationResults%5BcaseSheetId%5D=46&investigationResults%5BpatientId%5D=11&investigationResults%5Bdate%5D=2018-05-16&investigationResults%5BvisitedDoctor%5D=8&investigationResults%5Bdr_name%5D=John%20Doe&investigationResults%5Bqualification%5D=M.B.B.S&investigationResults%5BconsultationType%5D=IP%20Consultation&investigationResults%5Bdiagnosis%5D=&investigationResults%5Binv_details%5D%5B0%5D%5Bprice%5D=220&investigationResults%5Binv_details%5D%5B0%5D%5Btest_id%5D=36&investigationResults%5Binv_details%5D%5B0%5D%5Btest_name%5D=URINE%20ANALYSIS&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BArray%5D=CLEAR%2C%20CLOUDY&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=EPITHELIAL%20CELLS%20PRESENT%2C%203%20-%205%20PUS%20CELLS%20PRESENT%20IN%20HPF%2C%201%20-%202%20RBC%2C%20NO%20CASTS%20%26%20CRYSTALS&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A314&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=ml&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=APPEARANCE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D=CLEAR%2C%20PALE%20YELLOW%2C%20BRIGHT%20YELLOW%2C%20AMBER%2C%20%20TEA-COLORED&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A393&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=ml&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=COLOUR&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BArray%5D=ALKALINE%2C%20ACIDIC&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A412&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=ml&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=REACTION&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A434&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=T%2FF&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BtrueValue%5D=POSITIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=ml&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=BLOOD&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5B%24%24hashKey%5D=object%3A454&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BrangeType%5D=T%2FF&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BtrueValue%5D=POSITIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5Bunit_name%5D=ml&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BsubInvestigation%5D=BILE%20SALTS&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5B%24%24hashKey%5D=object%3A474&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BrangeType%5D=T%2FF&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BtrueValue%5D=POSITIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5Bunit_name%5D=ml&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BsubInvestigation%5D=BILE%20PIGMENTS&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BArray%5D=NORMAL%2C%20HEPATITIS%2C%20HEPATOTOXINS%2C%20%20BILIARY%20OBSTRUCTIONS&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5B%24%24hashKey%5D=object%3A494&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BsubInvestigation%5D=UROBILINOGEN&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D=NEGATIVE%2C%20TRACE%2C%20SMALL%2C%20MODERATE%2C%20LARGE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5B%24%24hashKey%5D=object%3A513&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5Bunit_name%5D=mmol%2FL&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BsubInvestigation%5D=KETONE%20BODIES&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D=NORMAL%2C%20NEGATIVE%2C%20TRACE%2C%20PROTEIN%201%2B%2C%20PROTEIN%202%2B%2C%20PROTEIN%203%2B%2C%20PROTEIN%204%2B&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5B%24%24hashKey%5D=object%3A536&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BsubInvestigation%5D=PROTEINS&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BArray%5D=NEGATIVE%2C%20LIGHT%2C%20MEDIUM%2C%20DARK&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5B%24%24hashKey%5D=object%3A555&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BsubInvestigation%5D=GLUCOSE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5B%24%24hashKey%5D=object%3A574&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BrangeType%5D=T%2FF&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BtrueValue%5D=POSITIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5Bunit_name%5D=%25&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BsubInvestigation%5D=NITRITES&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BendRange%5D=14&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5B%24%24hashKey%5D=object%3A594&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BrangeType%5D=Range&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5Bunit_name%5D=ph&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BstartRange%5D=1.0&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BsubInvestigation%5D=PH&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BendRange%5D=1.030&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5B%24%24hashKey%5D=object%3A610&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BrangeType%5D=Range&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BstartRange%5D=1.003&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BsubInvestigation%5D=SPECIFIC%20GRAVITY&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D=NEGATIVE%2C%20TRACE%2C%20SMALL%2C%20MODERATE%2C%20LARGE&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5B%24%24hashKey%5D=object%3A626&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BrangeType%5D=Array&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5Bunit_name%5D=cacells%2Ful&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BsubInvestigation%5D=LEUKOCYTES&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bprice%5D=220&investigationResults%5BinvestigationResults%5D%5B0%5D%5Btest_id%5D=36&investigationResults%5BinvestigationResults%5D%5B0%5D%5Btest_name%5D=URINE%20ANALYSIS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BArray%5D%5B%5D=CLEAR&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BArray%5D%5B%5D=%20CLOUDY&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=EPITHELIAL%20CELLS%20PRESENT%2C%203%20-%205%20PUS%20CELLS%20PRESENT%20IN%20HPF%2C%201%20-%202%20RBC%2C%20NO%20CASTS%20%26%20CRYSTALS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A314&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=ml&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=APPEARANCE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bresult%5D=CLEAR&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D%5B%5D=CLEAR&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D%5B%5D=%20PALE%20YELLOW&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D%5B%5D=%20BRIGHT%20YELLOW&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D%5B%5D=%20AMBER&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BArray%5D%5B%5D=%20%20TEA-COLORED&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5B%24%24hashKey%5D=object%3A393&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bunit_name%5D=ml&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5BsubInvestigation%5D=COLOUR&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B1%5D%5Bresult%5D=%20PALE%20YELLOW&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BArray%5D%5B%5D=ALKALINE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BArray%5D%5B%5D=%20ACIDIC&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5B%24%24hashKey%5D=object%3A412&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bunit_name%5D=ml&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5BsubInvestigation%5D=REACTION&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B2%5D%5Bresult%5D=%20ACIDIC&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5B%24%24hashKey%5D=object%3A434&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BrangeType%5D=T%2FF&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BtrueValue%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bunit_name%5D=ml&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5BsubInvestigation%5D=BLOOD&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B3%5D%5Bresult%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5B%24%24hashKey%5D=object%3A454&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BrangeType%5D=T%2FF&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BtrueValue%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5Bunit_name%5D=ml&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5BsubInvestigation%5D=BILE%20SALTS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B4%5D%5Bresult%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5B%24%24hashKey%5D=object%3A474&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BrangeType%5D=T%2FF&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BtrueValue%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5Bunit_name%5D=ml&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5BsubInvestigation%5D=BILE%20PIGMENTS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B5%5D%5Bresult%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BArray%5D%5B%5D=NORMAL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BArray%5D%5B%5D=%20HEPATITIS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BArray%5D%5B%5D=%20HEPATOTOXINS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BArray%5D%5B%5D=%20%20BILIARY%20OBSTRUCTIONS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5B%24%24hashKey%5D=object%3A494&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5BsubInvestigation%5D=UROBILINOGEN&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B6%5D%5Bresult%5D=NORMAL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D%5B%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D%5B%5D=%20TRACE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D%5B%5D=%20SMALL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D%5B%5D=%20MODERATE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BArray%5D%5B%5D=%20LARGE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5B%24%24hashKey%5D=object%3A513&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5Bunit_name%5D=mmol%2FL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5BsubInvestigation%5D=KETONE%20BODIES&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B7%5D%5Bresult%5D=%20SMALL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=NORMAL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=%20NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=%20TRACE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=%20PROTEIN%201%2B&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=%20PROTEIN%202%2B&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=%20PROTEIN%203%2B&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BArray%5D%5B%5D=%20PROTEIN%204%2B&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5B%24%24hashKey%5D=object%3A536&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5BsubInvestigation%5D=PROTEINS&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B8%5D%5Bresult%5D=%20PROTEIN%201%2B&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BArray%5D%5B%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BArray%5D%5B%5D=%20LIGHT&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BArray%5D%5B%5D=%20MEDIUM&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BArray%5D%5B%5D=%20DARK&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5B%24%24hashKey%5D=object%3A555&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5BsubInvestigation%5D=GLUCOSE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B9%5D%5Bresult%5D=%20MEDIUM&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5B%24%24hashKey%5D=object%3A574&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BrangeType%5D=T%2FF&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BtrueValue%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5Bunit_name%5D=%25&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BfalseValue%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5BsubInvestigation%5D=NITRITES&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B10%5D%5Bresult%5D=POSITIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BendRange%5D=14&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5B%24%24hashKey%5D=object%3A594&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BrangeType%5D=Range&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5Bunit_name%5D=ph&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BstartRange%5D=1.0&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5BsubInvestigation%5D=PH&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B11%5D%5Bresult%5D=2&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BendRange%5D=1.030&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5B%24%24hashKey%5D=object%3A610&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BrangeType%5D=Range&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5Bunit_name%5D=mg%2Fdl&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BstartRange%5D=1.003&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5BsubInvestigation%5D=SPECIFIC%20GRAVITY&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B12%5D%5Bresult%5D=1&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D%5B%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D%5B%5D=%20TRACE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D%5B%5D=%20SMALL&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D%5B%5D=%20MODERATE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BArray%5D%5B%5D=%20LARGE&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5B%24%24hashKey%5D=object%3A626&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BrangeType%5D=Array&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5Bunit_name%5D=cacells%2Ful&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5BsubInvestigation%5D=LEUKOCYTES&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B13%5D%5Bresult%5D=NEGATIVE&investigationResults%5BinvestigationResults%5D%5B0%5D%5BresultGiven%5D=false&investigationResults%5BinvestigationResults%5D%5B0%5D%5B%24%24hashKey%5D=object%3A3303&investigationResults%5Bmedication_details%5D=&investigationResults%5Bmonitoring%5D=&investigationResults%5Bnotes%5D=&investigationResults%5Bgender%5D=M&investigationResults%5Bage%5D=24&investigationResults%5Bis_test_exist%5D=true&investigationResults%5Bis_medicine_exist%5D=false&investigationResults%5B%24%24hashKey%5D=object%3A3244&investigationResults%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:20:40",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:20:44",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:22:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:22:59",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:23:04",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:23:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:23:51",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:23:57",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:23:58",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:01",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:04",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:07",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:12",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:16",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:18",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:30",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:42",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:45",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:24:47",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 15:24:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 15:25:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:25:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "casesheet%5Binv_details%5D%5B0%5D%5Btest_id%5D=44&casesheet%5Binv_details%5D%5B0%5D%5Btest_name%5D=GLYCOSOLATED%20HEMOGLOBIN%20A1c&casesheet%5Binv_details%5D%5B0%5D%5Bprice%5D=200&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=LOREM%20IPSUM%20DOLOR&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A2736&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Description&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=%25&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BDescription%5D=NORMAL%20%3A%203.0%20-%206.2%25%2C%20GOOD%20DIABETIC%20CONTROL%20%3A%205.5%20-%206.8%25%2C%20FAIR%20CONTROL%20%3A%206.8%20-%207.6%25%2C%20POOR%20CONTROL%20%3A%20%3E7.6%25&casesheet%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=GLYCOSOLATED%20HEMOGLOBIN%20A1c&casesheet%5Bdate%5D=May%2016%2C%202018&casesheet%5Bpatient_id%5D=4&casesheet%5Bp_visit_id%5D=4&casesheet%5Bbed_id%5D=15&casesheet%5Bdoctor_id%5D=8&casesheet%5Bconsultation_id%5D=IP%20Consultation&casesheet%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:25:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:25:43",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:26:10",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:26:25",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 15:28:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:28:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "CaseSheet Added",
+    "extra": "investigationResults%5BcaseSheetId%5D=47&investigationResults%5BpatientId%5D=4&investigationResults%5Bdate%5D=2018-05-16&investigationResults%5BvisitedDoctor%5D=8&investigationResults%5Bdr_name%5D=John%20Doe&investigationResults%5Bqualification%5D=M.B.B.S&investigationResults%5BconsultationType%5D=IP%20Consultation&investigationResults%5Bdiagnosis%5D=&investigationResults%5Binv_details%5D%5B0%5D%5Bprice%5D=200&investigationResults%5Binv_details%5D%5B0%5D%5Btest_id%5D=44&investigationResults%5Binv_details%5D%5B0%5D%5Btest_name%5D=GLYCOSOLATED%20HEMOGLOBIN%20A1c&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=LOREM%20IPSUM%20DOLOR&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A2736&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Description&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=%25&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BDescription%5D=NORMAL%20%3A%203.0%20-%206.2%25%2C%20GOOD%20DIABETIC%20CONTROL%20%3A%205.5%20-%206.8%25%2C%20FAIR%20CONTROL%20%3A%206.8%20-%207.6%25%2C%20POOR%20CONTROL%20%3A%20%3E7.6%25&investigationResults%5Binv_details%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=GLYCOSOLATED%20HEMOGLOBIN%20A1c&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bprice%5D=200&investigationResults%5BinvestigationResults%5D%5B0%5D%5Btest_id%5D=44&investigationResults%5BinvestigationResults%5D%5B0%5D%5Btest_name%5D=GLYCOSOLATED%20HEMOGLOBIN%20A1c&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BGender%5D=All&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bremarks%5D=LOREM%20IPSUM%20DOLOR&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5B%24%24hashKey%5D=object%3A2736&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BrangeType%5D=Description&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bunit_name%5D=%25&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BDescription%5D%5B%5D=NORMAL%20%3A%203.0%20-%206.2%25&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BDescription%5D%5B%5D=%20GOOD%20DIABETIC%20CONTROL%20%3A%205.5%20-%206.8%25&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BDescription%5D%5B%5D=%20FAIR%20CONTROL%20%3A%206.8%20-%207.6%25&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BDescription%5D%5B%5D=%20POOR%20CONTROL%20%3A%20%3E7.6%25&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5BsubInvestigation%5D=GLYCOSOLATED%20HEMOGLOBIN%20A1c&investigationResults%5BinvestigationResults%5D%5B0%5D%5Bref_values%5D%5B0%5D%5Bresult%5D=2&investigationResults%5BinvestigationResults%5D%5B0%5D%5BresultGiven%5D=false&investigationResults%5BinvestigationResults%5D%5B0%5D%5B%24%24hashKey%5D=object%3A1650&investigationResults%5Bmedication_details%5D=&investigationResults%5Bmonitoring%5D=&investigationResults%5Bnotes%5D=&investigationResults%5Bgender%5D=F&investigationResults%5Bage%5D=54&investigationResults%5Bis_test_exist%5D=true&investigationResults%5Bis_medicine_exist%5D=false&investigationResults%5B%24%24hashKey%5D=object%3A1603&investigationResults%5Buser_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:28:41",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:28:47",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:29:02",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:29:03",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:32:42",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:32:44",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:32:52",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 15:33:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:33:42",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:33:44",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:33:46",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:33:55",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:34:05",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:34:14",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:34:46",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:34:48",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:34:53",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:35:00",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:35:16",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:35:37",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:35:45",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:35:49",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:36:02",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:36:04",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:36:14",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:36:16",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:36:20",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:36:32",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 15:36:31",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:37:15",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:37:17",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:37:20",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:37:36",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:38:45",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:38:48",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 15:44:10",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:01:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:02:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:05:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:11:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:16:41",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:20:33",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:21:23",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:21:25",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:21:30",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:21:52",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:45:44",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:45:53",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 16:46:10",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:46:13",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:46:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 16:46:27",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 16:46:32",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:46:33",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:46:36",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:46:45",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:46:49",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:46:55",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:47:07",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:47:10",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 16:47:12",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:54:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:55:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:55:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:55:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:57:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-16 16:58:18",
+        "client_ip": "10.22.39.157"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:58:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:59:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 16:59:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:00:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:01:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:08:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:08:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:08:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:09:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:14:04",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:21:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:25:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:25:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:26:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:27:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:28:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:28:56",
+        "client_ip": "10.22.39.162"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:29:14",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:29:20",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:29:29",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "16"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:29:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:29:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:30:33",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:30:34",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:30:39",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:30:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:30:55",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:31:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:32:17",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:32:19",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:32:23",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:32:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:32:32",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:33:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:34:10",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:34:19",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:34:26",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:34:35",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:34:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:34:40",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:34:46",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:35:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:35:16",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:35:19",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:35:30",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "15"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:35:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:35:38",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:36:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:37:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:39:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:39:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:39:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:40:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:43:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:45:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:47:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:47:59",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:49:40",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:50:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:51:06",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:51:33",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:51:34",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:51:34",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:52:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:52:26",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:52:32",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:53:23",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 17:56:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 17:59:38",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:00:48",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:03:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:04:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:04:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Item Group",
+    "extra": "Item Group is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:04:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Assets",
+    "extra": "Assets is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:04:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicines",
+    "extra": "Medicines is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:05:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:09:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:09:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:09:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Date Change",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 18:10:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:22:40",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:25:36",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:25:38",
+        "client_ip": "10.22.39.155"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:26:43",
+        "client_ip": "10.22.39.155"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:31:32",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:31:36",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "21",
+        "date_time": "2018-05-16 18:32:07",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:32:29",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:34:45",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-16 18:39:47",
+        "client_ip": "10.22.39.162"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-05-16 19:00:35",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},

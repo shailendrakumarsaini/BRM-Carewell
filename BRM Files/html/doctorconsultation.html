@@ -1,0 +1,208 @@
+<div ng-controller="doctorconsultation_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/doctor_red.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Consultation Charges
+                    </div>
+                    <small class="text-muted">OP/IP Consultations</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <!-- <div class="row" style="overflow: auto">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <label class="input-group-addon btn" for="searchID"><i class="fa fa-search"></i></label>
+                        <input class="form-control" ng-model="search" id="searchID">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_new_consult()" style="width:100px;"><i class="fa fa-plus"></i>New</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="consult_form" style="width:100px;"><i class="fa fa-check"></i>Save</button><br/></div>
+            </div> -->
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12" ng-init="init()">
+                    <div ng-show="action == 1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="font-size: 20px;">Consultation Information<button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_new_consult()" style="width:100px;"><i class="fa fa-plus"></i>New</button></div>
+                            <div class="panel-body">
+                                    <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr ng-hide="change == 1">
+                                                    <td colspan="7">
+                                                        <div class="input-group col-md-3 pull-left">
+                                                            <label class="input-group-addon btn" for="searchID"><i class="fa fa-search"></i></label>
+                                                            <input class="form-control" ng-model="search" id="searchID">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>S No.</th>
+                                                    <!-- <th><a ng-click="SortData('dr_id')">Doctor ID</a></th> -->
+                                                    <th><a ng-click="SortData('name')">Doctor Name</a></th>
+                                                    <th><a ng-click="SortData('type_of_consultation')">Consult Type</a></th>
+                                                    <th style="text-align:right"><a ng-click="SortData('amount')">Fee</a></th>
+                                                    <th>Valid Days</th>
+                                                    <th>Valid Visits</th>
+                                                    <th><a ng-click="SortData('con_status')">Status</a></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="i in consult_data | filter:search | orderBy:Sort:reverseSort">  
+                                                <tr>
+                                                    <td>{{$index+1}}</td>
+                                                    <!-- <td><a ng-click="get_patient_menus(update[$index], $index)">{{i.dr_id}}</a></td> -->
+                                                    <td><a ng-click="get_patient_menu(i.dr_consult_id)">Dr.&nbsp;{{i.name |uppercase}}&nbsp;{{i.qualification}}</a></td>
+                                                    <td>{{i.fcname | uppercase}}</td>  
+                                                    <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{i.amount | number:'2'}}</td>
+                                                    <td>{{i.valid_days}}</td>
+                                                    <td>{{i.valid_visits}}</td>
+                                                    <td><a href ng-click="change_status(i.dr_consult_id)">
+                                                            <i class="fa fa-check text-success" ng-show="i.con_status==1"></i>
+                                                            <i class="fa fa-times text-danger" ng-show="i.con_status==0"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                                                
+                                                
+                                                <tr ng-show="update==i.dr_consult_id">
+                                                    <td colspan="9">
+                                                        <form name="update_form" class="form-validation">
+                                                            <div class="row">
+                
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Select Doctor</label>
+                                                                        <select ng-model="i.dr_id" class="form-control" required>
+                                                                            <option value="">Select Doctor</option>
+                                                                            <option value="{{j.uid}}" ng-repeat="j in doctors_data">Dr.&nbsp;{{j.name}}&nbsp;{{j.qualification}}</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                
+                                                            <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="drID">Consultation Type</label>
+                                                        <select ng-model="i.fcid"  class="form-control"  required>
+                                                            <option value="">Select Consultation Type</option>
+                                                            <option  value="{{k.fcid}}" ng-repeat="k in get_op_conslt">{{k.fcname}}</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                
+                                                          
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                       <label>Fee</label>
+                                                                        <input type="text" ng-model="i.amount" pattern="[0-9 ,.]{1,10}" class="form-control" autocomplete="off" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Valid Days</label>
+                                                                        <input type="text" ng-model="i.valid_days" pattern="[0-9]{1,10}" class="form-control" maxlength="10" autocomplete="off" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Valid Visits</label>
+                                                                        <input type="text" ng-model="i.valid_visits" pattern="[0-9]{1,10}" class="form-control" maxlength="10" autocomplete="off" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form> 
+                                                    </td>
+                                                </tr>
+                                                <tr ng-show="update==i.dr_consult_id">
+                                                    <td colspan="7">
+                                                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_consult(i)" ng-disabled="update_form.$invalid" style="width:100px;"><i class="fa fa-plus"></i>Update</button> 
+                                                    </td>
+                                                </tr> 
+                                                <!-- <pre>{{update | json}}</pre> -->
+                                            </tbody>
+                                            <tbody ng-show="change == 1"> 
+                                                <tr align="center">
+                                                    <td colspan="7">
+                                                        <h4 >No Data</h4>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div ng-show="action==2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="font-size: 20px;">Consultation Form<button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="consult_form" style="width:100px;"><i class="fa fa-check"></i>Save</button><br/></div>
+                            <div class="panel-body">
+                                <form name="consult_form" id="consult_form" ng-submit="Save_consult_data()" class="form-validation">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="drID">Select Doctor</label>
+                                                <select ng-model="dr_id" id="drID" class="form-control" required>
+                                                    <option value="">Select Doctor</option>
+                                                    <option value="{{i.uid}}" ng-repeat="i in doctors_data">Dr.&nbsp;{{i.name}} {{ i.qualification }}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="drID">Consultation Type</label>
+                                                <select ng-model="consultation_type"  class="form-control"  required>
+                                                    <option value="">Select Consultation Type</option>
+                                                    <option value="{{a.fcid}}" ng-repeat="a in get_op_conslt">{{a.fcgname}} - {{a.fcname}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                
+                                            
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="feeId">Fee</label> 
+                                                <div class="input-group">
+                                                    <label class="input-group-addon btn" for="feeId"><i class="glyphicon glyphicon-list-alt"></i></label>
+                                                    <input type="text" ng-model="amount" id="feeId" pattern="[0-9 ,.]{1,10}" class="form-control" maxlength="10" autocomplete="off" required>
+                                                </div> 
+                                            </div>
+                                        </div> 
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="valDID">Valid Days</label>
+                                                <div class="input-group" ng-init="valid_days = 15">
+                                                    <label class="input-group-addon btn" for="valDID"><i class="glyphicon glyphicon-list-alt"></i></label>
+                                                    <input type="text" ng-model="valid_days" id="valDID" pattern="[0-9]{1,10}" class="form-control" maxlength="10" autocomplete="off" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="vaVID">Valid Visits</label>
+                                                <div class="input-group" ng-init="valid_visits = 2">
+                                                    <label class="input-group-addon btn" for="vaVID"><i class="glyphicon glyphicon-list-alt"></i></label> 
+                                                    <input type="text" ng-model="valid_visits" id="vaVID" pattern="[0-9]{1,10}" class="form-control" maxlength="10" autocomplete="off" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

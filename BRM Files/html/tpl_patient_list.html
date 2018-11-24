@@ -1,0 +1,123 @@
+<!-- <table class="table">
+    <tr >
+        <td> -->
+    <div class="panel panel-default" ng-repeat="i in patientList">
+            <div class=" panel-heading ">
+                <div class="clearfix ">
+                    <a href=" " class="pull-left thumb-md avatar b-3x m-r " style="text-align: center">
+                <img src="img/medical_icons/team.png " alt="... ">
+                <br/>
+                <b>ID</b> : {{ i.patient_id }}
+            </a>
+                    <div class="clear">
+                        <div class="col-md-3">
+                            <table width="100% " style="font-size: 12px; ">
+                                <tr>
+                                    <td width="35% ">Name & Age </td>
+                                    <th>{{ i.name }} <span style="margin-left: 5px; ">{{ i.gender + ' : ' + i.age }}</span></th>
+                                </tr>
+                                <tr>
+                                    <td width="35% ">S/0</td>
+                                    <th>{{ i.father_name }}</th>
+                                </tr>
+                                <tr>
+                                    <td width="35% ">City</td>
+                                    <th>{{ i.city }}</th>
+                                </tr>
+                                <tr>
+                                    <td width="35% ">Mobile</td>
+                                    <th>{{ i.mobile }}</th>
+                                </tr>
+                            </table>
+                        </div>
+        
+                        <div class="col-md-3">
+                            <table width="100% " style="font-size: 12px; ">
+                                <tr>
+                                    <td width="30% ">Admission</td>
+                                    <th>{{ i.admit_date | date: 'dd-MM-yy' }}</th>
+                                </tr>
+                                <tr>
+                                    <td width="30% ">Scheme</td>
+                                    <th>{{ i.schemeName }}/ <i class="fa fa-inr"></i> {{ i.total_package_amount }}</th>
+                                </tr>
+                                <tr>
+                                    <td width="30% ">Bed</td>
+                                    <th>{{ i.loc_name + ' ' + i.bed_code }}</th>
+                                </tr>
+                                <tr>
+                                    <td width="30% ">Daignosis</td>
+                                    <th>{{ i.spname }} : {{ i.initial_diagnosis }}</th>
+                                </tr>
+        
+                            </table>
+                        </div>
+
+                        <div class="col-md-3">
+                            <table width="100% " style="font-size: 12px; ">
+                                <tr>
+                                    <td width="100% "><b>Dr. {{ i.dr_name + ' ' + i.qualification }}</b></td>
+                                </tr>
+                                <tr>
+                                    <td width="100% "><b>Dr. {{ i.surgeon_dr_name + ' ' + i.surgeon_dr_qualification }}</b></td>
+                                </tr>
+                                <tr>
+                                    <td width="100% "><b>Dr. {{ i.anesthesian_dr_name + ' ' + i.anesthesian_dr_qualification }}</b></td>
+                                </tr> 
+                            </table>
+                        </div>
+
+                        <!-- 1 for new patient -->
+                        <div class="col-md-3">
+                            <a><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#ipdetails" ng-click="specific_ip_detailsFun(i.p_visit_id)"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a><i class="fa fa-edit fa-lg" ng-click="moveToEdit(i.patient_id, i.p_visit_id)"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary" ng-if="i.isBillSettled == 1" ng-click="dischargePatient(i.patient_id, i.p_visit_id)">Discharge</button>
+                            <label ng-if="i.isBillSettled != 1">Active</label>
+                        </div>
+
+                        <!-- 2 for case sheet -->
+                        <div class="col-md-3" ng-if="controller === 2">
+                            as
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="list-group no-radius alt ">
+                <span class="list-group-item ">
+                    <div class="pull-right">
+                        <span  class="pull-right badge bg-success">2</span><br>
+                        <small><i class="fa fa-clock-o"></i> {{ i.admit_date | date: 'dd-MM-yy' }}</small>
+                    </div>
+                    <b>Dr. {{ i.dr_name + ' ' + i.qualification }}</b><b>Dr. {{ i.dr_name + ' ' + i.qualification }}</b><br><small>Consultant</small>
+                </span>
+            </div>
+            
+            <div class="list-group no-radius alt ">
+                <span class="list-group-item ">
+                    <div class="pull-right">
+                        <span  class="pull-right badge bg-success">4</span><br>
+                        <small><i class="fa fa-clock-o"></i> {{ i.admit_date | date: 'dd-MM-yy' }}</small>
+                    </div>
+                    <b>Dr. {{ i.surgeon_dr_name + ' ' + i.surgeon_dr_qualification }}</b><br><small>Surgeon</small>
+                </span>
+            </div>
+            <div class="list-group no-radius alt "> 
+                <span class="list-group-item ">
+                    <div class="pull-right">
+                        <span  class="pull-right badge bg-success">1</span><br>
+                        <small><i class="fa fa-clock-o"></i> {{ i.admit_date | date: 'dd-MM-yy' }}</small>
+                    </div>
+                    <b>Dr. {{ i.anesthesian_dr_name + ' ' + i.anesthesian_dr_qualification }} </b><br><small>Anesthetist</small>
+                </span>
+            </div>
+            <div class="list-group no-radius alt"> 
+                <span class="list-group-item">
+                    <button ng-click="visits()">Visits</button> <button ng-click="visits()">bills</button>         
+                </span>
+            </div> -->
+    </div>
+    <!-- </td>
+    </tr>
+    </table> -->
+    

@@ -1,0 +1,120 @@
+<div ng-controller="facilitiesgroup_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/hospital-bed.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Facilities Group
+                    </div>
+                    <small class="text-muted">Page Caption</small>
+
+                </div>
+
+            </div>   
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="addfecgrp()">
+                    <i class="fa fa-plus"></i>
+                    New
+                </button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" ng-init="init()">
+		
+		<table class="table table-striped table-bordered" ng-show="action==1">
+        <thead>
+          <tr>
+            <th style="width:20px;">#</th>
+            <th>Group Name</th>
+            <th>Description</th>
+            <th>Status</th>
+           </tr>
+        </thead>
+
+ 
+        <tbody ng-repeat="x in fec_grps |filter:search" ng-if="noRecords === false">
+            <tr rowspan="2">
+                <td>{{$index+1}}</td>
+                <td ><a ng-click="get_fecigrp_menu(x.fcgid)"><span ng-bind="x.fcgname"></span></a></td>
+                <td>{{ x.fcgdesc | limitTo: 70 }}</td>
+                <td><a href ng-click="change_status(x.fcgid,x.fcg_status,$index)"><i class="fa fa-check text-success" ng-show="x.fcg_status==1"></i><i class="fa fa-times text-danger" ng-show="x.fcg_status==0"></i></a></td>	
+            </tr>
+		   
+            <tr ng-show="menu_uid==x.fcgid">
+                <td colspan="4"> 
+                    <form name="form">
+                        <div class="row">
+                            <div class="col-md-4" >
+                                <label>Fecility Group Name</label>
+                                <input type="text" class="form-control" ng-model="fec_grp.fcgname" placeholder="Fecility Group Name" required title="Enter Speciality Name">
+                            </div> 
+                            <div class="col-md-4" >
+                                <label>Description</label>
+                                <textarea name="spdesc" class="form-control" ng-model="fec_grp.fcgdesc" required placeholder="Description" ></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right"  ng-click="update_fecgrpi(x.fcgid)" ng-disabled="form.$invalid" ><i class="fa fa-check"></i>Update</button>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+		    <!-- <tr ng-show="menu_uid==x.fcgid">
+                <td colspan="5">
+                    <div clss="row">
+                        <button class="btn m-b-xs btn-sm btn-danger btn-addon"  ng-click="delete_fecgrp(x.fcgid)"><i class="fa fa-trash"></i>Delete</button>
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right"  ng-click="update_fecgrpi(x.fcgid)" ng-disabled="form.$invalid" ><i class="fa fa-check"></i>Update</button>
+                    </div>
+                    <div class="col-xs-12 alert alert-success" ng-if="result!=''">
+                        <strong><i class="fa fa-check fa-lg" aria-hidden="true"></i></strong> {{result}}
+                    </div>
+                </td>
+            </tr> -->
+        </tbody>
+        <tbody ng-if="noRecords === true">
+            <tr>
+                <td colspan="4" align="center"><h4>No Records</h4></td>
+            </tr>
+        </tbody>
+      </table>
+	  <div ng-show="action==2">
+	<form  name="form" ng-submit="save_fecgrp()" id="myform"  >
+	<div class="col-md-6">
+	
+			<div class="form-group">
+					  <label>Fecility Group Name</label>
+					  <input type="text" class="form-control" ng-model="fcgname" placeholder="Fecility Group Name" required title="Enter Specialities Name">
+                      
+					</div>
+			<div class="form-group">
+    <label for="inputEmail" class="control-label">Description</label>
+     <textarea name="spdesc" class="form-control" ng-model="fcgdesc" required placeholder="Description" ></textarea>
+  </div>
+  
+			 
+			 
+	</div>
+	 
+	</form>
+	<!--<pre ng-bind="user |json"></pre>-->
+	</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

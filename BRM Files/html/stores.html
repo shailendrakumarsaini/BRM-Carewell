@@ -1,0 +1,249 @@
+<div ng-controller="stores_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix"> 
+                <a ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r"> <img src="img/medical_icons/store.png" > </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs"> Stores </div>
+                    <small class="text-muted">Stores</small> </div>
+            </div>
+        </div>
+        <div class="panel-body" >
+            <!-- <div class="row" style="overflow: auto">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1"> <span class="input-group-addon"> <i class="fa fa-search"></i> </span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" style="width:100px;"> <i class="fa fa-check"></i>Save</button>
+                </div>
+            </div> -->
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12" ng-init="init()">
+                    <div class="panel panel-default" ng-show="action==1">
+                        <div class="panel-heading" style="font-size: 20px;">Store Details                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr ng-hide="NoData==1">
+                                        <td colspan="10">
+                                            <div class="input-group col-md-3 pull-left"> <span class="input-group-addon"> <i class="fa fa-search"></i> </span>
+                                                <input class="form-control" ng-model="search">
+                                            </div>
+                                        </td>
+                                    </tr>   
+                                    <tr>
+                                        <th><a ng-click="SortTheData('$index')">S.No.</a></th>  
+                                        <th><a ng-click="SortTheData('store_name')">Store Name</a></th>
+                                        <th><a ng-click="SortTheData('store_type')">Store Type</a></th>
+                                        <!-- <th><a ng-click="SortTheData('hname')">Store Account Group</a></th> -->
+                                        <!-- <th>Location</th> -->
+                                        <th><a ng-click="SortTheData('block_name')">Block Name</a></th>
+                                        <th><a ng-click="SortTheData('loc_name')">Loc. Name</a></th>
+                                        <th><a ng-click="SortTheData('tin_no')">TIN</a></th>
+                                        <th><a ng-click="SortTheData('drug_no')">DLN</a></th>
+                                        <th><a ng-click="SortTheData('is_super_store')">Super Store</a></th>
+                                        <th><a ng-click="SortTheData('sales_unit')">Sales Unit</a></th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-repeat="x in unit_data | filter:search | orderBy:sort:reverseSort">
+                                    <tr rowspan="2">
+                                        <td><a ng-click="menu_uid[$index]=(menu_uid[$index]!=1)?1:0"><span ng-bind="$index+1"></span></a></td>
+                                        <td><a ng-click="menu_uid[$index]=(menu_uid[$index]!=1)?1:0"><span ng-bind="x.store_name"></span></a></td>
+                                        <td ng-bind="x.store_type"></td>
+                                        <!-- <td><span ng-bind="x.hname"></span></td> -->
+                                        <!-- <td>{{x.loc_code}}</td> -->
+                                        <td>{{x.block_name}}</td>
+                                        <td>{{x.loc_name}}</td>
+                                        <td>{{(x.tin_no == '')? '----' : x.tin_no }}</td>
+                                        <td>{{(x.drug_no == '')? '----' : x.drug_no }}</td>
+                                        <td>{{x.is_super_store}}</td>
+                                        <td ng-bind="x.sales_unit"></td>
+                                        <td><a href ng-click="change_status(x.id,x.status,$index)"> <i class="fa fa-check text-success" ng-show="x.store_status==1"></i> <i class="fa fa-times text-danger"  ng-show="x.store_status==0"></i></a></td>
+                                    </tr>
+
+
+                                    <tr ng-show="menu_uid[$index]==1">
+                                        <td colspan="10">
+                                            <form name="updatestore" class="form-validation">
+                                                <div class="row">
+                                                    <div class="col-md-4" ng-class="{ 'has-error' : updatestore.store_name.$invalid && !updatestore.store_name.$pristine }">
+                                                        <label>Store Name</label>
+                                                        <input type="text" class="form-control" name="store_name" ng-model="x.store_name" placeholder="Store Name" ng-pattern="/^[a-z A-Z 0-9]{2,50}$/" required ng-minlength="2" ng-maxlength="50">
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>Store Type</label>
+                                                        <select class="form-control m-b" ng-model="x.store_type" required>
+                                                            <option value="">Select Type</option>
+                                                            <option value="Inventory">Inventory</option>
+                                                            <option value="Test">Test</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>Is Super Store</label>
+                                                        <select class="form-control m-b" ng-model="x.is_super_store" required>
+                                                            <option value="">Select Type</option>
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label>Sales Unit</label>
+                                                        <select class="form-control m-b" ng-model="x.sales_unit" required>
+                                                            <option value="">Select Unit</option>
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4" ng-if="x.sales_unit === 'Yes'">
+                                                        <label>Store Account Group</label>
+                                                        <select class="form-control m-b"  ng-model="x.store_account_group">
+                                                            <option value="">Select Account Group</option>
+                                                            <option value="{{r.hid}}" ng-repeat="r in organization_data" >{{r.hname}}</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4" ng-if="x.sales_unit === 'Yes'">
+                                                        <label>TIN</label>
+                                                        <input type="text" class="form-control" name="tin_no" ng-model="x.tin_no" placeholder="Enter TIN Number" minlength="15" maxlength="15" autocomplete="off" >
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4" ng-if="x.sales_unit === 'Yes'">
+                                                        <label>Drug Licence Number</label>
+                                                        <input type="text" class="form-control" name="drug_no" ng-model="x.drug_no" placeholder="Enter DLN Number" maxlength="30" autocomplete="off">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label>Location</label>
+                                                        <select class="form-control m-b" ng-model="x.location_id" required>
+                                                            <option value="">Select Location</option>
+                                                            <option value="{{q.loc_id}}" ng-repeat="q in locations_data">{{q.loc_name}}</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div clss="row">
+                                                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_hospital(x)" ng-disabled="updatestore.$invalid"><i class="fa fa-check"></i>Update</button>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody ng-show="NoData==1">
+                                    <tr align="center">
+                                        <td colspan="10">
+                                            <h4>No Data</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                    <div ng-show="action==2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="font-size: 20px;">Add Store 
+                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" style="width:100px;"> <i class="fa fa-check"></i>Save</button>
+                        </div>
+                        <div class="panel-body">
+                            <form ng-submit="add_store()" id="myform" name="addstore" class="form-validation">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group" ng-class="{ 'has-error' : addstore.store_name.$invalid &&!addstore.store_name.$pristine }">
+                                            <label>Store</label>
+                                            <input type="text" class="form-control" name="store_name" ng-model="store_name" placeholder="Enter Store name" ng-keyup="get_age_data(pt_age)" ng-pattern="/^[a-z A-Z 0-9]{2,50}$/" autocomplete="off" required ng-minlength="3" ng-maxlength="50" required>
+                                            <p ng-show="addstore.store_name.$error.minlength" class="help-block">Store Name is too short.</p>
+                                            <p ng-show="addstore.store_name.$error.maxlength" class="help-block">Store Name is too long.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Store Type</label>
+                                            <select class="form-control m-b" ng-model="store_type" required>
+                                                <option value="">Select Type</option>
+                                                <option value="Inventory">Inventory</option>
+                                                <option value="Test">Test</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Sales Unit</label>
+                                            <select class="form-control m-b" ng-model="sales_unit" ng-change="changeValue(sales_unit)" required>
+                                                <option value="">Select Unit</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Is Super Store</label>
+                                    <select class="form-control m-b" ng-model="store_super" required>
+                                                <option value="">Select Type</option>
+                                                <option value="Yes">Yes</option>   
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6" ng-show="hide == 0">
+                                        <div class="form-group">
+                                            <label>Store Account Group</label>
+                                            <select class="form-control m-b" id="store_group" name="store_group" ng-model="store_group">
+                                                <option value="">Select Account Group</option>
+                                                <option value="{{x.hid}}" ng-repeat="x in organization_data">{{x.hname}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" ng-show="hide == 0">
+                                        <!-- <div class="form-group" ng-class="{ 'has-error' : addstore.store_dln.$invalid && !addstore.store_dln.$pristine }"> -->
+                                        <label>Drug Licence Number</label>
+                                        <input type="text" class="form-control" id="store_dln" name="store_dln" ng-model="store_dln" placeholder="Enter DLN Number" maxlength="30" autocomplete="off">
+                                        <!-- <p ng-show="addstore.store_dln.$error.minlength" class="help-block">Drug Licence Number is too short.</p> -->
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-6" ng-show="hide == 0">
+                                        <!-- <div class="form-group" ng-class="{ 'has-error' : addstore.store_tin.$invalid && !addstore.store_tin.$pristine }"> -->
+                                            <label>TIN</label>
+                                            <input type="text" class="form-control" id="store_tin" name="store_tin" ng-model="store_tin" placeholder="Enter TIN Number" ng-keyup="get_age_data(pt_age)" autocomplete="off"  minlength="15" maxlength="15">
+                                            <!-- <p ng-show="addstore.store_tin.$error.maxlength" class="help-block">TIN is too long.</p> -->
+                                        <!-- </div> -->   
+                                    </div>
+                                    <div class="col-md-6">  
+                                        <div class="form-group">
+                                            <label>Location</label>
+                                            <select class="form-control" ng-model="location" ng-options="y.loc_id as y.loc_name for y in locations_data" ng-required="true">
+                                                <option value="">Select Location</option>               
+                                                <!-- <option value="{{z.loc_id}}" ng-repeat="z in locations_data">{{z.loc_name}}</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

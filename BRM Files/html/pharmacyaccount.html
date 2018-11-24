@@ -1,0 +1,154 @@
+<div ng-controller="pharmacyaccount_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/pharmacy.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Patient Account
+                    </div>
+                    <small class="text-muted">Profit/Loss Details</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body" style="min-height: 300px">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div> -->
+                    <!-- <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()"><i class="fa fa-plus"></i>New</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5" ng-init="init()" ng-show="action == 1">
+                    <div class="input-group pull-left">
+                        <label class="input-group-addon btn" for="searchid"><b class="fa fa-search"> &nbsp;Search Patient</b></label>
+
+                        <ui-select ng-model="selected_data.innerObj" ng-change="autosearch_data($select.search)" id="searchid" reset-search-input="true" theme="bootstrap" append-to-body="true">
+                            <ui-select-match placeholder="Search for Patient..."><span ng-bind="$select.selected.name"></span></ui-select-match>
+                            <ui-select-choices repeat="item in (patient_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0" ng-click="ShowTable(selected_data.innerObj.patient_id)">
+                            
+                            <span ng-bind-html="item.name |uppercase | highlight: $select.search"></span>&nbsp;
+                            <span ng-bind-html="item.gender | highlight: $select.search"></span>:
+                            <span ng-bind-html="item.age | highlight: $select.search"></span><br>
+                            <span class="text-muted">
+                                <i class="fa fa-map-marker"></i>&nbsp;
+                                <span ng-bind-html="item.city | uppercase|highlight: $select.search"></span>&nbsp;&nbsp;
+                                <i class="fa fa-mobile"></i>
+                                <div ng-bind-html="item.mobile | highlight: $select.search"></div>
+                            </span>
+                            </ui-select-choices>
+                        </ui-select>
+                                
+                    </div>
+                </div>
+            </div><br>
+            <div class="panel panel-default" ng-show="show==1">
+                <div class="panel-heading" style="font-size: 20px;">Patient Account Information</div>
+                <div class="panel-body"> 
+                    <div class="row" ng-show="show==1">
+                        <div class="col-md-6">
+                            <table class="table table-striped b-t b-light table-bordered">
+                                <caption>Patient Details</caption>
+                                <thead>
+                                    <th>Patient ID</th>
+                                    <th>Patient Name</th>
+                                    <th>City</th>
+                                    <th>Mobile No.</th>
+                                </thead>
+                                <tbody ng-repeat="i in patient_details" ng-hide="NoData==1">
+                                    <td>{{i.patient_id}}</td>
+                                    <td>{{i.name}}<span class="text-muted"><br>{{i.gender}}&nbsp;:&nbsp;{{i.age}},&nbsp;{{i.father_name}}</span></td>
+                                    <td>{{i.city}}</td>
+                                    <td>{{i.mobile}}</td>
+                                </tbody>
+                                <tbody>
+                                </tbody>
+                                <tbody ng-show="NoData==1">
+                                    <tr align="center">
+                                        <td colspan="5"><h4>NO Data</h4></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-striped b-t b-light table-bordered">
+                                <caption>Visit Details</caption>
+                                <thead>
+                                    <th>Patient Type</th>
+                                    <th>Visit Date</th>
+                                    <th>Consultent Doctor</th>
+                                </thead>
+                                <tbody ng-repeat="i in patient_visit_details" ng-hide="NoData==1">
+                                    <td>{{i.patient_type}} <br>&nbsp;</td>
+                                    <td>{{i.visit_date | date:'dd-MM-yy'}}</td>
+                                    <td>Dr.&nbsp;{{i.dr_name}}</td>
+                                </tbody>
+                                <tbody>
+                                </tbody>
+                                <tbody ng-show="NoData==1">
+                                    <tr align="center">
+                                        <td colspan="5"><h4>NO Data</h4></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row" ng-show="show==1">
+                        <div class="col-md-6">
+                            <table class="table table-striped b-t b-light table-bordered">
+                                <thead>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th style="text-align:right">Amount</th>
+                                </thead>
+                                <tbody ng-repeat="i in transactions_details" ng-hide="show_transactions_details==0">
+                                    <td>{{i.purpose_of_payment}}</td>
+                                    <td>{{i.date_time | date:'dd-MM-yy'}}</td>
+                                    <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{i.amount | number:'2'}}</td>
+                                </tbody>
+                                <tbody>
+                                </tbody>
+                                <tbody ng-show="show_transactions_details==0">
+                                    <tr align="center">
+                                        <td colspan="5">NO Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-striped b-t b-light table-bordered">
+                                <thead>
+                                    <th style="text-align:right"></i>Total Amount</th>
+                                    <th style="text-align:right">Actual Amount</th>
+                                    <th style="text-align:right">Profit/Loss</th>
+                                </thead>
+                                <tbody ng-hide="show_profit_loss==0">
+                                    <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{profit_loss.total_amount | number:'2'}}</td>
+                                    <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{profit_loss.actual_amount | number:'2'}}</td>
+                                    <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{profit_loss.total_amount - profit_loss.actual_amount | number:'2'}}</td>
+                                </tbody>
+                                <tbody>
+                                </tbody>
+                                <tbody ng-show="show_profit_loss==0">
+                                    <tr align="center">
+                                        <td colspan="5">NO Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

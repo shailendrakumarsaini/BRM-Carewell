@@ -1,0 +1,265 @@
+<div ng-controller="doctorcollection_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="all_reset()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/doctor_collection.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Doctor Collection
+                    </div>
+                    <small class="text-muted">Doctor Collection Details</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body" ng-init="init()" >
+            <div class="panel panel-default">
+                <div class="panel-heading" style="font-size: 20px;">Collection Information</div>
+                <div class="panel-body">
+
+                    <!-- 	<div class="row">
+                        <div class="col-md-6">
+                            <label class="radio-inline" style="font-size:17px">
+                            <input type="radio" name="dr_rf" ng-model="doc_ref_col" value="d">Doctor
+                            </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                            <label class="radio-inline" style="font-size:17px">
+                            <input type="radio" name="dr_rf" ng-model="doc_ref_col" value="r" ng-click="" >Referral
+                            </label>
+                        </div>
+                        <div class="col-md-6 pull-right" >
+                        <button class="btn btn-sm btn-primary pull-right" ng-disabled="dr_ref_col.$invalid" ng-click="save_ref_data(doc_ref_col)">Save</button>
+                        </div>
+                        </div> -->
+                        <br>
+                        <div class="row">
+                            <!-- <div class="col-md-3">
+                            <label>From Date</label>
+                            <div class="input-group">
+                                <input type="text" id="from_dateID" ng-model="from_date" ng-change="change_from_date(from_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                <label class="input-group-addon" for="from_dateID"><i class="fa fa-calendar"></i></label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">   
+                            <label>To Date</label>
+                            <div class="input-group">
+                                <input type="text" id="to_dateID" ng-model="to_date" ng-change="change_to_date(to_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                <label class="input-group-addon" for="to_dateID"><i class="fa fa-calendar"></i></label>
+                            </div>
+                    </div> -->
+                    <div class="col-md-3">
+                        <label for="testdate1">From Date</label>
+                        <div class="input-group">
+                            <input type="date" id="testdate1" ng-model="from_date" ng-change="dr_collection.from_date = from_date.toLocaleDateString('en-GB',{ day:'2-digit', month:'long', year:'numeric' })" class="form-control">
+                            <label class="input-group-addon btn" for="testdate1">
+                                <i class="fa fa-calendar"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="testdate2">To Date</label>
+                        <div class="input-group">
+                            <input type="date" id="testdate2" ng-model="to_date" ng-change="dr_collection.to_date = to_date.toLocaleDateString('en-GB',{ day:'2-digit', month:'long', year:'numeric' })" class="form-control">
+                            <label class="input-group-addon btn" for="testdate2">
+                                <i class="fa fa-calendar"></i>
+                            </label>
+                        </div>
+                    </div>
+                        <div class="col-md-3">
+                            <label>Select Doctor/Referral</label>
+                                <select class="form-control" ng-model="doc_ref_col">
+                                    <option value="">Select Doctor/Referral</option>
+                                    <option value="d">Doctor</option>
+                                    <option value="r">Referral</option>
+                                </select>
+                        </div>
+                    <div class="col-md-3">
+                                <label>Select Doctor/Referral</label>
+                                <label ng-if="doc_ref_col != 'r' || doc_ref_col != 'd'"></label>
+                                <select class="form-control" ng-model="dr_rf_name" ng-change="get_dr_ref_col(dr_rf_name,from_date,to_date,doc_ref_col)">
+                                <option ng-if="doc_ref_col == 'd'" value="">Select Doctor</option>
+                                <option ng-if="doc_ref_col == 'r'" value="">Select Referral</option>
+                                <option ng-if="doc_ref_col == 'd'" value="{{a.uid}}" ng-repeat="a in doctorsData">Dr.&nbsp{{a.name}}&nbsp;{{a.qualification}}</option>
+                                <option ng-if="doc_ref_col == 'r'" value="{{b.ref_id}}" ng-repeat="b in referralList">{{b.ref_name}}</option>
+                                </select>
+                    </div>
+                        </div>
+
+                    <br>
+                    <br>
+                    <!-- Referral -->
+                        <form name="dr_ref_col">
+                            <div class="row" ng-show="yes_table == 1">
+                                <div class="col-md-12">
+                                    <table class="table table-striped table-bordered">
+                                            <thead >
+                                                <tr>
+                                                    <th>SNo</th>
+                                                    <th>Patient Name</th>
+                                                    <th>DOA</th>
+                                                    <th>Package</th>
+                                                    <th>Referral Amount</th>
+                                                    <th>Paid Date</th>
+                                                    <th>Paid Through</th>
+                                                    <th>Payment Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody  ng-repeat="c in get_doc_ref_data" ng-show="no_data==0">
+                                                <tr ng-if="c.packageAmount != null">
+                                                        <td>{{$index+1}}</td>
+                                                        <td>
+                                                        <i class="fa fa-hashtag fa-fw m-r-xs"></i>{{ c.patient_id }}<br>
+                                                        <i class="fa fa-user-o fa-fw m-r-xs"></i><strong>{{ c.name }} &nbsp;{{ c.gender + ' : ' + c.age }}</strong><br>
+                                                        <i class="fa fa-user fa-fw m-r-xs"></i>S/0: {{c.father_name }}<br>
+                                                        <i class="fa fa-map-marker fa-fw m-r-xs"></i>{{ c.city}}<br>
+                                                        <i class="fa fa-mobile fa-fw m-r-xs"></i>{{ c.mobile}}<br>
+                                                        </td>
+                                                        <td>{{c.visit_date | date:'dd/MM/yyyy'}}</td>
+                                                        <td><i class="fa fa-rupee"></i>&nbsp;{{c.packageAmount | number:2}}</td>
+
+                                                        <td ng-if="c.isPaid == null"><input type="text" class="form-control" ng-model="c.referralPayment" ></td>
+
+                                                        <td ng-if="c.isPaid != null"><label><i class="fa fa-rupee"></i>&nbsp;{{c.referralPayment | number:2}}</label></td>
+
+                                                        <td>{{c.dateOfPayment | date:'dd/MM/yyyy'}}</td>
+                                                        <td>{{c.paymentThrough}}</td>
+
+                                                        <td>{{c.paymentType }}</td>
+
+
+
+                                                        <!-- <td ng-class="(c.isPaid != null)?'text-success':'text-danger'" style="font-size:15px;">{{(c.referralPayment === null) ? 'Not Paid' : 'Paid'}}</td> -->
+
+                                                        <!-- <td ng-if="c.referralPayment != null"><label><i class="fa fa-rupee"></i>&nbsp;{{c.referralPayment| number:2}}</label></td>
+
+                                                        <td ng-if="c.referralPayment != null"><label><i class="fa fa-rupee"></i>&nbsp;{{c.referralPayment| number:2}}</label></td>
+
+                                                        <td ng-if="c.referralPayment != null"><label><i class="fa fa-rupee"></i>&nbsp;{{c.referralPayment| number:2}}</label></td> -->
+                                                </tr>
+                                            </tbody>
+
+                                    </table>
+                                <p ng-show="no_data==1" style="text-align:center;font-size:18px;font-family:'century gothic';">No Data</p>
+                                </div>
+                            </div><br>
+                            
+                            <div class="row" ng-show="yes_table == 1 && no_data == 0">
+                                    <div class="col-md-3">
+                                        <label>Payment Date</label>
+                                        <div class="input-group">
+                                            <input type="text" id="payment_dateID" ng-model="payment_date" ng-change="change_payment_date(payment_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                            <label class="input-group-addon" for="payment_dateID"><i class="fa fa-calendar"></i></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Payment Type</label>
+                                        <select class="form-control" ng-model="payment_type" required>
+                                        <option value="">Select Payment Type</option>
+                                        <option value="cash">Cash</option>
+                                        <option value="cheque">Cheque</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Paid Through</label>
+                                        <input type="text" class="form-control" ng-model="paid_through" required>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Payment Details</label>
+                                        <textarea class="form-control" rows="2" ng-model="payment_details"></textarea>
+                                    </div>
+                            </div><br>
+                            
+                            <div class="row" ng-show="yes_table == 1 && no_data==0">
+                                    <div class="col-md-6 pull-right" >
+                                        <button class="btn btn-primary pull-right" ng-disabled="dr_ref_col.$invalid" ng-click="save_ref_data(doc_ref_col)">Save</button>
+                                    </div>
+                            </div>
+                        </form>
+
+                    <!-- Doctor  -->
+                        <form name="ref_col">
+                            <div class="row" ng-show="dr_yes_table == 1">
+                                    <div class="col-md-12">
+                                            <table class="table table-striped">
+                                                    <thead >
+                                                        <tr>
+                                                            <th>SNo</th>
+                                                            <th>Patient Name</th>
+                                                            <th>DOA</th>
+                                                            <th>Visit Count</th>
+                                                            <th>Package</th>
+                                                            <th>Doctor Amount</th>
+                                                            <th>Paid Date</th>
+                                                            <th>Paid Through</th>
+                                                            <th>Payment Type</th>
+                                                            <th>Dis. Status</th>
+                                                        </tr>   
+                                                    </thead>
+                                                    <tbody  ng-repeat="d in get_doc_coll_data" ng-show="dr_no_data==0">
+                                                        <tr ng-if="d.packageAmount != null">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>
+                                                            <i class="fa fa-hashtag fa-fw m-r-xs"></i>{{ d.patient_id }}<br>
+                                                            <i class="fa fa-user-o fa-fw m-r-xs"></i><strong>{{ d.name }} &nbsp;{{ d.gender + ' : ' + d.age }}</strong><br>
+                                                            <i class="fa fa-user fa-fw m-r-xs"></i>S/0: {{d.father_name }}<br>
+                                                            <i class="fa fa-map-marker fa-fw m-r-xs"></i>{{ d.city}}<br>
+                                                            <i class="fa fa-mobile fa-fw m-r-xs"></i>{{ d.mobile}}<br>
+                                                            </td>
+                                                            <td>{{d.visit_date | date:'dd/MM/yyyy'}}</td>
+                                                            <td>{{d.visitCount}}</td>
+                                                            <td><i class="fa fa-rupee"></i>&nbsp;{{d.packageAmount | number:2}}</td>
+                                                            <td ng-if="d.isPaid == null"><input type="text" class="form-control" ng-model="d.doctorPayment" ></td>
+                                                            <td ng-if="d.isPaid != null"><label><i class="fa fa-rupee"></i>&nbsp;{{d.doctorPayment | number:2}}</label></td>
+                                                            <td>{{d.dateOfPayment | date:'dd/MM/yyyy'}}</td>
+                                                            <td>{{d.paymentThrough}}</td>
+                                                            <td>{{d.paymentType }}</td>
+                                                            <td>{{(d.discharge_status === '0')?'Active':'Discharged'}}</td>
+                                                        </tr>
+                                                    </tbody>
+                                            </table>
+                                            <p ng-show="dr_no_data==1" style="text-align:center;font-size:18px;font-family:'century gothic';">No Data</p>
+                                    </div>
+                            </div><br>
+                    
+                            <div class="row" ng-show="dr_yes_table == 1 && dr_no_data == 0">
+                                    <div class="col-md-3">
+                                        <label>Payment Date</label>
+                                        <div class="input-group">
+                                            <input type="text" id="dpayment_dateID" ng-model="dr_payment_date" ng-change="change_dr_payment_date(dr_payment_date)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                            <label class="input-group-addon" for="dpayment_dateID"><i class="fa fa-calendar"></i></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Payment Type</label>
+                                        <select class="form-control" ng-model="dr_payment_type" required>
+                                        <option value="">Select Payment Type</option>
+                                        <option value="cash">Cash</option>
+                                        <option value="cheque">Cheque</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Paid Through</label>
+                                        <input type="text" class="form-control" ng-model="dr_paid_through" required>
+                                    </div>
+                                    <div class="col-md-3">
+
+                                            <label>Payment Details</label>
+                                            <textarea class="form-control" rows="2" ng-model="dr_payment_details"></textarea>
+                                    </div>
+                            </div><br>
+                    
+                            <div class="row" ng-show="dr_yes_table == 1 && dr_no_data==0">
+                                <div class="col-md-6 pull-right" >
+                                    <button class="btn btn-primary pull-right" ng-disabled="ref_col.$invalid" ng-click="save_dr_data()">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>  
+            </div>  
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+<div ng-controller="assetspos_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Assets POS
+                    </div>
+                    <small class="text-muted">Assets Purchase Orders</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div> -->
+                     <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" form="asset_po_form"><i class="fa fa-plus"></i>Save</button>
+                     <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="action=2"><i class="fa fa-plus"></i>Show</button>
+                     <!-- <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2"  form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button> -->
+                </div>
+                <div class="col-md-12">
+                    <h4 class="pull-right" ng-show="action==1">Date<br>
+                    <input type="date" class="pull-right" ng-model="assetpo_date" ng-show="action==1" min="1950-01-01" max="2050-12-31" style="width:200px"></h4><br>
+                </div>
+            </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12" ng-init="init()">
+                            <form id="asset_po_form" name="asset_po_form" ng-submit="save_asset_po_data()">  
+                                <div class="row">    
+                                    <div class="col-md-10">
+                                        <h3>Supplier IDssssssssttttt</h3>
+                                        <input type="text" ng-model="assetpo_supplier_id" ng-show="action==1" style="width:200px">
+                                    </div>
+                                    <div class="col-md-2">
+                                    <br><br><button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="add_item()" value="Add" ng-show="action==1" style="width:150px"><i class="fa fa-check"></i>Add Items</button>
+                                    </div>
+                                </div>
+
+                                <table class="table table-striped b-t b-light" ng-show="action==1">
+                                        <thead>
+                                            <tr align="center">
+                                                    <th>Items</th>
+                                                    <th>MRP</th>
+                                                    <th>Unit</th>
+                                                    <th>QTY</th>
+                                                    <th>Amount</th>
+                                                    <th>#####</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody >
+                                            <tr ng-repeat="x in items_list track by $index">
+                                                <!-- <td><input type="text" class="form-control" ng-model="ig_name" ng-keyup="get_item_data(specialization)"  placeholder="Item Name" title="Enter Item Group ID" maxlength=20  >
+                                                    <span class="label label-warning" ng-repeat="s in user_spec"><a ng-click="insert_spec_data(s.spname)">&nbsp;{{s.spname}}&nbsp;</a></span>
+                                                </td> -->
+                                                <td>
+                                                        <select class="form-control m-b" required ng-model="x.name">
+                                                                <option value="">Item Name</option>
+                                                                <option value="{{x.asset_id}}" ng-repeat="x in groupitems_data">{{x.asset_name}}</option>
+                                                        </select>
+                                                </td>
+                                                <td><input type="text"  class="form-control" ng-model="x.mrp"  placeholder="Item Name" title="Enter Item Group ID" maxlength=20  ></td>
+                                                <!-- <td><input type="text"  class="form-control" ng-model="x.qty"   placeholder="Item Nameeeeeeeee" title="Enter Item Group ID" maxlength=20  ></td> -->
+                                                <td>
+                                                        <select class="form-control m-b" required ng-model="sale_unit" ng-change="dst_units=sale_unit">
+                                                                <option value="">Select Unit</option>
+                                                                <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                                                        </select>
+                                                </td>
+                                                <td><input type="text"  class="form-control" ng-model="x.qty"   placeholder="QTY" title="Enter Item Group ID" maxlength=20  ></td>
+                                                <td><input type="text"  class="form-control" ng-model="x.qty"   placeholder="Amount" title="Enter Item Group ID" maxlength=20  ></td>
+                                                <td><button class="btn m-b-xs btn-sm btn-danger btn-addon pull-right" ng-click="remove_item($index)" value="Add" style="width:150px"><i class="fa fa-trash"></i>Remove Items</button></td>
+                                            </tr>
+
+                                            <tr ng-show="show_tx==1">
+                                            <td colspan="4"></td>
+                                                <td >
+                                                        <input  type="text"  class="form-control" ng-model="assetpo_price" pattern="^[_0-9]{1,10}$"  placeholder="Total Amount" title="Enter Total Amount" maxlength=20  >
+                                                </td>
+                                            </tr>
+                                            <tr ng-show="show_tx==1">
+                                                    <td colspan="4"></td>
+                                                    <td >
+                                                            <select class="form-control m-b" required ng-model="tax_name">
+                                                                    <option value="" selected="selected">Select Tax</option>
+                                                                    <option value="{{x.tax_name}}" ng-repeat="x in medtaxes_data">{{x.tax_name}}</option>
+                                                            </select>
+                                                    </td>
+                                            </tr>
+                                            <tr ng-show="show_tx==1">
+                                                    <td colspan="4"></td>
+                                                    <td >
+                                                            <input  type="text"  class="form-control" ng-model="assetpo_net_price" pattern="^[_0-9]{1,10}$" placeholder="Net Price" title="Enter Net Price" maxlength=20  >
+                                                    </td>
+                                            </tr>
+
+                                        </tbody>
+                                </table>                            
+                      <pre ng-bind="items_list |json"></pre>       
+                                
+
+                            </form>
+                        </div>
+                    </div>
+
+            
+
+                                <div ng-show="action==2">
+                                        <table class="table table-striped b-t b-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Asset PO ID</th>
+                                                        <th>Date</th>
+                                                        <th>Asset PO Supplier ID</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody ng-repeat="x in unit_data |filter:search">
+                                                    <tr rowspan="2" >
+                                                        <td><a ng-click="update=(update!=x.id)?x.id:1"><span ng-bind="x.assetpo_id"></span></a></td>
+                                                        <td><a ng-click="update=(update!=x.id)?x.id:1"><span ng-bind="x.assetpo_supplier_id"></span></a></td>
+                                                        <td><span ng-bind="x.assetpo_date"></span> </td>
+                                                        <td><a href ng-click="change_status(x.id,x.supply_status,$index)"><i class="fa fa-check text-success" ng-show="x.supply_status==1"></i><i class="fa fa-times text-danger" ng-show="x.supply_status==0"></i></a>
+                                                        </td>
+                                                    </tr> 
+                                                </tbody>
+                                        </table> 
+                                </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,5041 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-05 11:25:37",
+        "client_ip": "210.212.210.97"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-05 11:25:42",
+        "client_ip": "210.212.210.97"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-05 11:26:01",
+        "client_ip": "210.212.210.97"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-05 11:26:02",
+        "client_ip": "210.212.210.97"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:38:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:38:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:42:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:43:47",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:44:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:46:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:47:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:48:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:52:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:56:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:57:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 11:58:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:00:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:02:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:03:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:03:46",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:06:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:06:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:08:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:10:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:12:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:18:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:19:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:37:35",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:41:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:42:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:42:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:43:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:49:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:50:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:52:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:55:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:57:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:59:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 12:59:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:00:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:04:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:04:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:06:47",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:09:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:10:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:13:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:15:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:17:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:22:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:24:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:26:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:27:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:29:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:33:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:34:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:34:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:35:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:36:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:37:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:37:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:38:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:39:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 13:41:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:03:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:04:46",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:05:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:07:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:08:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:09:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:10:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:12:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:13:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:20:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:24:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:24:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:25:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:28:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:28:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:31:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:32:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:32:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:35:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:36:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:36:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:37:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:38:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:39:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:47",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:47",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:47",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:47",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:44:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:45:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:45:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:47:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:47:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:47:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:50:23",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:50:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:50:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:50:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:51:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:51:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:51:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:51:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:51:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:52:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:45",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:46",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:53:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:54:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:54:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:54:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:55:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:56:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "5"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:57:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:58:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:58:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:58:06",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:58:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:58:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 14:59:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:05:45",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:05:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:05:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:05:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:06:04",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:16:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:21:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:21:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:21:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:21:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:21:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:00",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "9"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "7"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:22:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "11"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:23:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:24:38",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "5"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:26:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:06",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "5"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:27:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:45",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:29:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "8"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:39",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:46",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:30:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:31:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:32:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:32:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:36:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:39:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:39:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:39:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:40:04",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:40:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:40:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:40:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:40:45",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:38",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:39",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:39",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:41:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:46",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:42:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:43:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:43:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:43:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:44:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:44:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:44:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:44:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:44:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:49:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:50:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:50:04",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:50:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:04",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:51:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:52:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:06",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:06",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:07",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:54:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:38",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:56:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:10",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "5"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:57:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:17",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 15:58:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:11:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:14:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:17:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:17:39",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:17:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:22:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:22:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:25:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:26:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Collection",
+    "extra": "collection_data%5Bpaid_details%5D%5B0%5D%5B%24%24hashKey%5D=object%3A267&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbcid%5D=2&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbcname%5D=Advance&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbccode%5D=ADV&collection_data%5Bpaid_details%5D%5B0%5D%5Bbill_id%5D=2&collection_data%5Bpaid_details%5D%5B0%5D%5Bpaid_amount%5D=200&collection_data%5Bpaid_details%5D%5B1%5D%5B%24%24hashKey%5D=object%3A430&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbcid%5D=3&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbcname%5D=LABS&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbccode%5D=LAB&collection_data%5Bpaid_details%5D%5B1%5D%5Bbill_id%5D=3&collection_data%5Bpaid_details%5D%5B1%5D%5Bpaid_amount%5D=200&collection_data%5Bpaid_details%5D%5B2%5D%5B%24%24hashKey%5D=object%3A461&collection_data%5Bpaid_details%5D%5B2%5D%5Bobj%5D%5Bbcid%5D=4&collection_data%5Bpaid_details%5D%5B2%5D%5Bobj%5D%5Bbcname%5D=PHARMACY&collection_data%5Bpaid_details%5D%5B2%5D%5Bobj%5D%5Bbccode%5D=PHR&collection_data%5Bpaid_details%5D%5B2%5D%5Bbill_id%5D=4&collection_data%5Bpaid_details%5D%5B2%5D%5Bpaid_amount%5D=200&collection_data%5Btransaction_date%5D=4%2F5%2F2018&collection_data%5Bpatient_id%5D=2&collection_data%5Bp_visit_id%5D=12&collection_data%5Bdr_id%5D=6&collection_data%5Buser_id%5D=2&collection_data%5Bpayment_type%5D=Cash&collection_data%5Bhospital_id%5D=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:26:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:28:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:28:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:28:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:29:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:29:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:29:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:30:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Collection",
+    "extra": "collection_data%5Bpaid_details%5D%5B0%5D%5B%24%24hashKey%5D=object%3A275&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbcid%5D=2&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbcname%5D=Advance&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbccode%5D=ADV&collection_data%5Bpaid_details%5D%5B0%5D%5Bbill_id%5D=2&collection_data%5Bpaid_details%5D%5B0%5D%5Bpaid_amount%5D=200&collection_data%5Bpaid_details%5D%5B1%5D%5B%24%24hashKey%5D=object%3A410&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbcid%5D=3&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbcname%5D=LABS&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbccode%5D=LAB&collection_data%5Bpaid_details%5D%5B1%5D%5Bbill_id%5D=3&collection_data%5Bpaid_details%5D%5B1%5D%5Bpaid_amount%5D=200&collection_data%5Btransaction_date%5D=4%2F5%2F2018&collection_data%5Bpatient_id%5D=6&collection_data%5Bp_visit_id%5D=13&collection_data%5Bdr_id%5D=7&collection_data%5Buser_id%5D=2&collection_data%5Bhospital_id%5D=1&collection_data%5Bpayment_type%5D=Cash"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:31:12",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:31:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:34:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:34:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:35:32",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:36:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:36:59",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:37:31",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:38:53",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:39:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:44:08",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:44:48",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:51:35",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:53:35",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:55:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:56:30",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:56:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:57:20",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:58:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:58:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 16:58:55",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:00:09",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:00:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:11",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New AssetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:16",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Medicine PO",
+    "extra": "Medicine PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Clicked on Add New MedicinetPO",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:21",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved Previous Item Po Data",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Changed Quantity of item",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:25",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Items added To Object",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:28",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Removed Previous Item Data",
+    "extra": "0"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:35",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:16:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:18:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:19:02",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:22:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:24:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:13",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:14",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:38",
+        "client_ip": "10.22.39.156"
+    },
+    "window": " New Patient ",
+    "extra": "New patient Opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:42",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Doctor_ConsultData is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:25:57",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Retrieved the Items of PO",
+    "extra": "12"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:27:39",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:27:40",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:29:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:33:04",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:41:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:42:24",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:42:34",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:43:49",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:46:58",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:47:03",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:47:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:49:38",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:51:05",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:55:52",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:56:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:57:06",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 17:57:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:01:50",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:02:15",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:02:35",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:03:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:05:19",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:06:26",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:06:33",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:06:43",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:06:54",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:07:18",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:07:29",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:07:37",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:07:44",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:08:22",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:08:36",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:08:51",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:10:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:10:27",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:10:56",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Collection",
+    "extra": "collection_data%5Bpaid_details%5D%5B0%5D%5B%24%24hashKey%5D=object%3A96&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbcid%5D=2&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbcname%5D=Advance&collection_data%5Bpaid_details%5D%5B0%5D%5Bobj%5D%5Bbccode%5D=ADV&collection_data%5Bpaid_details%5D%5B0%5D%5Bbill_id%5D=2&collection_data%5Bpaid_details%5D%5B0%5D%5Bpaid_amount%5D=500&collection_data%5Bpaid_details%5D%5B1%5D%5B%24%24hashKey%5D=object%3A231&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbcid%5D=3&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbcname%5D=LABS&collection_data%5Bpaid_details%5D%5B1%5D%5Bobj%5D%5Bbccode%5D=LAB&collection_data%5Bpaid_details%5D%5B1%5D%5Bbill_id%5D=3&collection_data%5Bpaid_details%5D%5B1%5D%5Bpaid_amount%5D=300&collection_data%5Btransaction_date%5D=4%2F5%2F2018&collection_data%5Bpatient_id%5D=3&collection_data%5Bp_visit_id%5D=4&collection_data%5Bdr_id%5D=8&collection_data%5Buser_id%5D=2&collection_data%5Bhospital_id%5D=2&collection_data%5Bpayment_type%5D=Card"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:11:01",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-04-05 18:11:41",
+        "client_ip": "10.22.39.156"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},

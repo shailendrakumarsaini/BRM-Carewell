@@ -1,0 +1,158 @@
+<div ng-controller="beds_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/084-hospital-bed.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Beds
+                    </div>
+                    <small class="text-muted">Page Caption</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body" ng-init="init()">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_bed()">
+                    <i class="fa fa-plus"></i>
+                    New
+                </button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped table-bordered" ng-show="action==1">
+                <thead>
+                    <tr>
+                        <th>S No.</th>
+                        <th><a ng-click="SortTheData('bed_id')">Bed Code</a></th>
+                        <th>Bed Location</th>
+                        <th style="text-align: right"><a ng-click="SortTheData('rentAmount')">Rent Amount</a></th>
+                        <th>Bed Data</th>                        
+						<!-- <th style="width:30px;"></th> -->
+
+                    </tr>
+                </thead>
+                <tbody ng-repeat="x in data | orderBy:sort:reverseSort | filter:search" ng-if="noRecords === false">
+                    <tr rowspan="2">
+							<td>{{$index+1}}</td>							
+							<td><a ng-click="get_bed_menu($index,x.bed_id)">{{x.bed_code}}</a>
+                            <td ng-bind="x.bed_loc_name"></td>
+                            <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{x.rentAmount | number: '2'}}</td>
+							<td ng-bind="x.extra_data"></td>							
+							<!-- <td><a href ng-click="change_status(x.ref_id,x.ref_is_deleted,$index)"><i class="fa fa-check text-success" ng-show="x.ref_is_deleted==1"></i><i class="fa fa-times text-danger" ng-show="x.ref_is_deleted==0"></i></a></td> -->
+                    </tr>    
+
+                    <tr ng-show="menu_id[$index]==x.bed_id">                         
+                        <td colspan="8">
+                            <form name="form">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Bed Code</label>
+                                            <input type="text" class="form-control" ng-model="x.bed_code" placeholder="Bed Code" required title="Enter Bed Code">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Bed Location</label>							 
+                                            <select name="item.item_units" class="form-control m-b" ng-model="x.bed_loc_id" ng-options="y.loc_id as y.loc_name for y in locations" required>
+                                                <option style="display:none" value="" >Select Location</option> 
+                                            </select>                              
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">   
+                                        <br>
+                                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_bed(x.bed_id,x)" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Update</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Rent Amount</label>							 
+                                            <input type="text" class="form-control" ng-model="x.rentAmount" placeholder="Rent Amount" required title="Enter Rent Amount">      
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Bed Description</label>
+                                            <textarea name="extra_datas" class="form-control" ng-model="x.extra_data" placeholder="Extra Data" required></textarea>      
+                                        </div>                 
+                                    </div>    
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody ng-if="noRecords === true">
+                    <tr>
+                        <td colspan="5" align="center"><h4>No Records</h4></td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			<div ng-show="action==2">
+                
+				<form id="myform"  ng-submit="save_bed()">
+                    <div class="row"> 
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Bed Code</label>
+                                <input type="text" class="form-control" ng-model="bed_code" placeholder="Bed Code" required title="Enter Bed Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Location</label>							 
+                                <select name="item.item_units" class="form-control m-b" ng-model="bed_loc_id" required>
+                                    <option value="" >Select Location</option>
+                                    <option value="{{ y.loc_id }}" ng-repeat="y in locations">{{ y.loc_name }}</option>
+                                </select>       
+                            </div>
+                        </div>
+                     </div>
+
+                     <div class="row"> 
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Rent Amount</label>							 
+                                <input type="text" class="form-control" ng-model="rent_amount" placeholder="Rent Amount" required title="Enter Rent Amount">      
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="row"> 
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Bed Description</label>
+                                <textarea name="extra_datas" class="form-control" ng-model="extra_data" required placeholder="Extra Data"></textarea>
+                                <!-- <input type="text" class="form-control" ng-model="extra_data" placeholder="Bed Description" required title="Enter Bed Description"> -->
+                            </div>                 
+                        </div>
+                    </div> 
+
+                    
+
+                </form>
+                <!--<pre ng-bind="user |json"></pre>-->
+            </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+
+</div>

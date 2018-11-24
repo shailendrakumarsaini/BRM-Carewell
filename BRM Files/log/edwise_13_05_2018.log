@@ -1,0 +1,19 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-13 13:05:49",
+        "client_ip": "unknown"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "19",
+        "date_time": "2018-05-13 13:05:49",
+        "client_ip": "unknown"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},

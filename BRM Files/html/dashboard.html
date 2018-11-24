@@ -1,0 +1,1319 @@
+<div ng-controller="dashboard_ctrl" ng-init="init()">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                    <img src="img/medical_icons/088-hospital.png" ng-click="Home()">
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Dashboard
+                    </div>
+                    <small class="text-muted">Day Activities</small>
+                    <span class="pull-right text-muted">
+                        <i class="fa fa-calendar"></i> {{currentDate| date:'dd/MM/yyyy' }}
+                    </span>
+                </div>  
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel no-border">
+
+                            <div class="hbox bg-primary bg">
+                                <div class="col wrapper">
+                                    <span class="pull-right visible-lg">
+                                       <a data-toggle="modal" data-target="#Income" ng-click="income()"><img src="img/medical_icons/income.png" width="40px;"></a>
+                                    </span>
+                                    <!-- <a data-toggle="modal" data-target="#Income" ng-click="income()"> -->
+                                        <span>Income</span>
+                                        <div class="h3 text-warning font-thin text-white">
+                                            <small>
+                                                <i class="fa fa-inr text-white"></i>
+                                            </small> {{(income_details.total_income == null) ? 0 : income_details.total_income}}
+                                        </div>
+                                    <!-- </a> -->
+                                </div>
+                                <div class="col wrapper bg-info">
+                                    <span class="pull-right visible-lg ">
+                                        <a data-toggle="modal" data-target="#Expenditure" ng-click="Expenditure()"><img src="img/medical_icons/expenditure1.png" width="40px;"></a>
+                                    </span>
+                                        <!-- <a data-toggle="modal" data-target="#Expenditure" ng-click="Expenditure()"> -->
+                                        <span>Expenditure</span>
+                                        <div class="h3 text-warning font-thin text-white">
+                                            <small>
+                                                <i class="fa fa-inr text-white"></i>
+                                            </small> {{(total_expenditure[0].totalAmount == null) ? 0 : total_expenditure[0].totalAmount }}
+                                        </div>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+                            <div class="panel-footer bg-light lter wrapper"> 
+                                <div class="row">
+                                        <div class="col-xs-4" ng-repeat="i in full_income">
+                                            <small class="text-muted block"><a id="'modal'+$index" ng-click="OpenModalFun(i.bcgroup,$index)">{{i.bcgroup}}</a></small>
+                                            <span class="text-md">
+                                                <small><i class="fa fa-inr"></i></small> {{i.ind_income}}
+                                            </span>
+                                            
+                                                <!-- Models -->
+                                                    <div class="modal fade" id="modal0">
+                                                            <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                                                <div class="modal-content">
+                                            
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 style="font-family:'century gothic';" class="modal-title">Hospital Income</h4>
+                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                                                    </div>
+                                                                        <!-- Modal body -->
+                                                                        <div class="modal-body">
+                                                                            <table class="table table-hover table-bordered">
+                                                                                <thead>
+                                                                                    <th>S No.</th>
+                                                                                    <th>Patient Id</th>
+                                                                                    <th>Patient Name</th>
+                                                                                    <th>Gender</th>
+                                                                                    <th>Age</th>
+                                                                                    <th>City</th>
+                                                                                    <th>Category</th>
+                                                                                    <th style="text-align:right;">Amount</th>
+                                                                                </thead>
+                                                                                <tbody ng-repeat="i in income_data" ng-hide="NoDataforIncome==1">
+                                                                                    <td>{{$index+1}}</td>
+                                                                                    <td>{{i.patient_id}}</td>
+                                                                                    <td>{{i.name}}</td>
+                                                                                    <td>{{i.gender}}</td>
+                                                                                    <td>{{i.age}}</td>
+                                                                                    <td>{{i.city}}</td>
+                                                                                    <td>{{i.purpose_of_payment}}</td>
+                                                                                    <td style="text-align:right;">{{i.amount}}</td>
+                                                                                </tbody>
+                                                                                <tbody ng-show="NoDataforIncome==1">
+                                                                                    <tr align="center">
+                                                                                        <td colspan="8"><h4>NO Data</h4></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                                            
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+
+                                                    <div class="modal fade" id="modal1">
+                                                            <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                                                <div class="modal-content">
+                                            
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 style="font-family:'century gothic';" class="modal-title">Labs Income</h4>
+                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                                                    </div>
+                                                                        <!-- Modal body -->
+                                                                        <div class="modal-body">
+                                                                            <table class="table table-hover table-bordered">
+                                                                                <thead>
+                                                                                    <th>S No.</th>
+                                                                                    <th>Patient Id</th>
+                                                                                    <th>Patient Name</th>
+                                                                                    <th>Gender</th>
+                                                                                    <th>Age</th>
+                                                                                    <th>City</th>
+                                                                                    <th>Category</th>
+                                                                                    <th style="text-align:right;">Amount</th>
+                                                                                </thead>
+                                                                                <tbody ng-repeat="i in income_data" ng-hide="NoDataforIncome==1">
+                                                                                    <td>{{$index+1}}</td>
+                                                                                    <td>{{i.patient_id}}</td>
+                                                                                    <td>{{i.name}}</td>
+                                                                                    <td>{{i.gender}}</td>
+                                                                                    <td>{{i.age}}</td>
+                                                                                    <td>{{i.city}}</td>
+                                                                                    <td>{{i.purpose_of_payment}}</td>
+                                                                                    <td style="text-align:right;">{{i.amount}}</td>
+                                                                                </tbody>
+                                                                                <tbody ng-show="NoDataforIncome==1">
+                                                                                    <tr align="center">
+                                                                                        <td colspan="8"><h4>NO Data</h4></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                                            
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                    
+                                                    <div class="modal fade" id="modal2">
+                                                            <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                                                <div class="modal-content">
+                                            
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 style="font-family:'century gothic';" class="modal-title">Pharmacy Income</h4>
+                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            
+                                                                    </div>
+                                                                        <!-- Modal body -->
+                                                                        <div class="modal-body">
+                                                                            <table class="table table-hover table-bordered">
+                                                                                <thead>
+                                                                                    <th>S No.</th>
+                                                                                    <th>Patient Id</th>
+                                                                                    <th>Patient Name</th>
+                                                                                    <th>Gender</th>
+                                                                                    <th>Age</th>
+                                                                                    <th>City</th>
+                                                                                    <th>Category</th>
+                                                                                    <th style="text-align:right;">Amount</th>
+                                                                                </thead>
+                                                                                <tbody ng-repeat="i in income_data" ng-hide="NoDataforIncome==1">
+                                                                                    <td>{{$index+1}}</td>
+                                                                                    <td>{{i.patient_id}}</td>
+                                                                                    <td>{{i.name}}</td>
+                                                                                    <td>{{i.gender}}</td>
+                                                                                    <td>{{i.age}}</td>
+                                                                                    <td>{{i.city}}</td>
+                                                                                    <td>{{i.purpose_of_payment}}</td>
+                                                                                    <td style="text-align:right;">{{i.amount}}</td>
+                                                                                </tbody>
+                                                                                <tbody ng-show="NoDataforIncome==1">
+                                                                                    <tr align="center">
+                                                                                        <td colspan="8"><h4>NO Data</h4></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                                            
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+
+                                        </div>
+                                </div>
+
+                        <!--    <div class="row">
+                                    <div class="col-xs-4">
+                                        <small class="text-muted block">Hospital</small>
+                                        <span class="text-md">
+                                            <small>
+                                                <i class="fa fa-inr"></i>
+                                            </small> 0</span>
+                                    </div>                                    
+                                     <div class="col-xs-4">
+                                        <small class="text-muted block">Labs</small>
+                                        <span class="text-md">
+                                            <small>
+                                                <i class="fa fa-inr"></i>
+                                            </small> 0</span>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <small class="text-muted block">Pharmacy</small>
+                                        <span class="text-md">
+                                            <small>
+                                                <i class="fa fa-inr"></i>
+                                            </small> 0</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="panel no-border">
+
+                            <div class="hbox " style="background-color:cornflowerblue">
+                                <div class="col wrapper">
+                                    <a href ng-click="getbeds()">
+                                        <img src="img/medical_icons/patient.png" width="40px;">
+                                    </a>
+                                    <span class="h2 text-white font-thin pull-right" ng-repeat="b in inpatient_count">{{b.inpatient_count}}</span>
+                                    <br>
+
+                                    <span class="h5 text-white font-thin pull-right" style="margin-top: -10px;">In Patients</span>
+                                </div>
+                                <div class="col wrapper" style="background-color:darkgreen">
+                                    <a href ng-click="getConsult()">
+                                        <img src="img/medical_icons/patient1.png" width="40px;">
+                                    </a>
+                                    <span class="h2 text-white font-thin pull-right" ng-repeat="a in consult_count">{{a.patient_count}}</span>
+                                    <br>
+
+                                    <span class="h5 text-white font-thin pull-right" style="margin-top: -10px;">Out Patients</span>
+                                </div>
+                            </div>
+                            <div class="panel-footer bg-light lter wrapper">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <small class="text-muted block">Admits</small>
+                                        <span class="text-md">0</span>
+                                    </div>
+                                    <!-- <div class="col-xs-4">
+                                        <small class="text-muted block">Surgeries</small>
+                                        <span class="text-md">0</span>
+                                    </div> -->
+                                    <div class="col-xs-6">
+                                        <small class="text-muted block">Schemes</small>
+                                        <span style="cursor:pointer" ng-click="get_schmes_count()" class="text-md" ng-repeat="c in inpatient_count" >{{c.inpatient_count}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Model for Income  -->
+                    <div class="modal fade" id="Income">
+                            <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                <div class="modal-content">
+            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 style="font-family:'century gothic';" class="modal-title">Total Income</h4>
+                                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            
+                                    </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                    <th>S No.</th>
+                                                    <th>Patient Id</th>
+                                                    <th>Patient Name</th>
+                                                    <!-- <th>Gender</th>
+                                                    <th>Age</th> -->
+                                                    <th>City</th>
+                                                    <th>Category</th>
+                                                    <th style="text-align:right;">Amount</th>
+                                                </thead>
+                                                <tbody ng-repeat="i in income_data" ng-hide="NoDataforIncome==1">
+                                                    <td>{{$index+1}}</td>
+                                                    <td>{{i.patient_id}}</td>
+                                                    <td>{{i.name}}<span class="text-muted"><br>{{i.age}}&nbsp;:&nbsp;{{i.gender}},&nbsp;S/O&nbsp;{{i.father_name}}</span></td>
+                                                    <!-- <td>{{i.gender}}</td>
+                                                    <td>{{i.age}}</td> -->
+                                                    <td>{{i.city}}</td>
+                                                    <td>{{i.purpose_of_payment}}</td>
+                                                    <td style="text-align:right;">{{i.amount}}</td>
+                                                </tbody>
+                                                <tbody ng-show="NoDataforIncome==1">
+                                                    <tr align="center">
+                                                        <td colspan="8"><h4>NO Data</h4></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                <!-- Model for Expenditure  -->
+                    <div class="modal fade" id="Expenditure">
+                            <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                <div class="modal-content">
+            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            
+                                    </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                    <th>S No.</th>
+                                                    <th>Received User ID</th>
+                                                    <th>Received By</th>
+                                                    <th>Category</th>
+                                                    <th>Purpose</th>
+                                                    <th style="text-align:right;">Amount</th>
+                                                </thead>
+                                                <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                    <td>{{$index+1}}</td>
+                                                    <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                    <td>{{i.receivedBy}}</td>
+                                                    <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                    <td>{{i.purpose}}</td>
+                                                    <td style="text-align:right;">{{i.amount}}</td>
+                                                </tbody>
+                                                <tbody ng-show="NoDataforExpenducture==1">
+                                                    <tr align="center">
+                                                        <td colspan="6"><h4>NO Data</h4></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+
+                <div ng-show="beds_show==1">   
+                    <div class="row" ng-repeat="i in data.blocks" ng-if="$index%3 == 0">
+                        <div class="col-sm-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                        <img src="img/medical_icons/hospital-bed.png" alt="...">
+                                        </a>  
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                            {{i.block_name}}
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>   
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt" ng-repeat=" j in i.rooms"> 
+                                    <span class="list-group-item">
+                                        <span class="badge bg-info" >{{j.room_name}}</span>
+
+                                
+                                <span ng-repeat="k in j.beds">
+                                        <i id="bed_{{k.bed_id}}" ng-style="myObj['bed_' + k.bed_id]" ng-class="(k.is_allocated==0)?'fa fa-bed text-success':'fa fa-bed text-danger'" ng-click="get_bed_id(k.bed_id, k.is_allocated, 'bed_' + k.bed_id)"></i>
+                                        <span ng-if="(data.blocks.length == ($parent.$parent.$index + 1))? placeToolTip(data): '' "></span>
+                                    </span>
+                                    </span>       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" ng-if="(data.blocks.length - 1) >= ($index + 1)">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                        <img src="img/medical_icons/hospital-bed.png" alt="...">
+                                        </a>  
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                            {{data.blocks[$index+1].block_name}}
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>   
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt" ng-repeat=" j in data.blocks[$index+1].rooms"> 
+                                    <span class="list-group-item">
+                                        <span class="badge bg-info" >{{j.room_name}}</span>
+
+                                
+                                <span ng-repeat="k in j.beds">
+                                        <i id="bed_{{k.bed_id}}" ng-style="myObj['bed_' + k.bed_id]" ng-class="(k.is_allocated==0)?'fa fa-bed text-success':'fa fa-bed text-danger'" ng-click="get_bed_id(k.bed_id, k.is_allocated, 'bed_' + k.bed_id)"></i>
+                                        <span ng-if="(data.blocks.length == ($parent.$parent.$index + 1))? placeToolTip(data): '' "></span>
+                                    </span>
+                                    </span>       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" ng-if="(data.blocks.length - 1) >= ($index + 2)">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                        <img src="img/medical_icons/hospital-bed.png" alt="...">
+                                        </a>  
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                            {{data.blocks[$index+2].block_name}}
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>   
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt" ng-repeat=" j in data.blocks[$index+2].rooms"> 
+                                    <span class="list-group-item">
+                                        <span class="badge bg-info" >{{j.room_name}}</span>
+
+                                
+                                <span ng-repeat="k in j.beds">
+                                        <i id="bed_{{k.bed_id}}" ng-style="myObj['bed_' + k.bed_id]" ng-class="(k.is_allocated==0)?'fa fa-bed text-success':'fa fa-bed text-danger'" ng-click="get_bed_id(k.bed_id, k.is_allocated, 'bed_' + k.bed_id)"></i>
+                                        <span ng-if="(data.blocks.length == ($parent.$parent.$index + 1))? placeToolTip(data): '' "></span>
+                                    </span>
+                                    </span>       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" ng-show="consult_show==1">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="clearfix">
+                                    <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                        <img src="img/medical_icons/doctor_red.png" alt="...">
+                                    </a>
+                                    <div class="clear">
+                                        <div class="h3 m-t-xs m-b-xs">
+                                            <!-- {{i.location_name}} -->
+                                            OP Consultation
+                                            <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                        </div>
+                                        <!-- <small class="text-muted">General and Neurology</small> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group no-radius alt">
+                                <span class="list-group-item" ng-repeat="j in consult_data">
+
+                                    <span class="badge bg-info">{{j.patient_count}}</span>
+                                    <i class="fa fa-user-md fa-fw text-muted"></i> Dr.&nbsp;{{j.dr_name}}&nbsp;{{j.qualification}}
+                                    <!-- <sub>MBBS, MAIMS, FAIMS</sub> -->
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schemes -->
+                    <div class="row" ng-show="sch==2">
+                            <div class="col-sm-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                            <img src="img/medical_icons/scheme.png" alt="...">
+                                        </a>
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                Schemes
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                            </div>
+                                            <small class="text-muted">NTR Health, EHS, NTR Vydya Seva etc..</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt">
+                                    <a class="list-group-item" ng-click = "get_schemes_details(b.scheme_id)" data-toggle="modal" data-target="#schemes" ng-repeat = "b in details_schemes_data">
+                                        <span class="badge bg-success">{{b.inpatient_count}}</span>
+                                        <i class="fa fa-user-md fa-fw text-muted"></i>
+                                    {{b.schemeName}}
+                                    </a>
+                                <!--  <a class="list-group-item" href="">
+                                        <span class="badge bg-info">16</span>
+                                        <i class="fa fa-bed-md fa-fw text-muted"></i>
+                                        In Patient Test
+                                    </a>
+                                    <a class="list-group-item" href="">
+                                        <span class="badge bg-light">5000</span>
+                                        <i class="fa fa-inr-md fa-fw text-muted"></i>
+                                        Amount Received
+                                    </a> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+				<!-- Schemes Model  -->
+                    <div class="modal fade" id="schemes">
+                            <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                <div class="modal-content">
+            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 style="font-family:'century gothic';" class="modal-title"><b>{{scheme_name}}</b> Scheme Details</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
+                                    </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <table class="table table-hover table-bordered">
+                                                <thead>
+                                                    <th>SNo.</th>
+                                                    <th>Patient Id</th>
+                                                    <th>Name</th>
+                                                    <th>S/o</th>
+                                                    <th>Age/Gender</th>
+                                                    <th>Visit Date</th>
+                                                    <th>Doctor</th>
+                                                    
+                                                </thead>
+                                                <tbody ng-repeat="d in get_schemes_details_data" ng-hide="NoDataforExpenducture==1">
+                                                    <td>{{$index+1}}</td>
+                                                    <td>{{d.patient_id}}</td>
+                                                    <td>{{d.name}}</td>
+                                                    <td>{{d.father_name}}</td>
+                                                    <td>{{d.age}}/{{d.gender}}</td>
+                                                    <td>{{d.visit_date}}</td>
+                                                    <td>Dr.&nbsp;{{d.dr_name}}&nbsp;{{d.qualification}}</td>
+                                                </tbody>
+                                                <tbody ng-show="NoDataforExpenducture==1">
+                                                    <tr align="center">
+                                                        <td colspan="6"><h4>No Data</h4></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+				<!-- Schemes Model End -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                            <img src="img/medical_icons/test-tubes.png" alt="...">
+                                        </a>
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                Laboratory
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                            </div>
+                                            <small class="text-muted">Hematology, Chemistry, Urinalysis etc..</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt">
+                                    <a data-toggle="modal" data-target="#modalL1" class="list-group-item" href="">
+                                        <span class="badge bg-success">{{op_patient.op_test_count}}</span>
+                                        <i class="fa fa-user-md fa-fw text-muted"></i>
+                                        Out Patient Tests
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalL1" class="list-group-item" href="">
+                                        <span class="badge bg-info">{{op_patient.ip_test_count}}</span>
+                                        <i class="fa fa-bed-md fa-fw text-muted"></i>
+                                        In Patient Test
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalL1" class="list-group-item" href="">
+                                        <span class="badge bg-light"><i class="fa fa-rupee"></i>&nbsp;{{op_patient.total_amount}}</span>
+                                        <i class="fa fa-inr-md fa-fw text-muted"></i>
+                                        Amount Received
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                             <!-- Model for Expenditure  -->
+                                <div class="modal fade" id="modalL1">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalL2">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalL3">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        <div class="col-sm-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                            <img src="img/medical_icons/imaging1.png" alt="...">
+                                        </a>
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                Imaging
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                            </div>
+                                            <small class="text-muted">MRI, CT, X-Ray, Ultra Sound etc..</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt">
+                                    <a data-toggle="modal" data-target="#modalI1" class="list-group-item" href="">
+                                        <span class="badge bg-success">2</span>
+                                        <i class="fa fa-user-md fa-fw text-muted"></i>
+                                        Out Patient Tests
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalI2" class="list-group-item" href="">
+                                        <span class="badge bg-info">0</span>
+                                        <i class="fa fa-bed-md fa-fw text-muted"></i>
+                                        In Patient Test
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalI3" class="list-group-item" href="">
+                                        <span class="badge bg-light"><i class="fa fa-rupee"></i>&nbsp;400</span>
+                                        <i class="fa fa-inr-md fa-fw text-muted"></i>
+                                        Amount Received
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                             <!-- Model for Expenditure  -->
+                                <div class="modal fade" id="modalI1">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalI2">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalI3">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                    </div> 
+                
+                <div class="row">
+                        <div class="col-sm-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                            <img src="img/medical_icons/pills1.png" alt="...">
+                                        </a>
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                Pharmacy
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                            </div>
+                                            <small class="text-muted">Medicine Store</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt">
+                                    <a data-toggle="modal" data-target="#modalID1" class="list-group-item" href="">
+                                        <span class="badge bg-danger">{{pharmacy_data.drugs_to_be_expired}} </span>
+                                        <i class="fa fa-calendar fa-fw text-muted"></i>
+                                        Drugs expired in 30 days
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalID2" class="list-group-item" href="">
+                                        <span class="badge bg-warning">{{pharmacy_data.purchase_price}}</span>
+                                        <i class="fa fa-inr fa-fw text-muted"></i>
+                                        Purchase Price
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalID3" class="list-group-item" href="">
+                                        <span class="badge bg-light"><i class="fa fa-rupee"></i>&nbsp;{{pharmacy_data.sale_price}}</span>
+                                        <i class="fa fa-inr fa-fw text-muted"></i>
+                                        Sale Price
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+
+
+                                <!-- Model for Expenditure  -->
+                                <div class="modal fade" id="modalID1">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalID2">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalID3">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+    
+                        <div class="col-sm-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                            <img src="img/medical_icons/warehouse.png" alt="...">
+                                        </a>
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                Inventory
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                            </div>
+                                            <small class="text-muted">Warehouse</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt">
+                                    <a data-toggle="modal" data-target="#modalInv1" class="list-group-item" href="">
+                                        <span class="badge bg-success">25</span>
+                                        <i class="fa fa-sign-in fa-fw text-muted"></i>
+                                        Inwards
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalInv2" class="list-group-item" href="">
+                                        <span class="badge bg-info">16</span>
+                                        <i class="fa fa-sign-out fa-fw text-muted"></i>
+                                        Outwards
+                                    </a>
+                                    <a data-toggle="modal" data-target="#modalInv3" class="list-group-item" href="">
+                                        <span class="badge bg-light">5</span>
+                                        <i class="fa fa-sticky-note fa-fw text-muted"></i>
+                                        Pending Requests
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+
+                                 <!-- Model for Expenditure  -->
+                                <div class="modal fade" id="modalInv1">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalInv2">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="modalInv3">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 40%;">
+                                        <div class="modal-content">
+                    
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h4 style="font-family:'century gothic';" class="modal-title">Total Expenditure</h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                                            </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <!-- <table class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <th>S No.</th>
+                                                            <th>Received User ID</th>
+                                                            <th>Received By</th>
+                                                            <th>Category</th>
+                                                            <th>Purpose</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </thead>
+                                                        <tbody ng-repeat="i in expenditure_data" ng-hide="NoDataforExpenducture==1">
+                                                            <td>{{$index+1}}</td>
+                                                            <td>{{i.receivedUserId == null ? '-----' : i.receivedUserId}}</td>
+                                                            <td>{{i.receivedBy}}</td>
+                                                            <td>{{i.expCatName == null ? '------' : i.expCatName}}</td>
+                                                            <td>{{i.purpose}}</td>
+                                                            <td style="text-align:right;">{{i.amount}}</td>
+                                                        </tbody>
+                                                        <tbody ng-show="NoDataforExpenducture==1">
+                                                            <tr align="center">
+                                                                <td colspan="6"><h4>NO Data</h4></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table> -->
+                                                </div>
+                        
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button> &nbsp;&nbsp;
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                </div> 
+        </div>
+
+                  
+
+        <!-- <pre>{{consult_count | json}}</pre> -->
+    </div>
+</div>
+

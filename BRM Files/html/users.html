@@ -1,0 +1,298 @@
+<div ng-controller="users_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                <img src="img/medical_icons/team.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        User Profiles
+                    </div>
+                    <small class="text-muted">User login details</small>
+
+                </div>
+
+            </div>
+        </div> 
+        
+        <div class="panel-body" ng-init="user_init()">
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="adduser()"><i class="fa fa-user-plus"></i>New</button>
+                    <!--<button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" ng-click="submituser()"><i class="fa fa-check"></i>Save</button>-->
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="status"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+
+
+        <div style="overflow: auto">     
+            <table class="table table-striped b-t b-light table-bordered" ng-show="action==1">
+                <thead>
+                    <tr>
+                        <th style="width:20px;">
+                            <label class="i-checks m-b-none">
+
+                            </label>
+                        </th>
+                        <th>Code</th>
+						<th>User Name</th>
+                        <th>Name</th>
+						<th>Level</th>
+                        <th>Specialization</th>
+						<th>Mobile</th>
+                  
+                        <th style="width:30px;" ng-if="level == 1"></th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="x in users |filter:search">
+                    <tr rowspan="2">
+
+                        <td><i class="fa fa-chevron-right text-default" aria-hidden="true" ng-show="menu_uid!=x.uid"></i>
+                            <i class="fa fa-chevron-down text-default" aria-hidden="true" ng-show="menu_uid==x.uid"></i>
+                        </td>
+                        <td><a ng-click="get_user_menu(x.uid)"><span ng-bind="x.code"></span></a> </td>
+						<td><span ng-bind="x.username=(x.username == '')?'---':x.username |uppercase"></span></td>
+                        <td><a ng-click="get_user_menu(x.uid)"><span ng-if="x.level_name == 'Doctor'">Dr.&nbsp;</span><span ng-bind="x.name |uppercase"></span><span ng-if="x.level_name == 'Doctor'">&nbsp;&nbsp;{{x.qualification}}</span></a> </td>
+						 <td ng-bind="x.level_name"></td>
+                        <td ng-bind="x.specialization"></td>
+                        <td ng-bind="x.mobile"></td>
+						
+                       
+                        <td ng-if="level == 1">
+                            <a href ng-click="change_status(x.uid,x.status,$index)"><i class="fa fa-check text-success" ng-show="x.status==1"></i><i class="fa fa-times text-danger" ng-show="x.status==0"></i></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="menu_uid == x.uid" ng-if="level == 1">
+                        <td colspan="7">
+                            <div class="row">
+                                <div class="form-group pull-right">
+                                    <select name="level" class="form-control m-b" ng-model="x.level_id" ng-selected="y.ul_id==x.level_id" ng-options="y.ul_id as y.level_name for y in levels" required>
+                                    <option style="display:none" value="" >Select Level</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <tr>
+                                            <th colspan="10">Assign Menus</th>
+                                        </tr>
+                                        <tr ng-repeat="k in user_menu">
+                                            <td ng-bind="(user_menu[$index].mainmenu!=user_menu[$index-1].mainmenu)?user_menu[$index].mainmenu:' ' |uppercase"></td>
+                                            <td> {{k.submenu |uppercase}}</td>
+                                            <td>
+                                                <div class="form-group" ng-show="x.level_id<=k.min_level">
+                                                    <label class="i-switch m-t-xs m-r pull-right">
+                                                    <input type="checkbox" ng-model="k.chk" ng-init="k.chk=(k.user>0)?true:false" ng-checked="k.user>0" >
+                                                    <i></i>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <table class="table">
+                                        <tr>
+                                            <th colspan="10">Assign Hospital</th>
+                                        </tr>
+                                        <tr ng-repeat="k in hospital">
+                                            <td> {{k.hname |uppercase}}</td>
+                                            <td>
+                                                <label class="i-switch m-t-xs m-r pull-right">
+                                            <input type="checkbox" ng-model="k.chk" ng-init="k.chk=(k.user_id>0)?true:false" ng-checked="k.user_id>0" >
+                                            <i></i>
+                                            </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr ng-show="menu_uid==x.uid" ng-if="level == 1">
+                        <td colspan="7">
+                            <div clss="row">
+                                <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="delete_user(x.uid)"><i class="fa fa-trash"></i>Delete</button>
+                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_menu(x.level_id)"><i class="fa fa-check"></i>Update</button>
+                            </div>
+                            <div class="col-xs-12 alert alert-success" ng-if="result!=''">
+                                <strong><i class="fa fa-check fa-lg" aria-hidden="true"></i></strong> {{result}}
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <!--<pre ng-bind="user_menu |json"></pre>-->
+			
+			
+            <div ng-show="action==2">
+                <form ng-submit="save_user()" id="myform" name="myform" class="form-validation">
+                   
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <b class="text-danger">*</b><label>Full Name</label>
+                                <input type="text" class="form-control" ng-model="user.name" placeholder="Full Name" required title="Enter Full Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group" ng-init="get_levels()">
+                                <b class="text-danger">*</b><label>Level</label>
+                                <select class="form-control m-b" ng-model="user.level" required>
+                                    <option value="">Select Level</option>
+                                    <option value="{{ y.ul_id }}" ng-repeat="y in levels" ng-if="y.ul_id != 1 || level == 1">{{ y.level_name }}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-md-6">
+						    <div class="form-group">
+                                <b class="text-danger">*</b><label>Qualification</label>
+                                <input type="text" class="form-control" ng-model="qualification" placeholder="Qualification" ng-change="get_qual_data(qualification)" required>
+                                <span ng-hide="hide_span_for_Qul == 0" class="label label-warning" ng-repeat="q in user_qual"><a ng-click="insert_qual_data(q.qualification)">&nbsp;{{q.qualification}}&nbsp;</a></span>
+                            </div>
+                        </div>
+					
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Specialization</label>
+								<select class="form-control" ng-model="specialization" ng-disabled="user.level != 3">
+									<option value="">Select Specialization</option>
+									<option ng-repeat="s in user_spec">{{s.spname}}</option>
+								</select>
+                            </div>
+						</div>
+                    </div>
+					<div class="row">
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Date of Join</label>
+                                <input type="date" class="form-control" ng-model="user.doj" placeholder="Date Of Join" >
+                            </div>
+                        </div> -->
+                        <div class="col-md-6">
+                            <label>Date of Join</label>
+                            <div class="input-group"> 
+                                <input type="text" id="dojID" ng-model="doj" ng-change="changeDate_Through_UiJquery(doj)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                <label class="input-group-addon" for="dojID"><i class="fa fa-calendar"></i></label>
+                            </div>
+                        </div>
+						<div class="col-md-6">
+                            <label>Upload Photo</label>
+                            <div> 
+                                <input type="file" class="form-control" file-model="myFile" />
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <br>
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Street</label>
+                                <input type="text" class="form-control" ng-model="user.street" placeholder="Street" >
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <b class="text-danger">*</b><label>City</label>
+                                <input type="text" class="form-control" ng-model="user.city" placeholder="City" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail" class="control-label">Email</label>
+                                <input type="email" class="form-control" ng-model="user.email" placeholder="Email">
+                            </div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group" ng-class="{ 'has-error' : myform.mobile.$invalid &&!myform.mobile.$pristine }">
+								<b class="text-danger">*</b><label>Mobile</label>
+								<input type="text" class="form-control" name="mobile" ng-model="mobile" placeholder="Enter Mobile" autocomplete="off" pattern="[0-9]{10,10}" ng-minlength="10" maxlength="10" ng-change="add_whatsapp()" required>
+								<p ng-show="myform.mobile.$error.minlength" class="help-block">Mobile No. Must Be 10 Digits</p>
+							</div>
+						</div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-6">
+							<div class="form-group">    
+                             <label>
+                                Whatsapp No.</label>
+                                <input type="tel" name="whatsapp" class="form-control" ng-model="whatsapp" placeholder="Whatsapp Number" pattern="[0-9]{10,10}" minlength="10" maxlength="10" >
+                                
+                            </div>
+						</div>
+						<div class="col-md-6">
+                            <div class="form-group">
+                                <label>Short Note </label>
+                                <input type="text" class="form-control" ng-model="user.note" placeholder="Short Note">       
+                            </div>
+                        </div>
+                    </div>
+					 <div class="row">
+					 <div class="col-md-4 form-group">
+                            <label>Salaried Employee </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="i-switch m-t-xs m-r">
+                                    <input type="checkbox" ng-model="user.salary_emp" >
+                                    <i></i>
+                                </label>
+                        </div>
+                        
+						 <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Outer Staff</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="i-switch m-t-xs m-r">
+                                    <input type="checkbox" ng-model="user.outer_staff" >
+                                    <i></i>
+                                </label>
+                            </div>
+                        </div>
+                        
+               
+						<div class="col-md-4 form-group">
+						
+                            <label>Login Status</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label class="i-switch m-t-xs m-r">
+                                    <input type="checkbox" ng-model="user.login_status" >
+                                    <i></i>
+                                </label>
+                        </div>
+						
+					</div>
+					 <div class="row" ng-if="user.login_status == true">
+                        <div class="col-md-6">
+                            <div class="form-group" ng-class="{ 'has-error' : myform.username.$invalid && !myform.username.$pristine }">
+                                <b class="text-danger">*</b><label>User Name</label>
+                                <input type="text" name="username" class="form-control" ng-model="user.username" ng-change="user_check(user.username)" placeholder="Enter User Name" autocomplete="off" ng-minlength="4" maxlength="30" required>
+                                <span ng-show="myform.username.$error.minlength" class="help-block">Minimum Username Length Atleast 4 Digits</span>
+                                <p class="text-danger" ng-show="status">User Name already exist!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" >
+                            <div class="form-group" ng-class="{ 'has-error' : myform.password.$invalid &&!myform.password.$pristine }">
+                               <b class="text-danger">*</b><label>Password</label>
+                                <input type="password" name="password" class="form-control" ng-model="user.password" placeholder="Enter Password" autocomplete="off" ng-minlength="6" maxlength="30" required>
+                                <span ng-show="myform.password.$error.minlength" class="help-block">Minimum Password Length Atleast 6 Digits</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                  <pre ng-bind="user |json"></pre>  
+            </div>
+        </div>
+    </div>
+</div>

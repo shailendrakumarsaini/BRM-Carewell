@@ -1,0 +1,516 @@
+<div ng-controller="directpurchase_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="all_reset()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/direct_purchase.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Direct Purchase
+                    </div>
+                    <small class="text-muted">Purchase Details</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <!-- <div class="row" style="overflow: auto"> 
+                <div class="col-md-3">
+                    <div class="form-group input-group pull-left" ng-show="action==1">
+                        <span class="input-group-addon">
+                                <i class="fa fa-search"></i> 
+                            </span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_new_po()" style="width:100px;"><i class="fa fa-plus"></i>New</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.$invalid" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div> -->
+            <!-- <div class="row" style="overflow: auto">
+                <div class="col-md-3">
+                    <div class="form-group input-group pull-left" ng-show="action==1"> 
+                        <label class="input-group-addon btn" for="searchID"><b class="glyphicon glyphicon-search"></b></label>
+                        <input class="form-control" ng-model="search" id="searchID">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <span class="pull-right">
+                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_new_os()" style="width:100px;"> <i class="fa fa-plus"></i> Add OS </button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_new_po()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                    </span>
+                </div>
+            </div> -->
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12" ng-init="init()" ng-show="action==1">
+                        <div class="panel panel-default" ng-show="action==1">
+                            <div class="panel-heading" style="font-size: 20px;">Direct Purchase Details
+                                    <span class="pull-right">
+                                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_new_os()" style="width:100px;"> <i class="fa fa-plus"></i> Add OS </button>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_new_po()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                                    </span>                            </div>
+                            <div class="panel-body">
+                                    <table class="table table-striped b-t b-light table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>S No.</th>
+                                                <th><a ng-click="SortTheData('medicinepo_date')">Supplier Name</a></th>
+                                                <th><a ng-click="SortTheData('name')">Store Name</a></th>
+                                                <th>Invoice No</th>
+                                                <th>Invoice Date</th>
+                                                <th>Discount</th>
+                                                <th style="text-align:right">Net Amount</th>
+                                                <th>Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody ng-repeat="x in med_pos | filter:search | orderBy:sort:reverseSort">
+                                            <tr rowspan="2">
+                                                <td ng-bind="$index+1 "></td>
+
+
+                                                <td>{{x.supplier_name}}</td>
+                                                <td>{{x.supplier_name}}</td>
+                                                <td>{{x.invoiceNo}}</td>
+                                                <td ng-bind="x.invoiceDate | date:'dd-MM-yyyy'"></td>
+                                            
+                                                <td>{{x.discount}}&nbsp;%</td>
+                                                <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{x.netAmount | number:2}}</td>
+
+                                                <td><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal" ng-click="show_items(x.directPOId)"></i></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody ng-show="NoData == 1">
+                                            <tr align="center">
+                                                <td colspan="8">
+                                                    <h4>No Data</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>  
+                                    </table>
+
+
+                                    <div id="myModal" class="modal fade" data-backdrop="static">
+                                        <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                            <div class="modal-content" style="overflow: auto">
+                                                <div class="modal-header">
+                                                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                    <h4 class="modal-title">Item List</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <table class="table table-striped b-t b-light">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Item</th>
+                                                                <th>MRP</th>
+                                                                <th>P.Price</th>
+                                                                <th>Qty</th>
+                                                                <th>Free</th>
+                                                                <th>Amount</th>
+                                                                <th>Batch No</th>
+                                                                <th>Expire Date</th>
+                                                                <th>Tax</th>
+                                                                <th>Total</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="y in med_pos_data">
+                                                            <tr rowspan="2">
+                                                                <td ng-bind="$index+1"></td>
+                                                                <td ng-bind="y.med_name"></td>
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{y.mrp | number:2}}</td>
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{y.purchasePrice | number:2}}</td>
+                                                            
+                                                                <td ng-bind="y.quantity"></td>
+                                                                <td ng-bind="y.free"></td>
+                                                            <td><i class="fa fa-rupee"></i>{{y.amount | number:2}}</td>
+                                                                <td ng-bind="y.batchNo"></td>
+                                                                <td ng-bind="y.expiryDate | date:'dd-MM-yyyy'"></td>
+                                                                <td ng-bind="y.tax_name"></td>
+                                                                <td><i class="fa fa-rupee"></i>&nbsp;{{y.amountTax | number:2}}</td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                         </div>
+
+                </div>
+            </div>
+            
+
+            <!-- Add Purchase -->
+            <div ng-show="action==2"> 
+                    <div class="panel panel-default" >
+                            <div class="panel-heading" style="font-size: 20px;">Direct Purchase
+                                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.$invalid" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                                </div>
+                            <div class="panel-body">       
+                                    <!-- <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.$invalid" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                                        </div>
+                                    </div> -->
+                                    <div class="row">
+                                        <form name="myform" id="myform" ng-submit="save_medicine_po_data()" class="form-validation">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <label>Supplier Name</label>
+                                                    <select ng-model="pos.supplier_id" class="form-control" autocomplete="off" required>
+                                                    <option value="" >Select Supplier</option>
+                                                    <option value="{{z.id}}" ng-repeat="z in suppliers">{{z.name}}</option>
+                                                </select>
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <label>Store Name</label>
+                                                    <select ng-model="pos.store_id" class="form-control" autocomplete="off" required>
+                                                    <option value="" >Select Store</option>
+                                                    <option value="{{u.id}}" ng-repeat="u in sup">{{u.store_name}}</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <label>Invoice No.</label>
+                                                    <input type="text" ng-model="pos.invoice_no" name="invno" ng-change="item_obj.mpo_pp=item_obj.mpo_mrp" class="form-control" pattern="[0-9]{1,20}" maxlength="20" autocomplete="off" placeholder="Invoice No." required>
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <label>Invoice Date</label> 
+                                                    <div class="input-group">
+                                                        <input type="date" id="invoicedateID" ng-model="invoicedate" ng-change="pos.invoice_date = invoicedate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' })" class="form-control" placeholder="Invoice Date" required>
+                                                        <label class="input-group-addon" for="invoicedateID"><i class="fa fa-calendar"></i></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <br>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" style="font-size:13px;font-family:'century gothic';">
+                                                        <b ng-show="pre_i_d==1">Supplier:</b>&nbsp;{{pre_sup_name}}&nbsp;&nbsp;&nbsp;
+                                                        <b ng-show="pre_i_d==1">MRP:</b>&nbsp;
+                                                        <i class="fa fa-rupee" ng-style="myStyle1" ng-show="pre_i_d==1">&nbsp;{{pre_mrp}}</i>
+                                                        &nbsp;&nbsp;&nbsp;
+                                                        <b ng-show="pre_i_d==1">P.Price:</b>
+                                                        <i class="fa fa-rupee" ng-style="myStyle" ng-show="pre_i_d==1">&nbsp;{{pre_pp}}</i>
+                                                        &nbsp;&nbsp;&nbsp;
+                                                        <b ng-show="pre_i_d==1">Free:</b>
+                                                        <i ng-show="pre_i_d==1">&nbsp;{{pre_free}}</i>
+                                                        <!-- &nbsp;&nbsp;&nbsp;&nbsp;<b ng-show="pre_i_d==1">Unit Price:</b>&nbsp; -->
+                                                    </div>
+                                                            <!--<div class="panel-body">Panel Content</div>-->
+                                                </div>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        </form>
+                                        <form name="myform1" id="myform1">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-8 form-group">
+                                                    <label>Medcine</label>
+                                                    <!-- <ui-select ng-model="item_obj.obj" style="width: 100%" ng-change="previous_item_data(item_obj.obj.med_id, item_obj.obj)">    
+                                                        <ui-select-match>
+                                                            <span>{{$select.selected.med_name}}</span>
+                                                        </ui-select-match>
+                                                        <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index">
+                                                            <div ng-bind-html="item.med_name | highlight: $select.search"></div>
+                                                        </ui-select-choices>
+                                                    </ui-select> -->
+                                                    <ui-select ng-model="item_obj.obj" ng-change="autosearch_data($select.search); previous_item_data(item_obj.obj.med_id, item_obj.obj)" id="searchid" reset-search-input="true" theme="bootstrap"  title="Choose an address" append-to-body="true">
+                                                        <ui-select-match placeholder="Search Medcines...">
+                                                            <span ng-bind="$select.selected.med_name">
+                                                        </span></ui-select-match>
+                                                        <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0">
+                                                        <span ng-bind-html="item.med_name |uppercase | highlight: $select.search"></span>&nbsp;
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                                <div class="col-md-4 form-group">    
+                                                    <label>Batch No</label>
+                                                    <input type="text" ng-model="item_obj.batch_no" class="form-control" autocomplete="off" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 form-group">
+                                                    <label>Qty in &nbsp;<b>{{units}}</b></label>
+                                                    <input type="text" name="qty" ng-model="item_obj.mpo_qty" ng-change="change_qty($index)" autocomplete="off" pattern="[0-9]{1,10}" maxlength="10" class="form-control" value="" required>
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <label>Free in &nbsp;<b>{{units}}</b></label>
+                                                    <input type="text" name="free" ng-model="item_obj.free"  ng-change="change_act_price()" autocomplete="off" pattern="[0-9]{1,10}" maxlength="5" class="form-control" value="">
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <label>Exp date</label>
+                                                    <div class="input-group">
+                                                        <input type="date" id="expdateID" ng-model="expdate" ng-change="item_obj.exp_date = expdate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' })" class="form-control" placeholder="dd-yyyy" required>
+                                                        <label class="input-group-addon" for="expdateID"><i class="fa fa-calendar"></i></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 form-group">
+                                                    <label>MRP</label>
+                                                    <input type="text" ng-model="item_obj.mpo_mrp" class="form-control" ng-change="change_color1()" required>
+
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <label>P.Price</label>
+                                                    <input type="text" name="pp" ng-model="item_obj.mpo_pp" ng-change="change_pp();change_color()" class="form-control" autocomplete="off" required>
+
+                                                </div>
+
+                                                <div class="col-md-4 form-group">
+                                                    <label>Actual Price</label>
+                                                    <input type="text" name="acpp" ng-model="item_obj.ac_pp" class="form-control" autocomplete="off" disabled>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-md-12">
+                                                    <br>
+                                                    <button type="button" class="btn btn-sm btn-primary btn-addon pull-right" ng-click="add_item()" ng-disabled="myform1.$invalid"><i class="fa fa-plus fa-lg"></i> Add</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </form>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <br/>
+                                            <table class="table table-striped b-t b-light table-bordered">
+                                                <thead>
+                                                    <!-- <tr>
+                                                    <td colspan="10">
+                                                        <button type="button" class="btn btn-primary pull-right" ng-click="add_item()">Add Item</button>
+                                                    </td>
+                                                </tr> -->
+                                                    <tr>
+                                                        <th>Item</th>
+                                                        <th>MRP</th>
+                                                        <th>P.Price</th>
+                                                        <th>Qty</th>
+                                                        <th>Free</th>
+                                                        <th style="text-align: right">Amount</th>
+                                                        <th>Tax (%)</th>
+                                                        <th>Batch No.</th>
+                                                        <th>Expire Date</th>
+                                                        <th style="text-align: right">Value</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="d in pos.items_list">
+                                                        <td>{{d.mpo_item_name}}</td>
+                                                        <td><i class="fa fa-rupee">{{d.mpo_mrp | number :2}}</td>
+                                                        <td><i class="fa fa-rupee">{{d.mpo_pp | number :2}}</td>
+                                                        <td>{{d.mpo_qty}}</td>
+                                                        <td>{{d.free}}</td>
+                                                        <td style="text-align: right"><i class="fa fa-rupee">{{d.amount | number :2}}</td>
+                                                        <td>{{d.tax}}</td>
+                                                        <td>{{d.batch_no}}</td>
+                                                        <td>{{d.exp_date}}</td>
+                                                        <td style="text-align: right"><i class="fa fa-rupee">{{d.amount_tax | number :2}}</td>
+                                                        <td><button type="button"  ng-click="item_remove($index,x.amount)"><i class="fa w3-spin fa-trash"></i></button></td>
+                                                    </tr>
+
+                                                    <tr ng-show="show_Net_Price == 1">
+                                                        <td colspan="9">
+                                                            <p class="pull-right" style="font-size:15px">Discount(%)</p>
+                                                        </td>
+                                                        <td class="col-sm-1">
+                                                            <input class="col-sm-12"  ng-model="pos.discount" ng-init="pos.discount=0" ng-change="get_discount($index)" placeholder="Discount">
+                                                        </td> 
+                                                    </tr>
+
+                                                    <tr ng-show="show_Net_Price == 1">
+                                                        <td colspan="9"><p class="pull-right" style="font-size:17px">Total Amount</p></td>
+                                                        <td style="text-align: right; font-size:15px"><i class="fa fa-rupee"></i>&nbsp;{{pos.net_amount | number :2}}</td>
+                                                    </tr>
+
+                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <!-- <pre ng-bind="item_obj |json"></pre>
+                                    <pre ng-bind="pos |json"></pre>
+                                    <pre ng-bind="medunits_data |json"></pre> -->
+                            </div>
+                    </div>
+               
+            </div>
+
+            <div ng-show="action==3">
+                    <div class="panel panel-default">
+                            <div class="panel-heading" style="font-size: 20px;">Add Opening Stock
+                                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==3" ng-click="save_OS_data()" ng-disabled="enable==0" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                                </div>
+                            <div class="panel-body">
+                                    <!-- <div class="row">
+                                        <div class="2">
+                                            <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==3" ng-click="save_OS_data()" ng-disabled="enable==0" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="row">
+                                        <form name="OSform" id="OSform">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 form-group">   
+                                                        <label>Medcine</label>
+                                                        <!-- <ui-select ng-model="os_item_obj.obj1" style="width: 100%" ng-change="select_medicine(os_item_obj.obj1)" reset-search-input="true" ng-required="true">    
+                                                            <ui-select-match>
+                                                                <span>{{$select.selected.med_name}}</span>
+                                                            </ui-select-match>
+                                                            <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index">
+                                                                <div ng-bind-html="item.med_name | highlight: $select.search"></div>
+                                                            </ui-select-choices>
+                                                        </ui-select> -->
+                                                        <ui-select ng-model="os_item_obj.obj1" ng-change="autosearch_data_for_os($select.search); select_medicine(os_item_obj.obj1)"  reset-search-input="true" theme="bootstrap"  title="Choose an address" append-to-body="true">
+                                                            <ui-select-match placeholder="Search Medcines...">
+                                                                <span ng-bind="$select.selected.med_name">
+                                                            </span></ui-select-match>
+                                                            <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0">
+                                                            <span ng-bind-html="item.med_name |uppercase | highlight: $select.search"></span>&nbsp;
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label>Store Name</label>
+                                                        <select ng-model="os.store_id" class="form-control" required>
+                                                            <option value="" >Select Store</option>
+                                                            <option value="{{u.id}}" ng-repeat="u in sup">{{u.store_name}}</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label>Batch No</label>
+                                                        <input type="text" ng-model="os_item_obj.batch_no" class="form-control" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 form-group">
+                                                        <label>Qty in &nbsp;<b>{{units_for_os}}</b></label>
+                                                        <input type="text" name="qty" ng-model="os_item_obj.mpo_qty" ng-change="change_qty_for_os($index)" pattern="[0-9 .]{1,10}" maxlength="10" class="form-control" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label>Free in &nbsp;<b>{{units_for_os}}</b></label>
+                                                        <input type="text" name="free" ng-model="os_item_obj.free"  ng-change="change_act_price_for_os()" pattern="[0-9 .]{1,10}" maxlength="5" class="form-control" autocomplete="off">
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label>Exp date</label>
+                                                        <div class="input-group">
+                                                            <input type="date" id="expdate_for_osDateID" ng-model="expdate_for_os" ng-change="os_item_obj.exp_date = expdate_for_os.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' })" class="form-control" required>
+                                                            <label class="input-group-addon btn" for="expdate_for_osDateID"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 form-group">
+                                                        <label>MRP</label>
+                                                        <input type="text" ng-model="os_item_obj.mpo_mrp" pattern="[0-9 .]{1,10}" class="form-control" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label>P.Price</label>
+                                                        <input type="text" name="pp" ng-model="os_item_obj.mpo_pp" ng-change="change_pp_for_os();change_color()" pattern="[0-9 .]{1,10}" class="form-control" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-md-4 form-group">
+                                                        <label>Actual Price</label>
+                                                        <input type="text" name="acpp" ng-model="os_item_obj.ac_pp" class="form-control" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <br>
+                                                        <button type="button" class="btn btn-sm btn-primary btn-addon pull-right" ng-click="add_item_for_OB()" ng-disabled="OSform.$invalid" ng-hide="OSform.$invalid"><i class="fa fa-plus fa-lg"></i> Add</button>
+                                                    </div>             
+                                                </div>
+                                            </div> 
+                                        </form>
+                                    </div>
+                    
+                                    <div class="row" ng-hide="os.os_items_list.length==0">
+                                        <div class="col-md-12">
+                                            <br/>
+                                            <table class="table table-striped b-t b-light table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item</th>
+                                                        <th>MRP</th>
+                                                        <th>P.Price</th>
+                                                        <th>Qty</th>
+                                                        <th>Free</th>
+                                                        <th style="text-align:right">Amount</th>
+                                                        <th>Tax (%)</th>
+                                                        <th>Batch No.</th>
+                                                        <th>Expire Date</th>
+                                                        <th style="text-align:right">Value</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="d in os.os_items_list">
+                                                        <td><label>{{d.mpo_item_name}}</label></td>
+                                                        <td><i class="fa fa-rupee"><label>{{d.mpo_mrp | number :2}}</label></td>
+                                                        <td><i class="fa fa-rupee"><label>{{d.mpo_pp | number :2}}</label></td>
+                                                        <td><label>{{d.mpo_qty}}</label></td>
+                                                        <td><label>{{d.free}}</label></td>
+                                                        <td style="text-align:right"><i class="fa fa-rupee"><label>{{d.amount | number :2}}</label></td>
+                                                        <td><label>{{d.tax_percent}}</label></td>
+                                                        <td><label>{{d.batch_no}}</label></td>
+                                                        <td><label>{{d.exp_date}}</label></td>
+                                                        <td style="text-align:right"><i class="fa fa-rupee"><label>{{d.amount_tax | number :2}}</label></td>
+                                                        <td><button type="button" class="btn m-b-xs btn-sm btn-danger" ng-click="item_remove_for_OS($index,x.amount)" ><i class="fa fa-trash fa-lg"></i></button></td>
+                                                    </tr>
+
+                                                    <!-- <tr ng-show="os_show_Net_Price == 1">
+                                                        <td colspan="9"><p class="pull-right" style="font-size:15px">Discount(%)</p></td>
+                                                        <td><input type="text" class="form-control" ng-model="os.discount" ng-change="os_get_discount($index)" placeholder="Discount">                   </td> 
+                                                    </tr> -->
+                                                    <tr ng-show="os_show_Net_Price == 1">
+                                                        <td colspan="9"><p class="pull-right" style="font-size:17px">Total Amount</p></td>
+                                                        <td style="text-align:right"><i class="fa fa-rupee"><label style="font-size:18px">{{os.net_amount | number :2}}</label></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                <!-- <pre>{{os_item_obj |json}}</pre> 
+                                <pre>{{os |json}}</pre>  -->
+                            </div>
+                    </div>
+                        
+            </div>  
+        </div>
+    </div>
+
+</div>

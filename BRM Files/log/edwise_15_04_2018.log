@@ -1,0 +1,46 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-15 21:18:02",
+        "client_ip": "202.62.71.158"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-15 21:18:34",
+        "client_ip": "202.62.71.158"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-15 21:18:57",
+        "client_ip": "202.62.71.158"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-15 21:20:13",
+        "client_ip": "202.62.71.158"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-04-15 21:20:18",
+        "client_ip": "202.62.71.158"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},

@@ -1,0 +1,413 @@
+<div ng-controller="newpaitent_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        New Paitent 
+                    </div>
+                    <small class="text-muted">Page Caption</small>
+
+                </div>
+
+            </div>
+        </div>
+
+<!--
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()">
+                    <i class="fa fa-plus"></i>
+                    New
+                </button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" ng-init="init()">
+                    Content....
+
+                </div>
+            </div>
+        </div>
+-->
+        
+        <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="action=2"><i class="fa fa-plus"></i>Add New</button>
+
+
+    <div class="row">
+            <div class="col-md-12" ng-init="init()">
+                <table class="table table-striped b-t b-light" ng-show="action==1">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Next Kn Name</th>
+                                <th>Patient</th>
+                                <th>Mobile</th>
+                                <th>Address</th>
+                                <th>Email</th>
+                                <th>Aadhar ID</th>
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="x in unit_data |filter:search">
+                            <tr rowspan="2">
+                                <td><span ng-bind="x.id"> </span></td>
+                                <td><a ng-click="action=(action==3)?0:3"><span ng-bind="x.name_first"></span></a></td>
+                                <!-- <td><a ng-click="get_feci_menu(x.name)"><span ng-bind="x.name"></span></a></td> -->
+                                <td><span ng-bind="x.next_kn_name"></span> </td>
+                                <td><span ng-bind="x.patient"></span> </td>
+                                <td><span ng-bind="x.mobile_no"></span> </td>
+                                <td ng-bind="x.next_kn_address"></td>
+                                <td ng-bind="x.email"></td>
+                                <td ng-bind="aadhar_id"></td>
+                            </tr>
+                            <tr ng-show="action==2">
+                                    <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-click="save()"><i class="fa fa-check"></i>Save</button>
+                                            </div>
+                                    </div>
+                            </tr> 
+                        </tbody>
+                </table>    
+
+
+
+                            <div ng-show="action==2">
+                             <fieldset><legend>Basic Information</legend>
+                                <div class="row">
+                                    <div class="col-md-12" ng-init="init()">
+                                        <form ng-submit="add_patient()" name="myform">
+                                            <div class="col-md-6">
+                                                <h2>MR No   :LLM159614</h2>
+                                                        <div class="form-group">
+                                                                <label>Patient Name</label>
+                                                                <div class="input-group">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <span class="input-group-btn">
+                                                                                <select  class="form-control m-b" ng-model="name_ms" ng-change="change_pat_data(pt_type)" required>
+                                                                                <option  ng-selected="true" value="Mr.">Mr.</option>
+                                                                                <option  value="Mrs.">Mrs.</option>
+                                                                                <option  value="Ms.">Ms.</option>
+                                                                                </select>
+                                                                                </span>
+                                                                            </div>
+                                                                            <div class="col-md-9">
+                                                                                <div class="input-group">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-4">
+                                                                                            <input type="text" class="form-control" ng-model="name_first" placeholder="First Name" title="Enter Patient First Name" required>
+                                                                                        </div>
+                                                                                        <div class="col-md-4">
+                                                                                            <input type="text" class="form-control" ng-model="name_middle" placeholder="Middle Name" title="Enter Patient Middle Name" >
+                                                                                        </div>
+                                                                                        <div class="col-md-4">
+                                                                                            <input type="text" class="form-control" ng-model="name_last" placeholder="Last Name" title="Enter Patient Last Name" >
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                    
+                                                        <label>Patient DOB</label>
+                                                        <div class="form-group">
+                                                                <input type="date" ng-model="birth" min="1950-01-01" max="2050-12-31" style="width:250px;"> 
+                                                            <!-- <div class="row">
+                                                                    <div class="col-md-6">
+                                                                            <div class="row">
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="text" class="form-control" ng-model="dd" placeholder="DD" title="Enter Patient First Name" >
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="text" class="form-control" ng-model="mm" placeholder="MM" title="Enter Patient First Name" >
+                                                                                    </div>
+                                                                                    <div class="col-md-4">
+                                                                                        <input type="text" class="form-control" ng-model="yy" placeholder="YY" title="Enter Patient First Name" >
+                                                                                    </div>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                            <div class="col-md-4">
+                                                                                <input type="text" class="form-control" ng-model="mm-name" placeholder="Month" title="Enter Patient Lsat Name" >
+                                                                            </div>
+                                                                            <div class="col-md-8">
+                                                                                    <select  class="form-control m-b"  ng-model="yy-name"  >
+                                                                                            <option  ng-selected="true" value="Mr.">Jan</option>
+                                                                                            <option  value="Mrs.">Feb</option>
+                                                                                            <option  value="Ms.">Mar</option>
+                                                                                            <option  value="Ms.">Apr</option>
+                                                                                            <option  value="Ms.">May</option>
+                                                                                    </select>
+                                                                            </div>
+                                                                    </div>
+                                                                </div> -->
+                                                            </div>
+                    
+                                                            <div class="form-group">
+                                                                <label>Next of Kin Name</label>
+                                                                <input type="text" class="form-control" ng-model="next_kn_name" placeholder="Kin Name" style="width:250px;" required>
+                                                            </div>
+                    
+                                                            <div class="form-group">
+                                                                    <label>Photo</label>
+                                                                    <button ng-model="photo"><i class="fa fa-check"></i>Browse</button>
+                                                            </div>    
+                    
+                                                            <div class="form-group">                                      
+                                                                <label>Patient Category</label>
+                                                                <select  class="form-control m-b"  ng-model="patient"  style="width:250px;" >
+                                                                        <option value="general" ng-selected="true">general</option>
+                                                                        <option value="surgey">surgey</option>
+                                                                        <option value="operation">operation</option>
+                                                                        <option value="others">others</option> 
+                                                                </select>
+                                                            </div>
+                                                   
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                            <label>Case File No.</label>
+                                                                            <input type="text" class="form-control" ng-model="case_file_no" placeholder="Kin Name" >
+                                                                    </div>
+                                                                    <div class="col-md-1">
+                                                                            <label>Auto</label>
+                                                                            <input type="checkbox" class="form-control" ng-model="auto" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <h3>Issued To : PAEDIATRICS</h3>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                    
+                    
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                        <div class="col-md-1"><br>
+                                                                                <input type="checkbox" class="form-control" ng-model="pt_agea" >
+                                                                        </div>
+                                                                    <div class="col-md-5">
+                                                                            <label>Mark as Duplicate of</label>
+                                                                            <input type="text" class="form-control" ng-model="duplicate" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                    
+                    
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <label>Gender</label>
+                                                                        <div class="input-group">
+                                                                            <span class="input-group-btn">
+                                                                                <select class="form-control m-b" ng-model="gender">
+                                                                                    <option value="Male" ng-selected="true">Male</option>
+                                                                                    <option value="Female">Female</option>
+                                                                                    <option value="Transgender">Transgender</option>
+                                                                                </select>
+                                                                            </span>     
+                                                                        </div>       
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                            <label>Mobile</label>
+                                                                            <input type="tel" pattern="^[_0-9]{1,}$" class="form-control" ng-model="mobile_no" placeholder="Patient Mobile No." maxlength=10 >       
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                    
+                    
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <label>Relation</label>							
+                                                                        <input type="text" class="form-control" ng-model="relation" placeholder="Relation" >                 
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label>Contact No.</label>
+                                                                        <input type="tel" pattern="^[_0-9]{1,}$" class="form-control" ng-model="mobile1_no" placeholder="Patient Contact No." maxlength=10>
+                                                                    </div>				  
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <label>Kin Address</label>							
+                                                                        <input type="text" class="form-control" ng-model="next_kn_address" placeholder="Contact" >
+                                                                    </div> 
+                                                                    <div class="col-md-2">
+                                                                    <label>VIP Patient</label>
+                                                                        <input type="checkbox" ng-model="vip_patient">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                            <label>Old Reg:</label>
+                                                                            <input type="text" class="form-control" ng-model="old_reg" placeholder="Old Reg. No." >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                              
+                                                                <!-- <fieldset>
+                                                                 <legend>Personalia:</legend>
+                                                                 sunny: <input type="text"><br>
+                                                                 Email: <input type="text"><br>
+                                                                 Date of birth: <input type="text">
+                                                                </fieldset> -->
+                                                            
+
+
+                                            </div>
+                                            
+                                        </form>   
+                                    </div>
+                                </div>
+                            </fieldset>
+                                
+			<div class="well well-sm">Additional Information</div>
+			<div class="col-md-12">
+            <fieldset>
+                <legend>Additional Patient Information</legend>
+                    <div class="row">
+                       
+                            <div class="col-md-4">
+							<table>
+								<tr><td><label>Address:</label></td></tr>
+								<tr><td><textarea rows="4" cols="29" ng-model="address" placeholder="Address"></textarea></td></tr>
+							</table>
+                            </div>
+                            <div class="col-md-4">
+                                <table>
+                                    <tr>
+                                        <td><label>State:</label>
+                                    <input type="text" class="form-control" ng-model="state" placeholder="Patient Area" style="width:200px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Country:</label>
+                                        <input type="text" class="form-control" ng-model="country" placeholder="Patient City" style="width:200px;">
+                                    </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                                <label>Nationality</label>
+                                <select  class="form-control m-b" ng-model="nationality" style="width:200px;" required>
+                                        <option value="indian" ng-selected="true">Indian</option>
+                                        <option value="pakistan">Pakistan</option>
+                                        <option value="usa">USA</option>
+                                        <option value="uk">UK</option>
+                                        <option value="aust">Austrilya</option>
+                                </select>
+                        </div>
+                        <div class="col-md-4">
+                                <label>Blood Group</label>
+                                <select  class="form-control m-b" ng-model="pt_blood" style="width:200px;" required>
+                                        <option value="a" ng-selected="true">A</option>
+                                        <option value="b">B</option>
+                                        <option value="o">O</option>
+                                </select>
+                        </div>
+                        <div class="col-md-4">
+                                <label>Religion</label>
+                                <select  class="form-control m-b" ng-model="religion" style="width:200px;">
+                                        <option value="hindu" ng-selected="true">Hindu</option>
+                                        <option value="monduns">Momduns</option>
+                                        <option value="christan">Christions</option>
+                                        <option value="sikh">Sikh</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <label>Occupation</label>
+                                    <select  class="form-control m-b" ng-model="occupation" style="width:200px;">
+                                            <option value="farmer" ng-selected="true">Farmer</option>
+                                            <option value="doctor">Doctor</option>
+                                            <option value="engineer">Engineer</option>
+                                            <option value="lawer">Lawyer</option>
+                                            <option value="others">Others</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-4">
+                                    <label>Custom List 8</label>
+                                    <select  class="form-control m-b" ng-model="customlist" style="width:200px;">                                            <option  ng-selected="true">etc</option>                             
+                                    </select>
+                            </div>
+                            <div class="col-md-4">
+                                    <label>Custom List 9</label>
+                                    <select  class="form-control m-b" ng-model="pt_list9" style="width:200px;">
+                                            <option  ng-selected="true">etc</option>
+                                    </select>
+                            </div>
+                    </div>
+                    
+                        <div class="row">
+                            <div class="col-md-4">
+                                    <label>Email ID</label>
+                                    <input type="email" class="form-control" name="myemail" ng-model="email" placeholder="Patients Email" style="width:200px;">
+									<h1 ng-show="myForm.myemail.$invalid">Email is Invalid</h1>
+                            </div>
+                        </div><br>
+                    
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <label>Remarks</label>
+                                    <input type="text" class="form-control" ng-model="remarks" placeholder="Patient Remarks"  style="width:200px;">        
+                            </div>
+                            <div class="col-md-4">
+                                    <label>Portel Access</label><br> 
+                                    <input type="radio" ng-model="portal_access" value="yes">Yes 
+                                    <input type="radio" ng-model="portal_access" value="no">No
+                            </div>
+                            <div class="col-md-4">
+                                    <label> Second Email ID</label>
+                                    <input type="email" class="form-control" ng-model="email" placeholder="" style="width:200px;">        
+                            </div>     
+                    </div><br>
+
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <label>Govt Identifier Label</label>
+                                    <input type="text" class="form-control" ng-model="govt-id" placeholder="" style="width:200px;">        
+                            </div>
+                            <div class="col-md-4">
+                                    <label>Aadhar ID</label>
+                                    <input type="text" class="form-control" ng-model="aadhar_id" placeholder="" style="width:200px;">        
+                            </div>     
+                    </div><br><br>
+                </fieldset>
+				</div>
+              </div>       
+                            
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+</div>
+                

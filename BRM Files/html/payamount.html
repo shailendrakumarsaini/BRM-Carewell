@@ -1,0 +1,215 @@
+<div ng-controller="payamount_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Pay Amount
+                    </div>
+                    <small class="text-muted">Pay Amount Here</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body" ng-if="action==1">
+            <form action="#" method="get" class="sidebar-form">
+				<div class="col-md-12">
+                       <div class="col-md-6">
+                            <input type="text" class="form-control" ng-model="search_name" placeholder="Search..."  required>
+                        </div>	
+						
+				
+						<div class="col-md-3">
+						 <label>&nbsp;</label>
+						 <button class="btn m-b-xs btn-sm btn-primary btn-addon"  form="myform" ng-click="search_patient_details(search_name)"><i class="fa fa-check"></i>Search</button>
+                        </div>	
+				</div>
+				
+				
+				
+			</form>
+			<p>&nbsp;</p>
+			<div class="panel" ng-if="search_pt">	 
+			<table class="table table-striped b-t b-light">
+		
+				 <thead>
+                    <tr>
+						<th>S.No.</th>
+                        <th>Code</th>
+                        <th>Name</th>
+						<th>Mobile</th>
+                        <th>Consultant</th>
+						<th>Status</th>	
+						<th>Pay</th>		
+                    </tr>
+                </thead>	
+				
+			
+			<tbody>
+                    <tr  ng-repeat="x in search_pt">                      
+						<td>{{$index+1}}</td>
+                        <td><span ng-bind="x.pt_code"></span></td>
+                        <td><span ng-bind="x.pt_name"></span></td>
+                        <td ng-bind="x.pt_mobile"></td>
+                        <td ng-bind="x.primary_dr_name"></td>
+						<td ng-bind="x.visit_type"></td>
+						<td><button class="btn m-b-xs btn-sm btn-success" ng-click="pay_patient_amount(x.pt_id,x.visit_type)"><i class="fa fa-check"></i>Pay Now</button></td>		
+                    </tr>					                    
+            </tbody>
+			
+			</table>	
+			
+			</div>
+			
+			
+			
+
+        </div>
+		
+		
+ 
+	<div class="panel-body" ng-show="action==2">
+					 
+						<div class="row">
+							 <div class="col-md-4">
+                              <label>Name</label>
+                              <input type="text" class="form-control" readonly ng-model="patient_info[0].pt_name"  required>                                
+							</div>
+							
+							 <div class="col-md-4">
+                             <label>City</label>
+							<input type="text" class="form-control" readonly ng-model="patient_info[0].pt_city" placeholder="City" required>                                     
+							</div>
+							<div class="col-md-4">
+                             <label>Consultant</label>
+							<input type="text" class="form-control" readonly ng-model="patient_info[0].primary_dr_name" placeholder="Primary Doctor" required>                                
+							</div>
+						</div>	
+						<p>&nbsp;</p>
+						<div class="row">	
+						<table class="table table-striped b-t b-light">
+		
+				 <thead>
+                    <tr>
+						<th>S.No.</th>
+                        <th>Fee</th>
+                        <th>Amount</th>
+						<th>Paid</th>
+                    </tr>
+                </thead>	
+				
+			
+			<tbody>
+                    <tr  ng-repeat="x in fee_info">                      
+						<td>{{$index+1}}</td>
+                        <td><span ng-bind="x.fcname"></span></td>
+                        <td><span ng-bind="x.amount"></span></td>
+						<td><input type="text" class="form-control" ng-model="payamount"   required /></td>		
+                    </tr>					                    
+            </tbody>
+			
+			</table>		
+							
+							
+
+						</div>	
+
+					<div class="row">	
+							<div class="col-md-4">
+								&nbsp;                         
+							</div>
+							
+							 <div class="col-md-4">
+                                           &nbsp;               
+							</div>	
+							<div class="col-md-4">
+								 <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right"  form="myform" ng-click="save_bill_payment(search_name)"><i class="fa fa-check"></i>Save Bill</button>                            
+							</div>		
+						</div>					
+					</div>
+					
+	
+
+
+
+
+<div ng-show="action==3">
+									
+											
+							<table width="100%" border="0" style="border:1px solid #000000;" cellpadding="3" cellspacing="0">
+			 <tr>
+		 	<td colspan="3" style="text-align:center;"><img src="../images/hosplogo.jpg" width="100" /><b style="vertical-align:middle">{{op_hosp[0].hname}}</b></td>
+		    </tr>
+			<tr>
+		 	<td colspan="3" style="text-align:center;">{{op_hosp[0].haddress}}, {{op_hosp[0].hcity}}</td>
+		    </tr>
+		</table>
+			
+		<table width="100%" border="0" style="padding:0;" cellspacing="0" cellpadding="3">
+		  <tr>
+			<td colspan="3" style="border-left:1px solid #000000;border-right:1px solid #000000;border-bottom:1px solid #000000;" align="center"><p style="font-size:14px; font-weight:600; padding:0; margin:0;">RECEIPT</p></td>
+		  </tr>
+		  <tr>
+		  <td width="33%" style="border-left:1px solid #000000;"><b>BILL NUMBER:{{op_patient[0].bill_no}}</b></td>
+			<td width="33%" align="center">&nbsp;</td>
+			<td width="33%" align="right" style="border-right:1px solid #000000;">Date: {{op_patient[0].paid_date_time}}</td>
+		  </tr>
+		</table>
+		
+		<table width="100%" style="line-height:15px;" border="1" cellpadding="5" cellspacing="0">
+		      <tr>
+				<td style="background:#f5f5f5;">OP NUMBER </td>
+				<td style="background:#f5f5f5;font-weight:600" colspan="6">{{op_patient[0].pt_code}}</td>
+			  </tr>	
+			  <tr>
+				<td style="background:#f5f5f5;">PATIENT NAME </td>
+				<td style="background:#f5f5f5;font-weight:600" colspan="6">{{op_patient[0].pt_name}}</td>
+			  </tr>	
+			  <tr>
+				<td style="background:#f5f5f5;">AGE </td>
+				<td style="background:#f5f5f5;font-weight:600" colspan="6">{{op_patient[0].pt_age}} Years</td>
+			  </tr>	
+			   <tr>
+				<td style="background:#f5f5f5;">Mobile </td>
+				<td style="background:#f5f5f5;font-weight:600" colspan="6">{{op_patient[0].pt_mobile}}</td>
+			  </tr>	
+			  
+			  	
+		 </table>
+		 
+		 
+		 <table width="100%" style="line-height:15px;margin-top:10px;" border="1" height="250" cellpadding="5" cellspacing="0">
+	 <tr>
+	<td>Received with thanks from {{op_patient[0].pt_name}}  ({{op_patient[0].facilitator_name}} ),{{op_patient[0].bill_org_name_city}}<br><br>
+	The sum of Rupees : {{op_patient[0].paid}}/-<br><br>
+	   Towards   : OP<br>
+	</td>
+	</tr>	 
+	
+	 
+
+</table>
+
+<table style="margin-top:10px" width="100%" border="1" height="70" cellspacing="0" cellpadding="5">
+			  <tr>
+			  
+			  <td>
+			  <p style="float:left">Payee's Signature</p>
+			  <p style="float:right">For {{op_hosp[0].hname}}</p>
+			  </td>
+							  </tr>
+			  
+		
+		</table>
+   
+		<div style="clear:both"></div>
+							   </div>	
+					
+					
+   </div>
+</div>

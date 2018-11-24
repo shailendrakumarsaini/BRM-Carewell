@@ -1,0 +1,816 @@
+<div ng-controller="labtests_ctrl">
+        <div class="panel panel-default" style="margin: 5px">
+            <div class="panel-heading" style="background-color:aliceblue">
+                <div class="clearfix">
+                    <a href="" class="pull-left thumb-md avatar b-3x m-r" ng-click="action=1">
+                      <img src="img/medical_icons/046-medical-history.png"  >
+                    </a>
+                    <div class="clear">
+                        <div class="h3 m-t-xs m-b-xs">
+                            Lab Tests
+                        </div>
+                        <small class="text-muted">Lab Tests</small>
+                    </div>
+                </div>
+            </div>
+    
+                <div class="panel-body">
+                    <!-- <div class="row" style="overflow:auto">
+                        <div class="col-md-12">    
+                            <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                <input class="form-control" ng-model="search.test_name">
+                            </div>
+                            <span class="pull-right">
+                                <button class="btn btn-sm btn-primary btn-addon" ng-click="action = 3" ng-show="action==1"><i class="fa fa-plus"></i>Add Test Group</button> 
+                                <button class="btn btn-sm btn-primary btn-addon" ng-click="add_new_test()" ng-show="action==1"><i class="fa fa-plus"></i>Add Test</button> 
+                                <button class="btn btn-sm btn-success btn-addon" form="addform" ng-show="action==2"><i class="fa fa-check"></i>Save</button> 
+                                <button class="btn btn-sm btn-success btn-addon" form="updateform" ng-show="action==4"><i class="fa fa-check"></i>Update</button> 
+                            </span>
+                        </div>
+                    </div>  -->
+     
+                
+                    <div ng-init="init()" ng-show="action==1" style="overflow:auto">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="font-size: 20px;">Lab Test Information 
+                                <span class="pull-right">
+                                    <button class="btn btn-sm btn-primary btn-addon" ng-click="action = 3" ng-show="action==1"><i class="fa fa-plus"></i>Add Test Group</button> 
+                                    <button class="btn btn-sm btn-primary btn-addon" ng-click="add_new_test()" ng-show="action==1"><i class="fa fa-plus"></i>Add Test</button> 
+                                </span>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-striped b-t b-light table-bordered">
+                                    <thead>
+                                        <tr ng-hide="NoData == 1">
+                                            <td colspan="5">
+                                                <div class="input-group col-md-3 pull-left">
+                                                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                                    <input class="form-control" ng-model="search.test_name">
+                                                </div>
+                                            </td>
+                                        </tr> 
+                                        <tr>      
+                                            <th>S No.</th>
+                                            <th ng-click="sortTheData('test_name')">Test Name</th>
+                                            <th ng-click="sortTheData('test_group_name')">Test Group Name</th>
+                                            <th>Details</th>
+                                            <th>Update</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody ng-repeat="z in load_data | filter:search |orderBy:sort:reverseSort">
+                                        <tr>
+                                            <td>{{$index + 1}}</td>
+                                            <!-- <td>{{z.test_group_id}}</td> -->
+                                            <td>{{z.test_name}}</td>
+                                            <td>{{z.test_group_name}}</td>                                
+                                            <td><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal" ng-click="show_items(z)"></i></td>
+                                            <td><i class="fa fa-edit fa-lg" ng-click="update_test(z)"></i></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody ng-show="NoData == 1">
+                                        <tr align="center">
+                                            <td colspan="5"><h4>No Data</h4></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- <pre>{{load_data | json}}</pre> -->
+    
+                        <!-- Model -->
+                        <div id="myModal" class="modal fade col-md-12" role="dialog">
+                            <div class="modal-dialog modal-lg modal-full-height" style="overflow: auto">
+                                    
+                                <!-- Modal content-->
+                                <div class="modal-content" style="overflow: auto">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title" style="color: #00C851;">Lab Test Data</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-striped b-t b-light">
+                                            <thead>
+                                                <tr>
+                                                    <th>Test Name</th>
+                                                    <th>Test Group Name</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="y in details" > 
+                                                <tr rowspan="2">
+                                                    <td>{{y.test_name}}</td>
+                                                    <td>{{y.test_group_name}}</td>
+                                                </tr>
+                                            </tbody> 
+                                        </table>
+                                        <p style="color: #00C851;font-size: 20px">Values</p>
+                                        <table class="table table-striped table-bordered b-t b-light">
+                                            <!-- <caption><p style="color: #00C851;font-size: 20px">Values</p></caption> -->
+                                            <thead>
+                                                <tr>
+                                                    <th>S No.</th>
+                                                    <th>Value</th>
+                                                    <th>Start</th>
+                                                    <th>End</th>
+                                                    <th>Unit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="i in details[0].ref_values">
+                                                <tr>
+                                                    <td>{{ $index + 1 }}</td>
+                                                    <td ng-bind="i.value"></td>
+                                                    <td ng-bind="i.start"></td>
+                                                    <td>{{i.end}}</td>
+                                                    <td>{{i.unit_name}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="color: #00C851;font-size: 20px">Samples</p>
+                                        <table class="table table-striped table-bordered b-t b-light">
+                                            <!-- <caption><h4 style="color: #00C851;font-size: 20px">Samples</h4></caption> -->
+                                            <thead>
+                                                <tr>
+                                                    <th>S No.</th>
+                                                    <th>Sample</th>
+                                                    <th>Quantity</th>
+                                                    <th>Units</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="j in details[0].sample_name">
+                                                <tr>
+                                                    <td>{{$index+1}}</td>
+                                                    <td ng-bind="j.sample"></td>
+                                                    <td>{{j.qty}}</td>
+                                                    <td>{{ j.unit_name }}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="color: #00C851;font-size: 20px">Consumables Items</p>
+                                        <table class="table table-striped table-bordered b-t b-light">
+                                            <!-- <caption><h4 style="color: #00C851;">Consumables Items</h4></caption> -->
+                                            <thead>
+                                                <tr>
+                                                    <th>S No.</th>
+                                                    <th>Medicine</th>    
+                                                    <th>Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="k in details[0].consumable_items">
+                                                <tr>
+                                                    <td>{{ $index + 1 }}</td>
+                                                    <td>{{ k.med_name }}</td>
+                                                    <td>{{ k.qty }}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                     
+                        <!--Adding Test Data  -->
+                        <div ng-if="action==2"><br>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="font-size: 20px;">Lab Test Form<button class="btn btn-sm btn-success btn-addon pull-right" form="addform" ng-show="action==2"><i class="fa fa-check"></i>Save</button> </div>
+                                <div class="panel-body">
+                                    <form class="form-validation" id="addform" ng-submit="save_lab_Test_data()">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Test Group</label>
+                                                <select class="form-control" ng-model="lab_Test.test_group_id" ng-change="load_group_name()" required>
+                                                    <option value="">Select Test Group</option>
+                                                    <option value="{{y.test_group_id}}" ng-repeat="y in test_group_data">{{y.test_group_name}}</option>
+                                                </select>
+                                            </div>   
+                                            <div class="col-md-4">
+                                                <label>Test Name</label>
+                                                <input type="text" class="form-control" ng-model="lab_Test.test_name" placeholder="Enter Test Name" required>
+                                            </div>
+            
+                                            <div class="col-md-4">
+                                                <label>Service Name</label>
+                                                <select class="form-control" ng-model="lab_Test.test_service_id" required>
+                                                    <option value="">Select Service Name</option>
+                                                    <option value="{{z.fcgid}}" ng-repeat="z in facilityData">{{ z.fcgname }}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <div class="clear">
+                                                                <div class="m-t-xs m-b-xs" style="color: #00C851;font-size: 18px;">
+                                                                    Values
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt"> 
+                                                        <span class="list-group-item">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sub Investigations</th>
+                                                                    <th>Age Group</th>
+                                                                    <th>Select Range Type</th>
+                                                                    <th colspan="2">Reference Interval</th>
+                                                                    <th>Unit</th>
+                                                                    <th><button class="btn btn-primary btn-sm btn-addon" type="button" ng-click="add_values_list()"><i class="fa fa-plus"></i>Add</button></th>
+                                                                    
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr ng-repeat="i in lab_Test.input_values">
+                                                                    <td>
+                                                                        <input type="text" ng-model="i.subInvestigation" class="form-control" placeholder="Sub Investigation" required>
+                                                                    </td>
+                                                                    <td>
+                                                                        <select class="form-control" ng-model="i.Gender" required>
+                                                                            <option value="">Select Age Group</option>
+                                                                            <option value="M">Male</option>
+                                                                            <option value="F">Female</option>
+                                                                            <option value="P">Paediatric</option>
+                                                                            <option value="All">All</option>
+                                                                        </select>
+                                                                    </td>
+            
+                                                                    <td>
+            
+                                                                        <select class="form-control" ng-model="i.rangeType" ng-init="i.rangeType = 'Range'" ng-change="resetValues(i)" required>
+                                                                            <option value="">Select Value</option>
+                                                                            <option value="Range">Range</option>
+                                                                            <option value="Time">Time</option>
+                                                                            <option value="T/F">True / False</option>
+                                                                            <option value="Array">Array</option>
+                                                                            <option value="Description">Description</option>
+                                                                            <option value="Ratio">Ratio</option>
+                                                                        </select>
+                                                                    </td>
+            
+                                                                    <td colspan="2">
+                                                                        <div ng-if="i.rangeType === 'Range'">
+                                                                            <input type="text" ng-model="i.startRange" class="form-control" placeholder="Enter Start Range" required />
+                                                                            <input type="text" ng-model="i.endRange" class="form-control" placeholder="Enter End Range" required />
+                                                                        </div>
+            
+                                                                        <div ng-if="i.rangeType === 'Time'">
+                                                                            <div class="col-md-12">
+                                                                                <div class="col-md-6">
+                                                                                    <input type="text" ng-model="i.startMinutes" class="form-control" placeholder="Enter Start Minutes" required />
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <input type="text" ng-model="i.startSeconds" class="form-control" placeholder="Enter Start Seconds" required />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <div class="col-md-6">
+                                                                                    <input type="text" ng-model="i.endMinutes" class="form-control" placeholder="Enter End Minutes" required />
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                    <input type="text" ng-model="i.endSeconds" class="form-control" placeholder="Enter End Seconds" required />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+            
+                                                                        <div ng-if="i.rangeType === 'T/F'">
+                                                                            <input type="text" ng-model="i.trueValue" class="form-control" placeholder="Enter True Value" required />
+                                                                            <input type="text" ng-model="i.falseValue" class="form-control" placeholder="Enter False Value" required />
+                                                                        </div>
+            
+                                                                        <div ng-if="i.rangeType === 'Array'">
+                                                                            <input type="text" ng-model="i.Array" class="form-control" placeholder="Eg. A+, A-, AB+, etc.," required />
+                                                                        </div>
+            
+                                                                        <div ng-if="i.rangeType === 'Description'">
+                                                                            <textarea ng-model="i.Description" class="form-control" placeholder="Enter Direct Values" required></textarea>
+                                                                        </div>
+            
+                                                                        <div ng-if="i.rangeType === 'Ratio'">
+                                                                            <div class="col-md-12" style="display: flex; align-items: center">
+                                                                                <div class="col-md-5">
+                                                                                    <input type="text" class="form-control" ng-model="i.startNumerator" placeholder="Start Numerator" required />
+                                                                                </div>
+                                                                                <div class="col-md-2" style="text-align: center">
+                                                                                    <label class="text-muted">IN</label>
+                                                                                </div>
+                                                                                <div class="col-md-5">
+                                                                                    <input type="text" class="form-control" ng-model="i.startDenominator" placeholder="Start Denominator" required />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12" style="display: flex; align-items: center">
+                                                                                <div class="col-md-5">
+                                                                                    <input type="text" class="form-control" ng-model="i.endNumerator" placeholder="End Numerator" required />
+                                                                                </div>
+                                                                                <div class="col-md-2" style="text-align: center">
+                                                                                    <label class="text-muted">IN</label>
+                                                                                </div>
+                                                                                <div class="col-md-5">
+                                                                                    <input type="text" class="form-control" ng-model="i.endDenominator" placeholder="End Denominator" required />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                
+                                                                    <td>
+                                                                        <!-- <ui-select ng-model="i.med_selected" ng-change="MedicineUnit($index)" >
+                                                                            <ui-select-match placeholder="Select Unit">
+                                                                                <span ng-bind="$select.selected.unit_name"></span>
+                                                                            </ui-select-match>
+                                                                            <ui-select-choices repeat="item in (Unites | filter: $select.search) track by $index">
+                                                                                <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                                                            </ui-select-choices>
+                                                                        </ui-select> -->
+            
+                                                                        <input type="text" class="form-control" ng-model="i.unit_name" required />
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_values_list($index)" ng-disabled="lab_Test.input_values.length == 1"><i class="fa fa-trash fa-lg"></i></button>
+                                                                    </td> 
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="7">
+                                                                        <label for="testRemarks1">Remarks:</label>
+                                                                        <textarea id="testRemarks1" class="form-control" ng-model="lab_Test.Remarks" placeholder="Remarks"></textarea>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+            
+                                                        </span>
+                                                        <!-- <pre>{{ lab_Test.input_values | json }}</pre> -->
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- <pre>{{lab_Test|json}}</pre> -->
+                                        </div>
+            
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <div class="clear">
+                                                                <div class="m-t-xs m-b-xs" style="color: #00C851;font-size: 18px;">
+                                                                    Samples 
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt" > 
+                                                        <span class="list-group-item">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sample Name</th>
+                                                                    <th>Quantity</th>
+                                                                    <th>Unit</th>
+                                                                    <th><button class="btn btn-primary btn-sm btn-addon" type="button" ng-click="add_samples_list()"><i class="fa fa-plus"></i>Add</button></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr ng-repeat="j in lab_Test.input_samples">
+                                                                    <td><input type="text" ng-model="j.sample" ng-change="suggestion(j)" class="form-control" placeholder="Enter Samples" required>
+                                                                        <span class="label label-warning" ng-repeat="s in j.suggested_data | limitTo : 5"><a ng-click="insert_spec(s, j)">&nbsp;{{s}}&nbsp;</a></span>
+                                                                    </td>
+                                                                    <td><input type="text" ng-model="j.qty" class="form-control" pattern="[0-9 .]{1,10}" maxlength="10" placeholder="Enter Quantity" required></td>
+                                                                    
+                                                                    <td style="width: 275px">
+                                                                        <!-- <ui-select ng-model="j.med_selected_for_samples" ng-change="MedicineUnitfor_samples($index)">
+                                                                            <ui-select-match placeholder="Select Unit">
+                                                                                <span ng-bind="$select.selected.unit_name"></span>
+                                                                            </ui-select-match>
+                                                                            <ui-select-choices repeat="item in (Unites | filter: $select.search) track by $index">
+                                                                                <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                                                            </ui-select-choices>
+                                                                        </ui-select> -->
+            
+                                                                        <input type="text" class="form-control" ng-model="j.unit_name" required />
+                                                                    </td>
+                                                                    <td><button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_samples_list($index)" ng-disabled="lab_Test.input_samples.length == 1"><i class="fa fa-trash fa-lg"></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </span> 
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>      
+                                        <!-- <pre>{{lab_Test | json}}</pre>  -->
+                                        </div>
+            
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <div class="clear">
+                                                                <div class="m-t-xs m-b-xs" style="color: #00C851;font-size: 18px;">
+                                                                    Consumables
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt" > 
+                                                        <span class="list-group-item">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Medicine</th>
+                                                                    <th>Quantity</th>
+                                                                    <th><button class="btn btn-primary btn-sm btn-addon" type="button" ng-click="add_consumables_list()"><i class="fa fa-plus"></i>Add</button></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr ng-repeat="k in lab_Test.input_consumables">
+                                                                    <td style="width: 380px">
+                                                                        <!-- <div class="row">
+                                                                            <div class="col-md-3"> -->
+                                                                                <!-- <select  ng-model="k.item" class="form-control">
+                                                                                    <option value="">Select Item</option>
+                                                                                    <option value="{{item.med_id}}" ng-repeat="item in items">{{item.med_name}}</option>
+                                                                                </select> -->
+                                                                                <ui-select ng-model="k.selected" ng-change="changeConsume($index)">
+                                                                                    <ui-select-match placeholder="Select Medicine">
+                                                                                        <span ng-bind="$select.selected.med_name"></span>
+                                                                                    </ui-select-match>
+                                                                                    <ui-select-choices repeat="item in (items | filter: $select.search) track by $index">
+                                                                                        <div ng-bind-html="item.med_name | highlight: $select.search"></div>
+                                                                                    </ui-select-choices>
+                                                                                </ui-select>
+                                                                                <!-- <br> {{k.selected |json}}<br> -->
+                                                                            <!-- </div>
+                                                                            <div class="col-md-3">
+                                                                                <input type="text" ng-model="k.qty" class="form-control" required>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                    <button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_consumables_list($index)"><i class="fa fa-trash fa-lg"></button>
+                                                                            </div>
+                                                                        </div> -->
+                                                                    </td>
+                                                                    <td style="width: 380px"><input type="text" ng-model="k.qty" pattern="[0-9 .]{1,10}" maxlength="10" class="form-control" placeholder="Enter Quantity" required></td>
+                                                                    <td><button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_consumables_list($index)" ng-disabled="lab_Test.input_consumables.length == 1"><i class="fa fa-trash fa-lg"></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </span> 
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        <!-- <pre>{{lab_Test | json}}</pre>   -->
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div ng-if="action==4"><br>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="font-size: 20px;">Update Lab Result<button class="btn btn-sm btn-success btn-addon pull-right" form="updateform" ng-show="action==4"><i class="fa fa-check"></i>Update</button> </div>
+                                <div class="panel-body">
+                                    <form class="form-validation" id="updateform" ng-submit="update_lab_Test_data()">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Select Test Group</label>
+                                                <select class="form-control" ng-model="lab_Test.test_group_id" ng-change="load_group_name()" required>
+                                                    <option value="">Select Test Type</option>
+                                                    <option value="{{y.test_group_id}}" ng-repeat="y in test_group_data">{{y.test_group_name}}</option>
+                                                </select>
+                                            </div>   
+                                            <div class="col-md-4">
+                                                <label>Test Name</label>
+                                                <input type="text" class="form-control" ng-model="lab_Test.test_name" placeholder="Enter Test Name" required>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label>Select Test Group</label>
+                                                <select class="form-control" ng-model="lab_Test.test_service_id" required>
+                                                    <option value="">Select Test Type</option>
+                                                    <option value="{{z.fcgid}}" ng-repeat="z in facilityData">{{ z.fcgname }}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <div class="clear">
+                                                                <div class="m-t-xs m-b-xs" style="color: #00C851;font-size: 18px;">
+                                                                    Values 
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt" > 
+                                                        <span class="list-group-item">
+                                                                <table class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Sub Investigations</th>
+                                                                                <th>Age Group</th>
+                                                                                <th>Select Range Type</th>
+                                                                                <th colspan="2">Reference Interval</th>
+                                                                                <th>Unit</th>
+                                                                                <th><button class="btn btn-primary btn-sm btn-addon" type="button" ng-click="add_values_list()"><i class="fa fa-plus"></i>Add</button></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr ng-repeat="i in lab_Test.input_values">
+                                                                                <td>
+                                                                                    <input type="text" ng-model="i.subInvestigation" class="form-control" placeholder="Sub Investigation" required>
+                                                                                </td>
+                                                                                <td>
+                        
+                                                                                    <select class="form-control" ng-model="i.Gender" required>
+                                                                                        <option value="">Select Age Group</option>
+                                                                                        <option value="M">Male</option>
+                                                                                        <option value="F">Female</option>
+                                                                                        <option value="P">Paediatric</option>
+                                                                                        <option value="All">All</option>
+                                                                                    </select>
+                                                                                </td>
+                        
+                                                                                <td>
+                        
+                                                                                    <select class="form-control" ng-model="i.rangeType" ng-change="resetValues(i)" required>
+                                                                                        <option value="">Select Value</option>
+                                                                                        <option value="Range">Range</option>
+                                                                                        <option value="Time">Time</option>
+                                                                                        <option value="T/F">True / False</option>
+                                                                                        <option value="Array">Array</option> 
+                                                                                        <option value="Description">Description</option>
+                                                                                        <option value="Ratio">Ratio</option>
+                                                                                    </select>
+                                                                                </td>
+                        
+                                                                                <td colspan="2">
+                                                                                    <div ng-if="i.rangeType === 'Range'">
+                                                                                        <input type="text" ng-model="i.startRange" class="form-control" placeholder="Enter Start Range" required />
+                                                                                        <input type="text" ng-model="i.endRange" class="form-control" placeholder="Enter End Range" required />
+                                                                                    </div>
+                        
+                                                                                    <div ng-if="i.rangeType === 'Time'">
+                                                                                        <div class="col-md-12">
+                                                                                            <div class="col-md-6">
+                                                                                                <input type="text" ng-model="i.startMinutes" class="form-control" placeholder="Enter Start Minutes" required />
+                                                                                            </div>
+                                                                                            <div class="col-md-6">
+                                                                                                <input type="text" ng-model="i.startSeconds" class="form-control" placeholder="Enter Start Seconds" required />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-12">
+                                                                                            <div class="col-md-6">
+                                                                                                <input type="text" ng-model="i.endMinutes" class="form-control" placeholder="Enter End Minutes" required />
+                                                                                            </div>
+                                                                                            <div class="col-md-6">
+                                                                                                <input type="text" ng-model="i.endSeconds" class="form-control" placeholder="Enter End Seconds" required />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                        
+                                                                                    <div ng-if="i.rangeType === 'T/F'">
+                                                                                        <input type="text" ng-model="i.trueValue" class="form-control" placeholder="Enter True Value" required />
+                                                                                        <input type="text" ng-model="i.falseValue" class="form-control" placeholder="Enter False Value" required />
+                                                                                    </div>
+                        
+                                                                                    <div ng-if="i.rangeType === 'Array'">
+                                                                                        <input type="text" ng-model="i.Array" class="form-control" placeholder="Eg. A+, A-, AB+, etc.," required />
+                                                                                    </div>
+                        
+                                                                                    <div ng-if="i.rangeType === 'Description'">
+                                                                                        <textarea ng-model="i.Description" class="form-control" placeholder="Enter Direct Values" required></textarea>
+                                                                                    </div>
+        
+                                                                                    <div ng-if="i.rangeType === 'Ratio'">
+                                                                                        <div class="col-md-12" style="display: flex; align-items: center">
+                                                                                            <div class="col-md-5">
+                                                                                                <input type="text" class="form-control" ng-model="i.startNumerator" placeholder="Start Numerator" required />
+                                                                                            </div>
+                                                                                            <div class="col-md-2" style="text-align: center">
+                                                                                                <label class="text-muted">IN</label>
+                                                                                            </div>
+                                                                                            <div class="col-md-5">
+                                                                                                <input type="text" class="form-control" ng-model="i.startDenominator" placeholder="Start Denominator" required />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-12" style="display: flex; align-items: center">
+                                                                                            <div class="col-md-5">
+                                                                                                <input type="text" class="form-control" ng-model="i.endNumerator" placeholder="End Numerator" required />
+                                                                                            </div>
+                                                                                            <div class="col-md-2" style="text-align: center">
+                                                                                                <label class="text-muted">IN</label>
+                                                                                            </div>
+                                                                                            <div class="col-md-5">
+                                                                                                <input type="text" class="form-control" ng-model="i.endDenominator" placeholder="End Denominator" required />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <!-- <td><input type="text" ng-model="i.unit" class="form-control" required></td> -->
+                                                                                <!-- <td>
+                                                                                    <select ng-model="i.unit" class="form-control" required>
+                                                                                        <option value="">Select Unit</option>
+                                                                                        <option value="{{i.unit_id}}" ng-repeat="i in Unites">{{i.unit_name}}</option>
+                                                                                    </select>
+                                                                                </td> -->
+                                                                                <td>
+                                                                                    <!-- <ui-select ng-model="i.med_selected" ng-change="MedicineUnit($index)" >
+                                                                                        <ui-select-match placeholder="Select Unit">
+                                                                                            <span ng-bind="$select.selected.unit_name"></span>
+                                                                                        </ui-select-match>
+                                                                                        <ui-select-choices repeat="item in (Unites | filter: $select.search) track by $index">
+                                                                                            <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                                                                        </ui-select-choices>
+                                                                                    </ui-select> -->
+        
+                                                                                    <input type="text" class="form-control" ng-model="i.unit_name" required />
+                                                                                </td>
+                                                                                <td>
+                                                                                    <button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_values_list($index)" ng-disabled="lab_Test.input_values.length == 1"><i class="fa fa-trash fa-lg"></i></button>
+                                                                                </td> 
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td colspan="7">
+                                                                                    <label>Remarks: </label>
+                                                                                    <textarea class="form-control" ng-model="lab_Test.input_values[0].remarks"></textarea>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                        </span> 
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- <pre>{{lab_Test|json}}</pre> -->
+                                        </div>
+            
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <div class="clear">
+                                                                <div class=" m-t-xs m-b-xs" style="color: #00C851;font-size: 18px;">
+                                                                    Samples 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt" > 
+                                                        <span class="list-group-item">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sample Name</th>
+                                                                    <th>Quantity</th>
+                                                                    <th>Unit</th>
+                                                                    <th><button class="btn btn-primary btn-sm btn-addon" type="button" ng-click="add_samples_list()"><i class="fa fa-plus"></i>Add</button></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr ng-repeat="j in lab_Test.input_samples">
+                                                                    <td><input type="text" ng-model="j.sample" ng-change="suggestion(j)" class="form-control" placeholder="Enter Samples" required>
+                                                                        <span class="label label-warning" ng-repeat="s in j.suggested_data track by $index | limitTo : 5"><a ng-click="insert_spec(s, j)">&nbsp;{{ s }}&nbsp;</a></span>
+                                                                    </td>
+                                                                    <td><input type="text" ng-model="j.qty" class="form-control" pattern="[0-9 .]{1,10}" maxlength="10" placeholder="Enter Quantity" required></td>
+                                                                    <!-- <td><input type="text" ng-model="j.unit" class="form-control" required></td> -->
+                                                                    <td style="width: 275px">
+                                                                        <!-- <ui-select ng-model="j.med_selected_for_samples" ng-change="MedicineUnitfor_samples($index)">
+                                                                            <ui-select-match placeholder="Select Unit">
+                                                                                <span ng-bind="$select.selected.unit_name"></span>
+                                                                            </ui-select-match>
+                                                                            <ui-select-choices repeat="item in (Unites | filter: $select.search) track by $index">
+                                                                                <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                                                            </ui-select-choices>
+                                                                        </ui-select> -->
+        
+                                                                        <input type="text" class="form-control" ng-model="j.unit_name" required />
+                                                                    </td>
+                                                                    <td><button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_samples_list($index)" ng-disabled="lab_Test.input_samples.length == 1"><i class="fa fa-trash fa-lg"></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </span> 
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>      
+                                        <!-- <pre>{{lab_Test | json}}</pre>  -->
+                                        </div>
+            
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <div class="clearfix">
+                                                            <div class="clear">
+                                                                <div class=" m-t-xs m-b-xs" style="color: #00C851;font-size: 18px;">
+                                                                    Consumables
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-group no-radius alt" > 
+                                                        <span class="list-group-item">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Medicine</th>
+                                                                    <th>Quantity</th>
+                                                                    <th><button class="btn btn-primary btn-sm btn-addon" type="button" ng-click="add_consumables_list()"><i class="fa fa-plus"></i>Add</button></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr ng-repeat="k in lab_Test.input_consumables">
+                                                                    <td style="width: 380px">
+                                                                        <!-- <div class="row">
+                                                                            <div class="col-md-3"> -->
+                                                                                <!-- <select  ng-model="k.item" class="form-control">
+                                                                                    <option value="">Select Item</option>
+                                                                                    <option value="{{item.med_id}}" ng-repeat="item in items">{{item.med_name}}</option>
+                                                                                </select> -->
+                                                                                <ui-select ng-model="k.selected" ng-change="changeConsume($index)">
+                                                                                    <ui-select-match placeholder="Search Medicine">
+                                                                                        <span ng-bind="$select.selected.med_name"></span>
+                                                                                    </ui-select-match>
+                                                                                    <ui-select-choices repeat="item in (items | filter: $select.search) track by $index">
+                                                                                        <div ng-bind-html="item.med_name | highlight: $select.search"></div>
+                                                                                    </ui-select-choices>
+                                                                                </ui-select>
+                                                                                <!-- <br> {{k.selected |json}}<br> -->
+                                                                            <!-- </div>
+                                                                            <div class="col-md-3">
+                                                                                <input type="text" ng-model="k.qty" class="form-control" required>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                    <button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_consumables_list($index)"><i class="fa fa-trash fa-lg"></button>
+                                                                            </div>
+                                                                        </div> -->
+                                                                    </td>
+                                                                    <td style="width: 380px"><input type="text" ng-model="k.qty" pattern="[0-9 .]{1,10}" maxlength="10" class="form-control" placeholder="Enter Quantity" required></td>
+                                                                    <td><button class="btn m-b-xs btn-sm btn-danger" type="button" ng-click="remove_consumables_list($index)" ng-disabled="lab_Test.input_consumables.length == 1"><i class="fa fa-trash fa-lg"></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        </span> 
+                                                        
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        <!-- <pre>{{lab_Test | json}}</pre>   -->
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div ng-show="action==3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="font-size: 20px;">Add Test</div>
+                                <div class="panel-body">
+                                    <form name="t_form">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <label>Test Group Name</label>
+                                                    <input type="text" class="form-control" id="tgname" name="tgname" ng-model="t_group_name" maxlength="40" autocomplete="off" required> 
+                                            </div>
+                                            <div class="col-md-9">
+                                                <br>
+                                                <button type="submit" class="btn btn-sm btn-success btn-addon pull-right" ng-click="add_test_group_data()" ng-disabled="t_form.$invalid"><i class="fa fa-check"></i>Save</button> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>  
+            </div>
+        </div>
+    </div>

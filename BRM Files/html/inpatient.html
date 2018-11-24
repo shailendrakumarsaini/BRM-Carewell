@@ -1,0 +1,319 @@
+<div ng-controller="inpatient_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="GotoNewPatient()" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/inpatient.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        In Patient
+                    </div>
+                    <small class="text-muted">In Patient</small>
+                </div>   
+            </div>
+        </div>
+
+        <div class="panel-body" ng-init="init()" style="min-height: 800px;">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==1" form="form_id" ><i class="fa fa-check"></i>Save</button><br><br>
+                    </div>  
+                </div> 
+            
+
+                
+                <div class="row">
+                    <div class="col-md-6" ng-repeat="z in patient_basic_data">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="clearfix">
+                                    <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                    <img src="img/medical_icons/team.png" alt="...">
+                                    </a>  
+                                    <div class="clear">
+                                        <div class="h3 m-t-xs m-b-xs">
+                                        {{z.name}}
+                                            <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>   
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="list-group no-radius alt" > 
+                                <span class="list-group-item">
+                                    Fathers Name :
+                                    <span class="pull-right">{{z.father_name}}</span> 
+                                </span>   
+                            </div>
+                            <div class="list-group no-radius alt" > 
+                                <span class="list-group-item">  
+                                    Patient Age :
+                                    <span class="pull-right">{{z.age}}</span> 
+                                </span>   
+                            </div>
+                            <div class="list-group no-radius alt" > 
+                                <span class="list-group-item">
+                                   City Name :
+                                    <span class="pull-right">{{z.city}}</span> 
+                                </span>   
+                            </div>
+                            <div class="list-group no-radius alt" > 
+                                <span class="list-group-item">
+                                    Mobile No. :
+                                    <span class="pull-right">{{z.mobile}}</span> 
+                                </span>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <form id="form_id" ng-submit="allot_bed()" class="form-validation" >
+                <div class="row">
+                        <div class="col-md-6" >
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <!-- <div class="clearfix"> -->
+                                        <!-- <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                       
+                                        </a>   -->
+                                        <!-- <div class="clear"> -->
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                <div class="well well-sm">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="radio">
+                                                                    <label><input type="radio" name="radio2" value="surgery" ng-model="test2" ng-click="selectSurgery()" required="required">&nbsp;Surgery</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="radio">
+                                                                    <label><input type="radio" name="radio2" value="medical" ng-model="test2" ng-click="selectSurgery()" required="required">&nbsp;Medical</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="well well-sm">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="radio">
+                                                                    <label><input type="radio"  name="radio1" value="package" ng-model="test1" ng-click="selectPackage()" required="required">&nbsp;Package</label>
+                                                            </div>
+                                                        </div>                                                  
+                                                        <div class="col-md-6">
+                                                            <div class="radio">
+                                                                    <label><input type="radio" name="radio1" value="regular" ng-model="test1" ng-click="selectPackage()" required="required">&nbsp;Regular</label>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>  
+                                        <!-- </div>   -->
+                                    <!-- </div> -->
+                                </div>
+                                <div class="list-group no-radius alt"> 
+                                    <span class="list-group-item" >
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label><b class="text-danger">*</b>Date</label>
+                                                <div class="input-group"> 
+                                                    <input type="text" id="admissionID" ng-model="admission" ng-change="changeDate_Through_UiJquery(admission)" placeholder="dd/mm/yyyy" class="form-control" readonly required />
+                                                    <label class="input-group-addon" for="admissionID"><i class="fa fa-calendar"></i></label>
+                                                </div>
+                                            </div> 
+
+                                            <div class="col-md-6">
+                                                <div class="form-group" ng-init="scheme_id = scheme_data[0].schemeId">
+                                                    <label><b class="text-danger">*</b>Scheme Name</label>
+                                                    <select ng-model="inpatient_data.scheme_id" class="form-control" required>
+                                                        <option value="">Select Scheme</option>
+                                                        <option value="{{j.schemeId}}" ng-repeat="j in scheme_data">{{j.schemeName}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                      
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label><b class="text-danger">*</b>Department</label>
+                                                    <select ng-model="inpatient_data.department_id" class="form-control" required>
+                                                        <option value="">Select Department</option>
+                                                        <option value="{{j.spid}}" ng-repeat="j in department_data">{{j.spname}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label><b class="text-danger">*</b>Physician</label>
+                                                    <select id="sel" ng-model="inpatient_data.dr_id" class="form-control" required>
+                                                        <option value="">Select Doctor</option>
+                                                        <option value="{{i.uid}}" ng-repeat="i in doctors_data">Dr.&nbsp;{{i.name}}&nbsp;{{i.qualification}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                  
+                                                
+                                            </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">                          
+                                                <!-- <div class="form-group" ng-show="showSurgery == 1">
+                                                    <label><b class="text-danger">*</b>Surgeon Doctor Name</label>
+                                                    <select ng-model="surgen" class="form-control" ng-change="surgens()" >
+                                                        <option value="">Surgeon Doctor Name</option>
+                                                        <option value="{{j.uid}}" ng-repeat="j in doctors_data" ng-if="j.uid != test">Dr.&nbsp;{{j.name}}&nbsp;{{j.qualification}}</option>
+                                                    </select>
+                                                </div> -->
+
+                                                <div class="form-group" ng-if="showSurgery == 1">
+                                                        <label><b class="text-danger">*</b>Surgeon</label>
+                                                        <select ng-model="inpatient_data.surgeon_dr_id" class="form-control" required>
+                                                            <option value="">Select Doctor</option>
+                                                            <option value="{{i.uid}}" ng-repeat="i in doctors_data">Dr.&nbsp;{{i.name}}&nbsp;{{i.qualification}}</option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <div class="form-group" ng-if="showSurgery == 1">
+                                                        <!-- <label><b class="text-danger">*</b>Anesthesia Doctor Name</label>
+                                                        <select ng-model="anesthesia" class="form-control" ng-change="anesthesias()" >
+                                                            <option value="">Anesthesia Doctor Name</option>
+                                                            <option value="{{k.uid}}" ng-repeat="k in doctors_data" ng-if="k.uid != test">Dr.&nbsp;{{k.name}}&nbsp;{{k.qualification}}</option>
+                                                        </select> -->
+
+                                                        <label><b class="text-danger">*</b>Anesthetist</label>
+                                                        <select ng-model="inpatient_data.anesthesia_dr_id" class="form-control" required>
+                                                            <option value="">Select Doctor</option>
+                                                            <option value="{{i.uid}}" ng-repeat="i in doctors_data">Dr.&nbsp;{{i.name}}&nbsp;{{i.qualification}}</option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                        </div>  
+
+                                        <div class="row">
+                                                <div class="col-md-6">
+                                                
+
+                                                <label><b class="text-danger">*</b>Bed</label>
+                                                <select ng-model="inpatient_data.bed_id" class="form-control" ng-change="selectAmount(inpatient_data.bed_id)" required>
+                                                    <option value="">Select Bed</option>
+                                                    <option value="{{i.bed_id}}" ng-repeat="i in beds">{{ i.loc_name + ' - ' + i.bed_code }}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <label for="no_of_daysID"><b class="text-danger">*</b>Number Of Days</label>
+                                                    
+                                                        <input type="text" ng-model="inpatient_data.no_of_days" id="no_of_daysID"  pattern="[0-9]{0,10}" placeholder="Number Of Days" maxlength="10" class="form-control" autocomplete="off" >
+                                                </div>
+                                            <!-- <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label><b style="color:red;";>*</b>Advance Amount</label>
+                                                    <input type="text" ng-model="advAmount" ng-change="advAmounts()" pattern="[0-9]{0,20}" class="form-control" >
+                                                </div>
+                                            </div> -->
+                                        </div>
+
+                                        <div class="row" ng-if="showpackage == 1">
+                                            <div class="col-md-6">
+                                                <label><b class="text-danger">*</b>Total Package</label>
+                                                <input type="text" ng-model="inpatient_data.totalPackage" pattern="[0-9]{0,20}" class="form-control" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label><b class="text-danger">*</b>Initial Diagnosis</label>
+                                                    <!-- <div class="input-group">
+                                                        <input type="text" ng-model="inpatient_data.init_diagnosis" placeholder="Initial Diagnosis" maxlength="50" class="form-control" autocomplete="off" required>
+                                                        <label class="input-group-addon btn"><i class="glyphicon-glyphicon-th"></i></label>
+                                                    </div> -->
+                                                    <textarea ng-model="inpatient_data.init_diagnosis" placeholder="Initial Diagnosis" class="form-control" autocomplete="off"></textarea>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                
+                                        
+                                   
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" >
+                                <!-- <div class="row" ng-repeat="i in data.blocks" ng-if="$index%2 == 0">
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <div class="clearfix">
+                                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                                        <img src="img/medical_icons/hospital-bed.png" alt="...">
+                                                        </a>  
+                                                        <div class="clear">
+                                                            <div class="h3 m-t-xs m-b-xs">
+                                                            {{i.block_name}}
+                                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>   
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                                <div class="list-group no-radius alt" ng-repeat=" j in i.rooms"> 
+                                                    <span class="list-group-item">
+                                                        <span class="badge bg-info pull-left">{{ j.room_name }}</span><br/>
+                                                    <br/>
+                    
+                                                    
+                                                <span ng-repeat="k in j.beds">
+                                                        <i id="bed_{{k.bed_id}}" ng-style="myObj['bed_' + k.bed_id]" ng-class="(k.is_allocated==0)?'fa fa-bed text-success':'fa fa-bed text-danger'" ng-click="get_bed_id(k.bed_id,k.rentAmount, k.is_allocated, 'bed_' + k.bed_id)"></i>
+                                                        <span ng-if="(data.blocks.length == ($parent.$parent.$index + 1))? placeToolTip(data): '' "></span>
+                                                    </span>
+                                                    </span>       
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+										
+										<div class="col-sm-6" ng-if="(data.blocks.length - 1) >= ($index + 1)">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <div class="clearfix">
+                                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                                        <img src="img/medical_icons/hospital-bed.png" alt="...">
+                                                        </a>  
+                                                        <div class="clear">
+                                                            <div class="h3 m-t-xs m-b-xs">
+																{{ data.blocks[$index+1].block_name }}
+                                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>   
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                                <div class="list-group no-radius alt" ng-repeat=" j in data.blocks[$index+1].rooms"> 
+                                                    <span class="list-group-item">
+                                                        <span class="badge bg-info pull-left">{{ j.room_name }}</span><br/>
+                                                    <br/>
+                                                <span ng-repeat="k in j.beds">
+                                                        <i id="bed_{{k.bed_id}}" ng-style="myObj['bed_' + k.bed_id]" ng-class="(k.is_allocated==0)?'fa fa-bed text-success':'fa fa-bed text-danger'" ng-click="get_bed_id(k.bed_id,k.rentAmount, k.is_allocated, 'bed_' + k.bed_id)"></i>
+                                                        <span ng-if="(data.blocks.length == ($parent.$parent.$index + 1))? placeToolTip(data): '' "></span>
+                                                    </span>
+                                                    </span>       
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                                </div> -->
+                            
+                        </div>
+                </div>             
+               
+            </form> 
+            <pre>{{inpatient_data |json}}</pre>
+        </div>
+    </div>
+</div>

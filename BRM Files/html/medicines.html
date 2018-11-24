@@ -1,0 +1,627 @@
+<div ng-controller="medicines_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix"> <a ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r"> <img src="img/medical_icons/medicine-7.png" > </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">Medicines </div>
+                    <small class="text-muted">All Medicines</small> </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1"> <span class="input-group-addon"> <i class="fa fa-search"></i> </span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-disabled="addmedicine.$invalid" ng-show="action==2" form="myform" style="width:100px;"> <i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12" ng-init="init()">
+				<!-- Page Nation -->
+				    <div class="panel panel-default" ng-show="action==1">
+                        <div class="panel-heading">
+                        All Medicines
+                        </div>
+   
+                        <div class="table-responsive">
+                        <table class="table table-striped b-t b-light">
+                            <thead>
+                            <tr>
+                            <th>S.No.</th>
+                                                    <th><a ng-click="SortTheData('med_name')">Name</a></th>
+                                                    <th><a ng-click="SortTheData('med_sale_units')">Units</a></th>
+                                                    <th><a ng-click="SortTheData('ig_name')">Group</a></th>
+                                                    <th><a ng-click="SortTheData('med_brand')">Marketed by</a></th>
+                                                    <th><a ng-click="SortTheData('tax_name')">Tax Name</a></th>
+                                                    <th>Status</th>
+                            </tr>
+                            </thead>
+                            
+                            <tbody ng-repeat="x in medicine_data | filter:search | orderBy:sort:reverseSort">
+                                                <tr>
+                                                    <td>{{x.med_id}}</td>
+                                                    <td><a>
+                                                            <span ng-click="update(x.med_id,x)"><b ng-bind="x.med_name"></b></span>
+                                                            <span class="pull-right"><i ng-class="(x.med_allow_sale=='Yes')?'fa fa-cart-plus':''"></i></span>
+                                                            <br>
+                                                            <small ng-bind="x.med_combination" ng-click="update(x.med_id,x)"></small>
+                                                        </a>
+                                                    </td>
+                                                    <td>{{x.med_purchasepack}}&nbsp;{{x.med_sale_units}}: {{x.med_boxpack}}&nbsp;{{x.med_distributed_units}}</td>
+                                                    <td><span ng-bind="x.ig_name"></span></td>
+                                                    <td><span ng-bind="x.med_brand"></span></td>
+                                                    <td><span ng-bind="x.tax_name"></span></td>
+                                                    <td><a href ng-click="change_status(x.med_id,x.status,$index)"> <i class="fa fa-check text-success" ng-show="x.med_status==1"></i> <i class="fa fa-times text-danger"  ng-show="x.med_status==0"></i></a></td>
+                                                </tr> 
+                                                
+                                                <tr ng-show="menu_uid==x.med_id">
+                                                    <td colspan="11">
+                                                        <form name="updatemedicines" class="form-validation">
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>HSN Code</label>
+                                                                        <input type="text" ng-model="x.med_hsncode" placeholder="Enter HSN Code" class="form-control" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Code</label>
+                                                                        <input type="text" class="form-control" name="code" ng-model="x.med_code" placeholder="Enter Code" ng-keyup="get_age_data(pt_age)" autocomplete="off" required maxlength="20">
+                                                                    </div>
+                                                                </div>
+                                                            <div class="col-md-4">
+                                                                    <label>Medicine Name</label>
+                                                                    <input type="text" class="form-control" name="med_name" ng-model="x.med_name" placeholder="Enter Medicine name" ng-keyup="get_age_data(pt_age)" maxlength="30" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <label>Combination</label>
+                                                                    <input type="text" class="form-control" name="med_combination" ng-model="x.med_combination" placeholder="Enter Combination Name" ng-keyup="get_age_data(pt_age)" maxlength="30">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label>Marketed by</label>
+                                                                    <input type="text" class="form-control" name="med_brand" ng-model="x.med_brand" placeholder="Enter Brand name" ng-keyup="get_age_data(pt_age)" maxlength="30">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Manufactured By</label>
+                                                                        <input type="text" ng-model="x.med_manufacturedby" placeholder="Enter Manufacturar" class="form-control" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <label>Group</label>
+                                                                    <select class="form-control m-b" required ng-model="x.med_group_id">
+                                                                        <option value="">Select Group Name</option>
+                                                                        <option value="{{x.ig_id}}" ng-repeat="x in groupitems_data">{{x.ig_name}}</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label>Medicine Category</label>
+                                                                    <input type="text" class="form-control" name="med_category" ng-model="x.med_category" placeholder="Enter Category name" ng-keyup="get_age_data(pt_age)" maxlength="30">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Schedule</label>
+                                                                        <select class="form-control" ng-model="x.med_schedule">
+                                                                            <option value="" >Select Schedule</option>
+                                                                            <option value="H" >H</option>
+                                                                            <option value="H1">H1</option>
+                                                                            <option value="C">C</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <label>Allow Sale</label>
+                                                                    <select class="form-control m-b" ng-model="x.med_allow_sale" required>
+                                                                        <option value="">Select Type</option>
+                                                                        <option value="Yes" >Yes</option>
+                                                                        <option value="No">No</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label>Purchase Units</label>
+                                                                    <select class="form-control m-b" ng-model="x.med_sale_units" required>
+                                                                        <option value="">Select Unit</option>
+                                                                        <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                                                                    </select>
+                                                                    <!-- <ui-select ng-model="selected_data_sale_unit.unit_obj" ng-change="SelectSaleUnit(selected_data_sale_unit.unit_obj)">    
+                                                                <ui-select-match placeholder="Search Units">
+                                                                    <span ng-bind="$select.selected.unit_name"></span>
+                                                                </ui-select-match>
+                                                                <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index">
+                                                                    <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                                                </ui-select-choices>
+                                                            </ui-select> -->
+                                                            </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-group">
+                                                                        <label>Purchase Pack</label>
+                                                                        <input type="text" ng-model="x.med_purchasepack" class="form-control" placeholder="Enter Purchase Details" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <label>Sale Units</label>
+                                                                    <select class="form-control m-b" required ng-model="x.med_distributed_units">
+                                                                        <option value="">Select Unit</option>
+                                                                        <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-group">
+                                                                        <label>Sales Pack</label>
+                                                                        <input type="text" ng-model="x.med_boxpack" pattern="[0-9]{1,10}" maxlength="10" class="form-control" placeholder="Enter Box Details" required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Minimum Stock</label>
+                                                                        <input type="text" ng-model="x.med_reorder" pattern="[0-9 .,]{0,10}" maxlength="10" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Rack No.</label>
+                                                                        <input type="text" ng-model="x.med_rockno" class="form-control" placeholder="Enter Rack No." required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label>Tax Name</label>
+                                                                    <select class="form-control m-b" required ng-model="x.med_tax">
+                                                                    <option value="">Select Tax</option>
+                                                                    <option value="{{x.tax_id}}" ng-repeat="x in medtaxes_data">{{x.tax_name}}</option>
+                                                                </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Remarks</label>
+                                                                        <input type="text" ng-model="x.med_no_of_units" class="form-control" placeholder="Remarks">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <br><br>
+                                                                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_medicines(x)" ng-disabled="updatemedicines.$invalid"><i class="fa fa-check"></i>Update</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </td>
+                                                    
+                                                </tr>   
+                                                <tr ng-show="menu_uid==x.med_id">
+                                                    <td colspan="12">
+                                                        <div clss="row">
+                                                            <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="delete_hospital(x.hid)"><i class="fa fa-trash"></i>Delete</button>
+                                                            <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_medicines(x)" ng-disabled="updatemedicines.$invalid"><i class="fa fa-check"></i>Update</button>
+                                                        </div>
+                                                    </td>
+                                                </tr> 
+                                            
+                            
+                            </tbody>
+                        </table>
+                        </div>
+                    <!-- <footer class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-4 hidden-xs">
+                        
+                                        
+                        </div>
+                        <div class="col-sm-4 text-center">
+                        <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
+                        </div>
+                        <div class="col-sm-4 text-right text-center-xs">                
+                        <ul class="pagination pagination-sm m-t-none m-b-none">
+                            <li><a href><i class="fa fa-chevron-left"></i></a></li>
+                            <li><a href>1</a></li>
+                            <li><a href>2</a></li>
+                            <li><a href>3</a></li>
+                            <li><a href>4</a></li>
+                            <li><a href>5</a></li>
+                            <li><a href><i class="fa fa-chevron-right"></i></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </footer> -->
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- / content -->
+
+
+
+				<!-- Page Nation Close-->
+				
+				
+				
+				
+                  <!--  <table class="table table-striped b-t b-light table-bordered" ng-show="action==1">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th><a ng-click="SortTheData('med_name')">Name</a></th>
+                                <th><a ng-click="SortTheData('med_sale_units')">Units</a></th>
+                                <th><a ng-click="SortTheData('ig_name')">Group</a></th>
+                                <th><a ng-click="SortTheData('med_brand')">Marketed by</a></th>
+                                <th><a ng-click="SortTheData('tax_name')">Tax Name</a></th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="x in medicine_data | filter:search | orderBy:sort:reverseSort">
+                            <tr>
+                                <td>{{x.med_id}}</td>
+                                <td><a>
+                                        <span ng-click="update(x.med_id,x)"><b ng-bind="x.med_name"></b></span>
+                                        <span class="pull-right"><i ng-class="(x.med_allow_sale=='Yes')?'fa fa-cart-plus':''"></i></span>
+                                        <br>
+                                        <small ng-bind="x.med_combination" ng-click="update(x.med_id,x)"></small>
+                                    </a>
+                                </td>
+                                <td>{{x.med_purchasepack}}&nbsp;{{x.med_sale_units}}: {{x.med_boxpack}}&nbsp;{{x.med_distributed_units}}</td>
+                                <td><span ng-bind="x.ig_name"></span></td>
+                                <td><span ng-bind="x.med_brand"></span></td>
+                                <td><span ng-bind="x.tax_name"></span></td>
+                                <td><a href ng-click="change_status(x.med_id,x.status,$index)"> <i class="fa fa-check text-success" ng-show="x.med_status==1"></i> <i class="fa fa-times text-danger"  ng-show="x.med_status==0"></i></a></td>
+                            </tr> 
+
+                            <tr ng-show="menu_uid==x.med_id">
+                                <td colspan="11">
+                                    <form name="updatemedicines" class="form-validation">
+                                        <div class="row">
+                                             <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>HSN Code</label>
+                                                    <input type="text" ng-model="x.med_hsncode" placeholder="Enter HSN Code" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Code</label>
+                                                    <input type="text" class="form-control" name="code" ng-model="x.med_code" placeholder="Enter Code" ng-keyup="get_age_data(pt_age)" autocomplete="off" required maxlength="20">
+                                                </div>
+                                            </div>
+                                           <div class="col-md-4">
+                                                <label>Medicine Name</label>
+                                                <input type="text" class="form-control" name="med_name" ng-model="x.med_name" placeholder="Enter Medicine name" ng-keyup="get_age_data(pt_age)" maxlength="30" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                             <div class="col-md-4">
+                                                <label>Combination</label>
+                                                <input type="text" class="form-control" name="med_combination" ng-model="x.med_combination" placeholder="Enter Combination Name" ng-keyup="get_age_data(pt_age)" maxlength="30">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label>Marketed by</label>
+                                                <input type="text" class="form-control" name="med_brand" ng-model="x.med_brand" placeholder="Enter Brand name" ng-keyup="get_age_data(pt_age)" maxlength="30">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Manufactured By</label>
+                                                    <input type="text" ng-model="x.med_manufacturedby" placeholder="Enter Manufacturar" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Group</label>
+                                                <select class="form-control m-b" required ng-model="x.med_group_id">
+                                                    <option value="">Select Group Name</option>
+                                                    <option value="{{x.ig_id}}" ng-repeat="x in groupitems_data">{{x.ig_name}}</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label>Medicine Category</label>
+                                                <input type="text" class="form-control" name="med_category" ng-model="x.med_category" placeholder="Enter Category name" ng-keyup="get_age_data(pt_age)" maxlength="30">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Schedule</label>
+                                                    <select class="form-control" ng-model="x.med_schedule">
+                                                        <option value="" >Select Schedule</option>
+                                                        <option value="H" >H</option>
+                                                        <option value="H1">H1</option>
+                                                        <option value="C">C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label>Allow Sale</label>
+                                                <select class="form-control m-b" ng-model="x.med_allow_sale" required>
+                                                    <option value="">Select Type</option>
+                                                    <option value="Yes" >Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Purchase Units</label>
+                                                <select class="form-control m-b" ng-model="x.med_sale_units" required>
+                                                    <option value="">Select Unit</option>
+                                                    <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                                                </select>
+                                                <!-- <ui-select ng-model="selected_data_sale_unit.unit_obj" ng-change="SelectSaleUnit(selected_data_sale_unit.unit_obj)">    
+                                            <ui-select-match placeholder="Search Units">
+                                                <span ng-bind="$select.selected.unit_name"></span>
+                                            </ui-select-match>
+                                            <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index">
+                                                <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                            </ui-select-choices>
+                                        </ui-select> -->
+                               <!--              </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Purchase Pack</label>
+                                                    <input type="text" ng-model="x.med_purchasepack" class="form-control" placeholder="Enter Purchase Details" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>Sale Units</label>
+                                                <select class="form-control m-b" required ng-model="x.med_distributed_units">
+                                                    <option value="">Select Unit</option>
+                                                    <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                                                </select>
+                                            </div>
+                                             <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label>Sales Pack</label>
+                                                    <input type="text" ng-model="x.med_boxpack" pattern="[0-9]{1,10}" maxlength="10" class="form-control" placeholder="Enter Box Details" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Minimum Stock</label>
+                                                    <input type="text" ng-model="x.med_reorder" pattern="[0-9 .,]{0,10}" maxlength="10" class="form-control">
+                                                </div>
+                                            </div>
+                                             <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Rack No.</label>
+                                                    <input type="text" ng-model="x.med_rockno" class="form-control" placeholder="Enter Rack No." required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label>Tax Name</label>
+                                                <select class="form-control m-b" required ng-model="x.med_tax">
+                                                <option value="">Select Tax</option>
+                                                <option value="{{x.tax_id}}" ng-repeat="x in medtaxes_data">{{x.tax_name}}</option>
+                                            </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Remarks</label>
+                                                    <input type="text" ng-model="x.med_no_of_units" class="form-control" placeholder="Remarks">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <br><br>
+                                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_medicines(x)" ng-disabled="updatemedicines.$invalid"><i class="fa fa-check"></i>Update</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                                
+                            </tr>   -->  
+                            <!-- <tr ng-show="menu_uid==x.med_id">
+                                <td colspan="12">
+                                    <div clss="row">
+                                        <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="delete_hospital(x.hid)"><i class="fa fa-trash"></i>Delete</button>
+                                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_medicines(x)" ng-disabled="updatemedicines.$invalid"><i class="fa fa-check"></i>Update</button>
+                                    </div>
+                                </td>
+                            </tr> -->
+                       <!--  </tbody>   
+                        <tbody ng-show="NoData == 1">
+                            <tr align="center">
+                                <td colspan="11">
+                                    <h4>No Data</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <!-- <pre>{{menu_uid |json}}</pre> -->
+                   <!--   </table>   -->
+              
+
+            <!-- Add Medicine -->
+
+            <div ng-show="action==2">
+                <form ng-submit="add_medicine()" id="myform" name="addmedicine" class="form-validation">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>HSN Code</label>
+                                <input type="text" ng-model="hsn_code" placeholder="Enter HSN Code" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Code</label>
+                                <input type="text" class="form-control" name="code" ng-model="code" placeholder="Enter Code" ng-keyup="get_age_data(pt_age)" autocomplete="off" maxlength="30" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Medicine Name</label>
+                                <input type="text" class="form-control" name="medicine_name" ng-model="medicine_name" autocomplete="off" placeholder="Enter Medicine name" ng-keyup="get_age_data(pt_age)" maxlength="30" required>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Combination</label>
+                                <input type="text" class="form-control" name="combination_name" ng-model="combination_name" placeholder="Enter Combination Name" ng-keyup="get_combination_sugg(combination_name)" maxlength="30" autocomplete="off" required>
+                                <span class="label label-warning" ng-repeat="c in filtered_comb_sugg | limitTo : 8"><a ng-click="choose_combination_sugg(c.med_combination)">{{c.med_combination}}</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Marketed by</label>
+                                <input type="text" class="form-control" name="brand_name" autocomplete=off ng-model="med_brand" placeholder="Enter Brand name" ng-keyup="get_brand_sugg(med_brand)" ng-maxlength="50" required>
+                                <span class="label label-warning" ng-repeat="b in filtered_brand_sugg | limitTo : 8"><a ng-click="choose_sugg(b.med_brand)">{{b.med_brand}}</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Manufactured by</label>
+                                <input type="text" ng-model="manufactured_by" placeholder="Enter Manufacturar" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Group</label>
+                                <select class="form-control m-b" ng-model="group_name" required>
+                                      <option value="">Select Group</option>
+                                      <option value="{{x.ig_id}}" ng-repeat="x in groupitems_data">{{x.ig_name}}</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Medicine Category</label>
+                                <input type="text" class="form-control" autocomplete=off name="category_name" ng-model="med_category" placeholder="Enter Category name" ng-change="get_medicine_category(med_category)" required>
+                                <span class="label label-warning" ng-repeat="s in segg | unique: 'med_category' | limitTo : 8"><a ng-click="insert_spec_medicine(s)">&nbsp;{{s}}&nbsp;</a></span>
+                                <!-- <pre>{{segg|json}}</pre> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Schedule</label>
+                                <select class="form-control" ng-model="schedule">
+                                  <option value="" >Select Schedule</option>
+                                  <option value="H" >H</option>
+                                  <option value="H1">H1</option>
+                                  <option value="C">C</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Allow Sale</label>
+                                <select class="form-control m-b" ng-model="allow_sales">
+                              <option value="Yes" >Yes</option>
+                              <option value="No">No</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Purchase Units</label>
+                                <!-- <select class="form-control m-b" required ng-model="sale_unit" ng-change="dst_units=sale_unit">
+                                  <option value="">Select Unit</option>
+                                  <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                              </select> -->
+
+                                <ui-select ng-model="selected_data_sale_unit.unit_obj" ng-change="SelectSaleUnit(selected_data_sale_unit.unit_obj)">
+                                    <ui-select-match placeholder="Search Units">
+                                        <span ng-bind="$select.selected.unit_name"></span>
+                                    </ui-select-match>
+                                    <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index">
+                                        <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                    </ui-select-choices>
+                                </ui-select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2" ng-init="purchase_pack=1">
+                            <div class="form-group">
+                                <label>Purchase Pack</label >
+                                <input type="text" ng-model="purchase_pack" class="form-control" placeholder="Enter Purchase Details" required>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Sale Units</label>
+                                <!-- <select class="form-control m-b" required ng-model="dst_units" >
+                                  <option value="">Select Unit</option>
+                                  <option value="{{x.unit_name}}" ng-repeat="x in medunits_data">{{x.unit_name}}</option>
+                              </select> -->
+                                <ui-select ng-model="selected_data_dist_unit.unit_obj">
+                                    <ui-select-match placeholder="Search Units">
+                                        <span ng-bind="$select.selected.unit_name"></span>
+                                    </ui-select-match>
+                                    <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index">
+                                        <div ng-bind-html="item.unit_name | highlight: $select.search"></div>
+                                    </ui-select-choices>
+                                </ui-select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label>Sales Pack</label>
+                                <input type="text" ng-model="box_pack" pattern="[0-9]{1,10}" maxlength="10" class="form-control" placeholder="Enter Box Details" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Minimum Stock</label>
+                                <input type="text" ng-model="reorder" pattern="[0-9 .,]{0,10}" maxlength="10" class="form-control" placeholder="To alert low stock">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Rack No.</label>
+                                <input type="text" ng-model="rack_no" class="form-control" placeholder="Enter Rack No." required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Tax Name</label>
+                                <select class="form-control m-b" ng-model="tax_name" required>
+                              <option value="" >Select Tax</option>
+                              <option value="{{x.tax_id}}" ng-repeat="x in medtaxes_data">{{x.tax_name}}</option>
+                          </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Remarks</label>
+                                <input type="text" ng-model="no_of_units" class="form-control" placeholder="Remarks">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <!-- <pre ng-bind="segg|json"></pre> -->
+            </div>
+        </div>
+    </div>
+</div>

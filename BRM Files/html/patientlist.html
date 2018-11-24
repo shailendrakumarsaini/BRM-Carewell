@@ -1,0 +1,38 @@
+<div ng-controller="patientlist_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Patient List
+
+                        <div class="col-md-6 m-b-sm pull-right">
+                            <div class="btn-group btn-group-justified">
+                                <a href="" ng-class="(action=='oplist')?'btn btn-success btn-addon btn-sm':'btn btn-default btn-addon btn-sm'" ng-click="oplist()"><i class="fa fa-user-md fa-lg"></i>Out Patients</a>
+                                <a href="" ng-class="(action=='casualty')?'btn btn-success btn-addon btn-sm':'btn btn-default btn-addon btn-sm'" ng-click="casualty()"><i class="fa fa-stethoscope fa-lg"></i>Casualty</a>
+
+                                <a href="" ng-class="(action=='iplist')?'btn btn-success btn-addon btn-sm':'btn btn-default btn-addon btn-sm'" ng-click="iplist()"> <i class="fa fa-bed fa-lg"></i>In Patients</a>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">In house Patient list</small>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+
+            <oplist1 data="{fromdate:'2018-06-05',todate:'2018-06-05'}"></oplist1>
+
+        </div>
+    </div>
+
+
+</div>

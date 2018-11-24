@@ -1,0 +1,386 @@
+<div ng-controller="inward_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+			<a ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+			<img src="img/medical_icons/asset_inward.png" > </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs"> Inward </div>
+                    <small class="text-muted">Inward Asset</small> </div>
+            </div>
+        </div>  
+        <div class="panel-body">
+            <!-- <div class="row" style="overflow: auto">
+                <div class="col-md-3">
+                    <div class="form-group input-group pull-left" ng-show="action==1"> <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                </div>
+
+				<div class="col-md-9">
+                    <span class="pull-right">
+                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_new_ob()" style="width:100px;"> <i class="fa fa-plus"></i> Add OS </button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_inv_unit()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                    </span>
+                </div>
+            </div> -->
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12" ng-init="init()">
+                    <div class="panel panel-default" ng-show="action==1">
+                        <div class="panel-heading" style="font-size: 20px;">Asset Inward Details
+                            <span class="pull-right">
+                                <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_new_ob()" style="width:100px;"> <i class="fa fa-plus"></i> Add OS </button>
+                                <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-show="action==1" ng-click="add_inv_unit()" style="width:100px;"> <i class="fa fa-plus"></i> New </button>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped b-t b-light table-bordered">
+                                <thead>
+                                    <tr ng-hide="NoData==1">
+                                        <td colspan="6">
+                                            <div class=" col-md-3 input-group pull-left"> <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                                <input class="form-control" ng-model="search">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>S No.</th>
+                                        <th><a ng-click="SortTheData('invoice_no')">Invoice No</a></th>
+                                        <th><a ng-click="SortTheData('invoice_date')">Invoice Date</a></th>
+                                        <th><a ng-click="SortTheData('name')">Supplier Name</a></th>
+                                        <th style="text-align:right"><a ng-click="SortTheData('invoice_amount')">Invoice Amount</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-repeat="x in inward_data |filter:search | orderBy:sort:reverseSort">
+                                    <tr rowspan="2">
+                                        <td>{{$index+1}}</td>
+                                        <td><span ng-bind="x.invoice_no"></span></td>
+                                        <td><span ng-bind="x.invoice_date | date:'dd-MM-yyyy'"></span></td>
+                                        <td><span ng-bind="x.name"></span></td>
+                                        <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{x.invoice_amount | number:'2'}}</td>
+                                        <td><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal" ng-click="show_inward(x.assetpo_id)"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i class="fa fa-qrcode fa-lg" ng-click="print_qr(x.assetpo_id)"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody ng-show="NoData==1">
+                                    <tr align="center">
+                                        <td colspan="6"><h4>No Data</h4></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div id="myModal" class="modal fade" role="dialog" data-backdrop="static">
+                                <div class="modal-dialog" style="overflow: auto;min-width: 80%">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content" style="overflow: auto">
+                                        <div class="modal-header">
+                                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                            <h4 class="modal-title">Item List</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-striped table-bordered b-t b-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Store Name</th>
+                                                        <th>PO ID</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody ng-repeat="z in asset_inward_show">
+                                                    <tr rowspan="2">
+                                                        <td ng-bind="z.inward_show_store_name"></td>
+                                                        <td ng-bind="z.inward_show_po_id"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table class="table table-striped table-bordered b-t b-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th>##</th>
+                                                        <th>Item Name</th>
+                                                        <th>Qty</th>
+                                                        <th>Receive QTY</th>
+                                                        <th>Pending Qty</th>
+                                                        <th style="text-align:right">Net Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody ng-repeat="y in asset_inward_data">
+                                                    <tr rowspan="2">
+                                                        <td>{{$index+1}}</td>
+                                                        <td ng-bind="y.asset_name"></td>
+                                                        <td ng-bind="y.item_qty"></td>
+                                                        <td>{{y.item_rec_qty}}</td>
+                                                        <td>{{y.item_pend_qty}}</td>
+                                                        <td style="text-align:right"><i class="fa fa-rupee"></i>&nbsp;{{y.item_amount |number:2}}</td>
+                                                        <td ng-if="y.item_rec_qty!=0?qr(y.item_rec_qty)" ng-repeat="i in range">{{y.item_rec_qty}}</td>
+                                                        <!-- <td ng-repeat="n in [].constructor(6) track by $index"><img style="width:30px;height:30px;" src="http://api.qrserver.com/v1/create-qr-code/?data={{y.item_rec_qty}}"></td> -->
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div ng-show="action==2" style="overflow: auto">
+                            <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.$invalid"> <i class="fa fa-check"></i>Save </button>
+                    </div> -->
+
+                    <div ng-show="action==2" class="row" style="overflow: auto">
+                        <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="font-size: 20px;">Add Asset For Inward                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.$invalid"> <i class="fa fa-check"></i>Save </button>
+                                    </div>
+                                    <div class="panel-body">
+                                    <form name="myform" id="myform" ng-submit="save_itm_invward()">
+                                        <table class="table table-striped b-t b-light" ng-show="action==2">
+                                            <tr>
+                                                <th colspan="4">&nbsp;&nbsp;&nbsp;Super Store</th>
+                                                <th colspan="4">&nbsp;&nbsp;&nbsp;PO ID</th>
+                                                <th colspan="2"></th>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <div class="form-group">
+                                                        <select name="str" ng-model="asset_inward.asset_inward_store_id" id="input${1/(\w+)/\u\1/g}" class="form-control" required>
+                                                            <option value="" >Select Store</option>
+                                                            <option value="{{s.id}}" ng-repeat="s in sup">{{s.store_name}}</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                                <td colspan="4">
+                                                    <div class="form-group">
+                                                        <div ng-class="{ 'has-error' : myform.poid.$invalid && !myform.poid.$pristine }">
+                                                            <input type="text" class="form-control" name="poid" ng-model="po_id" placeholder="PO iD" pattern="[0-9]{1,10}" maxlength=25 autocomplete="off" required>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2">
+                                                    <a href ng-click="show_items(po_id)" class="btn btn-primary btn-md" ng-disabled="myform.poid.$invalid || myform.str.$invalid"><i class="fa fa-eye"></i></a>
+                                                </td>
+                                            </tr>
+
+                                                <!-- <tr>
+                                                    <td colspan="4">
+                                                        <div class="form-group">
+                                                            <label>Super Store</label>
+                                                            <select name="str" ng-model="asset_inward.asset_inward_store_id" id="input${1/(\w+)/\u\1/g}" class="form-control" required>
+                                                                <option value="" >Select Store</option>
+                                                                <option value="{{s.id}}" ng-repeat="s in sup">{{s.store_name}}</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td colspan="4">
+                                                        <div class="form-group">
+                                                            <div ng-class="{ 'has-error' : myform.poid.$invalid && !myform.poid.$pristine }">
+                                                                <label>PO ID</label>
+                                                                <input type="text" class="form-control" name="poid" ng-model="po_id" placeholder="PO iD" pattern="[0-9]{1,10}" maxlength=25 autocomplete="off" required>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <br>
+                                                        <a href ng-click="show_items(po_id)" class="btn btn-primary btn-sm btn-addon" ng-disabled="myform.poid.$invalid || myform.str.$invalid"><i class="fa fa-eye"></i>Show</a>
+                                                    </td>
+                                                </tr> -->
+
+                                            <tr ng-show="test==1">
+                                                <td>S.No</td>
+                                                <td>Item</td>
+                                                <td>QTY</td>
+                                                <td>Al R.QTY</td>
+                                                <td>R.QTY</td>
+                                                <td>P.QTY</td>
+                                                <td>P Price</td>
+                                                <td>Tax</td>
+                                                <td>Amount</td>
+                                                <td>Tax+Amount</td>
+                                            </tr>
+                                            <tr ng-repeat="y in inward_item_data" ng-show="test==1" ng-init="present_rec_qty = 0">
+                                                <td ng-bind="$index+1"></td>
+                                                <td ng-bind="y.apo_item_name"></td>
+                                                <td ng-bind="y.apo_qty"></td>
+                                                <td ng-bind="(present_rec_qty - 0) + (y.apo_qty_received - 0)"></td>
+                                                <td><input type="text" ng-model="present_rec_qty" ng-keyup="present_rec_qty = callme($index, present_rec_qty)" pattern="[0-9]{1,5}" style="width:100px;" required></td>
+                                                <td ng-bind="(y.apo_qty - y.apo_qty_received) - present_rec_qty"></td>
+                                                <td ng-bind="y.apo_pp"></td>
+                                                <td ng-bind="y.tax"></td>
+                                                <td ng-bind="(y.apo_pp * present_rec_qty)"></td>
+                                                <td ng-bind="(((y.apo_pp * present_rec_qty) * (y.tax)) / 100) + (y.apo_pp * present_rec_qty)"></td>
+                                            </tr>
+                                            <tr ng-show="no_rec==1">
+                                                <td colspan="9" style="text-align: center">
+                                                    <h1>There is no Records</h1>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div ng-show="test==1" class="row">
+                                            <div class="col-md-3">
+                                            <div ng-class="{ 'has-error' : myform.invno.$invalid && !myform.invno.$pristine }">
+                                                <label>Invoice No.</label>
+                                                <input type="text" ng-model="asset_inward.asset_inward_invoiceno" name="invno" ng-change="x.apo_pp=x.apo_mrp" class="form-control" pattern="[0-9]{1,20}" maxlength="20" placeholder="Invoice No." autocomplete="off" required>
+                                            </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Invoice Date</label>
+                                                <div class="input-group">
+                                                    <input type="date" id="invoice_dateID" ng-model="invoice_date"  ng-change="asset_inward.asset_inward_invoicedate = invoice_date.toLocaleDateString('en-US', { day:'2-digit', month:'long', year:'numeric' })" class="form-control" placeholder="Invoice Date">
+                                                    <label class="input-group-addon" for="invoice_dateID"><i class="fa fa-calendar"></i></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">    
+                                                <label>Receive Date</label>
+                                                <div class="input-group">
+                                                    <input type="date" id="received_dateID" ng-model="received_date"  ng-change="asset_inward.asset_inward_receiveddate = received_date.toLocaleDateString('en-US', { day:'2-digit', month:'long', year:'numeric' });" class="form-control" placeholder="Received Date">
+                                                    <label class="input-group-addon" for="received_dateID"><i class="fa fa-calendar"></i></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Invoice Amount</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-rupee"></i></span>
+                                                    <input type="text" ng-model="asset_inward.asset_inward_invoiceamt" ng-change="x.apo_pp=x.apo_mrp" ng-disabled="true" class="form-control" value="" placeholder="Total">
+                                                </div>
+                                            </div>
+                                        </div><br><br>
+                                    </form>
+                                    <!-- <pre ng-bind="asset_inward |json"></pre> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div ng-show="action==3">
+                        <i class="glyphicon glyphicon-print pull-right" style="font-size: 25px" ng-click="print('QRprint')"></i><br>
+                        <div id="QRprint" >
+                            <div ng-repeat="l in labels" class="col-md-2" style="margin:20px;text-align:center">
+                                <img style="width:60px;height:60px;" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='{{l.srt_id}}:{{l.item_id}}:{{l.name}} :{{l.g_id}}'">
+                                <p>{{l.srt_id}}:{{l.item_id}}:<br>{{l.name}}:{{l.g_id}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="row" style="overflow: auto" ng-show="action==4">
+                        <div class="col-md-12">
+                            <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==4" form="OBform" ng-disabled="OBform.$invalid" style="width:100px;"> <i class="fa fa-check"></i>Save </button>
+                        </div>
+                    </div> -->
+
+                    <div class="row" style="overflow: auto" ng-show="action===4">
+                        <div class="col-md-12" style="min-height: 400px">
+                                <div class="panel panel-default">
+                                        <div class="panel-heading" style="font-size: 20px;">Add Opening Stock                            <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==4" form="OBform" ng-disabled="OBform.$invalid" style="width:100px;"> <i class="fa fa-check"></i>Save </button>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form name="OBform" id="OBform" ng-submit="saveOB()" class="form-validation">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-froup">
+                                                            <label>Store ID</label>
+                                                            <select ng-model="asset_ob.asset_ob_store_id" class="form-control"  required>
+                                                                <option value="">Select Store</option>
+                                                                <option value="{{s.id}}" ng-repeat="s in store">{{s.store_name}}</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                                        <div class="form-froup">
+                                                                            <label>Receive Date</label>
+                                                        <div class="input-group">
+                                                                            <input type="date" id="os_received_dateID" ng-model="os_received_date" ng-change="asset_ob.asset_ob_received_date = os_received_date.toLocaleDateString('en-US', { day:'2-digit', month:'long', year:'numeric' });" class="form-control" required>
+                                                        <label class="input-group-addon" for="os_received_dateID"><i class="fa fa-calendar"></i></label>
+                                                        </div>
+                                                                        </div>
+                                                    </div>
+                                                </div><br>
+
+
+                                                <!-- <div class="row">
+                                                    <div class="col-md-12"> -->
+                                                        <table class="table table-hover table-bordered">
+                                                                <thead>
+                                                                    <!-- <tr>
+                                                                        <td colspan="12">
+                                                                            <button type="button" class="btn btn-primary btn-md pull-right" ng-click="add_item()">Add Item</button>
+                                                                        </td>
+                                                                    </tr> -->
+                                                                <tr>
+                                                                        <th>Item ID</th>
+                                                                        <th>Quantity</th>
+                                                                        <th>Opening Balance</th>
+                                                                        <th><button type="button" class="btn btn-primary btn-md" ng-click="add_item()" ><i class="fa fa-plus"></i></button></th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr ng-repeat="x in asset_ob.ob_items_list">
+                                                                        <td>
+                                                                            <div class="form-froup">
+                                                                                <!-- <label>Item ID</label> -->
+                                                                                <!-- <select ng-model="x.ob_item_id" class="form-control" required >
+                                                                                    <option value="">Select Item</option>
+                                                                                    <option value="{{s.asset_id}}" ng-repeat="s in item_data">{{s.asset_name}}</option>
+                                                                                </select> -->
+
+                                                                                <ui-select ng-model="x.obj" style="width: 300px" ng-change="choose_medicine(x.obj,$index)">
+                                                                                    <ui-select-match>
+                                                                                        <span ng-bind="$select.selected.asset_name"></span>
+                                                                                    </ui-select-match>
+                                                                                    <ui-select-choices repeat="item in (item_data | filter: $select.search) track by $index">
+                                                                                        <div ng-bind-html="item.asset_name | highlight: $select.search"></div>
+                                                                                    </ui-select-choices>
+                                                                                </ui-select>
+                                                                                <!-- <pre>{{x.obj|json}}</pre> -->
+
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="form-froup">
+                                                                                <!-- <label>Quantity</label> -->
+                                                                                <input type="text" ng-model="x.ob_item_qty" class="form-control" pattern="[0-9]{1,10}" required>
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <div class="form-froup">
+                                                                                <!-- <label>Quantity Balance</label> -->
+                                                                                <input type="text" ng-model="x.ob_opening_balance" class="form-control" pattern="[0-9 ,.]{1,10}" required>
+                                                                            </div>
+                                                                        </td>
+
+                                                                        <td>
+                                                                            <button class="btn m-b-xs btn-md btn-danger" ng-click="item_remove($index)" ng-disabled="asset_ob.ob_items_list.length == 1"><i class="fa fa-trash"></button></i>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                        </table>
+                                                    <!-- </div>
+                                                </div> -->
+
+
+                                            </form>
+                                            <!-- <pre ng-bind="asset_ob |json"></pre> -->
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

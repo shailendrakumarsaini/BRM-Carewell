@@ -1,0 +1,390 @@
+<div ng-controller="informationsheet_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Information Sheet
+
+                        
+                    </div>
+                    <small class="text-muted">Patient Information about Admission</small>
+                    <small class="pull-right"><button class="btn btn-sm btn-info btn-addon" ng-click="redirectToNewPatientPage(currentParams.patientId,currentParams.name)"><i class="fa fa-chevron-left"></i>Back</button></small>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12" ng-init="init()">
+                    <form name="informationSheetForm" id="informationSheetForm" ng-submit="saveInformationSheet()">
+                        <div class="panel panel-default">
+                            <div class=" panel-heading ">
+                                <div class="clearfix">
+                                    <a href="javascript:void(0)" class="pull-left thumb-md avatar b-3x m-r " style="text-align: center">
+                                        <img src="img/medical_icons/team.png " alt="... ">
+                                        <br/>
+                                        <b>ID</b> : {{ is.ptdetails.patientId }}
+                                    </a>
+                                    <div class="clear">
+                                        <div class="col-md-5">
+                                            <table width="100% " style="font-size: 14px; ">
+                                                <tr>
+                                                    <td width="20% ">Name & Age </td>
+                                                    <th>{{ is.ptdetails.name }} <span style="margin-left: 5px; ">{{ is.ptdetails.gender + ' : ' + is.ptdetails.age }}</span></th>
+                                                </tr>
+                                                <tr>
+                                                    <td width="20% ">S/0</td>
+                                                    <th>{{ is.ptdetails.father_name }}</th>
+                                                </tr>
+                                                <tr>
+                                                    <td width="20% ">City</td>
+                                                    <th>{{ is.ptdetails.city }}</th>
+                                                </tr>
+                                                <tr>
+                                                    <td width="20% ">Mobile</td>
+                                                    <th>{{ is.ptdetails.mobile }}</th>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+
+                                        <div class="col-md-3 ">
+                                            <table width="100% " style="font-size: 14px; ">
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-group m-b-sm">
+                                                            <button type="button" ng-class="(is.ptdetails.package_or_regular === 'package') ? 'btn btn-success' : 'btn btn-default'">Package<i class="fa fa-check" aria-hidden="true" ng-if="is.ptdetails.package_or_regular === 'package'"></i></button>
+                                                            <button type="button" ng-class="(is.ptdetails.package_or_regular === 'regular') ? 'btn btn-success' : 'btn btn-default'">Regular<i class="fa fa-check" aria-hidden="true" ng-if="is.ptdetails.package_or_regular === 'regular'"></i></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-group m-b-sm">
+                                                            <button type="button" ng-class="(is.ptdetails.surgery_or_medical === 'surgery') ? 'btn btn-success' : 'btn btn-default'">Surgery<i class="fa fa-check" aria-hidden="true" ng-if="is.ptdetails.surgery_or_medical === 'surgery'"></i></button>
+                                                            <button type="button" ng-class="(is.ptdetails.surgery_or_medical === 'medical') ? 'btn btn-success' : 'btn btn-default'">Medical<i class="fa fa-check" aria-hidden="true" ng-if="is.ptdetails.surgery_or_medical === 'medical'"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                        <div class="col-md-4 ">
+                                            <table width="100% " style="font-size: 14px; ">
+                                                <tr>
+                                                    <td width="50% ">Admission</td>
+                                                    <th>{{ is.ptdetails.admit_date | date: 'dd-MM-yyyy' }}</th>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50%">Discharge</td>
+                                                    <th>Active</th>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50% ">Days</td>
+                                                    <th>
+                                                        5
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50% ">Scheme</td>
+                                                    <th>
+                                                        {{ is.ptdetails.schemeName }}
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group no-radius alt ">
+                                <span class="list-group-item">
+                                    <div class="pull-right">
+                                        <span class="pull-right badge bg-success">{{ is.ptdetails.spname }}</span>
+                                    </div>
+                                    <b>Diagnosis</b>
+                                    <p>{{ is.ptdetails.initial_diagnosis }}</p> 
+                                </span>
+                            </div>
+
+                            <div class="list-group no-radius alt">
+                                <span class="list-group-item " style="height: 80px">
+                                    <div class="col-xs-4">
+                                        <label>Total Package</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.ptdetails.total_package_amount" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <label>Advance Paid</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.paidDetails.paidAmount" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <label>Amount Received</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.paidDetails.receivedAmount" />
+                                        </div>
+                                    </div>
+                                </span>
+                                <span class="list-group-item" style="height: 80px">
+                                    <div class="col-xs-4">
+                                        <b>Dr. {{ is.physician.dr_name }} <sub>{{ is.physician.qualification }}</sub></b>
+                                        <br>
+                                        <span>Pysician</span><br>
+                                        <span>Vistis: {{ is.physician.visitCount }}</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Amount</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.physician.amount" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <label ng-bind="(is.physician.paid)?'Paid':'Not Paid'"></label><br>
+                                        <label class="i-switch m-t-xs m-r">
+                                        <input type="checkbox" checked="" ng-model="is.physician.paid">
+                                        <i></i>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Remarks</label>
+                                        <input class="form-control" ng-model="is.physician.remarks">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" ng-model="is.physician.tempDate" ng-change="is.physician.dateOfPayment = is.physician.tempDate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }" ng-required="is.physician.paid" />
+                                        
+                                    </div>
+                                </span>
+                                <span class="list-group-item" style="height: 80px" ng-if="is.Surgen !== undefined">
+                                    <div class="col-xs-4">
+                                        <b>Dr. {{ is.Surgen.dr_name }} <sub>{{ is.Surgen.qualification }}</sub></b>
+                                        <br>
+                                        <span>Surgen</span><br>
+                                        <span>Vistis: {{ is.Surgen.visitCount }}</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Amount</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.Surgen.amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <label ng-bind="(is.Surgen.paid)?'Paid':'Not Paid'"></label><br>
+                                        <label class="i-switch m-t-xs m-r">
+                                        <input type="checkbox" checked="" ng-model="is.Surgen.paid">
+                                        <i></i>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Remarks</label>
+                                        <input class="form-control" ng-model="is.Surgen.remarks">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" ng-model="is.Surgen.tempDate" ng-change="is.Surgen.dateOfPayment = is.Surgen.tempDate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }" ng-required="is.Surgen.paid" />
+                                    </div>
+                                </span>
+                                <span class="list-group-item" style="height: 80px" ng-if="is.Anesthesian !== undefined">
+                                    <div class="col-xs-4">
+                                        <b>{{ is.Anesthesian.dr_name }} <sub>{{ is.Anesthesian.qualification }}</sub></b>
+                                        <br>
+                                        <span>Anesthesian</span><br>
+                                        <span>Vistis: {{ is.Anesthesian.visitCount }}</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Amount</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.Anesthesian.amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <label ng-bind="(is.Anesthesian.paid)?'Paid':'Not Paid'"></label><br>
+                                        <label class="i-switch m-t-xs m-r">
+                                        <input type="checkbox" checked="" ng-model="is.Anesthesian.paid">
+                                        <i></i>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Remarks</label>
+                                        <input class="form-control" ng-model="is.Anesthesian.remarks">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" ng-model="is.Anesthesian.tempDate" ng-change="is.Anesthesian.dateOfPayment = is.Anesthesian.tempDate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }" ng-required="is.Anesthesian.paid" />
+                                    </div>
+                                </span>
+                                <span class="list-group-item" style="height: 80px" ng-repeat="i in is.cumulativeConsultants" ng-if="is.cumulativeConsultants.length > 0">
+                                    <div class="col-xs-4">
+                                        <b>{{ i.dr_name }} <sub>{{ i.qualification }}</sub></b>
+                                        <br>
+                                        <span>Consultant</span><br>
+                                        <span>Vistis: {{ i.visitCount }}</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Amount</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="i.amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <label ng-bind="(i.paid)?'Paid':'Not Paid'"></label><br>
+                                        <label class="i-switch m-t-xs m-r">
+                                        <input type="checkbox" checked="" ng-model="i.paid">
+                                        <i></i>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Remarks</label>
+                                        <input class="form-control" ng-model="i.remarks">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" ng-model="i.tempDate" ng-change="i.dateOfPayment = i.tempDate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }" ng-required="i.paid" />
+                                    </div>
+                                </span>
+                                <span class="list-group-item" style="height: 80px" ng-if="is.referral.ref_id !== undefined">
+                                    <div class="col-xs-4">
+                                        <b>{{ is.referral.ref_name }} </b>
+                                        <br>{{ is.referral.ref_city }}<br>
+                                        <span>{{ is.referral.ref_occupation }}</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Amount</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.referral.amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <label ng-bind="(is.referral.paid)?'Paid':'Not Paid'"></label><br>
+                                        <label class="i-switch m-t-xs m-r">
+                                            <input type="checkbox" checked="" ng-model="is.referral.paid">
+                                            <i></i>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Remarks</label>
+                                        <input class="form-control" ng-model="is.referral.remarks">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" ng-model="is.referral.tempDate" ng-change="is.referral.dateOfPayment = is.referral.tempDate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }" ng-required="is.referral.paid" />
+                                    </div>
+                                </span>
+
+                                <span class="list-group-item" style="height: 80px" ng-if="is.pro.pro_id !== undefined">
+                                    <div class="col-xs-4">
+                                        <b>{{ is.pro.pro_name }} </b>
+                                        <br>{{ is.pro.pro_city }}<br>
+                                        <span>P.R.O</span>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Amount</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.pro.amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <label ng-bind="(is.pro.paid)?'Paid':'Not Paid'"></label><br>
+                                        <label class="i-switch m-t-xs m-r">
+                                            <input type="checkbox" checked="" ng-model="is.pro.paid">
+                                            <i></i>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <label>Remarks</label>
+                                        <input class="form-control" ng-model="is.pro.remarks">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" ng-model="is.pro.tempDate" ng-change="is.pro.dateOfPayment = is.pro.tempDate.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }" ng-required="is.pro.paid" />
+                                    </div>
+                                </span>
+                                <span class="list-group-item" style="height: 160px">
+                                    <div class="col-xs-6">
+                                        <label>O.T Medicines</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.OTMedicines">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label>General Medicines</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.GeneralMedicines">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label>Lab Charges</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.LabCharges">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label>Others</label>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon"><i class="fa fa-inr"></i></span>
+                                            <input type="text" class="form-control" ng-model="is.Others">
+                                        </div>
+                                    </div>
+                                </span>
+
+                                <span class="list-group-item">
+                                    <table class="table">
+                                        <tr><th>From Date</th><th>To Date</th><th>Room</th><th>Days</th></tr>
+                                        <tr ng-repeat="i in is.roomHistory">
+                                            <td>{{ i.enteredDate | date: 'dd-MM-yyyy' }}</td>
+                                            <td>{{ (i.vacatedDate !== null) ? (i.vacatedDate | date: 'dd-MM-yyyy') : 'Till Now' }}</td>
+                                            <td>{{ i.bed_loc_name + ' ' + i.bed_code }}</td>
+                                            <td>{{ ((i.noOfDays - 0) + 1) }}</td>
+                                        </tr>
+                                    </table>
+                                </span>
+                                
+                              
+                                <span class="list-group-item">
+                                    <b>Notes</b>
+                                    <textarea class="form-control" ng-model="is.notes"></textarea> 
+                                </span>
+                                
+
+
+                                <span class="list-group-item" style="height: 50px;" ng-show="btnAction == 2">
+                                    <span class="pull-right">
+                                        <button class="btn btn-primary" form="informationSheetForm" ng-disabled="informationSheetForm.$invalid">Save</button>    
+                                    </span>
+                                </span>
+
+                                <span class="list-group-item" style="height: 50px;" ng-show="btnAction == 1">
+                                    <span class="pull-right">
+                                        <button class="btn btn-primary" form="informationSheetForm" ng-disabled="informationSheetForm.$invalid">Update</button>    
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!--    <pre>
+        {{ is | json }} 
+    </pre> -->
+</div>

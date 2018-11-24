@@ -1,0 +1,300 @@
+ <div ng-controller="pharmacybilling_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/Pharmacy_bill.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Pharmacy Billing
+                    </div>
+                    <small class="text-muted">Pharmacy Billing Details</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="row" ng-show="action==2">
+                <div class="col-md-12">
+                    <form id="pharmacyformID" name="pharmacyformName" ng-submit="save_pharmacy_billing_data()">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" form="pharmacyformID" class="btn btn-success btn-sm btn-addon pull-right" ng-disabled="pharmacyformName.$invalid"><i class="fa fa-check"></i>Save</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Date</label>
+                                                    <input type="date" ng-model="transaction_date" ng-change="convert_date_for_pharmacy()" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label>Select Doctor</label>
+                                                    <select ng-model="pharmacy_lab_billing.dr_id" class="form-control" required>
+                                                        <option value=""> Select Hospital</option>
+                                                        <option value="{{j.uid}}" ng-repeat="j in doctors">{{j.name}}</option>
+                                                    </select>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label>Select Hospital</label>
+                                                    <select ng-model="pharmacy_lab_billing.hospital_id" class="form-control" required>
+                                                        <option value=""> Select Hospital</option>
+                                                        <option value="{{j.hid}}" ng-repeat="j in hospital">{{j.hname}}</option>
+                                                    </select>
+        
+                                                    <!-- <ui-select ng-model="selected_data.obj" ng-change="select_hospital(selected_data.obj)" id="hosID" reset-search-input="true">
+                                                        <ui-select-match>
+                                                            <span>{{$select.selected.hname}}</span>
+                                                        </ui-select-match>
+                                                        <ui-select-choices repeat="j in (hospital | filter: $select.search) track by $index">
+                                                            <div ng-bind-html="j.hname | highlight: $select.search"></div>
+                                                        </ui-select-choices>
+                                                    </ui-select> -->
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-md-1">
+                                                <br>
+                                                <button class="btn btn-primary" type="button" ng-click="add_for_lab_billing_pharmacy($index)" ng-disabled="pharmacy_add_btn_disable == 1"><b class="fa fa-plus"></b></button>
+                                            </div> -->
+                                </div>
+                                <div class="row" ng-repeat="i in pharmacy_lab_billing.Arr" >
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Select Medicine</label>
+                                            
+                                            <ui-select ng-model="i.obj" ng-change="select_medicine_for_pharmacy_lab_billing(i.obj,$index)" reset-search-input="true">
+                                                <ui-select-match>
+                                                    <span>{{$select.selected.med_name}}</span>
+                                                </ui-select-match>
+                                                <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0">
+                                                        <span ng-bind-html="item.med_name |uppercase | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            Quantity :<span class="text-muted" ng-bind-html="item.quantity | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            Price :<span class="text-muted" ng-bind-html="item.price |number:2 | highlight: $select.search"></span><br>
+                                            <!-- SN :<span class="text-muted" ng-bind-html="item.store_name | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                            SU :<span class="text-muted" ng-bind-html="item.med_sale_units | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            BN :<span class="text-muted" ng-bind-html="item.batch_no | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            
+                                            <!-- Expiry :<span class="text-muted" ng-bind-html="item.expiry_date | date : 'dd-MM-yy' | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                                </ui-select-choices>
+                                            </ui-select>
+                                            <!-- <pre>{{i.obj | json}}</pre>  -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Quantity</label>
+                                            <input type="text" ng-model="i.quantity" ng-change="change_qty_for_pharmacy($index,i.quantity)" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Amount</label>
+                                            <input type="text" ng-model="i.price" ng-change="change_amount_for_pharmacy($index,i.price)" ng-disabled="true" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <br>
+                                            <button class="btn btn-danger" type="button" ng-click="remove_for_lab_billing_pharmacy($index)" ng-disabled="pharmacy_lab_billing.Arr.length == 1" ng-hide="pharmacy_lab_billing.Arr.length == 1"><i class="fa fa-trash"></i></button>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                <div class="row" ng-show="show_pharmacy_total==1">
+                                    <div class="col-md-8">
+                                        <br>
+                                        <button class="btn btn-primary" type="button" ng-click="add_for_lab_billing_pharmacy($index)" ng-disabled="pharmacy_add_btn_disable == 1"><b class="fa fa-plus"></b></button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Total Amount</label>
+                                            <input type="text" ng-model="pharmacy_lab_billing.total_amount" ng-change="get_paid_amount_for_biiling()"  ng-disabled="true" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                        <div class="col-md-6">
+                                            <div class="form=group">
+                                                <label>Payment Type</label>
+                                                <select ng-model="pharmacy_lab_billing.payment_type" class="form-control"  required>
+                                                    <option value=""> Select Type</option>
+                                                    <option value="Cash"> Cash</option>
+                                                    <option value="Card"> Card</option>
+                                                    <option value="Cheque"> Cheque</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label>Remark</label>
+                                                <textarea  class="form-control" ng-model="pharmacy_lab_billing.remark" placeholder="Remark" style="height: 35px"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                </div><br>
+                            </div><br>
+                            <!-- <div class="col-md-4" ng-show="Type == 'In Patient'">
+                                <table class="table table-hover b-t b-light table-bordered">
+                                    <tbody ng-if="showNoPrescriptions === false">
+                                        <tr ng-repeat="i in inpatientPrescriptions">
+                                            <td><span style="cursor: pointer" ng-click="ShowPrescription($index)">Prescriptions  {{$index+1}}</span></td>
+                                            <td>Dr. {{ i.dr_name }}</td>
+                                            <td>{{ i.date | date: 'dd-MM-yy' }}</td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody ng-if="showNoPrescriptions === true">
+                                        <tr>
+                                            <td colspan="3"><h4>No Prescriptions</h4></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> -->
+                        </div>
+
+                    </form>  
+                    
+                        <!--  Details Print Modal -->
+                        <button id="modalToggleButton" class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-hide="true"></button>
+                        <div class="modal fade" id="PharmacyID">
+                            <div class="modal-dialog modal-lg modal-full-height">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">&nbsp;IP Details</h4>
+                                        <button type="button" class="close" data-dismiss="modal" ng-click="reloadPage()">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div id="lab_billingPharmacy">
+                                            <div ng-repeat="t in pharmacy_bills">
+                                                <div class="row">
+                                                    <div class="col-md-12" align="center" ng-repeat="i in t.hospital_details">
+                                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                            <tr>
+                                                                <h3>{{i.hname}}</h3>
+                                                            </tr>
+                                                            <tr>
+                                                                {{i.haddress}}
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h4>To</h4>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                            <tr>
+                                                                <td style="text-align:center">Name</td>
+                                                                <td style="text-align:center">Address</td>
+                                                                <td style="text-align:center">Mobile</td>
+                                                                <td style="text-align:center">Doctor Name</td>
+                                                                <td style="text-align:center">Receipt Code </td>
+                                                                <td style="text-align:center">Date</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center">{{t.name}}</td>
+                                                                <td style="text-align:center">{{t.city}}</td>
+                                                                <td style="text-align:center">{{t.mobile}}</td>
+                                                                <td style="text-align:center">Dr.&nbsp;{{t.dr_name}}</td>
+                                                                <td style="text-align:center">{{t.receipt_code}}</td>
+                                                                <td style="text-align:center">{{t.date_time}}</td>
+                                                            </tr>
+                                                        </table><br/>
+                                                        <table border="1px" cellspacing="0px" hieght="100%" width="100%">
+                                                            <tr>
+                                                                <th>S No.</th>
+                                                                <th style="text-align:center">Description</th>
+                                                                <th style="text-align:center">Amount</th>
+                                                            </tr>
+                                                            <tr ng-repeat="z in t.paid_details">
+                                                                <td>{{$index+1}}</td>
+                                                                <td style="text-align:center">{{z.bcname}} {{ (z.bcname === 'OP Consultation') ? '[Dr.&nbsp;' + t.dr_name + ']' : ''}}</td>
+                                                                <td style="text-align:center">{{z.amount}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center" colspan="2">Total Amount</td>
+                                                                <td style="text-align:center">{{t.amount}}</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <br/>
+                                                <table cellspacing="0px" hieght="100%" width="100%">
+                                                    <tr>
+                                                        <td><b>Terms & Conditions :</b></td>
+                                                        <td align="left"><b>Signature:</b></td>
+                                                    </tr>
+                                                </table>
+                                                <table cellspacing="0px" hieght="100%" width="100%">
+                                                    <tr>
+                                                        <td><b>1&nbsp;</b>A finance charge of 1.5% will be made on unpaid balances after 30 days.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary btn-md" data-dismiss="modal" ng-click="reloadPage()">Close</button>
+                                            <button type="button" class="btn btn-primary pull-left" ng-click="ip_print_fun('lab_billingPharmacy')">Print</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                            
+                    <!-- <pre>{{pharmacy_lab_billing |json}}</pre> -->
+                </div>
+            </div>
+
+
+
+            <div class="row" style="min-height: 300px" ng-show="action == 1">   
+
+                <div class="col-md-5" ng-init="init()">
+                    <div class="input-group pull-left">
+
+                        <label class="input-group-addon btn" for="searchid"><b class="fa fa-search"> &nbsp;Search Patient</b></label>
+
+                      
+                        <ui-select ng-model="selected_data.innerObj" ng-change="autosearch_data($select.search)" id="searchid" reset-search-input="true" theme="bootstrap"  title="Choose an address" append-to-body="true">
+                            <ui-select-match placeholder="Search for Patient..."><span ng-bind="$select.selected.collection_data"></span></ui-select-match>
+                            <ui-select-choices repeat="item in (collection_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0" ng-click="move(selected_data.innerObj.patient_id)">
+                            
+                            <span ng-bind-html="item.name |uppercase | highlight: $select.search"></span>&nbsp;
+                            <span ng-bind-html="item.gender | highlight: $select.search"></span>:
+                            <span ng-bind-html="item.age | highlight: $select.search"></span><br>
+                            <span class="text-muted">
+                                <i class="fa fa-map-marker"></i>&nbsp;
+                                <span ng-bind-html="item.city | uppercase|highlight: $select.search"></span>&nbsp;&nbsp;
+                                <i class="fa fa-mobile"></i>
+                                <div ng-bind-html="item.mobile | highlight: $select.search"></div>
+                            </span>
+                            </ui-select-choices>
+                        </ui-select>
+                                
+                              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,127 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:31:45",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group",
+    "extra": "data.data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:33:50",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-06 20:34:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:36:21",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:36:44",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:15",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group Opend",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:21",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:22",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group Opend",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:32",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group save",
+    "extra": "ig_name=ss&ig_asset=N&is_medicine=Y"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:33",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group Opend",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:41",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group change status",
+    "extra": "119"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:41",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group Opend",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:46",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group change status",
+    "extra": "120"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-06 20:42:46",
+        "client_ip": "10.22.39.27"
+    },
+    "window": "Item Group Opend",
+    "extra": ""
+},

@@ -1,0 +1,313 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+    <meta name="google-signin-client_id" content="439140113635-caspd7h6pe4p60r9cpokue57rvkva1vc.apps.googleusercontent.com">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <title>MedWise </title>
+    <style type="text/css">
+        html,
+        body,
+        .container {
+            height: 100%;
+        }
+
+        .container {
+            display: table;
+            vertical-align: middle;
+        }
+
+        .vertical-center-row {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        body {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background: none;
+        }
+
+        .full {
+            background: url(../images/bg-ot.jpg) no-repeat center center fixed;
+
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+
+        section {
+            background: yellow;
+        }
+
+        .banner {
+            background: red;
+            min-height: 200px;
+        }
+
+        .banner .row {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .banner h1 {
+            color: white;
+        }
+
+        div.desc {
+            position: absolute;
+            bottom: 20;
+            width: 100%;
+            background-color: #fff;
+            color: #fff;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+
+        }
+
+    </style>
+</head>
+
+<body ng-app="edwise" ng-controller="login_ctrl" class="full">
+    <div class="alert alert-danger" style="display:none" ng-show="error!=''" ng-style="(error!='')?'display:block':'display:none'"><strong>Error!</strong>
+        <p ng-bind="error"></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="desc" style="height: 200px;">
+
+    </div>
+
+    <div  style="bottom:35;right:300; position: absolute; ">
+       
+            <h2 style="font-family: 'Pacifico', cursive;color:ffffff;margin-left:15px">
+                <img src="img/medical_icons/cardiogram.png" width="40px" height="40px" style="margin-top: -10px;">
+                <span> medwise</span></h2>
+
+            <!-- <span style="display: inline;margin-left: 0px;font: 400 40px/1.5 'Pacifico', Helvetica, sans-serif;
+                                color: #ea4335; text-shadow: 3px 3px 3px rgba(0,0,0,0.2)"><i class="fa fa-heartbeat"></i>medwise</span> -->
+
+            <!--<div  id="my-signin1" style="display:block">Press <b>Ctrl+F5</b> to get Signin button</div><br>-->
+            <div class="row">
+                <form id="formID" ng-submit="login_chk()" class="form-validation" >
+                    <!-- <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5"><br>
+                                <div class="g-signin2" data-longtitle="true" data-width="200" data-height="35" data-theme="dark" data-onsuccess="onSuccess"></div>
+                        </div>
+                    </div><br> -->
+                    <div class="row" >
+                        <div class="col-md-2 col-sm-12"></div>
+                        <div class="col-md-4 ">
+                            <label for="emailID">USER NAME</label>
+                            <div class="form-group input-group">
+                                <label class="input-group-addon btn" for="emailID"><b>@</b></label>
+                                <input type="text" placeholder="User Name" ng-model="username" class="form-control" id="emailID" tabindex="1" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="passwordID">PASSWORD</label>
+                            <div class="form-group input-group">
+                                <label class="input-group-addon btn" for="passwordID"><i class="glyphicon glyphicon-lock"></i></label>
+                                <input type="password" placeholder="Password" ng-model="password" class="form-control" id="passwordID" tabindex="2" required>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <br/>
+                        <button class="btn btn-primary btn-sm" form="formID" tabindex="3">Login</button>
+                        </div>
+                    </div>
+                    <p align="center" ng-show="wrong == 1" style="color:red">Incorrect Credentials</p>
+                </form>
+                
+            </div>
+
+    
+    </div>
+
+
+
+</body>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="js/ui-load.js"></script>
+<script src="js/ui-jp.config.js"></script>
+<script src="js/ui-jp.js"></script>
+<script src="js/ui-nav.js"></script>
+<script src="js/ui-toggle.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+    function signout() {
+        window.sessionStorage.clear();
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function() {
+            console.log('User signed out.');
+            window.location.assign("index.html");
+        });
+    }
+
+</script>
+
+<script src="../angular-1.4.8/angular.min.js"></script>
+<script>
+    var app = angular.module('edwise', []);
+    app.controller('login_ctrl', function($scope, $window, $http, $filter) {
+        $scope.error = '';
+        $scope.gd = "test";
+        $window.onSuccess = function(googleUser) {
+            //console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+            $http.get("../php/login.php?email=" + googleUser.getBasicProfile().getEmail() + "&password=" + googleUser.getBasicProfile().getPassword()).then(function OnSuccess(response) {
+                //console.log(response.data);
+            if(Array.isArray(response.data)) {
+                $scope.wrong = 0;
+                var g = googleUser.getBasicProfile();
+                if (response.data[0].status == 1) {
+                    var obj = {
+                        google: {
+                            id: g.getId(),
+                            name: g.getName(),
+                            image: g.getImageUrl(),
+                            email: g.getEmail()
+                        },
+                        edwise: {
+                            level: response.data[0].level_id,
+                            level_name: response.data[0].level_name,
+                            mobile: response.data[0].mobile,
+                            uid: response.data[0].uid,
+                            name: response.date[0].name
+                        },
+                        client_ip: response.data[0].ip,
+                        login_time: $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss'),
+                        app_navigation: [{
+                            window: 'dashboard',
+                            date_time: $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss')
+                        }]
+                    };
+                    $window.sessionStorage.setItem('_login', JSON.stringify(obj));
+                    $http.get("../php/login.php?user=" + response.data[0].uid).then(function OnSuccess(res) {
+                        //console.log(JSON.stringify(res.data));
+                        $window.sessionStorage.setItem('_menu', JSON.stringify(res.data[0]));
+
+                        if (g.getId() != null)
+						
+						
+                            window.location.assign("home.html");
+                        //console.log("home");
+						
+                        else
+                            $scope.error = "Some thing went wrong!";
+
+                    });
+
+                } else {
+                    $scope.error = "Email id not valid!"
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function() {
+                        console.log('User signed out.');
+                    });
+                    auth2.disconnect();
+
+                }
+            } else {
+                $scope.wrong = 1;
+                $scope.email = '';
+                $scope.password = '';
+                
+            }
+
+            });
+
+
+        }
+
+        $scope.login_chk = function() {
+            //console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+            $http.get("../php/login.php?username=" + $scope.username + "&password=" + $scope.password).then(function OnSuccess(response) {
+                //console.log(response.data);
+                if(Array.isArray(response.data)) {
+                    $scope.wrong = 0;
+                if (response.data[0].status == 1) {
+                    var obj = {
+
+                                edwise: {
+                                            level: response.data[0].level_id,
+                                            level_name: response.data[0].level_name,
+                                            mobile: response.data[0].mobile,
+                                            uid: response.data[0].uid,
+                                            name: response.data[0].name,
+                                            email: response.data[0].email,
+											username: response.data[0].username
+                                        },
+                                client_ip: response.data[0].ip,
+                                login_time: $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss'),
+                                app_navigation: [{
+                                                window: 'dashboard',
+                                                date_time: $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss')
+                                                }]
+                                };
+                    $window.sessionStorage.setItem('_login', JSON.stringify(obj));
+                    $http.get("../php/login.php?user=" + response.data[0].uid).then(function OnSuccess(res) {
+                        //console.log(JSON.stringify(res.data));
+                        $window.sessionStorage.setItem('_menu', JSON.stringify(res.data));
+
+                        if ($scope.username != null)
+                            window.location.assign("home.html");
+                        //console.log("home");
+                        else
+                            $scope.error = "Some thing went wrong!";
+
+                    });
+
+                } else {
+                    $scope.error = "Email id not valid!"
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function() {
+                        console.log('User signed out.');
+                    });
+                    auth2.disconnect();
+
+                }
+                } else {
+                    $scope.wrong = 1;  
+                    $scope.username = '';
+                    $scope.password = '';
+                    
+                }
+
+            });
+
+
+        }
+
+        $window.onFailure = function(error) {
+            console.log(error);
+            $scope.error = error;
+  
+
+        }
+
+
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,377 @@
+<div ng-controller="referrals_ctrl">
+  <div class="panel panel-default" style="margin: 5px">
+    <div class="panel-heading" style="background-color:aliceblue">
+      <div class="clearfix"> <a href ng-click="Home()" class="pull-left thumb-md avatar b-3x m-r"> <img src="img/medical_icons/082-ambulance-1.png" > </a>
+        <div class="clear">
+          <div class="h3 m-t-xs m-b-xs"> Referrals </div>
+          <small class="text-muted">Referral Details</small> </div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1"> <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input class="form-control" ng-model="search">
+          </div>
+          <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_refer()"> <i class="fa fa-plus"></i> New </button>
+          <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" ng-disabled="myform.$invalid" form="myform" form="myform" ng-disabled="form.$invalid">
+          <i class="fa fa-check"></i>Save
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" ng-init="init()">
+          <table class="table table-striped table-bordered" ng-show="action==1">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Ref Code</th>
+                <th>Ref Name</th>
+                <th>Ref Occupation</th>
+                <th>Ref Org Type</th>
+				<th>Bank Details</th>
+				<th>Photo</th>
+                <th style="width:30px;"></th>
+              </tr>
+            </thead>
+            <tbody ng-repeat="x in referals |filter:search" ng-if="noRecords === false">
+              <tr rowspan="2">
+                <td>{{$index+1}}</td>
+                <td><a ng-click="get_item_menu($index,x.ref_id)"><span ng-bind="x.ref_code"></span></a></td>
+                <td><span ng-bind="x.ref_name |uppercase"></span></td>
+                <td><span ng-bind="x.ref_occupation"></span></td>
+                <td><span ng-bind="x.ref_org_type"></span></td>
+				<td><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModalb" ng-click="show_bank_details(x.ref_id)"></i></td>
+		<td><a id="toggleLinker" data-toggle="modal" data-target="#myPhoto" ng-click="displayPhoto(x.ref_image_name)"><i class="fa fa-camera"></i></a>
+		</td>
+				
+                <td><a href ng-click="change_status(x.ref_id,x.ref_is_deleted,$index)"><i class="fa fa-check text-success" ng-show="x.ref_is_deleted==1"></i><i class="fa fa-times text-danger" ng-show="x.ref_is_deleted==0"></i></a> </td>
+				
+              </tr>
+			 
+					
+              <tr ng-show="menu_uid[$index]==x.ref_id">
+                <td colspan="8"><form name="form">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Name</label>
+                        <input type="text" class="form-control" ng-model="x.ref_name" placeholder="Reference Name" required title="Enter Reference Name">
+                      </div>
+                      </div>
+                       <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Occupation</label>
+                        <select name="item.item_units" class="form-control m-b" ng-model="x.ref_occupation" ng-options="occupation for occupation in ref_occupations" required>
+                          <option style="display:none" value="" >Select Occupation</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Organization Type</label>
+                        <select name="item.item_units" class="form-control m-b" ng-model="x.ref_org_type" ng-options="orgtype for orgtype in org_types" required>
+                          <option style="display:none" value="" >Select Type</option>
+                        </select>
+                      </div>
+                      </div>
+                       <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Organization Name</label>
+                        <input type="text" class="form-control" ng-model="x.ref_org_name" placeholder="Organization Name" required title="Enter Organization Name">
+                      </div>
+                    </div>
+                    <div class="col-md-3">   
+                      <div class="form-group">
+                        <label>Reference Address</label>
+                        <input type="text" class="form-control" ng-model="x.ref_address" placeholder="Address" required title="Address">
+                      </div>
+                      </div>
+                       <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference City</label>
+                        <input type="text" class="form-control" ng-model="x.ref_city" placeholder="City" required title="Enter City Name">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Mobile</label>
+                        <input type="text" class="form-control" ng-model="x.ref_mobile" placeholder="Mobile" required title="Enter Mobile Number" >
+                      </div>
+                      </div>
+                       <div class="col-md-3">
+                      <div class="form-group">
+                        <label><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp No. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox"  ng-model="x.same" ng-checked="x.ref_mobile==x.ref_whatsapp">
+                         </label>
+                        <span ng-if="x.same==true ? x.ref_whatsapp=x.ref_mobile : x.ref_whatsapp=x.ref_whatsapp "></span>
+                        <input type="text" name="x.ref_whatsapp" class="form-control" ng-model="x.ref_whatsapp" ng-pattern="/^\d{10}$/" placeholder="Whatsapp Number"  >
+                        <span class="error text-danger" ng-show="myForm.x.ref_whatsapp.$error.pattern">Not a valid mobile no!</span> </div>
+                        </div>
+                      <!-- <div class="form-group"> -->
+                      <!-- <label>Reference Whatsapp</label> -->
+                      <!-- <label><i class="fa fa-whatsapp" aria-hidden="true"></i>  -->
+                      <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"  ng-model"same">Same as Mobile Number</label> -->
+                      <!-- <input type="text" class="form-control" ng-model="x.ref_whatsapp"   placeholder="Whatsapp Number" required title="Enter Whatsapp Number"> -->
+                      <!-- </div> -->
+                   
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Email</label>
+                        <input type="text" class="form-control" ng-model="x.ref_email" placeholder="Email Id"  title="Enter Email Id">
+                      </div>
+                      </div>
+                       <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Reference Type</label>
+                        <select name="ref_srb" class="form-control m-b" ng-model="x.ref_srb"  required>
+                          <option style="display:none" value="" >Select Type</option>
+                          <option value="Send" >Send</option>
+                          <option value="Receive" >Receive</option>
+                          <option value="Both" >Both</option>
+                        </select>
+                      </div>
+                    </div>
+					<!-- <label style="margin:6px;">Bank Account Details</label> -->
+					<div class="row">
+						<div class="col-md-12">
+						<div class="panel panel-default">
+							<!-- <label style="margin:6px;">Bank Account Details</label> -->
+						<div class="panel-body">
+						<div class="col-md-3">
+							<label>Account Holder Name</label>
+							<input type="text" class="form-control" ng-model="x.ref_acc_hol_name">
+						</div>
+						<div class="col-md-3">
+							<label>Account No</label>
+							<input type="text" class="form-control" ng-model="x.ref_account_no">
+						</div>
+						<div class="col-md-2">
+							<label>Bank Name</label>
+							<input type="text" class="form-control" ng-model="x.ref_bank_name">
+						</div>
+						<div class="col-md-2">
+							<label>Branch </label>
+							<input type="text" class="form-control" ng-model="x.ref_branch">
+						</div>
+					<div class="col-md-2">
+						<label>IFSC Code</label>
+						<input type="text" class="form-control" ng-model="x.ref_ifsc_code">
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+                    <div class="col-md-12 pull-right">
+                        
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_referral(x.ref_id,x)" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Update</button>
+                    </div>
+					
+                  </form>
+                </td>
+              </tr>
+			  
+				
+			  
+              <!-- <tr ng-show="menu_uid[$index]==x.ref_id">
+                <td colspan="5"><div clss="row">
+                    <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="delete_item(x.ref_id)"><i class="fa fa-trash"></i>Delete</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_referral(x.ref_id,x)" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Update</button>
+                  </div>
+                  <div class="col-xs-12 alert alert-success" ng-if="result!=''"> <strong><i class="fa fa-check fa-lg" aria-hidden="true"></i></strong> {{result}} </div></td>
+              </tr> -->
+            </tbody>
+            <tbody ng-if="noRecords === true">
+                <tr>
+                    <td align="center" colspan="6"><h4>No Records</h4></td>
+                </tr>
+            </tbody>
+          </table>
+		  <!-- Photo Modal -->
+		   <div id="myPhoto" class="modal fade" role="dialog">
+            <div class="modal-dialog">              
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>                  
+                </div>
+
+                <div class="modal-body">
+                  <img src="{{ photoPath }}" class="img-responsive" ng-if="photoPath !== null">
+				 
+				  <p ng-if="photoPath === null" style="font-family:'century gothi';font-size:18px;text-align:center">No Image Available</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+			 <!-- Display Modal  -->
+			     <div id="myModalb" class="modal fade col-md-12" role="dialog">
+                        <div class="modal-dialog modal-md modal-full-height" style="min-width: 40%;">
+                                
+                            <!-- Modal content-->
+                            <div class="modal-content" style="overflow: auto">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Bank Details</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-striped b-t b-light">
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th>Account Holder Name</th>
+                                                <th>Account No</th>
+												<th>Bank</th>
+                                                <th>Branch</th>
+                                                <th>IFSC Code</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody ng-repeat="q in bank_details_data" > 
+                                            <tr>
+                                               
+                                                <td ng-bind="q.ref_acc_hol_name"></td>
+                                                <td ng-bind="q.ref_account_no"></td>
+												<td ng-bind="q.ref_bank_name"></td>
+												<td ng-bind="q.ref_branch"></td>
+												<td ng-bind="q.ref_ifsc_code"></td>
+                                                
+                                            </tr>
+                                          
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+          <div ng-show="action==2">
+            <form name="myform" ng-submit="save_referal()" id="myform" novalidate>
+              <!-- <form role="form" name="myform" class="myform" id="myform"  ng-submit="save_referal()"   novalidate> -->
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Name</label>
+                  <input type="text" class="form-control" name="ref_name" ng-model="ref_name" ng-pattern="/^[a-zA-Z\s]*$/"  placeholder="Reference Name" required title="Enter Reference Name">
+                  <span class="error text-danger" ng-show="myform.ref_name.$error.pattern">Only Characters allowed!</span> </div>
+                  </div>
+                   <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Occupation</label>
+                  <select name="item.item_units" class="form-control m-b" ng-model="ref_occupation" ng-options="occupation for occupation in ref_occupations" required>
+                    <option style="display:none" value="" >Select Occupation</option>
+                  </select>
+                </div>
+                </div>
+                 <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Organization Type</label>
+                  <select name="item.item_units" class="form-control m-b" ng-model="ref_org_type" ng-options="orgtype for orgtype in org_types" required>
+                    <option style="display:none" value="" >Select Type</option>
+                  </select>
+                </div>
+                </div>
+                 <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Organization Name</label>
+                  <input type="text" class="form-control" ng-model="ref_org_name" placeholder="Organization Name" required title="Enter Organization Name">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Address</label>
+                  <input type="text" class="form-control" ng-model="ref_address" placeholder="Address" required title="Enter Address">
+                </div>
+                </div>
+                 <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference City</label>
+                  <input type="text" class="form-control" ng-model="ref_city" placeholder="City" required title="Enter City Name">
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Mobile</label>
+                  <input type="text" class="form-control" name="ref_mobile" ng-model="ref_mobile" placeholder="Mobile" value="" required maxlength="10" minlength="10" ng-pattern="/^\d{10}$/" ng-keyup="cpy(ref_mobile)">
+                  <span class="error text-danger" ng-show="myform.ref_mobile.$error.pattern">Not a valid mobile no!</span> </div>
+                  </div>
+                   <div class="col-md-3">
+                <div class="form-group">
+                  <label><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp No.</label>
+                  <input type="tel" name="ref_whatsapp" class="form-control" ng-model="ref_whatsapp"  ng-click="delcpy()"  placeholder="Whatsapp Number"   ng-pattern="/^\d{10}$/">
+                  <span class="error text-danger" ng-show="myform.ref_whatsapp.$error.pattern">Not a valid mobile no!</span> </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Reference Email</label>
+                  <input type="email" name="ref_email" class="form-control" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-model="ref_email" placeholder="Email Id"  title="Enter Email Id">
+                  <span  ng-show="myform.ref_email.$error.pattern" class="error text-danger">Enter a valid email.</span> </div>
+                  </div>
+                  
+                   <div class="col-md-3">
+					<div class="form-group">
+					<label>Reference Type</label>
+					<select name="ref_srb" class="form-control m-b" ng-model="ref_srb"  required>
+                    <option style="display:none" value="" >Select Type</option>
+                    <option value="Send" >Send</option>
+                    <option value="Receive" >Receive</option>
+                    <option value="Both" >Both</option>
+                  </select>
+                </div>
+              </div>
+			  <div class="col-md-3">
+					
+			 <div class="file-upload">
+			<label>Upload Photo</label>
+				<input type="file" file-model="myFile" />{{sze}}
+				
+				</div>
+				
+			 </div>
+				
+  
+			
+               
+              
+			  <br>
+			  <div class="row">
+			  <div class="col-md-12">
+			  <div class="panel panel-default">
+			  <label style="margin:6px;">Bank Account Details</label>
+				<div class="panel-body">
+					<div class="col-md-3">
+						<label>Account Holder Name</label>
+						<input type="text" class="form-control" ng-model="acc_hol_name">
+					</div>
+					<div class="col-md-3">
+						<label>Account No</label>
+						<input type="text" class="form-control" ng-model="account_no">
+					</div>
+					<div class="col-md-2">
+							<label>Bank Name</label>
+							<input type="text" class="form-control" ng-model="bank_name">
+						</div>
+					<div class="col-md-2">
+						<label>Branch </label>
+						<input type="text" class="form-control" ng-model="branch">
+					</div>
+					<div class="col-md-2">
+						<label>IFSC Code</label>
+						<input type="text" class="form-control" ng-model="ifsc_code">
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+            </form>
+			 </div> 
+            <!--<pre ng-bind="user |json"></pre>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

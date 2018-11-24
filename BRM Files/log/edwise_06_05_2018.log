@@ -1,0 +1,73 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:12:08",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "InPatient",
+    "extra": "Getting Total Out Patients"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:12:17",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:12:31",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:12:46",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:12:59",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:13:05",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:13:15",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Medicine Stock",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-05-06 18:13:37",
+        "client_ip": "157.47.10.143"
+    },
+    "window": "Medicine Outward",
+    "extra": "Medicine outward opened"
+},

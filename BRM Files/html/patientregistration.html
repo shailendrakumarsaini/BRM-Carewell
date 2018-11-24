@@ -1,0 +1,52 @@
+<div ng-controller="patientregistration_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Patient Registration
+                    </div>
+                    <small class="text-muted">Page Caption</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="action=2">
+                    <i class="fa fa-plus"></i>
+                    New
+                </button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" ng-init="init()">
+                    Content....
+
+                </div>
+            </div>
+            <div ng-show="action==2">
+                <form name="myform" ng-submit="save()" id="myform" novalidate>
+
+                    <input type=text ng-model="name_first">
+                    <input type=text ng-model="name_middle">
+                    <input type=text ng-model="name_last">
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

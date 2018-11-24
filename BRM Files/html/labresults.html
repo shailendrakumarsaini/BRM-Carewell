@@ -1,0 +1,732 @@
+<div ng-controller="labresults_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                      <img src="img/medical_icons/lab_result.png" >
+                    </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Lab Results
+                    </div>
+                    <small class="text-muted">Results</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body">  
+            <!-- <div class="row">
+                    <div class="col-md-4 pull-left" ng-show="action==1">
+                        <label>Search Patient</label>
+                        <div class="input-group">
+                            <label class="input-group-addon btn" for="searchID1"><i class="fa fa-search"></i></label>
+                            <input class="form-control" ng-model="search1" id="searchID1">
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" ng-show="action==2">
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="testform"><i class="fa fa-check"></i>Update</button>
+                    </div>
+                    <div class="col-md-3 pull-right" ng-show="action==1">
+                      <label for="testdate2">To Date</label>
+                        <div class="input-group">
+                            <input type="date" id="testdate2" ng-model="tempDateModelToDate" ng-change="byDate()" class="form-control">
+                            <label class="input-group-addon btn" for="testdate2">
+                                <i class="fa fa-calendar"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pull-right" ng-show="action==1">
+                      <label for="testdate1">From Date</label>
+                        <div class="input-group">
+                            <input type="date" id="testdate1" ng-model="tempDateModelFromDate" ng-change="byDate()" class="form-control">
+                            <label class="input-group-addon btn" for="testdate1">
+                                <i class="fa fa-calendar"></i>
+                            </label>
+                        </div>
+                    </div>
+                    
+
+            </div><br> -->
+
+            <!-- MODAL FOR PRINT -->
+            <div id="myModal" class="modal" role="dialog" data-backdrop="static">
+                <div class="modal-dialog modal-lg modal-full-width" style="min-width: 80%">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <table>
+                                <tr>
+                                    <td style="width:20%;">
+                                        <img class="pull-left thumb-md avatar b-3x m-r" src="img/medical_icons/012-hospital-4.png" style="height: 100px;width: 100px">
+                                    </td>
+                                    <td style="width:50%;">
+                                        <h1 style="text-align: center; margin: 0">Dr. BRM CAREWELL HOSPITAL</h1>
+                                        <h3 style="text-align: center; margin: 0">MULTI SPECIALITY HOSPITAL</h3>
+                                        <h3 style="text-align: center; margin: 0">DIAGNOSTIC DIVISION</h3>
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+
+                            <div id="LabResult">
+                                <table style="width: 100%;">
+                                    <tr ng-repeat="i in testResultDetails">
+                                        <td style="float: left;padding-left: 20px">
+                                            <h4><b>Name: </b>{{ i.name }}</h4>
+                                            <h4><b>Ref By: </b> Dr. {{ i.dr_name + ' ' + i.qualification }}</h4>
+                                        </td>
+                                        <td style="float: right; padding-right: 30px">
+                                            <h4><b>{{ (i.gender === 'M') ? 'Male' : (i.gender === 'F') ? 'Female' : 'Paediatric' }}: </b>{{ i.age }} Yrs.</h4>
+                                            <h4><b>Date : </b>{{ i.date | date: 'dd-MM-yyyy' }}</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr>
+                                <h3 style="text-align: center; text-decoration: underline">Investigation Results</h3>
+                                <table ng-if="testResultDetails[0].inv_details !== null" style="width :100%">
+                                    <tr>
+                                        <td style="width: 25%;"><u><h4>Investigations</h4></u></td>
+                                        <td style="width: 25%;"><u><h4>Results</h4></u>
+                                            <td>
+                                                <td style="width: 25%;"> <u><h4>Units</h4></u></td>
+                                                <td style="width: 25%;"><u><h4>Reference Interval</h4></u></td>
+                                    </tr>
+                                    <!-- <tr ng-repeat="j in testResultDetails[0].investigationResults">
+                                                <td colspan="4">
+                                                    <table style="width: 100%">
+                                                            <tr ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                                                <td><u>{{ j.test_name }}: </u></td>
+                                                            </tr>
+                                                            <tr ng-repeat="k in j.ref_values">
+                                                                <td ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}">
+                                                                    <span><b>{{ k.subInvestigation }}</b></span>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Range'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="(k.result - 0) < (k.startRange - 0) || (k.result - 0) > (k.endRange - 0)">
+                                                                        <b>{{ k.result }}</b>
+                                                                    </p>
+                                                                    <p ng-if="(k.result - 0) >= (k.startRange - 0) && (k.result - 0) <= (k.endRange - 0)">
+                                                                        {{ k.result }}
+                                                                    </p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'T/F'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="k.result === k.trueValue"><b>{{ k.result }}</b></p>
+                                                                    <p ng-if="k.result === k.falseValue">{{ k.result }}</p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Time'">
+                                                                        <p ng-if="k.resultMinutes === undefined">-----</p>
+                                                                        <p ng-if="((k.resultMinutes - 0) < (k.startMinutes - 0)) || ((k.resultMinutes - 0) > (k.endMinutes - 0))">
+                                                                            <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                                        </p>
+                                                                        <p ng-if="((k.resultMinutes - 0) >= (k.startMinutes - 0)) && ((k.resultMinutes - 0) <= (k.endMinutes - 0))">
+                                                                            <span ng-if="((k.resultSeconds - 0) < (k.startSeconds - 0)) || ((k.resultSeconds - 0) > (k.endSeconds - 0))">
+                                                                                <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                                            </span>
+
+                                                                            <span ng-if="((k.resultSeconds - 0) >= (k.startSeconds - 0)) && ((k.resultSeconds - 0) <= (k.endSeconds - 0))">
+                                                                                    {{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}
+                                                                                </span>
+                                                                        </p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Array'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Description'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Ratio'">
+                                                                    <p ng-if="k.resultNumerator === undefined">-----</p>
+                                                                    <p ng-if="k.resultNumerator !== undefined"><b>{{ k.resultNumerator + ' IN ' + k.resultDenominator }}</b></p>
+                                                                </td>
+                                                                <td>
+                                                                        <i>{{ k.unit_name }}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Range'">
+                                                                    <i>{{ k.startRange + ' - ' + k.endRange }}</i>
+                                                                </td>
+                                                                <td class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                                                    <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Time'">
+                                                                        <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Array'">
+                                                                    <i>{{}}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Description'">
+                                                                    <div class="col-md-12" ng-repeat="m in k.Description">
+                                                                        <i>{{ m }}</i>
+                                                                    </div>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Ratio'">
+                                                                        <i>{{  }}</i>
+                                                                </td>
+                                                            </tr>
+                                                            <tr ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                                                <td>
+                                                                    <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                                                    <p>{{ j.ref_values[0].remarks }}</p>
+                                                                </td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr> -->
+                                </table>
+                                <table style="width: 100%" ng-repeat="j in testResultDetails[0].investigationResults">
+                                    <tr ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                        <td style="width: 25%;"><u>{{ j.test_name }}: </u></td>
+                                    </tr>
+                                    <tr ng-repeat="k in j.ref_values">
+                                        <td style="width: 25%;" ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}">
+                                            <span><b>{{ k.subInvestigation }}</b></span>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Range'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="(k.result - 0) < (k.startRange - 0) || (k.result - 0) > (k.endRange - 0)">
+                                                <b>{{ k.result }}</b>
+                                            </p>
+                                            <p ng-if="(k.result - 0) >= (k.startRange - 0) && (k.result - 0) <= (k.endRange - 0)">
+                                                {{ k.result }}
+                                            </p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'T/F'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="k.result === k.trueValue"><b>{{ k.result }}</b></p>
+                                            <p ng-if="k.result === k.falseValue">{{ k.result }}</p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Time'">
+                                            <p ng-if="k.resultMinutes === undefined">-----</p>
+                                            <p ng-if="((k.resultMinutes - 0) < (k.startMinutes - 0)) || ((k.resultMinutes - 0) > (k.endMinutes - 0))">
+                                                <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                            </p>
+                                            <p ng-if="((k.resultMinutes - 0) >= (k.startMinutes - 0)) && ((k.resultMinutes - 0) <= (k.endMinutes - 0))">
+                                                <span ng-if="((k.resultSeconds - 0) < (k.startSeconds - 0)) || ((k.resultSeconds - 0) > (k.endSeconds - 0))">
+                                                                <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                            </span>
+
+                                                <span ng-if="((k.resultSeconds - 0) >= (k.startSeconds - 0)) && ((k.resultSeconds - 0) <= (k.endSeconds - 0))">
+                                                                    {{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}
+                                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Array'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Description'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Ratio'">
+                                            <p ng-if="k.resultNumerator === undefined">-----</p>
+                                            <p ng-if="k.resultNumerator !== undefined"><b>{{ k.resultNumerator + ' IN ' + k.resultDenominator }}</b></p>
+                                        </td>
+                                        <td style="width: 25%;">
+                                            <i>{{ k.unit_name }}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Range'">
+                                            <i>{{ k.startRange + ' - ' + k.endRange }}</i>
+                                        </td>
+                                        <td style="width: 25%;" class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                            <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Time'">
+                                            <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Array'">
+                                            <i>{{}}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Description'">
+                                            <div class="col-md-12" ng-repeat="m in k.Description">
+                                                <i>{{ m }}</i>
+                                            </div>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Ratio'">
+                                            <i>{{  }}</i>
+                                        </td>
+
+                                    </tr>
+                                    <tr ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                        <td style="width: 25%;">
+                                            <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                            <p>{{ j.ref_values[0].remarks }}</p>
+                                        </td>
+                                    </tr>
+                                </table><br/>
+
+                                <h5 style="text-align:center">*********** END OF REPORT ***********</h5>
+                                <br>
+
+
+                                <table>
+                                    <tr>
+                                        <td style="width: 25%;font-size: 17px">SUGGESTED CLINICAL CORRELATION.
+                                            <br> IF THERE IS NEED, KINDLY DISCUSS.</td>
+                                        <td style="width: 35%;"></td>
+                                        <td style="width: 25%;font-size: 17px">LAB TECHNICIAN</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div id="LabResultPrint" ng-show="PrintShow==1">
+
+                                <table style="width: 100%; margin-top:1.4in">
+                                    <tr ng-repeat="i in testResultDetails">
+                                        <td style="float: left;padding-left: 20px">
+                                            <h4><b>Name: </b>{{ i.name }}</h4>
+                                            <h4><b>Ref By: </b> Dr. {{ i.dr_name + ' ' + i.qualification }}</h4>
+                                        </td>
+                                        <td style="float: right; padding-right: 30px">
+                                            <h4><b>{{ (i.gender === 'M') ? 'Male' : (i.gender === 'F') ? 'Female' : 'Paediatric' }}: </b>{{ i.age }} Yrs.</h4>
+                                            <h4><b>Date : </b>{{ i.date | date: 'dd-MM-yyyy' }}</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <hr>
+                                <h3 style="text-align: center; text-decoration: underline">Investigation Results</h3>
+                                <table ng-if="testResultDetails[0].inv_details !== null" style="width :100%">
+                                    <tr>
+                                        <td style="width: 25%;"><u><h4>Investigations</h4></u></td>
+                                        <td style="width: 25%;"><u><h4>Results</h4></u>
+                                            <td>
+                                                <td style="width: 25%;"> <u><h4>Units</h4></u></td>
+                                                <td style="width: 25%;"><u><h4>Reference Interval</h4></u></td>
+                                    </tr>
+                                    <!-- <tr ng-repeat="j in testResultDetails[0].investigationResults">
+                                                <td colspan="4">
+                                                    <table style="width: 100%">
+                                                            <tr ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                                                <td><u>{{ j.test_name }}: </u></td>
+                                                            </tr>
+                                                            <tr ng-repeat="k in j.ref_values">
+                                                                <td ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}">
+                                                                    <span><b>{{ k.subInvestigation }}</b></span>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Range'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="(k.result - 0) < (k.startRange - 0) || (k.result - 0) > (k.endRange - 0)">
+                                                                        <b>{{ k.result }}</b>
+                                                                    </p>
+                                                                    <p ng-if="(k.result - 0) >= (k.startRange - 0) && (k.result - 0) <= (k.endRange - 0)">
+                                                                        {{ k.result }}
+                                                                    </p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'T/F'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="k.result === k.trueValue"><b>{{ k.result }}</b></p>
+                                                                    <p ng-if="k.result === k.falseValue">{{ k.result }}</p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Time'">
+                                                                        <p ng-if="k.resultMinutes === undefined">-----</p>
+                                                                        <p ng-if="((k.resultMinutes - 0) < (k.startMinutes - 0)) || ((k.resultMinutes - 0) > (k.endMinutes - 0))">
+                                                                            <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                                        </p>
+                                                                        <p ng-if="((k.resultMinutes - 0) >= (k.startMinutes - 0)) && ((k.resultMinutes - 0) <= (k.endMinutes - 0))">
+                                                                            <span ng-if="((k.resultSeconds - 0) < (k.startSeconds - 0)) || ((k.resultSeconds - 0) > (k.endSeconds - 0))">
+                                                                                <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                                            </span>
+
+                                                                            <span ng-if="((k.resultSeconds - 0) >= (k.startSeconds - 0)) && ((k.resultSeconds - 0) <= (k.endSeconds - 0))">
+                                                                                    {{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}
+                                                                                </span>
+                                                                        </p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Array'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Description'">
+                                                                    <p ng-if="k.result === undefined">-----</p>
+                                                                    <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Ratio'">
+                                                                    <p ng-if="k.resultNumerator === undefined">-----</p>
+                                                                    <p ng-if="k.resultNumerator !== undefined"><b>{{ k.resultNumerator + ' IN ' + k.resultDenominator }}</b></p>
+                                                                </td>
+                                                                <td>
+                                                                        <i>{{ k.unit_name }}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Range'">
+                                                                    <i>{{ k.startRange + ' - ' + k.endRange }}</i>
+                                                                </td>
+                                                                <td class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                                                    <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Time'">
+                                                                        <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Array'">
+                                                                    <i>{{}}</i>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Description'">
+                                                                    <div class="col-md-12" ng-repeat="m in k.Description">
+                                                                        <i>{{ m }}</i>
+                                                                    </div>
+                                                                </td>
+                                                                <td ng-if="k.rangeType === 'Ratio'">
+                                                                        <i>{{  }}</i>
+                                                                </td>
+                                                            </tr>
+                                                            <tr ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                                                <td>
+                                                                    <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                                                    <p>{{ j.ref_values[0].remarks }}</p>
+                                                                </td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr> -->
+                                </table>
+                                <table style="width: 100%" ng-repeat="j in testResultDetails[0].investigationResults">
+                                    <tr ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                        <td style="width: 25%;"><u>{{ j.test_name }}: </u></td>
+                                    </tr>
+                                    <tr ng-repeat="k in j.ref_values">
+                                        <td style="width: 25%;" ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}">
+                                            <span><b>{{ k.subInvestigation }}</b></span>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Range'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="(k.result - 0) < (k.startRange - 0) || (k.result - 0) > (k.endRange - 0)">
+                                                <b>{{ k.result }}</b>
+                                            </p>
+                                            <p ng-if="(k.result - 0) >= (k.startRange - 0) && (k.result - 0) <= (k.endRange - 0)">
+                                                {{ k.result }}
+                                            </p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'T/F'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="k.result === k.trueValue"><b>{{ k.result }}</b></p>
+                                            <p ng-if="k.result === k.falseValue">{{ k.result }}</p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Time'">
+                                            <p ng-if="k.resultMinutes === undefined">-----</p>
+                                            <p ng-if="((k.resultMinutes - 0) < (k.startMinutes - 0)) || ((k.resultMinutes - 0) > (k.endMinutes - 0))">
+                                                <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                            </p>
+                                            <p ng-if="((k.resultMinutes - 0) >= (k.startMinutes - 0)) && ((k.resultMinutes - 0) <= (k.endMinutes - 0))">
+                                                <span ng-if="((k.resultSeconds - 0) < (k.startSeconds - 0)) || ((k.resultSeconds - 0) > (k.endSeconds - 0))">
+                                                                <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                            </span>
+
+                                                <span ng-if="((k.resultSeconds - 0) >= (k.startSeconds - 0)) && ((k.resultSeconds - 0) <= (k.endSeconds - 0))">
+                                                                    {{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}
+                                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Array'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Description'">
+                                            <p ng-if="k.result === undefined">-----</p>
+                                            <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Ratio'">
+                                            <p ng-if="k.resultNumerator === undefined">-----</p>
+                                            <p ng-if="k.resultNumerator !== undefined"><b>{{ k.resultNumerator + ' IN ' + k.resultDenominator }}</b></p>
+                                        </td>
+                                        <td style="width: 25%;">
+                                            <i>{{ k.unit_name }}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Range'">
+                                            <i>{{ k.startRange + ' - ' + k.endRange }}</i>
+                                        </td>
+                                        <td style="width: 25%;" class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                            <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Time'">
+                                            <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Array'">
+                                            <i>{{}}</i>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Description'">
+                                            <div class="col-md-12" ng-repeat="m in k.Description">
+                                                <i>{{ m }}</i>
+                                            </div>
+                                        </td>
+                                        <td style="width: 25%;" ng-if="k.rangeType === 'Ratio'">
+                                            <i>{{  }}</i>
+                                        </td>
+                                    </tr>
+                                    <tr ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                        <td style="width: 25%;">
+                                            <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                            <p>{{ j.ref_values[0].remarks }}</p>
+                                        </td>
+                                    </tr>
+                                </table><br/>
+                                <style>
+                                    .break-after {
+                                        display: block;
+                                        page-break-after: always;
+                                        position: relative;
+                                    }
+
+                                </style>
+
+                                <h5 style="text-align:center" class="break-after">*********** END OF REPORT ***********</h5>
+                                <br>
+                                <table>
+                                    <tr>
+                                        <td style="width: 25%;font-size: 17px">SUGGESTED CLINICAL CORRELATION.
+                                            <br> IF THERE IS NEED, KINDLY DISCUSS.</td>
+                                        <td style="width: 35%;"></td>
+                                        <td style="width: 25%;font-size: 17px">LAB TECHNICIAN</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <hr style="margin: 0" />
+                            <div class="row" style="font-size: 16px">
+                                <div class="col-md-1"><b>Note:</b></div>
+                                <div class="col-md-11">
+                                    <b>*</b>&nbsp;&nbsp;The reported above results are for the reference of referring doctor only.
+                                    <br><b>*</b>&nbsp;&nbsp;Test results of investigations are influenced by various factors such as sensitivity and specificity of test procedures, drug interactions andquality of sample. Hense reports have limitations.
+                                </div>
+                            </div>
+                            <hr style="margin-bottom: 0" />
+                            <h4 style="text-align: center">#2-6-32/3, RTC Complex Road, 100 Buildings Centre. Kakinada -3. &nbsp;&nbsp;&nbsp; Phone : <b>9618872266</b></h4>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary pull-left" ng-click="printLabResult('LabResultPrint')">Print</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row" ng-show="action==1">
+                <div class="col-md-12" ng-init="init()">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="font-size: 20px;">Lab Reports Information
+                                <div class="row">
+                                    <div class="col-md-3 pull-right" ng-show="action==1">
+                                        <label for="testdate2">To Date</label>
+                                        <div class="col-md-2 pull-right">&nbsp;</div>
+                                          <div class="input-group col-md-4 pull-right">
+                                              <input type="date" id="testdate2" ng-model="tempDateModelToDate" ng-change="byDate()" class="form-control">
+                                              <label class="input-group-addon btn" for="testdate2">
+                                                  <i class="fa fa-calendar"></i>
+                                              </label>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3 pull-right" ng-show="action==1">
+                                        <label for="testdate1">From Date</label> 
+                                        <div class="col-md-1 pull-right">&nbsp;</div>
+                                          <div class="input-group col-md-4 pull-right">
+                                              <input type="date" id="testdate1" ng-model="tempDateModelFromDate" ng-change="byDate()" class="form-control">
+                                              <label class="input-group-addon btn" for="testdate1">
+                                                  <i class="fa fa-calendar"></i>
+                                              </label>
+                                          </div>
+                                      </div>
+                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr ng-hide="NoData==1">
+                                        <td colspan="4">
+                                            <div class="col-md-4" >
+                                                <div class="input-group pull-left">
+                                                    <label class="input-group-addon btn" for="searchID1"><i class="fa fa-search"></i></label>
+                                                    <input class="form-control" ng-model="search1" id="searchID1">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Date</th>
+                                        <th>Doctor Name</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-repeat="i in lab_data |filter:search" ng-if="i.inv_details !== null">
+                                    <tr>
+                                        <td>{{i.name}}</td>
+                                        <td>{{i.date | date: 'dd-MM-yyyy' }}</td>
+                                        <td>Dr.&nbsp;{{i.dr_name}}&nbsp;{{i.qualification}}</td>
+                                        <td>
+                                            <!-- {{i.investigationResults[0].resultGiven}} -->
+                                            <button type="botton" ng-click="openTestResult(i.caseSheetId)" class="btn btn-primary">{{ (i.investigationResults[0].resultGiven === false) ? 'Add Test Results' : 'Update Test Results' }}</button>
+                                            <buttton type="buttton" class="close" data-toggle="modal" data-target="#myModal" ng-if="i.investigationResults[0].resultGiven === true" ng-click="getDetailsOfInvestigations(i.caseSheetId)"><i class="glyphicon glyphicon-print" style="font-size: 25px"></i></buttton>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody ng-show="NoData==1">
+                                    <tr align="center">
+                                        <td colspan="4">
+                                            <h4>No Data</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" ng-show="action==2">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size: 20px;">Patient Details<button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" form="testform"><i class="fa fa-check"></i>Update</button></div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <!-- <tr>
+                                        <th colspan="5">
+                                            Patient Details
+                                        </th>
+                                    </tr> -->
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Father's Name</th>
+                                        <th>Age</th>
+                                        <th>City</th>
+                                        <th>Mobile</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{test_result.name}}</td>
+                                        <td>{{test_result.father_name}}</td>
+                                        <td>{{test_result.age}}</td>
+                                        <td>{{test_result.city}}</td>
+                                        <td>{{test_result.mobile}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>  
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size: 20px;">Investigation Results</div>
+                    <div class="panel-body">
+                        <form id="testform" ng-submit="save_test_results()">
+                            <!-- <table class="table table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Test Name</th>
+                                            <th>Results</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody ng-repeat="j in test_result.inv_details">
+                                        <tr>
+                                            <td>{{j.test_name}}</td>
+                                            <td>
+                                                <input type="text" ng-model="j.result" class="form-control" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- <h3 class="text-center">Investigation Results </h3> -->
+                                    <div class="col-md-12" ng-repeat="j in test_result.investigationResults">
+
+                                        <div class="col-md-12" ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                            <h5><u>{{ j.test_name }}: </u></h5>
+                                        </div>
+                                        <div class="col-md-12" ng-repeat="k in j.ref_values">
+
+                                            <div class="col-md-3">
+                                                <span ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}"><b>{{ k.subInvestigation }}</b></span>
+                                            </div>
+
+                                            <!-- <div class="col-md-4">
+                                                        <i>{{ k.unit_name }}</i>
+                                                    </div> -->
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Range'">
+                                                <input type="text" class="form-control" ng-model="k.result" placeholder="Result" required />
+                                            </div>
+
+                                            <div class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                                <select class="form-control" ng-model="k.result" required>
+                                                            <option value="">Select</option>
+                                                            <option value="{{ k.trueValue }}">{{ k.trueValue }}</option>
+                                                            <option value="{{ k.falseValue }}">{{ k.falseValue }}</option>
+                                                        </select>
+                                            </div>
+
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Time'">
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" ng-model="k.resultMinutes" placeholder="Minutes" required />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" class="form-control" ng-model="k.resultSeconds" placeholder="Seconds" required />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Array'">
+                                                <select class="form-control" ng-model="k.result" required>
+                                                        <option value="">Select</option>
+                                                        <option value="{{ l }}" ng-repeat="l in k.Array">{{ l }}</option>
+                                                    </select>
+                                            </div>
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Description'">
+                                                <input type="text" class="form-control" ng-model="k.result" placeholder="Result" required />
+                                            </div>
+
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Ratio'" style="display: flex; align-items: center">
+                                                <div class="col-md-5">
+                                                    <input type="text" class="form-control" ng-model="k.resultNumerator" placeholder="Numerator" required />
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label>IN</label>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <input type="text" class="form-control" ng-model="k.resultDenominator" placeholder="Denominator" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <i>{{ k.unit_name }}</i>
+                                            </div>
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Range'">
+                                                <i>{{ k.startRange + ' - ' + k.endRange}}</i>
+                                            </div>
+                                            <div class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                                <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                            </div>
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Time'">
+                                                <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                            </div>
+
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Array'">
+                                                <i>{{  }}</i>
+                                            </div>
+
+                                            <div class="col-md-3" ng-if="k.rangeType === 'Description'">
+                                                <div class="col-md-12" ng-repeat="m in k.Description">
+                                                    <i>{{ m }}</i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" ng-if="k.rangeType === 'Ratio'">
+                                                <i>{{  }}</i>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12" ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                            <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                            <p>{{ j.ref_values[0].remarks }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                  
+            </div>
+            <!-- <pre>{{ test_result.investigationResults | json }}</pre> -->
+        </div>
+    </div>
+</div>

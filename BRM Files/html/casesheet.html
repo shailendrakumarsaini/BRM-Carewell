@@ -1,0 +1,823 @@
+<style>
+    #prescriptionsTable tr td {
+        vertical-align: middle;
+    }
+
+</style>
+<div ng-controller="casesheet_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="caseSheetHome()" class="pull-left thumb-md avatar b-3x m-r">
+                    <img src="img/medical_icons/case_sheet.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Case Sheet
+                    </div>
+                    <small class="text-muted">Patient Day Case Sheet</small>
+                    <small class="pull-right" ng-show="currentParams.patientId > 0"><button class="btn btn-sm btn-info btn-addon" ng-click="redirectToNewPatientPage()"><i class="fa fa-chevron-left"></i>Back</button></small>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="row" ng-show="action==1">
+                <div class="col-md-12" ng-init="init()">
+                    <!-- IP List -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="font-size: 20px;">Case Sheet Information</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <br/>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input class="form-control" ng-model="search2" id="searchID2" placeholder="Search.." />
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default" ng-repeat="i in inPatientsList |orderBy:sort:reverseSort |filter:search2" ng-if="NOIP">
+                                                <div class=" panel-heading ">
+                                                    <div class="clearfix ">
+                                                        <a href=" " class="pull-left thumb-md avatar b-3x m-r " style="text-align: center">
+                                                            <img src="img/medical_icons/team.png " alt="... ">
+                                                            <br/>
+                                                            <b>ID</b> : {{ i.patient_id }}
+                                                        </a>
+                                                        <div class="clear">
+                                                            <div class="col-md-3">
+                                                                <table width="100% " style="font-size: 12px; ">
+                                                                    <tr>
+                                                                        <td width="35% ">Name & Age </td>
+                                                                        <th>{{ i.name }} <span style="margin-left: 5px; ">{{ i.gender + ' : ' + i.age }}</span></th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="35% ">S/0</td>
+                                                                        <th>{{ i.father_name }}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="35% ">City</td>
+                                                                        <th>{{ i.city }}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="35% ">Mobile</td>
+                                                                        <th>{{ i.mobile }}</th>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <table width="100% " style="font-size: 12px; ">
+                                                                    <tr>
+                                                                        <td width="30% ">Admission</td>
+                                                                        <th>{{ i.admit_date | date: 'dd-MM-yy' }}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="30% ">Scheme</td>
+                                                                        <th>
+                                                                            {{ i.schemeName }}
+                                                                            <span ng-if="(patientDetails.total_package_amount - 0) > 0">
+                                                                                / <i class="fa fa-inr"></i> {{ patientDetails.total_package_amount }}
+                                                                            </span>
+                                                                        </th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="30% ">Bed</td>
+                                                                        <th>{{ i.loc_name + ' ' + i.bed_code }}</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="30% ">Daignosis</td>
+                                                                        <th>{{ i.spname }} : {{ i.initial_diagnosis }}</th>
+                                                                    </tr>
+
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <table width="100% " style="font-size: 12px; ">
+                                                                    <tr>
+                                                                        <td width="100% "><b>Dr. {{ i.dr_name + ' ' + i.qualification }}</b></td>
+                                                                    </tr>
+                                                                    <tr ng-if="patientDetails.surgeon_dr_name !== null">
+                                                                        <td width="100% "><b>Dr. {{ i.surgeon_dr_name + ' ' + i.surgeon_dr_qualification }}</b></td>
+                                                                    </tr>
+                                                                    <tr ng-if="patientDetails.anesthesian_dr_name !== null">
+                                                                        <td width="100% "><b>Dr. {{ i.anesthesian_dr_name + ' ' + i.anesthesian_dr_qualification }}</b></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <a><i class="fa fa-file-o fa-lg" ng-click="moveTo(i.patient_id,i.p_visit_id, i.bed_id)"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default" ng-if="!NOIP">
+                                                <div class="panel-body">
+                                                    <h4 style="text-align: center"> No Records</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-show="action!=1">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="font-size: 20px;"> Patient Details</div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <!-- <tr>
+                                        <th colspan="5">
+                                            Patient Details
+                                        </th>
+                                    </tr> -->
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Father's Name</th>
+                                        <th>Age</th>
+                                        <th>City</th>
+                                        <th>Mobile</th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-repeat="i in patient_details">
+                                    <tr>
+                                        <td>{{i.name}}</td>
+                                        <td>{{i.father_name}}</td>
+                                        <td>{{i.age}}</td>
+                                        <td>{{i.city}}</td>
+                                        <td>{{i.mobile}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-show="action==2">
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="font-size: 20px;"> Case Sheet<button type="button" class="btn btn-primary btn-addon btn-sm pull-right" ng-click="addNew(patientIdForAll, visitIdForAll, bedIdForAll)"><i class="fa fa-plus"></i>Add</button></div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <!-- <tr>
+                                        <th colspan="8">Case Sheet
+                                            <button type="button" class="btn btn-primary btn-addon btn-sm pull-right" ng-click="addNew(patientIdForAll, visitIdForAll, bedIdForAll)"><i class="fa fa-plus"></i>Add</button>
+                                        </th>
+                                    </tr> -->
+                                    <tr>
+                                        <th>S No.</th>
+                                        <th>Date</th>
+                                        <th>Doctor Name</th>
+                                        <th>Consultation Type</th>
+                                        <th class="text-center" colspan="4">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-repeat="i in dr_visit_details" ng-hide="NoVisits==1">
+                                    <tr>
+                                        <td>{{$index+1}}</td>
+                                        <td>{{ i.date | date: 'dd-MM-yyyy' }}</td>
+                                        <td>Dr.&nbsp;{{i.dr_name}}&nbsp;{{i.qualification}}</td>
+                                        <td>{{i.fcname}}</td>
+                                        <td>
+                                            <i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal" ng-click="viewVisitDetails(i)" style="cursor: pointer;"></i>
+                                        </td>
+                                        <td>
+                                            <i class="fa fa-edit fa-lg" ng-click="updateVisit(i)" style="cursor: pointer;"></i>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-addon btn-sm" ng-click="addOrUpdateTestResult(i)" ng-if="i.is_test_exist === true">{{ (i.investigationResults[0].resultGiven === false) ? 'Add Test Results' : 'Update Test Results' }}</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-addon btn-sm" ng-if="i.is_medicine_exist === true"><i class="fa fa-plus"></i>Prescriptions</button>
+                                        </td>
+                                    </tr>
+                                    <!-- <tr ng-if="i.is_test_exist === true">
+                                        <td colspan="10">
+                                            <span ng-repeat="x in i.investigationResults">
+                                                {{x.test_name}}: {{(x.result.length > 0)? x.result : '(empty)'}}{{(i.inv_details.length !== ($index + 1)) ? ',&nbsp;&nbsp;&nbsp;&nbsp;' : ''}}
+                                                <pre>{{ i.investigationResults | json }}</pre>
+                                            </span>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                                <tbody ng-show="NoVisits==1">
+                                    <td colspan="5">
+                                        <h4 align="center">No Visits</h4>
+                                    </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Model -->
+        <div id="myModal" class="modal fade col-md-12" role="dialog">
+            <div class="modal-dialog modal-lg modal-full-height" style="overflow: auto">
+
+                <!-- Modal content-->
+                <div class="modal-content" style="overflow: auto">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Item List</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default">
+                                                <h4>Doctor Details</h4>
+                                                <div class="list-group no-radius alt">
+                                                    <span class="list-group-item">
+                                                        <table class="table table-striped b-t b-light table-bordered">
+                                                            <thead>
+                                                                <th>Date</th>
+                                                                <th>Consultant Doctor</th>
+                                                                <th>Consultation</th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <td>{{info_casesheet.date | date: 'dd-MM-yyyy'}}</td>
+                                                                <td>Dr.&nbsp;{{info_casesheet.dr_name}}&nbsp;{{info_casesheet.qualification}}</td>
+                                                                <td>{{info_casesheet.fcname}}</td>
+                                                            </tbody>
+                                                        </table>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" ng-if="info_casesheet.inv_details !== null">
+                                        <div class="col-md-12">
+                                            <h3 style="text-align: center; text-decoration: underline">Investigation Results</h3>
+                                            <div class="col-md-3">
+                                                <u><h4>Investigations</h4></u>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <u><h4>Results</h4></u>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <u><h4>Units</h4></u>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <u><h4>Reference Interval</h4></u>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12" ng-repeat="j in info_casesheet.investigationResults">
+
+                                            <div class="col-md-12" ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                                <h5><u>{{ j.test_name }}: </u></h5>
+                                            </div>
+                                            <div class="col-md-12" ng-repeat="k in j.ref_values">
+
+                                                <div class="col-md-3">
+                                                    <span ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}"><b>{{ k.subInvestigation }}</b></span>
+                                                </div>
+
+                                                <!-- <div class="col-md-4">
+                                                        <i>{{ k.unit_name }}</i>
+                                                    </div> -->
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Range'">
+                                                    <p ng-if="k.result === undefined">-----</p>
+                                                    <p ng-if="(k.result - 0) < (k.startRange - 0) || (k.result - 0) > (k.endRange - 0)">
+                                                        <b>{{ k.result }}</b>
+                                                    </p>
+                                                    <p ng-if="(k.result - 0) >= (k.startRange - 0) && (k.result - 0) <= (k.endRange - 0)">
+                                                        {{ k.result }}
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3" ng-if="k.rangeType === 'T/F'">
+
+                                                    <p ng-if="k.result === undefined">-----</p>
+                                                    <p ng-if="k.result === k.trueValue"><b>{{ k.result }}</b></p>
+                                                    <p ng-if="k.result === k.falseValue">{{ k.result }}</p>
+                                                </div>
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Time'">
+
+                                                    <p ng-if="k.resultMinutes === undefined">-----</p>
+                                                    <p ng-if="((k.resultMinutes - 0) < (k.startMinutes - 0)) || ((k.resultMinutes - 0) > (k.endMinutes - 0))">
+                                                        <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                    </p>
+                                                    <p ng-if="((k.resultMinutes - 0) >= (k.startMinutes - 0)) && ((k.resultMinutes - 0) <= (k.endMinutes - 0))">
+                                                        <span ng-if="((k.resultSeconds - 0) < (k.startSeconds - 0)) || ((k.resultSeconds - 0) > (k.endSeconds - 0))">
+                                                            <b>{{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}</b>
+                                                        </span>
+
+                                                        <span ng-if="((k.resultSeconds - 0) >= (k.startSeconds - 0)) && ((k.resultSeconds - 0) <= (k.endSeconds - 0))">
+                                                                {{ k.resultMinutes + ' min ' + k.resultSeconds + ' sec' }}
+                                                            </span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Array'">
+                                                    <p ng-if="k.result === undefined">-----</p>
+                                                    <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                                </div>
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Description'">
+                                                    <p ng-if="k.result === undefined">-----</p>
+                                                    <p ng-if="k.result !== undefined"><b>{{ k.result }}</b></p>
+                                                </div>
+
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Ratio'">
+                                                    <p ng-if="k.resultNumerator === undefined">-----</p>
+                                                    <p ng-if="k.resultNumerator !== undefined"><b>{{ k.resultNumerator + ' IN ' + k.resultDenominator }}</b></p>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <i>{{ k.unit_name }}</i>
+                                                </div>
+
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Range'">
+                                                    <i>{{ k.startRange + ' - ' + k.endRange }}</i>
+                                                </div>
+                                                <div class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                                    <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                                </div>
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Time'">
+                                                    <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                                </div>
+
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Array'">
+                                                    <i>{{  }}</i>
+                                                </div>
+
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Description'">
+                                                    <div class="col-md-12" ng-repeat="m in k.Description">
+                                                        <i>{{ m }}</i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3" ng-if="k.rangeType === 'Ratio'">
+                                                    <i>{{  }}</i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12" ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                                <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                                <p>{{ j.ref_values[0].remarks }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" ng-if="info_casesheet.medication_details !== null">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default">
+                                                <h4>Medication Details</h4>
+                                                <div class="list-group no-radius alt">
+                                                    <span class="list-group-item">
+                                                        <table class="table table-striped b-t b-light table-bordered">
+                                                            <thead>
+                                                                <th>SNo.</th>
+                                                                <th>Medicine Name</th>
+                                                            </thead>
+                                                            <tbody ng-repeat="k in info_casesheet.medication_details">
+                                                                <td>{{$index + 1}}</td>
+                                                                <td>{{k.med_name}}</td>
+                                                            </tbody>
+                                                        </table>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" ng-if="info_casesheet.diagnosis !== ''">
+                                        <div class="col-md-12">
+                                            <h4>Diagnosis: </h4>
+                                            <span>{{info_casesheet.diagnosis}}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" ng-if="info_casesheet.notes !== ''">
+                                        <div class="col-md-12">
+                                            <h4>Notes: </h4>
+                                            <span>{{info_casesheet.notes}}</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" ng-show="action==3">
+                <div class="col-md-12">
+                    <form id="schemeForm" ng-submit="save_caseSheet_data()">
+                        <div class="panel panel-default">
+                            <!-- <h4> &nbsp;&nbsp;Doctor Details</h4> -->
+                            <div class="panel-heading">&nbsp;&nbsp;Doctor Details</div>
+                            <div class="list-group no-radius alt">
+                                <span class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-md-4 form-group">
+                                            <label>Date</label>
+                                            <input type="date" ng-model="today" ng-change="change_date()" class="form-control">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <label>Consultant Doctor</label>
+                                            <select class="form-control" ng-model="mdoctor" ng-change="getIpTypes(mdoctor)" required   >
+                                                <option value="">Select Doctor</option>
+                                                <option ng-repeat="f in op_data" value="{{f.uid}}">Dr.&nbsp;{{f.name}}&nbsp;{{f.qualification}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 form-group" >
+                                            <label>Consultation</label>
+                                            <select class="form-control" ng-model="casesheet.consultation_id" required>
+                                                <option value="">Select Type</option>
+                                                <option value="{{ h.dr_consult_id }}" ng-repeat="h in ipTypes">{{h.fcname}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <!-- <div class="panel-heading">
+                                                    <div class="clearfix">
+                                                    <h4 align="center" class="text-danger">Investigation Details</h4>
+                                                    </div>
+                                                </div> -->
+                                    <!-- <h4> &nbsp;&nbsp;Investigation Details</h4> -->
+                                    <div class="panel-heading">&nbsp;&nbsp;Investigation Details</div>
+                                    <div class="list-group no-radius alt">
+                                        <span class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-12 form-group">
+                                                    <label>Test Name</label>
+                                                    <ui-select multiple ng-model="multipleItem.Tests" theme="bootstrap" close-on-select="true" ng-change="displayselTests()">
+                                                        <ui-select-match placeholder="Select Test...">{{$item.test_name}}</ui-select-match>
+                                                        <ui-select-choices repeat="j in test_data | filter:$select.search">{{j.test_name}}</ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- <pre>{{ casesheet.inv_details | json }}</pre> -->
+                            </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <!-- <h4> &nbsp;&nbsp;Prescription Details</h4> -->
+                                <div class="panel-heading">&nbsp;&nbsp;Prescription Details</div>
+                                <div class="list-group no-radius alt">
+                                    <span class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <label>Medicine Name</label>
+                                                <ui-select multiple ng-model="multipleDemo.medicines" theme="bootstrap" close-on-select="true" ng-change="displayselMedicines()">
+                                                    <ui-select-match placeholder="Select medicines...">{{$item.med_name}}</ui-select-match>
+                                                    <ui-select-choices repeat="color in medunits_data | filter:$select.search">{{color.med_name}}</ui-select-choices>
+                                                </ui-select>
+
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <div class="row" ng-show="casesheet.medication_details.length > 0">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <h4> &nbsp;&nbsp;Prescription</h4>
+                <div class="list-group no-radius alt">
+                    <span class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-12" >
+                                <table id="prescriptionsTable" class="table b-t b-light table-hover table-bordered">
+                                    <tbody>
+                                        <tr class="text-muted" ng-repeat="i in casesheet.medication_details">
+                                            <td><b>{{i.med_name | uppercase}}</b></td>
+                                            <td><input type="text" class="form-control" ng-model="i.quantity" placeholder="Quantity" required></td>
+                                            <td><input type="checkbox" ng-model="i.BB" />&nbsp;&nbsp;&nbsp;&nbsp; BB</td>
+                                            <td><input type="checkbox" ng-model="i.AB" />&nbsp;&nbsp;&nbsp;&nbsp; AB</td>
+                                            <td><input type="checkbox" ng-model="i.BL" />&nbsp;&nbsp;&nbsp;&nbsp; BL</td>
+                                            <td><input type="checkbox" ng-model="i.AL" />&nbsp;&nbsp;&nbsp;&nbsp; AL</td>
+                                            <td><input type="checkbox" ng-model="i.BD" />&nbsp;&nbsp;&nbsp;&nbsp; BD</td>
+                                            <td><input type="checkbox" ng-model="i.AD" />&nbsp;&nbsp;&nbsp;&nbsp; AD</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <label>Diagnosis</label>
+            <textarea ng-model="casesheet.diagnosis" cols="1" rows="1" class="form-control"></textarea>
+        </div>
+        <div class="col-md-6">
+            <label>Notes</label>
+            <textarea ng-model="casesheet.notes" cols="1" rows="1" class="form-control"></textarea>
+        </div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit" form="schemeForm" class="btn btn-success btn-addon btn-sm pull-right"><i class="fa fa-check"></i>Save</button>
+        </div>
+    </div>
+
+    </form>
+    <!-- <pre>{{ casesheet | json }}</pre> -->
+</div>
+        </div>
+
+
+    <div class="row" ng-show="action==4">
+            <div class="container-fluid">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a id="doctorVisitLink" data-toggle="tab" ng-click="showTab('#doctorVisitTab', this.id)">Visit Details</a></li>
+                    <li><a id="investigationsLink" data-toggle="tab" ng-click="showTab('#investigationsTab', this.id)">Investigations</a></li>
+                    <li><a id="prescriptionsLink" data-toggle="tab" ng-click="showTab('#prescriptionsTab', this.id)">Prescriptions</a></li>
+                    <li><a id="OthersLink" data-toggle="tab" ng-click="showTab('#OthersTab', this.id)">Other Details</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="doctorVisitTab" class="tab-pane fade in active">
+                        <div class="col-md-12"><br>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form id="updateCaseSheetVisits" ng-submit="updateCaseSheetVisits()">
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label>Date</label>
+                                                <input type="date" ng-model="today" ng-change="change_date_for_update()" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label>Visited Doctor</label>
+                                                <select class="form-control" ng-model="update_casesheet.visitedDoctor" ng-change="getIpTypesForUpdate(update_casesheet.visitedDoctor)" required>
+                                                    <option value="">Select Doctor</option>
+                                                    <option ng-repeat="f in op_data" value="{{f.uid}}">Dr.&nbsp;{{f.name}}&nbsp;{{f.qualification}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label>Consultation</label>
+                                                <select class="form-control" ng-model="update_casesheet.consultationType" required>
+                                                    <option value="">Select Type</option>
+                                                    <option value="{{ h.dr_consult_id }}" ng-repeat="h in ipTypes">{{h.fcname}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <pre>{{ update_casesheet | json }}</pre>
+                                        <div class="form-group row">
+                                            <button type="submit" form="updateCaseSheetVisits" class="btn btn-success btn-addon btn-sm pull-right" style="margin-right: 10px;"><i class="fa fa-check"></i>Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="investigationsTab" class="tab-pane">
+                        <div class="col-md-12"><br>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form id="updateCaseSheetInvestigations" ng-submit="updateCaseSheetInvestigations()">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label>Test Name</label>
+                                                <ui-select multiple ng-model="updateCaseSheetUi.test_id" theme="bootstrap" close-on-select="true" ng-change="changeUpdateTestData(updateCaseSheetUi.test_id)">
+                                                    <ui-select-match placeholder="Select Test...">{{$item.test_name}}</ui-select-match>
+                                                    <ui-select-choices repeat="j in test_data | filter:$select.search">{{j.test_name}}</ui-select-choices>
+                                                </ui-select>
+                                            </div>
+                                        </div>
+                                        <!-- <pre>{{ update_casesheet.inv_details | json }}</pre> -->
+                                        <div class="form-group row">
+                                            <button type="submit" form="updateCaseSheetInvestigations" class="btn btn-success btn-addon btn-sm pull-right" style="margin-right: 10px;"><i class="fa fa-check"></i>Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prescriptionsTab" class="tab-pane">
+                        <div class="col-md-12"><br>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form id="updateCaseSheetPrescriptions" ng-submit="updateCaseSheetPrescriptions()">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label>Medicine Name</label>
+                                                <ui-select multiple ng-model="updateMultipleDemo.medicines" theme="bootstrap" close-on-select="true" ng-change="changeUpdateMedData(updateMultipleDemo.medicines)">
+                                                    <ui-select-match placeholder="Select medicines...">{{$item.med_name}}</ui-select-match>
+                                                    <ui-select-choices repeat="medicine in medunits_data | filter:$select.search">{{medicine.med_name}}</ui-select-choices>
+                                                </ui-select>
+                                                <!-- <pre>{{multipleDemo |json}}</pre> -->
+                                            </div>
+                                        </div>
+                                        <div class="row" ng-show="update_casesheet.medication_details.length > 0">
+                                            <div class="col-md-12">
+                                                <div class="panel panel-default">
+                                                    <h4> &nbsp;&nbsp;Prescription</h4>
+                                                    <div class="list-group no-radius alt">
+                                                        <span class="list-group-item">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12" >
+                                                                                <table id="prescriptionsTable" class="table b-t b-light table-hover table-bordered">
+                                                                                    <tbody>
+                                                                                        <tr class="text-muted" ng-repeat="i in update_casesheet.medication_details">
+                                                                                            <td><b>{{i.med_name | uppercase}}</b></td>
+                                                                                            <td><input type="text" class="form-control" ng-model="i.quantity" placeholder="Quantity" required></td>
+                                                                                            <td><input type="checkbox" ng-model="i.BB" />&nbsp;&nbsp;&nbsp;&nbsp; BB </td>
+                                                                                            <td><input type="checkbox" ng-model="i.AB" />&nbsp;&nbsp;&nbsp;&nbsp; AB </td>
+                                                                                            <td><input type="checkbox" ng-model="i.BL" />&nbsp;&nbsp;&nbsp;&nbsp; BL </td>
+                                                                                            <td><input type="checkbox" ng-model="i.AL" />&nbsp;&nbsp;&nbsp;&nbsp; AL </td>
+                                                                                            <td><input type="checkbox" ng-model="i.BD" />&nbsp;&nbsp;&nbsp;&nbsp; BD </td>
+                                                                                            <td><input type="checkbox" ng-model="i.AD" />&nbsp;&nbsp;&nbsp;&nbsp; AD </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <button type="submit" form="updateCaseSheetPrescriptions" class="btn btn-success btn-addon btn-sm pull-right" style="margin-right: 10px;"><i class="fa fa-check"></i>Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="OthersTab" class="tab-pane">
+                        <div class="col-md-12"><br>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <form id="updateCaseSheetOthers" ng-submit="updateCaseSheetOthers()">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Diagnosis</label>
+                                                <textarea ng-model="update_casesheet.diagnosis" cols="1" rows="1" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Notes</label>
+                                                <textarea ng-model="update_casesheet.notes" cols="1" rows="1" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <button type="submit" form="updateCaseSheetOthers" class="btn btn-success btn-addon btn-sm pull-right" style="margin-right: 10px;"><i class="fa fa-check"></i>Update</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="row" ng-show="action==5">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="font-size: 20px;">Investigation Results </div>
+                <div class="panel-body">
+                    <button type="submit" form="updateTestForm" class="btn btn-success btn-addon btn-sm pull-right"><i class="fa fa-check"></i>Save</button>
+                    <form id="updateTestForm" ng-submit="updateInvestigationFormData()">
+                    <div class="row">
+                            <div class="col-md-12">
+                                <!-- <h3 class="text-center">Investigation Results </h3> -->
+                                <div class="col-md-12" ng-repeat="j in addTestReults.investigationResults">
+
+                                    <div class="col-md-12" ng-if="j.test_name !== j.ref_values[0].subInvestigation">
+                                        <h5><u>{{ j.test_name }}: </u></h5>
+                                    </div>
+                                    <div class="col-md-12" ng-repeat="k in j.ref_values">
+
+                                        <div class="col-md-3">
+                                            <span ng-style="(j.test_name !== j.ref_values[0].subInvestigation) ? {'text-indent': '10px'}:{}"><b>{{ k.subInvestigation }}</b></span>
+                                        </div>
+
+                                        <!-- <div class="col-md-4">
+                                                <i>{{ k.unit_name }}</i>
+                                            </div> -->
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Range'">
+                                            <input type="text" class="form-control" ng-model="k.result" placeholder="Result" required />
+                                        </div>
+
+                                        <div class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                            <select class="form-control" ng-model="k.result" required>
+                                                    <option value="">Select</option>
+                                                    <option value="{{ k.trueValue }}">{{ k.trueValue }}</option>
+                                                    <option value="{{ k.falseValue }}">{{ k.falseValue }}</option>
+                                                </select>
+                                        </div>
+
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Time'">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" ng-model="k.resultMinutes" placeholder="Minutes" required />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" ng-model="k.resultSeconds" placeholder="Seconds" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Array'">
+                                            <select class="form-control" ng-model="k.result" required>
+                                                <option value="">Select</option>
+                                                <option value="{{ l }}" ng-repeat="l in k.Array">{{ l }}</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Description'">
+                                            <input type="text" class="form-control" ng-model="k.result" placeholder="Result" required />
+                                        </div>
+
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Ratio'" style="display: flex; align-items: center">
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control" ng-model="k.resultNumerator" placeholder="Numerator" required />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label>IN</label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control" ng-model="k.resultDenominator" placeholder="Denominator" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <i>{{ k.unit_name }}</i>
+                                        </div>
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Range'">
+                                            <i>{{ k.startRange + ' - ' + k.endRange}}</i>
+                                        </div>
+                                        <div class="col-md-3" ng-if="k.rangeType === 'T/F'">
+                                            <i>{{ k.trueValue + ' / ' + k.falseValue }}</i>
+                                        </div>
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Time'">
+                                            <i>{{ k.startMinutes + ' Min ' + k.startSeconds  + ' Sec - ' + k.endMinutes + ' Min ' + k.endSeconds  + ' Sec' }}</i>
+                                        </div>
+
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Array'">
+                                            <i>{{  }}</i>
+                                        </div>
+
+                                        <div class="col-md-3" ng-if="k.rangeType === 'Description'">
+                                            <div class="col-md-12" ng-repeat="m in k.Description">
+                                                <i>{{ m }}</i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4" ng-if="k.rangeType === 'Ratio'">
+                                            <i>{{  }}</i>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" ng-if="j.ref_values[0].remarks !== undefined && j.ref_values[0].remarks !== ''">
+                                        <h4><u>CLINICAL SIGNIFICANCE:</u></h4>
+                                        <p>{{ j.ref_values[0].remarks }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

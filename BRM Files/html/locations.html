@@ -1,0 +1,145 @@
+<div ng-controller="locations_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/placeholder.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Locations
+                    </div>
+                    <small class="text-muted">Blocks, Words, Labs etc.,</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body" ng-init="init()">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_location()"><i class="fa fa-user-plus"></i>New</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" form="myform" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+
+
+
+            <table class="table table-striped b-t b-light table-bordered" ng-show="action==1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Code</th>
+                        <th>Location</th>
+						<th>Facility Group</th>
+                        <th>Block</th>
+                        <th>Hospital</th>
+						<th style="width:30px;"></th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="x in locations |filter:search" ng-if="noRecords === false">
+                    <tr rowspan="2">
+                        <td>{{$index+1}}</td>
+                        <td><a ng-click="getlocation(x.loc_id)"><span ng-bind="x.loc_code"></span></a></td>
+                        <td><span ng-bind="x.loc_name"></span></td>
+						 <td><span ng-bind="x.fcgname"></span></td>
+                        <td><span ng-bind="x.block_name"></span></td>
+                        <td><span ng-bind="x.hname"></span></td>
+						<td>
+                            <a href ng-click="change_status(x.loc_id,x.status,$index)"><i class="fa fa-check text-success" ng-show="x.status==1"></i><i class="fa fa-times text-danger" ng-show="x.status==0"></i></a>
+                        </td>
+                    </tr>
+                    <tr ng-show="menu_uid==x.loc_id">
+                        <td colspan="6">
+                            <form name="form">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label>Location Name</label>
+                                        <input type="text" class="form-control" ng-model="loca_data.loc_name" placeholder="Location Name" required title="Enter Location Name">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label>Block Name</label>
+                                        <input type="text" class="form-control" ng-model="loca_data.block_name" placeholder="Block Name" required title="Enter Block Name">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label>Facility Group</label>
+                                        <select name="level" class="form-control m-b" ng-model="loca_data.fcgid" ng-options="y.fcgid as y.fcgname for y in fec_grps" required>
+                                 <option style="display:none" value="">Select Facility Group</option>              
+                                </select>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label>Hospital</label>
+                                        <select name="level" class="form-control m-b" ng-model="loca_data.hosp_id" ng-options="y.hid as y.hname for y in hospitals" required>
+                                            <option style="display:none" value="">Select Hospital</option>              
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <br>
+                                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_location(x.loc_id)" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Update</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <!-- <tr ng-show="menu_uid==x.loc_id">
+                        <td colspan="6">
+                            <div clss="row">
+                                <button class="btn m-b-xs btn-sm btn-danger btn-addon" ng-click="delete_location(x.loc_id)"><i class="fa fa-trash"></i>Delete</button>
+                                <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_location(x.loc_id)" ng-disabled="form.$invalid"><i class="fa fa-check"></i>Update</button>
+                            </div>
+                            <div class="col-xs-12 alert alert-success" ng-if="result!=''">
+                                <strong><i class="fa fa-check fa-lg" aria-hidden="true"></i></strong> {{result}}
+                            </div>
+                        </td>
+                    </tr> -->
+                </tbody>
+                <tbody ng-if="noRecords === true">
+                    <tr>
+                        <td colspan="6" align="center"><h4>No Records</h4></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div ng-show="action==2">
+                <form name="form" ng-submit="save_location()" id="myform">
+                    <div class="col-md-6">                       
+                        <div class="form-group">
+                            <label>Block Name</label>
+                            <input type="text" class="form-control" ng-model="block_name" placeholder="Block Name" required title="Enter Block Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="control-label">Location Name</label>
+                            <input type="text" class="form-control" ng-model="loc_name" placeholder="Location Name" required title="Enter Location Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Facility Group</label>
+                            <select name="level" class="form-control m-b" ng-model="fcgid" ng-options="y.fcgid as y.fcgname for y in fec_grps" required>
+					 <option style="display:none" value="">Select Facility Group</option>              
+            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Hospital</label>
+                            <select name="level" class="form-control m-b" ng-model="hosp_id" ng-options="y.hid as y.hname for y in hospitals" required>
+					 <option style="display:none" value="">Select Hospital</option>              
+            </select>
+                        </div>
+
+
+                    </div>
+
+                </form>
+                <!--<pre ng-bind="user |json"></pre>-->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+<div ng-controller="staff_ctrl">
+        <div class="panel panel-default" style="margin: 5px">
+            <div class="panel-heading" style="background-color:aliceblue">
+                <div class="clearfix">
+                    <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                      <img src="img/medical_icons/staff.png" >
+                    </a>
+                    <div class="clear">
+                        <div class="h3 m-t-xs m-b-xs">
+                            Staff
+                        </div>
+                        <small class="text-muted">Staff Details</small>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input class="form-control" ng-model="search">
+                        </div>
+                        <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="action=2"><i class="fa fa-plus"></i>New</button>
+                        <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="staff_form"><i class="fa fa-check"></i>Save</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" ng-init="init()" ng-show="action==1">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>S No.</th>
+                                    <th ng-click="SortTheData('staff_name')">Staff Name</th>
+                                    <th ng-click="SortTheData('staff_department')">Department</th>
+                                    <th ng-click="SortTheData('staff_salary')">Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody ng-repeat="i in staff_data |filter:search |orderBy:sort:reverseSort" ng-hide="NoData == 1">
+                                <tr>
+                                    <td>{{$index+1}}</td>
+                                    <td ng-click="updateMenu($index)">{{i.staff_name}}</td>
+                                    <td>{{i.staff_department}}</td>
+                                    <td>{{i.staff_salary}}</td>
+                                </tr>
+                                <tr ng-show="update[$index]==1">
+                                    <td colspan="4">
+                                        <form name="staff_update_form">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label>Staff Name</label>
+                                                    <div class="form-group">
+                                                        <input type="text" ng-model="i.staff_name" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Department</label>
+                                                    <div class="form-group">
+                                                        <input type="text" ng-model="i.staff_department" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label>Salary</label>
+                                                    <div class="form-group">
+                                                        <input type="text" ng-model="i.staff_salary" pattern="[0-9 .]{1,10}" maxlength="10" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <br>
+                                                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-click="update_staff(i)" ng-disabled="staff_update_form.$invalid"><i class="fa fa-check"></i>Update</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody ng-show="NoData == 1">
+                                <tr align="center">
+                                    <td colspan="4"><h4>No Data</h4></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+                <div ng-show="action==2">            
+                    <form id="staff_form" ng-submit="save_staff_data()" class="form-validation">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>Staff Name</label>
+                                <div class="form-group">
+                                    <input type="text" ng-model="staff_name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Department</label>
+                                <div class="form-group">
+                                    <input type="text" ng-model="department" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Salary</label>
+                                <div class="form-group">
+                                    <input type="text" ng-model="salary" pattern="[0-9 .]{1,10}" maxlength="10" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    

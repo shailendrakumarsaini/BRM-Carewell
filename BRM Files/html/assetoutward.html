@@ -1,0 +1,256 @@
+<div ng-controller="assetoutward_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a ng-click="test()" class="pull-left thumb-md avatar b-3x m-r">
+                    <img src="img/medical_icons/asset_outward.png">
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Asset Outward
+                    </div>
+                    <small class="text-muted">Outward Asset</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+
+<!-- 
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <input class="form-control" ng-model="search">
+
+                    </div>
+                    <button type="button" class="btn btn-primary btn-sm pull-right btn-addon" ng-show="action==1" ng-click="add_show()"><i class=" fa fa-plus"></i>Add New</button>
+                </div>
+            </div> -->
+            <div ng-init="init()" style="overflow: auto">
+                    <div class="panel panel-default" ng-show="action==1">
+                            <div class="panel-heading" style="font-size: 20px;">Asset Outward Details                    <button type="button" class="btn btn-primary btn-sm pull-right btn-addon" ng-show="action==1" ng-click="add_show()"><i class=" fa fa-plus"></i>Add New</button>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-striped b-t b-light table-bordered" >
+                                    <thead>
+                                        <tr ng-hide="NoData==1">
+                                            <td colspan="5">
+                                            <div class="input-group col-xs-6 col-sm-3 pull-left">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-search"></i>
+                                                    </span>
+                                                    <input class="form-control" ng-model="search">
+                            
+                                                </div>  
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>
+                                                <a ng-click="SortTheData('from_store_name')">From Store</a>
+                                            </th>
+                                            <th>
+                                                <a ng-click="SortTheData('to_store_name')">To Store</a>
+                                            </th>
+                                            <th>
+                                                <a ng-click="SortTheData('transaction_date')">Date</a>
+                                            </th>
+                                            <th>View</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody ng-repeat="d in details1_data | filter:search | orderBy:sort:reverseSort">
+                                        <tr rowspan="2">
+                                            <td>
+                                                <span ng-bind="{{$index+1}}"></span>
+                                            </td>
+                                            <td>
+                                                <span ng-bind="d.from_store_name"></span>
+                                            </td>
+                                            <td>
+                                                <span ng-bind="d.to_store_name"></span>
+                                            </td>
+                                            <td>
+                                                <span ng-bind="d.transaction_date"></span>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal" ng-click="show_outward(d.transaction_id)"></i>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                    <tbody ng-show="NoData==1">
+                                        <tr align="center">
+                                            <td colspan="5"><h4>No Data</h4></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+
+                             <!--Eye Display -->
+                            <div id="myModal" class="modal fade" role="dialog" data-backdrop="static">
+                                <div class="modal-dialog" style="min-width: 80%;">
+                
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                            <h4 class="modal-title">Outward Item List</h4>
+                                        </div>
+                                        <div class="modal-body">
+                
+                
+                                            <table class="table table-striped b-t b-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Asset Name</th>
+                                                        <th>Qty</th>
+                                                        <th>Recieved QTY</th>
+                                                        <th>User ID</th>
+                
+                                                    </tr>
+                                                </thead>
+                                                <tbody ng-repeat="o in outward_data">
+                                                    <tr rowspan="2">
+                                                        <td>{{$index+1}}</td>
+                                                        <td ng-bind="o.asset_name"></td>
+                                                        <td ng-bind="o.quantity"></td>
+                                                        <td ng-bind="o.received_quantity"></td>
+                                                        <td ng-bind="o.user_id"></td>
+                
+                                                    </tr>
+                
+                                                </tbody>
+                
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+
+            </div>  
+
+           
+ 
+
+            <div ng-show="sss==1">
+                    <div class="panel panel-default">
+                            <div class="panel-heading" style="font-size: 20px;">Asset For Outward                                                 <button type="button" class="btn btn-success btn-sm btn-addon pull-right" ng-click="save_out_data()" form="va" ng-disabled="va.$invalid"><i class="fa fa-check"></i>Save</button>
+                            </div>
+                            <div class="panel-body">
+                                <form name="va">
+                                    <!-- <div class="row">
+                                        <div class="col-md-12">
+                                                <button type="button" class="btn btn-success btn-sm btn-addon pull-right" ng-click="save_out_data()" form="va" ng-disabled="va.$invalid"><i class="fa fa-check"></i>Save</button>
+                                        </div><br><br>
+                                    </div> -->
+                                    <div class="row">
+                                            <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Select From Store</label>
+                                                            <select class="form-control" ng-model="fidx" ng-change="get_item(fidx)" required>
+                                                                <option value="">Select From Store</option>
+                                                                <option ng-repeat="x in unit_data" ng-value="$index">{{x.store_name}}</option>
+                                                            </select>
+                                                        </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Select To Store</label>
+                                                            <select class="form-control" ng-model="tidx" ng-change="search_item(tidx)">
+                                                                <option value="">Select To Store</option>
+                                                                <option ng-repeat="y in unit_data " ng-value="$index" ng-if="(y.store_name!=don)">{{y.store_name}}</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="col-md-4">
+                                                        <label>Search here for Item Name</label>
+                                                        <!-- <div class="form-group">
+                                                            <label>Search here for Item Name</label>
+                                                            <br>
+                                                            <input type="text" name="test" class="form-control" ng-model="query" ng-change="toggleGuess()" required>
+                                                            <p style="display:none;" ng-repeat="z in get_data | filter:query | limitTo:10" ng-click="get_details(out.ao_fromstore_id,z.item_id,z.asset_name)">{{z.asset_name}}</p>
+                                                        </div> -->
+                                                        <ui-select multiple ng-model="out.items_list" theme="bootstrap" close-on-select="true">
+                                                            <ui-select-match placeholder="Select items...">{{$item.asset_name}}</ui-select-match>
+                                                            <ui-select-choices repeat="item in get_data | filter:$select.search">
+
+                                                                <span ng-bind-html="item.asset_name | uppercase | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <!-- Quantity :<span class="text-muted" ng-bind-html="item.quantity | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                                                <!-- <br>
+                                                                BN :<span class="text-muted" ng-bind-html="medicine_stock.batch_no | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                Expiry :<span class="text-muted" ng-bind-html="medicine_stock.expiry_date | date : 'dd-MM-yy' | highlight: $select.search"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Select Date</label>
+                                                            <div class="input-group">
+                                                            <input type="date" id="dateFicker1" ng-model="transactiontime" ng-change="out.ao_transactiontime = transactiontime.toLocaleDateString('en-US', { day:'2-digit', month:'long', year:'numeric' })" class="form-control input-md">
+                                                            <label class="input-group-addon" for="dateFicker1"><i class="fa fa-calendar"></i></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <br>
+                                                            <button type="button" class="btn btn-success btn-sm btn-addon" ng-click="save_out_data()" form="va" ng-disabled="va.$invalid"><i class="fa fa-check"></i>Save</button>
+                                                        </div>
+                                                    </div> -->
+
+                                    </div>
+
+                                    <!--Add Item -->
+                                    <div ng-show="out.items_list.length > 0">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <table class="table table-striped b-t b-light">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th>Store Name</th>
+                                                                <th>Item Name</th>
+                                                                <th>Qty</th>
+                                                                <th>Send Qty</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tr ng-repeat="x in out.items_list">
+                                                            <td>{{x.store_name}}</td>
+                                                            <td>{{x.asset_name}}</td>
+                                                            <td>{{x.quantity}}</td>
+                                                            <td>
+                                                                <input ng-model="x.received_quantity" ng-keyup="x.received_quantity=mx(x.received_quantity,x.quantity)" pattern="[0-9]{1,10}" maxlength="10" class="form-control" required>
+                                                            </td>
+                                                            <td>
+                                                                <button type="button" class="btn m-b-xs btn-sm btn-danger" ng-click="item_remove($index)"><i class="fa fa-trash fa-lg"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <br>
+                                    <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=subbu%20&%20kavitha">  -->
+                                    <!-- <pre ng-bind="out |json"></pre> -->
+                                </form>
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>

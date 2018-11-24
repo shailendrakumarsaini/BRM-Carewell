@@ -1,0 +1,352 @@
+<div ng-controller="medicinepos_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                        <img src="img/medical_icons/medical_po.png">
+                    </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Medicine POS
+                    </div>
+                    <small class="text-muted">Purchase Orders for Medicine</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <!-- <div class="row" style="overflow: auto">
+                <div class="col-md-12">
+                    <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_new_po()" style="width:100px;"><i class="fa fa-plus"></i>New</button>
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.qty.$invalid" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div> -->
+            <div class="row" style="overflow: auto">
+                <div class="col-md-12" ng-init="init()">
+                        <div class="panel panel-default" ng-show="action==1">
+                            <div class="panel-heading" style="font-size: 20px;">Medicine Purchase Order Details                    <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_new_po()" style="width:100px;"><i class="fa fa-plus"></i>New</button>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-striped b-t b-light table-bordered">
+                                    <thead>
+                                        <tr ng-hide="NoData == 1">
+                                            <td colspan="7">
+                                                <div class="input-group col-xs-6 col-sm-3 pull-left">
+                                                    <span class="input-group-addon">
+                                                            <i class="fa fa-search"></i>
+                                                        </span>
+                                                    <input class="form-control" ng-model="search">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <!-- <th>#</th> -->
+                                            <th>S No.</th>
+                                            <th><a ng-click="SortTheData('medicinepo_id')">PO ID</a></th>
+                                            <th><a ng-click="SortTheData('medicinepo_date')">Date</a></th>
+                                            <th><a ng-click="SortTheData('name')">Supplier</a></th>
+                                            <th style="text-align: right"><a ng-click="SortTheData('medicinepo_net_price')">Amount</a></th>
+                                            <th>View</th>
+                                            <th>Print</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody ng-repeat="x in med_pos | filter:search | orderBy:sort:reverseSort">
+                                        <tr rowspan="2">
+                                            <td ng-bind="$index+1 "></td>
+
+                                            <td ng-bind="x.medicinepo_id"></td>
+                                            <td ng-bind="x.medicinepo_date | date:'dd-MM-yyyy'"></td>
+                                            <td ng-bind="x.name"></td>
+                                            <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{x.medicinepo_net_price | number:2}}</td>
+                                            <td><i class="fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal" ng-click="show_items(x.medicinepo_id)" style="cursor: pointer;"></i></td>
+                                            <td><i class="fa fa-print fa-lg" data-toggle="modal" data-target="#myModal_for_print" ng-click="print_details(x.medicinepo_id)" style="cursor: pointer;"></i></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody ng-show="NoData == 1">
+                                        <tr align="center">
+                                            <td colspan="7">
+                                                <h4>No Data</h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <div id="myModal" class="modal fade" data-backdrop="static">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                        <div class="modal-content" style="overflow: auto">
+                                            <div class="modal-header">
+                                                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                                <h4 class="modal-title">Item List</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-bordered b-t b-light">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Item</th>
+                                                            <th>MRP</th>
+                                                            <th>P.Price</th>
+                                                            <th>Qty</th>
+                                                            <th>Free</th>
+                                                            <th>TAX(%)</th>
+                                                            <th style="text-align: right">Amount</th>
+                                                            <th>Receive QTY</th>
+                                                            <th>Pending Qty</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody ng-repeat="y in med_pos_data">
+                                                        <tr rowspan="2">
+                                                            <td ng-bind="$index+1"></td>
+                                                            <td ng-bind="y.med_name"></td>
+                                                            <td><i class="fa fa-rupee"></i>&nbsp;{{y.mpo_mrp |number:2}}</td>
+                                                            <td><i class="fa fa-rupee"></i>&nbsp;{{y.mpo_pp |number:2}}</td>
+                                                            <td ng-bind="y.mpo_qty"></td>
+                                                            <td> {{(y.mpo_free == null) ? 0 :y.mpo_free}}</td>
+                                                            <td ng-bind="y.tax"></td>
+                                                            <td style="text-align: right"><i class="fa fa-rupee"></i>&nbsp;{{(((y.mpo_pp*y.mpo_qty)*(y.tax))/100)+(y.mpo_pp*y.mpo_qty) |number:2}}</td>
+                                                            <td>{{y.mpo_qty_received}}</td>
+                                                            <td>{{y.mpo_qty - y.mpo_qty_received }}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="myModal_for_print" class="modal fade" data-backdrop="static">
+                                    <div class="modal-dialog modal-lg modal-full-height" style="min-width: 80%;">
+                                        <div class="modal-content" style="overflow: auto">
+                                            <div class="modal-body">
+                                                <div id="PO_PRINT">
+                                                    <!-- <h4 style="text-align:center">PURCHASE ORDER</h4> -->
+                                                    <!--<h4 style="float: left">Dr.BRM CareWell Hospital</h4> -->
+                                                    <table hieght="100%" width="100%">
+                                                        <tr>
+                                                            <td style="font-size: 25px; min-width:70%"><b>{{med_pos_print_data.hospitalDetails.hname}}</b></td>
+                                                            <td style="font-size: 30px;text-align:center">PURCHASE ORDER</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>{{med_pos_print_data.hospitalDetails.haddress}}</td>
+                                                            <td style="text-align:right;padding-right:28px;font-size: 20px;"><b>Date :&nbsp;&nbsp;</b>{{med_pos_print_data.mpoInfo.medicinepo_date}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Kakinada</td>
+                                                            <td style="text-align:right;padding-right:106px;font-size: 20px;"><b>P.O # :&nbsp;&nbsp;</b>{{med_pos_print_data.mpoInfo.medicinepo_id}}</td>
+                                                        </tr>
+                                                    </table>
+                                                    <h5>TO</h5>
+                                                    <h4><b>{{med_pos_print_data.mpoInfo.name}}</b></h4>
+                                                    <!-- <p>Visakha Patnam</p> -->
+                                                    <table class="table table-striped b-t b-light" border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size:20px;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align:center">Item #</th>
+                                                                <th style="text-align:center">Description</th>
+                                                                <th style="text-align:center">Qty</th>
+                                                                <th style="text-align:right;padding-right: 15px">Unit Price</th>
+                                                                <th style="text-align:center">Tax</th>
+                                                                <th style="text-align:right;padding-right: 15px">Total</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="y in med_pos_print_data.mpo_details">
+                                                            <tr>
+                                                                <td style="text-align:center" ng-bind="$index+1"></td>
+                                                                <td style="text-align:center">{{y.med_name}}</td>
+                                                                <td style="text-align:center">{{y.mpo_qty}}</td>
+                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{y.mpo_pp |number:2}}</td>
+                                                                <td style="text-align:center">{{y.tax_name}}</td>
+                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{(y.mpo_pp * y.mpo_qty) + ((y.mpo_pp * y.mpo_qty) * y.tax_percent) / 100 |number:2}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="text-align:right;padding-right: 15px" colspan="5"><b>GrandTotal</b></td>
+                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{total |number:2}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p style="float: right;padding-right:8%;font-size:18px;">
+                                                        <b>Authorized By : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <b>Date : </b>
+                                                    </p><br>
+
+                                                </div>
+
+                                                <div id="PO_PRINT_print" ng-show="PrintShow==1">
+                                                    <!-- <h4 style="text-align:center">PURCHASE ORDER</h4> -->
+                                                    <!--<h4 style="float: left">Dr.BRM CareWell Hospital</h4> -->
+                                                    <!--<div class="row" style="font-size: 20px;margin-top: 1.4in;"></div>-->
+                                                    <p style="text-align:center; font-size: 20px; margin-top :1.4in;"><b>PURCHASE ORDER</b></p>
+                                                    <table hieght="100%" width="100%">
+                                                        <tr>
+                                                            <td style="font-size: 20px;">TO</td>
+                                                            <td style="text-align:right;padding-right:28px;font-size: 20px;"><b>Date :&nbsp;&nbsp;</b>{{med_pos_print_data.mpoInfo.medicinepo_date}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-size: 20px;"><b>{{med_pos_print_data.mpoInfo.name}}</b></td>
+                                                            <td style="text-align:right;padding-right:106px;font-size: 20px;"><b>P.O # :&nbsp;&nbsp;</b>{{med_pos_print_data.mpoInfo.medicinepo_id}}</td>
+                                                        </tr>
+                                                    </table><br>
+                                                    <table class="table table-striped b-t b-light" border="1px" cellspacing="0px" hieght="100%" width="100%" style="font-size:20px;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align:center">Item #</th>
+                                                                <th style="text-align:center">Description</th>
+                                                                <th style="text-align:center">Qty</th>
+                                                                <th style="text-align:right;padding-right: 15px">Unit Price</th>
+                                                                <th style="text-align:center">Tax</th>
+                                                                <th style="text-align:right;padding-right: 15px">Total</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody ng-repeat="y in med_pos_print_data.mpo_details">
+                                                            <tr>
+                                                                <td style="text-align:center" ng-bind="$index+1"></td>
+                                                                <td style="text-align:center">{{y.med_name}}</td>
+                                                                <td style="text-align:center">{{y.mpo_qty}}</td>
+                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{y.mpo_pp |number:2}}</td>
+                                                                <td style="text-align:center">{{y.tax_name}}</td>
+                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{(y.mpo_pp * y.mpo_qty) + ((y.mpo_pp * y.mpo_qty) * y.tax_percent) / 100 |number:2}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="text-align:right;padding-right: 15px" colspan="5"><b>GrandTotal</b></td>
+                                                                <td style="text-align:right;padding-right: 15px"><i class="fa fa-rupee"></i>&nbsp;{{total |number:2}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p style="float: right;padding-right:8%;font-size:18px;">
+                                                        <b>Authorized By : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <b>Date : </b>
+                                                    </p><br>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary pull-left" ng-click="print_po_details('PO_PRINT_print')">Print</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            <div ng-show="action==2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="font-size: 20px;">Add Medicine Purchase Order                     <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==2" form="myform" ng-disabled="myform.qty.$invalid" style="width:100px;"><i class="fa fa-check"></i>Save</button>
+                        </div>
+                        <div class="panel-body">
+                            <form name="myform" id="myform" ng-submit="save_medicine_po_data()" class="form-validation">
+                                <div class="row" style="overflow: auto;">
+                                    <div class="col-md-6">
+                                        <label>Supplier Name</label>
+                                        <select name="" ng-model="pos.medicinepo_supplier_id" class="form-control" required>
+                                                <option value="" >Select Supplier</option>
+                                                <option value="{{s.id}}" ng-repeat="s in suppliers">{{s.name}}</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Purchase Date</label>
+                                        <div class="input-group">
+                                        <input type="date" id="medpo_dateeID" ng-model="medpo_datee" ng-change="pos.medicinepo_date =medpo_datee.toLocaleDateString('en-US', { day:'2-digit', month:'long', year:'numeric' })" class="form-control" required>
+                                        <label class="input-group-addon" for="medpo_dateeID"><i class="fa fa-calendar"></i></label>
+                                        </div>
+                                    </div>
+                                </div>     
+
+                                <br>
+                                <table class="table table-striped b-t b-light table-bordered">
+                                    <thead>
+                                        <!-- <tr>
+                                                <td colspan="10">
+                                                    <button type="button" class="btn btn-primary pull-right" ng-click="add_item()">Add Item</button>
+                                                </td>
+                                            </tr> -->
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>MRP</th>
+                                            <th>P.Price</th>
+                                            <th>Qty</th>
+                                            <!-- <th>Free</th> -->
+                                            <th>Amount</th>
+                                            <th>TAX(%)</th>
+                                            <th>Value</th>
+                                            <th><button type="button" class="btn btn-sm btn-primary btn-addon" ng-click="add_item()" ng-disabled="addBtnDisable == 'yes'"><b class="fa fa-plus fa-lg"></b>&nbsp;&nbsp;</button></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="x in pos.items_list">
+                                            <td>
+                                                <ui-select ng-model="x.obj" style="width: 250px" ng-change="autosearch_data($select.search); previous_item_data(x.obj, $index)" theme="bootstrap" title="Choose an address" append-to-body="true">
+                                                    <ui-select-match placeholder="Search Medicine...">
+                                                        <span ng-bind="$select.selected.med_name">
+                                                        </span></ui-select-match>
+                                                    <ui-select-choices repeat="item in (medunits_data | filter: $select.search) track by $index" refresh="autosearch_data($select.search)" refresh-delay="0">
+                                                        <span ng-bind-html="item.med_name |uppercase | highlight: $select.search"></span>&nbsp;
+                                                    </ui-select-choices>
+                                                </ui-select>
+                                            </td>
+                                            <td><input type="text" ng-model="x.mpo_mrp" ng-change="x.mpo_pp=x.mpo_mrp" autocomplete="off" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" required></td>
+                                            <td><input type="text" name="pp" ng-model="x.mpo_pp" ng-change="change_pp($index)" class="form-control" pattern="[0-9 .,]{1,10}" maxlength="10" autocomplete="off" required></td>
+                                            <td>
+                                                <input type="text" name="qty" ng-model="x.mpo_qty" ng-change="change_qty($index)" autocomplete="off" pattern="[0-9]{1,10}" maxlength="10" class="form-control" value="" required>
+                                            </td>
+                                            <!-- <td><input type="text" name="free" ng-model="x.mpo_free" ng-init="x.mpo_free = 0" pattern="[0-9]{1,10}" maxlength="5" class="form-control" autocomplete="off"></td>    -->
+                                            <td><input type="text" ng-model="x.amount" class="form-control" value="" ng-disabled="true"></td>
+                                            <td><input type="text" ng-model="x.mpo_tax_name" class="form-control" ng-disabled="true"></td>
+                                            <td><input type="text" ng-model="x.amount_tax" class="form-control" value="" ng-disabled="true"></td>
+                                            <td><button type="button" class="btn m-b-xs btn-sm btn-danger" ng-click="item_remove($index,x.amount)" ng-disabled="pos.items_list.length == 1"><i class="fa fa-trash fa-lg"></button></i>
+                                            </td>
+                                        </tr>
+
+                                        <tr ng-show="show_Net_Price == 1">
+                                            <td colspan="6">
+                                                <h4 class="pull-right">Discount(%)</h4>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" ng-model="pos.discount" ng-change="get_discount($index)" placeholder="Discount" maxlength="3">
+                                                <!-- <span> &#8274;</span> -->
+                                            </td>
+                                        </tr>
+                                        <tr ng-show="show_Net_Price == 1">
+                                            <td colspan="6">
+                                                <h4 class="pull-right" style="color:green;">Total Amount</h4>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" ng-model="pos.net_amount" placeholder="Net Price" maxlength=20 ng-disabled="true">
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+                                <!-- <pre ng-bind="pos |json"></pre>
+                                <pre ng-bind="medunits_data |json"></pre> -->
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>

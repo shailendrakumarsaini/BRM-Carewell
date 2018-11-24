@@ -1,0 +1,2071 @@
+{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 09:27:32",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 09:27:44",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 09:27:47",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:03:39",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:14:10",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:25:58",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:26:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "zax"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "zax"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:56",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:28:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "zax"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:19",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "zax"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Select Medicines Suggestions",
+    "extra": "zax"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:29:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines  Brand Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "za"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines Suggestions",
+    "extra": "zax"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:30:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:02",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:31:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:04",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:32:25",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:32:46",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:33:08",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:33:13",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:33:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:34:09",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:34:23",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:23",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:34:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To get Medicines combination Suggestions",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:34:52",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 11:35:07",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:40:31",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Opened New Patient Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:40:31",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Opened New Patient Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:40:59",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:41:06",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:41:08",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:41:09",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:41:15",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:49:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:51:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened New Patient Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:51:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened New Patient Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:51:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:52:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:52:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Updated Supplier Data",
+    "extra": "id=1&name=Aditya%20Medical%20Agency&address=mathura&city=goverdhan&contact_person=sunil&mobile=2543525345&gst_no=4343434343&tin_no=4343434343"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:52:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:53:31",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:53:56",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:02",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:06",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:09",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:13",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:24",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:26",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:29",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 11:54:30",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:58:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 11:58:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "1",
+        "date_time": "2018-02-09 12:03:45",
+        "client_ip": "192.168.2.254"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:07:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:09:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:09:38",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:11:30",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:12:41",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:14:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:15:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:19:22",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:19:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:20:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Store Data is Saved",
+    "extra": "store_type=Test&store_name=apllo&store_account_group=1&tin_no=4545454544&drug_no=sddsdsd&is_super_store=No&sales_unit=yes&location_id=10"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:21:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:21:29",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Store Data is Saved",
+    "extra": "store_type=Inventory&store_name=sssdsdsd&store_account_group=1&tin_no=sdsdsds&drug_no=sdsd&is_super_store=yes&sales_unit=yes&location_id=14"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:23:43",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:23:49",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:27:10",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:27:17",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:27:45",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:29:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:29:55",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Store Data is Saved",
+    "extra": "store_type=Inventory&store_name=jojo&store_account_group=2&tin_no=sds&drug_no=sds&is_super_store=yes&sales_unit=yes&location_id=11"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:30:50",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:32:25",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:33:32",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:34:06",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:35:21",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:35:39",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:36:01",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:36:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Store Data is Saved",
+    "extra": "store_type=Inventory&store_name=kaka&store_account_group=1&tin_no=wwe&drug_no=qeq&is_super_store=No&sales_unit=No&location_id=14"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:37:42",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:38:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Add Unit",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:38:25",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Store Data is Saved",
+    "extra": "store_type=Inventory&store_name=raka&store_account_group=6&tin_no=eqwq&drug_no=qe&is_super_store=yes&sales_unit=yes&location_id=13"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "4",
+        "date_time": "2018-02-09 12:39:03",
+        "client_ip": "10.22.39.22"
+    },
+    "window": "Users",
+    "extra": "extra Data"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:42:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Data is Updated",
+    "extra": "id=10&store_type=Inventory&store_name=raka&store_account_group=6&tin_no=eqwq&drug_no=qe&is_super_store=yes&sales_unit=yes&location_id=10"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:48:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:48:58",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:50:34",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:50:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:50:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened the Supplier Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:51:07",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Item Group Opend",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:51:15",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:52:11",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset Data is Updated",
+    "extra": "asset_id=7&asset_name=Mouse&asset_group_id=2&asset_brand=Dell&asset_desc=Pointing%20Device&asset_units=18&asset_tax=1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:52:11",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:52:17",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:52:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "AssetPO Data is Opened",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:52:52",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:52:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "AssetPO Data is Opened",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:53:31",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "AssetPO Data is Opened",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:54:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Data is Loaded",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:54:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened New Patient Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 12:54:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Opened New Patient Data",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:08:20",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:08:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:08:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:08:59",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:10:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:11:42",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:11:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:11:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:11:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:12:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:14",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:19",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:24",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:27",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:28",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "5"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:32",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:32",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "6"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "7"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:13:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:14:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:14:50",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:14:54",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "4"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:16",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:26",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:33",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "1"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:37",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "2"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:15:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:16:02",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:16:05",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:16:08",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:16:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:16:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 13:17:17",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:20:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:20:40",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:20:45",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:30:36",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:30:39",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:30:48",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:32:41",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Load the Inward Datas",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:32:44",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Add New Inward",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 14:32:53",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "To Show the Items",
+    "extra": "3"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 16:30:21",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "AssetPO Data is Opened",
+    "extra": ""
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 18:55:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 18:56:03",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 18:59:43",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:00:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "store_type=Test&store_name=jain%20farmacy&store_account_group=1&tin_no=23232323232&drug_no=23232323232&is_super_store=yes&sales_unit=yes&location_id=11"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:00:30",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:02:11",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:02:35",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:05:51",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:05:57",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines",
+    "extra": "Medicines is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:06:12",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:07:00",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Asset PO",
+    "extra": "Asset PO opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:07:38",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:07:47",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Medicines",
+    "extra": "Medicines is opened"
+},{
+    "action": "log_data",
+    "login": {
+        "uid": "2",
+        "date_time": "2018-02-09 19:09:49",
+        "client_ip": "10.22.39.23"
+    },
+    "window": "Stores",
+    "extra": "Stores is opened"
+},

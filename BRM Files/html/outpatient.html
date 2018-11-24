@@ -1,0 +1,84 @@
+<div ng-controller="outpatient_ctrl">
+    <div class="panel panel-default" style="margin: 5px">
+        <div class="panel-heading" style="background-color:aliceblue">
+            <div class="clearfix">
+                <a href ng-click="action=1" class="pull-left thumb-md avatar b-3x m-r">
+                  <img src="img/medical_icons/dashboard.png" >
+                </a>
+                <div class="clear">
+                    <div class="h3 m-t-xs m-b-xs">
+                        Out Patient
+                    </div>
+                    <small class="text-muted">Page Caption</small>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                   <!-- <div class="form-group input-group col-xs-6 col-sm-3 pull-left" ng-show="action==1">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" ng-model="search">
+                    </div>
+                     <button class="btn m-b-xs btn-sm btn-primary btn-addon pull-right" ng-show="action==1" ng-click="add_inv_unit()">
+                    <i class="fa fa-plus"></i>
+                    New
+                </button> -->
+                    <button class="btn m-b-xs btn-sm btn-success btn-addon pull-right" ng-show="action==1"><i class="fa fa-check"></i>Save</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" ng-init="init()">
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="clearfix">
+                                        <a href="" class="pull-left thumb-md avatar b-3x m-r">
+                                            <img src="img/medical_icons/doctor_red.png" alt="...">
+                                        </a>
+                                        <div class="clear">
+                                            <div class="h3 m-t-xs m-b-xs">
+                                                Consultation-1
+                                                <i class="fa fa-circle text-success pull-right text-xs m-t-sm"></i>
+                                            </div>
+                                            <!-- <small class="text-muted">General and Neurology</small> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group no-radius alt">
+                                    <span class="list-group-item">
+ 
+                                    <span class="badge bg-info">3</span>
+                                    <i class="fa fa-user-md fa-fw text-muted"></i> Dr. T.Altaf <sub>MBBS, MAIMS, FAIMS</sub>
+        
+                                    </span>
+        
+                                    <span class="list-group-item">
+                                        
+                                    <span class="badge bg-info">5</span>
+                                    <i class="fa fa-user-md fa-fw text-muted"></i> Dr. T.Abhilash <sub>MS(GM)</sub>
+        
+                                    </span>
+                                    <span class="list-group-item">
+                                        
+                                    <span class="badge bg-info">5</span>
+                                    <i class="fa fa-user-md fa-fw text-muted"></i> Dr. P.Hari Prasad <sub>MS M.Ch(Neuro)</sub>
+        
+                                    </span>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
